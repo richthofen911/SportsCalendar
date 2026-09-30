@@ -1,27 +1,5 @@
 export const SEASON = "2026–27";
 
-export const CATEGORIES = [
-  {
-    id: "football",
-    name: "Football",
-    color: "#2E7D32",
-  },
-  {
-    id: "formula-1",
-    name: "Formula 1",
-    color: "#B3212B",
-    page: "2026 Formula One World Championship",
-    year: 2026,
-  },
-];
-
-export const LEAGUES = [
-  { name: "Premier League", page: `${SEASON} Premier League` },
-  { name: "La Liga", page: `${SEASON} La Liga` },
-  { name: "Bundesliga", page: `${SEASON} Bundesliga` },
-  { name: "Ligue 1", page: `${SEASON} Ligue 1` },
-];
-
 export const CLUBS = [
   {
     id: "real-madrid",
@@ -65,4 +43,33 @@ export const CLUBS = [
     color: "#004170",
     page: `${SEASON} Paris Saint-Germain FC season`,
   },
+];
+
+// Each category names the teams it can be filtered by; the UI builds one
+// dropdown per active category that has any. Formula 1 is a single series, so
+// it has none.
+export const CATEGORIES = [
+  {
+    id: "football",
+    name: "Football",
+    color: "#2E7D32",
+    teamsLabel: "Clubs",
+    teams: CLUBS.map((c) => c.id),
+  },
+  {
+    id: "formula-1",
+    name: "Formula 1",
+    color: "#B3212B",
+    teamsLabel: "Teams",
+    teams: [],
+    page: "2026 Formula One World Championship",
+    year: 2026,
+  },
+];
+
+export const LEAGUES = [
+  { name: "Premier League", page: `${SEASON} Premier League` },
+  { name: "La Liga", page: `${SEASON} La Liga` },
+  { name: "Bundesliga", page: `${SEASON} Bundesliga` },
+  { name: "Ligue 1", page: `${SEASON} Ligue 1` },
 ];

@@ -14,8 +14,8 @@ No accounts, no API keys, no build step, nothing running in the background.
 ## Open it
 
 On this Mac, double-click `index.html` (or `open index.html`). Month grid and
-agenda list, filters by club / competition / status, free-text search, and a
-local-vs-UTC time switch. Click any fixture for venue, scorers, bookings,
+agenda list, filters by category, team, competition and status, free-text
+search, and a local-vs-UTC time switch. Click any fixture for venue, scorers, bookings,
 attendance, referee and the official report link. Keyboard: `←` `→` change
 month, `Esc` closes the detail panel.
 
@@ -30,9 +30,17 @@ server only reads files from this folder and binds to your LAN.
 
 ## Categories and standings
 
-The chips at the left of the filter bar (**Football**, **Formula 1**) show or
-hide a whole category everywhere at once — grid, agenda, search and the month
-counts. The choice is remembered.
+The filter bar has two levels. The chips (**Football**, **Formula 1**) show or
+hide a whole category everywhere at once — grid, agenda, search, standings and
+the counts. Underneath, each active category that has teams gets **one
+dropdown** listing them with a tick box each; its label summarises the choice
+("Clubs · All 6" or "Clubs · 4 of 6") and offers *Select all* when you have
+narrowed it. Formula 1 is a single series, so it contributes no dropdown —
+switch football off and the clubs menu disappears with it.
+
+Which teams a category offers comes from the data, not the markup: add a
+category with `teams: [...]` in `tools/clubs.mjs` and the dropdown appears by
+itself. Both choices are remembered in the browser.
 
 **Calendar / Standings** switches the panel. Standings shows the four league
 tables — position, played, W-D-L, goals, GD, points — with your six clubs

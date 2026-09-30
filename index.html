@@ -87,6 +87,45 @@
       }
       .chip[aria-pressed="true"] { background: var(--c); border-color: transparent; color: #fff; }
       .chip[aria-pressed="true"] .dot { background: rgba(255,255,255,.9); }
+      /* one dropdown per category that has teams */
+      .teams { display: flex; gap: 8px; flex-wrap: wrap; }
+      .dd { position: relative; }
+      .dd > summary {
+        list-style: none; cursor: pointer;
+        display: inline-flex; align-items: center; gap: 7px;
+        border: 1px solid var(--line); border-radius: 8px;
+        padding: 5px 10px; font-size: 12.5px;
+        background: var(--bg); color: inherit;
+      }
+      .dd > summary::-webkit-details-marker { display: none; }
+      .dd > summary .caret {
+        width: 0; height: 0; opacity: .55;
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent;
+        border-top: 5px solid currentColor;
+      }
+      .dd > summary .count { color: var(--muted); font-weight: 400; }
+      .dd[open] > summary { border-color: var(--ink); }
+      .ddPanel {
+        position: absolute; z-index: 6; top: calc(100% + 5px); left: 0;
+        min-width: 232px; padding: 6px;
+        background: var(--panel); border: 1px solid var(--line); border-radius: 10px;
+        box-shadow: 0 10px 26px rgba(0, 0, 0, .16);
+      }
+      .ddRow {
+        display: flex; align-items: center; gap: 8px;
+        padding: 7px 8px; border-radius: 7px; cursor: pointer; font-size: 13px;
+      }
+      .ddRow:hover { background: color-mix(in srgb, var(--ink) 6%, var(--panel)); }
+      .ddRow input { accent-color: var(--c); width: 15px; height: 15px; }
+      .ddRow .dot { width: 9px; height: 9px; border-radius: 50%; background: var(--c); flex: 0 0 auto; }
+      .ddAll {
+        display: block; width: 100%; margin-top: 4px; padding: 6px 8px;
+        text-align: left; border: 0; border-radius: 7px;
+        background: none; color: var(--muted); font: inherit; font-size: 12px; cursor: pointer;
+      }
+      .ddAll:hover { background: color-mix(in srgb, var(--ink) 6%, var(--panel)); color: inherit; }
+
       select, input[type="search"] {
         font: inherit; font-size: 12.5px;
         padding: 5px 8px;
@@ -170,7 +209,7 @@
       :root[data-panel="standings"] #compSelect,
       :root[data-panel="standings"] #search,
       :root[data-panel="standings"] #monthNav,
-      :root[data-panel="standings"] #clubChips { display: none; }
+      :root[data-panel="standings"] #teamDropdowns { display: none; }
       /* the month nav gets an inline display from syncLayoutButtons */
       :root[data-panel="standings"] #monthNav { display: none !important; }
 
@@ -247,6 +286,7 @@
         width: 100%;
         padding-bottom: 4px;
         scrollbar-width: none;
+        -webkit-overflow-scrolling: touch;
       }
       .phone .chips::-webkit-scrollbar { display: none; }
       .phone .chip { flex: 0 0 auto; padding: 7px 12px; font-size: 13px; }
@@ -257,15 +297,21 @@
       .phone .seg button { font-size: 12px; padding: 7px 7px; }
       .phone input[type="search"] { flex: 1 1 140px; min-width: 0; }
 
-      /* three compact rows: clubs · filters · toggles */
-      /* no flex-grow: a growing input would fill the line and push the next
-         control onto its own row */
-      .phone #compSelect { order: 1; flex: 0 1 128px; min-width: 0; }
-      .phone #search { order: 2; flex: 0 1 108px; min-width: 0; }
-      .phone #tzSeg { order: 3; flex: 0 0 auto; }
+      /* four rows: switch + categories · teams + status · filters · toggles.
+         No flex-grow: a growing input would fill the line and push the next
+         control onto a row of its own. */
+      .phone #panelSeg { order: 1; flex: 0 0 auto; }
+      .phone #categoryChips { order: 2; flex: 0 1 auto; width: auto; max-width: 100%; }
+      .phone #teamDropdowns { order: 3; flex: 0 0 auto; }
       .phone #statusSeg { order: 4; flex: 0 0 auto; }
-      .phone #layoutSeg { order: 5; flex: 0 0 auto; }
-      .phone .nav { order: 6; width: 100%; justify-content: space-between; }
+      .phone #compSelect { order: 5; flex: 0 1 128px; min-width: 0; }
+      .phone #search { order: 6; flex: 0 1 108px; min-width: 0; }
+      .phone #tzSeg { order: 7; flex: 0 0 auto; }
+      .phone #layoutSeg { order: 8; flex: 0 0 auto; }
+      .phone .nav { order: 9; width: 100%; justify-content: space-between; }
+      .phone .dd > summary { padding: 7px 10px; font-size: 13px; }
+      .phone .ddPanel { min-width: 0; width: min(300px, 82vw); }
+      .phone .ddRow { padding: 11px 8px; font-size: 14px; }
       .phone .nav .label { min-width: 0; flex: 1; }
 
       /* the month grid needs roughly 700px to stay legible */
@@ -328,7 +374,7 @@
         <button id="pStandings" aria-pressed="false">Standings</button>
       </div>
       <div class="chips" id="categoryChips"></div>
-      <div class="chips" id="clubChips"></div>
+      <div class="teams" id="teamDropdowns"></div>
       <select id="compSelect" aria-label="Competition"></select>
       <div class="seg" id="statusSeg" role="group" aria-label="Status">
         <button id="stUpcoming" aria-pressed="true">Upcoming</button>
@@ -623,9 +669,7 @@
 
       function render({ anchor = false } = {}) {
         document.documentElement.dataset.panel = state.panel;
-        for (const el of document.querySelectorAll("#clubChips .chip")) {
-          el.setAttribute("aria-pressed", String(state.clubs.has(el.dataset.club)));
-        }
+        syncTeamDropdowns();
         for (const el of document.querySelectorAll("#categoryChips .chip")) {
           el.setAttribute("aria-pressed", String(state.categories.has(el.dataset.category)));
         }
@@ -960,6 +1004,48 @@
         document.getElementById(onId).setAttribute("aria-pressed", "true");
       }
 
+      // First level is the category row; each category that has teams gets its
+      // own dropdown, so the bar never shows a list of clubs for a category
+      // that is switched off.
+      function buildTeamDropdowns() {
+        document.getElementById("teamDropdowns").innerHTML = DATA.categories
+          .filter((c) => (c.teams || []).length)
+          .map((cat) => {
+            const rows = cat.teams
+              .map((id) => {
+                const club = CLUBS[id];
+                return `<label class="ddRow" style="--c:${club.color}">
+                  <input type="checkbox" data-club="${club.id}" />
+                  <span class="dot"></span>${club.name}
+                </label>`;
+              })
+              .join("");
+            return `<details class="dd" data-category="${cat.id}">
+              <summary>${cat.teamsLabel || "Teams"} <span class="count"></span><span class="caret"></span></summary>
+              <div class="ddPanel">${rows}<button class="ddAll" data-category="${cat.id}">Select all</button></div>
+            </details>`;
+          })
+          .join("");
+      }
+
+      function syncTeamDropdowns() {
+        for (const dd of document.querySelectorAll("#teamDropdowns .dd")) {
+          const cat = CATS[dd.dataset.category];
+          const on = state.categories.has(cat.id);
+          dd.hidden = !on;
+          if (!on) dd.open = false;
+          const chosen = cat.teams.filter((id) => state.clubs.has(id));
+          for (const box of dd.querySelectorAll("input[data-club]")) {
+            box.checked = state.clubs.has(box.dataset.club);
+          }
+          dd.querySelector(".count").textContent =
+            chosen.length === cat.teams.length
+              ? `All ${cat.teams.length}`
+              : `${chosen.length} of ${cat.teams.length}`;
+          dd.querySelector(".ddAll").hidden = chosen.length === cat.teams.length;
+        }
+      }
+
       function buildChrome() {
         document.getElementById("seasonLabel").textContent = ` ${DATA.season}`;
         document.getElementById("metaLine").innerHTML =
@@ -977,13 +1063,7 @@
               `<span class="dot"></span>${c.name}</button>`
           )
           .join("");
-        document.getElementById("clubChips").innerHTML = DATA.clubs
-          .map(
-            (c) =>
-              `<button class="chip" data-club="${c.id}" style="--c:${c.color}" aria-pressed="true">` +
-              `<span class="dot"></span>${c.name}</button>`
-          )
-          .join("");
+        buildTeamDropdowns();
         document.getElementById("compSelect").innerHTML = ["all", ...[...new Set(fixtures.map(eventCompetition))].sort()]
           .map((c) => `<option value="${c}">${c === "all" ? "All competitions" : c}</option>`)
           .join("");
@@ -1001,12 +1081,27 @@
         });
         document.getElementById("pCalendar").addEventListener("click", () => setPanel("calendar"));
         document.getElementById("pStandings").addEventListener("click", () => setPanel("standings"));
-        document.getElementById("clubChips").addEventListener("click", (e) => {
-          const btn = e.target.closest(".chip");
-          if (!btn) return;
-          state.clubs.has(btn.dataset.club) ? state.clubs.delete(btn.dataset.club) : state.clubs.add(btn.dataset.club);
-          if (!state.clubs.size) DATA.clubs.forEach((c) => state.clubs.add(c.id));
+        const teams = document.getElementById("teamDropdowns");
+        teams.addEventListener("change", (e) => {
+          const box = e.target.closest("input[data-club]");
+          if (!box) return;
+          const cat = CATS[box.closest(".dd").dataset.category];
+          state.clubs.has(box.dataset.club) ? state.clubs.delete(box.dataset.club) : state.clubs.add(box.dataset.club);
+          // An empty selection means "I did not mean that" — show them all.
+          if (!cat.teams.some((id) => state.clubs.has(id))) cat.teams.forEach((id) => state.clubs.add(id));
           render();
+        });
+        teams.addEventListener("click", (e) => {
+          const all = e.target.closest(".ddAll");
+          if (!all) return;
+          CATS[all.dataset.category].teams.forEach((id) => state.clubs.add(id));
+          render();
+        });
+        // Close a dropdown when the click lands outside it.
+        document.addEventListener("click", (e) => {
+          for (const dd of document.querySelectorAll("#teamDropdowns .dd[open]")) {
+            if (!dd.contains(e.target)) dd.open = false;
+          }
         });
         document.getElementById("compSelect").addEventListener("change", (e) => {
           state.competition = e.target.value;
