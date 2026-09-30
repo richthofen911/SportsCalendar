@@ -478,6 +478,18 @@
         // For the UTC view, shift the instant so local getters read back UTC fields.
         return state.tz === "utc" ? new Date(d.getTime() + d.getTimezoneOffset() * 60000) : d;
       }
+      function servedLocally() {
+        const h = location.hostname;
+        return (
+          h === "localhost" ||
+          h.endsWith(".local") ||
+          /^127\./.test(h) ||
+          /^10\./.test(h) ||
+          /^192\.168\./.test(h) ||
+          /^172\.(1[6-9]|2\d|3[01])\./.test(h)
+        );
+      }
+
       function localZoneId() {
         return Intl.DateTimeFormat().resolvedOptions().timeZone || "UTC";
       }
@@ -1048,8 +1060,9 @@
         });
         document.getElementById("backdrop").addEventListener("click", closeDrawer);
         const refreshBtn = document.getElementById("refreshBtn");
-        // Only meaningful when a server is running; over file:// there is nothing to call.
-        if (location.protocol.startsWith("http")) {
+        // The button calls the LAN server's /api/refresh, so it is offered only
+        // when this page is served from this machine or a private network.
+        if (servedLocally()) {
           refreshBtn.hidden = false;
           refreshBtn.addEventListener("click", () => refreshFromServer(refreshBtn));
         }

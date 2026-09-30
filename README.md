@@ -80,6 +80,44 @@ Tapping it re-runs the whole fetch-and-build on the Mac and reloads the page, so
 you can pull new scores from the sofa. It is a plain POST with no auth, so keep
 this on your own Wi-Fi and don't port-forward the address.
 
+## Publish to GitHub Pages
+
+The site is static, so GitHub Pages serves it and this Mac stays the only thing
+that fetches data:
+
+```
+Wikipedia/ESPN  --(npm run publish)-->  GitHub repo  --(Actions)-->  Pages site
+```
+
+- **`npm run publish`** — re-fetches, rebuilds `data/` and `calendar/`, commits
+  only those generated files and pushes. It makes no commit when nothing
+  changed, so a scheduled run on a quiet day is a no-op. Add `--dry-run` to
+  commit locally without pushing.
+- **`.github/workflows/pages.yml`** — runs on every push to `main`, copies
+  `index.html`, `data/calendar.js` and `calendar/*.ics` into the Pages artifact.
+  It never reads the network, so the page only ever shows what this machine
+  fetched.
+- **`npm run scheduler:install`** — optional. Installs a per-user LaunchAgent
+  (no admin rights) that runs the publish step at 07:15 and 19:15. Override with
+  `--times 06:00,22:00`; remove with `npm run scheduler:uninstall`. A job missed
+  while asleep runs on the next wake; while powered off it is skipped. Log:
+  `~/Library/Logs/SportsCalendar-refresh.log`.
+
+Site: `https://<owner>.github.io/SportsCalendar/`
+
+Because the calendar files are served over plain HTTP from that URL, a calendar
+app can **subscribe** to them instead of importing a snapshot — it then updates
+itself on every publish, with no re-import:
+
+- **Google Calendar** — Settings → Imports & exports → **Other calendars → By URL**
+  and paste `https://<owner>.github.io/SportsCalendar/calendar/all-events.ics`.
+- **Apple Calendar** — File → New Calendar Subscription with the same URL.
+  Set "Reload every hour".
+
+The **Refresh data** button in the header is shown only when the page comes from
+`localhost` or a private network address, so it never appears on the public site
+where there is no server to call.
+
 ## Refresh it by hand
 
 ```sh
@@ -131,6 +169,8 @@ tools/ics.mjs       RFC 5545 writer (CRLF, 75-octet folding, escaping)
 tools/f1.mjs        F1 calendar + results, ESPN start times
 tools/standings.mjs league results -> tables
 tools/serve.mjs     LAN static server + /api/refresh
+tools/publish.mjs   refresh, commit the generated files, push to GitHub
+tools/install-scheduler.mjs  optional twice-daily LaunchAgent
 tools/verify.mjs    cross-check against ESPN
 tools/clubs.mjs     the six clubs, colours and source pages
 data/               matches.json + matches.js (generated)

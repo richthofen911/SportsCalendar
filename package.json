@@ -8,6 +8,9 @@
     "refresh": "node tools/build.mjs",
     "refresh:force": "node tools/build.mjs --force",
     "serve": "node tools/serve.mjs",
+    "publish": "node tools/publish.mjs",
+    "scheduler:install": "node tools/install-scheduler.mjs",
+    "scheduler:uninstall": "node tools/install-scheduler.mjs --uninstall",
     "verify": "node tools/verify.mjs"
   },
   "engines": {
