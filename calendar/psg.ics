@@ -1,0 +1,635 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//SportsCalendar//2026-27//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Paris Saint-Germain 2026-27
+X-WR-TIMEZONE:UTC
+X-WR-CALDESC:46 matches\, refreshed 2026-09-30
+BEGIN:VEVENT
+UID:psg-2048319-1rxhoji@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260812T190000Z
+DTEND:20260812T210000Z
+SUMMARY:Paris Saint-Germain v Aston Villa (UEFA Super Cup)
+LOCATION:Stadion Salzburg\, Salzburg\, Austria
+DESCRIPTION:Competition: UEFA Super Cup\nRound: Final\nKick-off: 2026-08-1
+ 2T19:00Z (venue clock 21:00)\nResult: Paris Saint-Germain 2-1 Aston Vill
+ a\nParis Saint-Germain: Kvaratskhelia 20'\, Doué 61'\nAston Villa: Madj
+ o 45'\, Torres 51' (yellow)\, João Gomes 64' (yellow)\, McGinn 72' (yel
+ low)\nVenue: Stadion Salzburg\, Salzburg\, Austria\nAttendance: 27681\nR
+ eferee: Omar Artan (Somalia)\nReport: https://www.uefa.com/uefasupercup/
+ match/2048319/\nSource: Wikipedia — 2026–27 Paris Saint-Germain FC s
+ eason
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w033jd2j@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260816T184500Z
+DTEND:20260816T204500Z
+SUMMARY:Lens v Paris Saint-Germain (Trophée des Champions)
+LOCATION:Stade Bollaert-Delelis\, Lens
+DESCRIPTION:Competition: Trophée des Champions\nRound: Final\nKick-off: 2
+ 026-08-16T18:45Z (venue clock 20:45)\nResult: Lens 1-0 Paris Saint-Germa
+ in\nLens: Thauvin 32'\, Antonio\, Bulatović 90' (yellow)\nParis Saint-G
+ ermain: Doué 64' (yellow)\, Mendes\, Ruiz 89' (yellow)\, Hakimi 90' (ye
+ llow)\nVenue: Stade Bollaert-Delelis\, Lens\nAttendance: 38223\nReferee:
+  Jérémie Pignard\nReport: https://ligue1.com/en/match-sheet/l1_champio
+ nship_match_2636517\nSource: Wikipedia — 2026–27 Paris Saint-Germain
+  FC season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w0z4wo1e@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260823T184500Z
+DTEND:20260823T204500Z
+SUMMARY:Rennes v Paris Saint-Germain (Ligue 1)
+LOCATION:Roazhon Park\, Rennes
+DESCRIPTION:Competition: Ligue 1\nRound: 1\nKick-off: 2026-08-23T18:45Z (v
+ enue clock 20:45)\nResult: Rennes 2-2 Paris Saint-Germain\nRennes: Szyma
+ ński 9'\, Lepaul 38'\, Thomasson 42' (yellow)\, Al-Taamari 63' (yellow)
+ \nParis Saint-Germain: Torres 71'\, Marquinhos 78' (yellow)\, Hakimi 84'
+  (yellow)\nVenue: Roazhon Park\, Rennes\nAttendance: 28255\nReferee: Bas
+ tien Dechepy\nReport: https://ligue1.com/en/match-sheet/l1_championship_
+ match_73827\nSource: Wikipedia — 2026–27 Paris Saint-Germain FC seas
+ on
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w1t9lhvg@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260828T184500Z
+DTEND:20260828T204500Z
+SUMMARY:Lille v Paris Saint-Germain (Ligue 1)
+LOCATION:Stade Pierre-Mauroy\, Villeneuve-d'Ascq
+DESCRIPTION:Competition: Ligue 1\nRound: 2\nKick-off: 2026-08-28T18:45Z (v
+ enue clock 20:45)\nResult: Lille 2-2 Paris Saint-Germain\nLille: Haralds
+ son 21'\, André 52' (yellow)\, Bakwa 84'\, Perraud (yellow)\nParis Sain
+ t-Germain: Ruiz 39' (yellow)\, Vitinha\, Marquinhos\nVenue: Stade Pierre
+ -Mauroy\, Villeneuve-d'Ascq\nAttendance: 47793\nReferee: Éric Wattellie
+ r\nReport: https://ligue1.com/en/match-sheet/l1_championship_match_73832
+ \nSource: Wikipedia — 2026–27 Paris Saint-Germain FC season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w1o82qc0@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260904T190500Z
+DTEND:20260904T210500Z
+SUMMARY:Paris Saint-Germain v Monaco (Ligue 1)
+LOCATION:Parc des Princes\, Paris
+DESCRIPTION:Competition: Ligue 1\nRound: 3\nKick-off: 2026-09-04T19:05Z (v
+ enue clock 21:05)\nResult: Paris Saint-Germain 1-2 Monaco\nParis Saint-G
+ ermain: Marquinhos 31'\, Hernandez 68' (yellow)\nMonaco: Nazinho 58'\, T
+ eze 68' (yellow)\, Idumbo 72'\nVenue: Parc des Princes\, Paris\nAttendan
+ ce: 46945\nReferee: Jérôme Brisard\nReport: https://ligue1.com/en/matc
+ h-sheet/l1_championship_match_73845\nSource: Wikipedia — 2026–27 Par
+ is Saint-Germain FC season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-2049559-1pv1phy@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260909T190000Z
+DTEND:20260909T210000Z
+SUMMARY:Paris Saint-Germain v Slovan Bratislava (UEFA Champions League)
+LOCATION:Parc des Princes\, Paris\, France
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 1\nK
+ ick-off: 2026-09-09T19:00Z (venue clock 21:00)\nResult: Paris Saint-Germ
+ ain 6-1 Slovan Bratislava\nParis Saint-Germain: Dembélé 17'\, Torres 3
+ 1'\, Ruiz 88'\nSlovan Bratislava: Blackman 53' (yellow)\, Su. Camara 59'
+ \nVenue: Parc des Princes\, Paris\, France\nAttendance: 47511\nReferee: 
+ Mykola Balakin (Ukraine)\nReport: https://www.uefa.com/uefachampionsleag
+ ue/match/2049559/\nSource: Wikipedia — 2026–27 Paris Saint-Germain F
+ C season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w1v4ks2t@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260913T184500Z
+DTEND:20260913T204500Z
+SUMMARY:Brest v Paris Saint-Germain (Ligue 1)
+LOCATION:Stade Francis-Le Blé\, Brest
+DESCRIPTION:Competition: Ligue 1\nRound: 4\nKick-off: 2026-09-13T18:45Z (v
+ enue clock 20:45)\nResult: Brest 0-1 Paris Saint-Germain\nBrest: Doumbia
+  31' (yellow)\nParis Saint-Germain: Torres 5'\, Vitinha 84' (yellow)\, F
+ ernández 87' (yellow)\nVenue: Stade Francis-Le Blé\, Brest\nAttendance
+ : 14944\nReferee: Willy Delajod\nReport: https://ligue1.com/en/match-she
+ et/l1_championship_match_73849\nSource: Wikipedia — 2026–27 Paris Sa
+ int-Germain FC season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w1kq84gn@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260920T184500Z
+DTEND:20260920T204500Z
+SUMMARY:Marseille v Paris Saint-Germain (Ligue 1)
+LOCATION:Stade Vélodrome\, Marseille
+DESCRIPTION:Competition: Ligue 1\nRound: 5\nKick-off: 2026-09-20T18:45Z (v
+ enue clock 20:45)\nResult: Marseille 1-2 Paris Saint-Germain\nMarseille:
+  Weah\, Gomes 72'\, 90' (yellow)\, Abdallah 81' (yellow)\nParis Saint-Ge
+ rmain: Mendes 39' (yellow)\, Torres 66'\, Marquinhos 74'\nVenue: Stade V
+ élodrome\, Marseille\nAttendance: 61499\nReferee: François Letexier\nR
+ eport: https://ligue1.com/en/match-sheet/l1_championship_match_73861\nSo
+ urce: Wikipedia — 2026–27 Paris Saint-Germain FC season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w03uvst2@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261010T184500Z
+DTEND:20261010T204500Z
+SUMMARY:Paris Saint-Germain v Le Mans (Ligue 1)
+LOCATION:Parc des Princes\, Paris
+DESCRIPTION:Competition: Ligue 1\nRound: 6\nKick-off: 2026-10-10T18:45Z (v
+ enue clock 20:45)\nVenue: Parc des Princes\, Paris\nReport: https://ligu
+ e1.com/en/match-sheet/l1_championship_match_73872\nSource: Wikipedia —
+  2026–27 Paris Saint-Germain FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-2049580-04w7ttd@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261014T190000Z
+DTEND:20261014T210000Z
+SUMMARY:Manchester City v Paris Saint-Germain (UEFA Champions League)
+LOCATION:City of Manchester Stadium\, Manchester\, England
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 2\nK
+ ick-off: 2026-10-14T19:00Z (venue clock 20:00)\nVenue: City of Mancheste
+ r Stadium\, Manchester\, England\nReport: https://www.uefa.com/uefachamp
+ ionsleague/match/2049580/\nSource: Wikipedia — 2026–27 Paris Saint-G
+ ermain FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w0pcqrrx@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261017T151500Z
+DTEND:20261017T171500Z
+SUMMARY:Strasbourg v Paris Saint-Germain (Ligue 1)
+LOCATION:Stade de la Meinau\, Strasbourg
+DESCRIPTION:Competition: Ligue 1\nRound: 7\nKick-off: 2026-10-17T15:15Z (v
+ enue clock 17:15)\nVenue: Stade de la Meinau\, Strasbourg\nReport: https
+ ://ligue1.com/en/match-sheet/l1_championship_match_73882\nSource: Wikipe
+ dia — 2026–27 Paris Saint-Germain FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-2049589-0snfs2o@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261020T190000Z
+DTEND:20261020T210000Z
+SUMMARY:Paris Saint-Germain v Barcelona (UEFA Champions League)
+LOCATION:Parc des Princes\, Paris\, France
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 3\nK
+ ick-off: 2026-10-20T19:00Z (venue clock 21:00)\nVenue: Parc des Princes\
+ , Paris\, France\nReport: https://www.uefa.com/uefachampionsleague/match
+ /2049589/\nSource: Wikipedia — 2026–27 Paris Saint-Germain FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w0oghwmq@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261025T194500Z
+DTEND:20261025T214500Z
+SUMMARY:Paris Saint-Germain v Lyon (Ligue 1)
+LOCATION:Parc des Princes\, Paris
+DESCRIPTION:Competition: Ligue 1\nRound: 8\nKick-off: 2026-10-25T19:45Z (v
+ enue clock 20:45)\nVenue: Parc des Princes\, Paris\nReport: https://ligu
+ e1.com/en/match-sheet/l1_championship_match_73890\nSource: Wikipedia —
+  2026–27 Paris Saint-Germain FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w19dz6c5@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261030T180000Z
+DTEND:20261030T200000Z
+SUMMARY:Le Havre v Paris Saint-Germain (Ligue 1)
+LOCATION:Stade Océane\, Le Havre
+DESCRIPTION:Competition: Ligue 1\nRound: 9\nKick-off: 2026-10-30T18:00Z (v
+ enue clock 19:00)\nVenue: Stade Océane\, Le Havre\nReport: https://ligu
+ e1.com/en/match-sheet/l1_championship_match_73893/stats\nSource: Wikiped
+ ia — 2026–27 Paris Saint-Germain FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-2049612-1vkwsh5@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261103T200000Z
+DTEND:20261103T220000Z
+SUMMARY:Villarreal v Paris Saint-Germain (UEFA Champions League)
+LOCATION:Estadio de la Cerámica\, Villarreal\, Spain
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 4\nK
+ ick-off: 2026-11-03T20:00Z (venue clock 21:00)\nVenue: Estadio de la Cer
+ ámica\, Villarreal\, Spain\nReport: https://www.uefa.com/uefachampionsl
+ eague/match/2049612/\nSource: Wikipedia — 2026–27 Paris Saint-Germai
+ n FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w16bklzt@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261107T194500Z
+DTEND:20261107T214500Z
+SUMMARY:Paris Saint-Germain v Troyes (Ligue 1)
+LOCATION:Parc des Princes\, Paris
+DESCRIPTION:Competition: Ligue 1\nRound: 10\nKick-off: 2026-11-07T19:45Z (
+ venue clock 20:45)\nVenue: Parc des Princes\, Paris\nReport: https://lig
+ ue1.com/en/match-sheet/l1_championship_match_73908\nSource: Wikipedia 
+ — 2026–27 Paris Saint-Germain FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w1i7u8lk@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261121T161500Z
+DTEND:20261121T181500Z
+SUMMARY:Nice v Paris Saint-Germain (Ligue 1)
+LOCATION:Allianz Riviera\, Nice
+DESCRIPTION:Competition: Ligue 1\nRound: 11\nKick-off: 2026-11-21T16:15Z (
+ venue clock 17:15)\nVenue: Allianz Riviera\, Nice\nReport: https://ligue
+ 1.com/en/match-sheet/l1_championship_match_73908\nSource: Wikipedia — 
+ 2026–27 Paris Saint-Germain FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-2049634-0zx93rs@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261125T200000Z
+DTEND:20261125T220000Z
+SUMMARY:Paris Saint-Germain v Roma (UEFA Champions League)
+LOCATION:Parc des Princes\, Paris\, France
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 5\nK
+ ick-off: 2026-11-25T20:00Z (venue clock 21:00)\nVenue: Parc des Princes\
+ , Paris\, France\nReport: https://www.uefa.com/uefachampionsleague/match
+ /2049634/\nSource: Wikipedia — 2026–27 Paris Saint-Germain FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w1wi4r2l@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261128T194500Z
+DTEND:20261128T214500Z
+SUMMARY:Paris Saint-Germain v Lorient (Ligue 1)
+LOCATION:Parc des Princes\, Paris
+DESCRIPTION:Competition: Ligue 1\nRound: 12\nKick-off: 2026-11-28T19:45Z (
+ venue clock 20:45)\nVenue: Parc des Princes\, Paris\nReport: https://lig
+ ue1.com/en/match-sheet/l1_championship_match_73927\nSource: Wikipedia 
+ — 2026–27 Paris Saint-Germain FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w0qtetlb@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20261206
+DTEND;VALUE=DATE:20261207
+SUMMARY:Toulouse v Paris Saint-Germain (Ligue 1)
+LOCATION:Stadium de Toulouse\, Toulouse
+DESCRIPTION:Competition: Ligue 1\nRound: 13\nDate: 2026-12-06 — kick-off
+  time to be confirmed\nVenue: Stadium de Toulouse\, Toulouse\nReport: ht
+ tps://ligue1.com/en/match-sheet/l1_championship_match_73936\nSource: Wik
+ ipedia — 2026–27 Paris Saint-Germain FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-2049646-08dv57w@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261208T200000Z
+DTEND:20261208T220000Z
+SUMMARY:Aston Villa v Paris Saint-Germain (UEFA Champions League)
+LOCATION:Villa Park\, Birmingham\, England
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 6\nK
+ ick-off: 2026-12-08T20:00Z (venue clock 20:00)\nVenue: Villa Park\, Birm
+ ingham\, England\nReport: https://www.uefa.com/uefachampionsleague/match
+ /2049646/\nSource: Wikipedia — 2026–27 Paris Saint-Germain FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w01pfn7f@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20261213
+DTEND;VALUE=DATE:20261214
+SUMMARY:Paris Saint-Germain v Paris FC (Ligue 1)
+LOCATION:Parc des Princes\, Paris
+DESCRIPTION:Competition: Ligue 1\nRound: 14\nDate: 2026-12-13 — kick-off
+  time to be confirmed\nVenue: Parc des Princes\, Paris\nReport: https://
+ ligue1.com/en/match-sheet/l1_championship_match_73945\nSource: Wikipedia
+  — 2026–27 Paris Saint-Germain FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w0q8ip8w@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20261216
+DTEND;VALUE=DATE:20261217
+SUMMARY:Paris Saint-Germain v TBD (FIFA Intercontinental Cup)
+LOCATION:TBD
+DESCRIPTION:Competition: FIFA Intercontinental Cup\nRound: Final\nDate: 20
+ 26-12-16 — kick-off time to be confirmed\nSource: Wikipedia — 2026
+ –27 Paris Saint-Germain FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w09okkf4@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20261221
+DTEND;VALUE=DATE:20261222
+SUMMARY: v  (Coupe de France)
+LOCATION:
+DESCRIPTION:Competition: Coupe de France\nRound: Round of 64\nDate: 2026-1
+ 2-21 — kick-off time to be confirmed\nSource: Wikipedia — 2026–27 
+ Paris Saint-Germain FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w0e8hmw5@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270103T194500Z
+DTEND:20270103T214500Z
+SUMMARY:Lens v Paris Saint-Germain (Ligue 1)
+LOCATION:Stade Bollaert-Delelis\, Lens
+DESCRIPTION:Competition: Ligue 1\nRound: 15\nKick-off: 2027-01-03T19:45Z (
+ venue clock 20:45)\nVenue: Stade Bollaert-Delelis\, Lens\nReport: https:
+ //ligue1.com/en/match-sheet/l1_championship_match_73949\nSource: Wikiped
+ ia — 2026–27 Paris Saint-Germain FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w180dw34@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270117
+DTEND;VALUE=DATE:20270118
+SUMMARY:Angers v Paris Saint-Germain (Ligue 1)
+LOCATION:Stade Raymond Kopa\, Angers
+DESCRIPTION:Competition: Ligue 1\nRound: 16\nDate: 2027-01-17 — kick-off
+  time to be confirmed\nVenue: Stade Raymond Kopa\, Angers\nReport: https
+ ://ligue1.com/en/match-sheet/l1_championship_match_73956\nSource: Wikipe
+ dia — 2026–27 Paris Saint-Germain FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-2049675-1uywxne@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270120T200000Z
+DTEND:20270120T220000Z
+SUMMARY:Como v Paris Saint-Germain (UEFA Champions League)
+LOCATION:Stadio Giuseppe Sinigaglia\, Como\, Italy
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 7\nK
+ ick-off: 2027-01-20T20:00Z (venue clock 21:00)\nVenue: Stadio Giuseppe S
+ inigaglia\, Como\, Italy\nReport: https://www.uefa.com/uefachampionsleag
+ ue/match/2049675/\nSource: Wikipedia — 2026–27 Paris Saint-Germain F
+ C season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w1yuagzg@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270124
+DTEND;VALUE=DATE:20270125
+SUMMARY:Paris Saint-Germain v Auxerre (Ligue 1)
+LOCATION:Parc des Princes\, Paris
+DESCRIPTION:Competition: Ligue 1\nRound: 17\nDate: 2027-01-24 — kick-off
+  time to be confirmed\nVenue: Parc des Princes\, Paris\nReport: https://
+ ligue1.com/en/match-sheet/l1_championship_match_73970\nSource: Wikipedia
+  — 2026–27 Paris Saint-Germain FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-2049679-1qm2k3f@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270127T200000Z
+DTEND:20270127T220000Z
+SUMMARY:Paris Saint-Germain v Galatasaray (UEFA Champions League)
+LOCATION:Parc des Princes\, Paris\, France
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 8\nK
+ ick-off: 2027-01-27T20:00Z (venue clock 21:00)\nVenue: Parc des Princes\
+ , Paris\, France\nReport: https://www.uefa.com/uefachampionsleague/match
+ /2049679/\nSource: Wikipedia — 2026–27 Paris Saint-Germain FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w13c04vh@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270131
+DTEND;VALUE=DATE:20270201
+SUMMARY:Monaco v Paris Saint-Germain (Ligue 1)
+LOCATION:Stade Louis II\, Monaco
+DESCRIPTION:Competition: Ligue 1\nRound: 18\nDate: 2027-01-31 — kick-off
+  time to be confirmed\nVenue: Stade Louis II\, Monaco\nReport: https://l
+ igue1.com/en/match-sheet/l1_championship_match_73979\nSource: Wikipedia 
+ — 2026–27 Paris Saint-Germain FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w12fvdxk@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270207T194500Z
+DTEND:20270207T214500Z
+SUMMARY:Paris Saint-Germain v Marseille (Ligue 1)
+LOCATION:Parc des Princes\, Paris
+DESCRIPTION:Competition: Ligue 1\nRound: 19\nKick-off: 2027-02-07T19:45Z (
+ venue clock 20:45)\nVenue: Parc des Princes\, Paris\nReport: https://lig
+ ue1.com/en/match-sheet/l1_championship_match_73988\nSource: Wikipedia 
+ — 2026–27 Paris Saint-Germain FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w1yz17vc@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270214
+DTEND;VALUE=DATE:20270215
+SUMMARY:Le Mans v Paris Saint-Germain (Ligue 1)
+LOCATION:Stade Marie-Marvingt\, Le Mans
+DESCRIPTION:Competition: Ligue 1\nRound: 20\nDate: 2027-02-14 — kick-off
+  time to be confirmed\nVenue: Stade Marie-Marvingt\, Le Mans\nReport: ht
+ tps://ligue1.com/en/match-sheet/l1_championship_match_73994\nSource: Wik
+ ipedia — 2026–27 Paris Saint-Germain FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w0dm7jje@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270221
+DTEND;VALUE=DATE:20270222
+SUMMARY:Paris Saint-Germain v Brest (Ligue 1)
+LOCATION:Parc des Princes\, Paris
+DESCRIPTION:Competition: Ligue 1\nRound: 21\nDate: 2027-02-21 — kick-off
+  time to be confirmed\nVenue: Parc des Princes\, Paris\nReport: https://
+ ligue1.com/en/match-sheet/l1_championship_match_74007\nSource: Wikipedia
+  — 2026–27 Paris Saint-Germain FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w0fhp6n7@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270228T194500Z
+DTEND:20270228T214500Z
+SUMMARY:Paris Saint-Germain v Lens (Ligue 1)
+LOCATION:Parc des Princes\, Paris
+DESCRIPTION:Competition: Ligue 1\nRound: 22\nKick-off: 2027-02-28T19:45Z (
+ venue clock 20:45)\nVenue: Parc des Princes\, Paris\nReport: https://lig
+ ue1.com/en/match-sheet/l1_championship_match_74016\nSource: Wikipedia 
+ — 2026–27 Paris Saint-Germain FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w0vy871i@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270307
+DTEND;VALUE=DATE:20270308
+SUMMARY:Paris Saint-Germain v Rennes (Ligue 1)
+LOCATION:Parc des Princes\, Paris
+DESCRIPTION:Competition: Ligue 1\nRound: 23\nDate: 2027-03-07 — kick-off
+  time to be confirmed\nVenue: Parc des Princes\, Paris\nSource: Wikipedi
+ a — 2026–27 Paris Saint-Germain FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w15urvkr@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270314
+DTEND;VALUE=DATE:20270315
+SUMMARY:Auxerre v Paris Saint-Germain (Ligue 1)
+LOCATION:Stade de l'Abbé-Deschamps\, Auxerre
+DESCRIPTION:Competition: Ligue 1\nRound: 24\nDate: 2027-03-14 — kick-off
+  time to be confirmed\nVenue: Stade de l'Abbé-Deschamps\, Auxerre\nRepo
+ rt: https://ligue1.com/en/match-sheet/l1_championship_match_74028\nSourc
+ e: Wikipedia — 2026–27 Paris Saint-Germain FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w053i1s7@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270321
+DTEND;VALUE=DATE:20270322
+SUMMARY:Paris Saint-Germain v Strasbourg (Ligue 1)
+LOCATION:Parc des Princes\, Paris
+DESCRIPTION:Competition: Ligue 1\nRound: 25\nDate: 2027-03-21 — kick-off
+  time to be confirmed\nVenue: Parc des Princes\, Paris\nReport: https://
+ ligue1.com/en/match-sheet/l1_championship_match_74042\nSource: Wikipedia
+  — 2026–27 Paris Saint-Germain FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w0642dvf@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270404
+DTEND;VALUE=DATE:20270405
+SUMMARY:Paris FC v Paris Saint-Germain (Ligue 1)
+LOCATION:Stade Jean-Bouin\, Paris
+DESCRIPTION:Competition: Ligue 1\nRound: 26\nDate: 2027-04-04 — kick-off
+  time to be confirmed\nVenue: Stade Jean-Bouin\, Paris\nReport: https://
+ ligue1.com/en/match-sheet/l1_championship_match_74053\nSource: Wikipedia
+  — 2026–27 Paris Saint-Germain FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w1pkocly@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270411
+DTEND;VALUE=DATE:20270412
+SUMMARY:Paris Saint-Germain v Le Havre (Ligue 1)
+LOCATION:Parc des Princes\, Paris
+DESCRIPTION:Competition: Ligue 1\nRound: 27\nDate: 2027-04-11 — kick-off
+  time to be confirmed\nVenue: Parc des Princes\, Paris\nReport: https://
+ ligue1.com/en/match-sheet/l1_championship_match_74062\nSource: Wikipedia
+  — 2026–27 Paris Saint-Germain FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w1mn7vmq@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270418
+DTEND;VALUE=DATE:20270419
+SUMMARY:Paris Saint-Germain v Lille (Ligue 1)
+LOCATION:Parc des Princes\, Paris
+DESCRIPTION:Competition: Ligue 1\nRound: 28\nDate: 2027-04-18 — kick-off
+  time to be confirmed\nVenue: Parc des Princes\, Paris\nReport: https://
+ ligue1.com/en/match-sheet/l1_championship_match_74070\nSource: Wikipedia
+  — 2026–27 Paris Saint-Germain FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w0tbeauf@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270425
+DTEND;VALUE=DATE:20270426
+SUMMARY:Lorient v Paris Saint-Germain (Ligue 1)
+LOCATION:Stade du Moustoir\, Lorient
+DESCRIPTION:Competition: Ligue 1\nRound: 29\nDate: 2027-04-25 — kick-off
+  time to be confirmed\nVenue: Stade du Moustoir\, Lorient\nReport: https
+ ://ligue1.com/en/match-sheet/l1_championship_match_74075\nSource: Wikipe
+ dia — 2026–27 Paris Saint-Germain FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w1kpba7s@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270502
+DTEND;VALUE=DATE:20270503
+SUMMARY:Paris Saint-Germain v Angers (Ligue 1)
+LOCATION:Parc des Princes\, Paris
+DESCRIPTION:Competition: Ligue 1\nRound: 30\nDate: 2027-05-02 — kick-off
+  time to be confirmed\nVenue: Parc des Princes\, Paris\nReport: https://
+ ligue1.com/en/match-sheet/l1_championship_match_74086\nSource: Wikipedia
+  — 2026–27 Paris Saint-Germain FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w1wjsr2p@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270509T184500Z
+DTEND:20270509T204500Z
+SUMMARY:Lyon v Paris Saint-Germain (Ligue 1)
+LOCATION:Parc Olympique Lyonnais\, Décines-Charpieu
+DESCRIPTION:Competition: Ligue 1\nRound: 31\nKick-off: 2027-05-09T18:45Z (
+ venue clock 20:45)\nVenue: Parc Olympique Lyonnais\, Décines-Charpieu\n
+ Report: https://ligue1.com/en/match-sheet/l1_championship_match_74096\nS
+ ource: Wikipedia — 2026–27 Paris Saint-Germain FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w0wy8t6u@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270516
+DTEND;VALUE=DATE:20270517
+SUMMARY:Paris Saint-Germain v Nice (Ligue 1)
+LOCATION:Parc des Princes\, Paris
+DESCRIPTION:Competition: Ligue 1\nRound: 32\nDate: 2027-05-16 — kick-off
+  time to be confirmed\nVenue: Parc des Princes\, Paris\nReport: https://
+ ligue1.com/en/match-sheet/l1_championship_match_74106\nSource: Wikipedia
+  — 2026–27 Paris Saint-Germain FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w0vrpwv8@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270522T190000Z
+DTEND:20270522T210000Z
+SUMMARY:Troyes v Paris Saint-Germain (Ligue 1)
+LOCATION:Stade de l'Aube\, Troyes
+DESCRIPTION:Competition: Ligue 1\nRound: 33\nKick-off: 2027-05-22T19:00Z (
+ venue clock 21:00)\nVenue: Stade de l'Aube\, Troyes\nReport: https://lig
+ ue1.com/en/match-sheet/l1_championship_match_74117\nSource: Wikipedia 
+ — 2026–27 Paris Saint-Germain FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w0oqhh5d@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270529T190000Z
+DTEND:20270529T210000Z
+SUMMARY:Paris Saint-Germain v Toulouse (Ligue 1)
+LOCATION:Parc des Princes\, Paris
+DESCRIPTION:Competition: Ligue 1\nRound: 34\nKick-off: 2027-05-29T19:00Z (
+ venue clock 21:00)\nVenue: Parc des Princes\, Paris\nReport: https://lig
+ ue1.com/en/match-sheet/l1_championship_match_74124\nSource: Wikipedia 
+ — 2026–27 Paris Saint-Germain FC season
+STATUS:TENTATIVE
+END:VEVENT
+END:VCALENDAR

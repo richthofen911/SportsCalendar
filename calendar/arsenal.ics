@@ -1,0 +1,684 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//SportsCalendar//2026-27//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Arsenal 2026-27
+X-WR-TIMEZONE:UTC
+X-WR-CALDESC:50 matches\, refreshed 2026-09-30
+BEGIN:VEVENT
+UID:arsenal-w19wy5ck@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260816T140000Z
+DTEND:20260816T160000Z
+SUMMARY:Arsenal v Manchester City (FA Community Shield)
+LOCATION:Millennium Stadium\, Cardiff
+DESCRIPTION:Competition: FA Community Shield\nRound: Final\nKick-off: 2026
+ -08-16T14:00Z (venue clock 15:00)\nResult: Arsenal 3-0 Manchester City\n
+ Arsenal: Calafiori 1'\, 38' (yellow)\, Havertz 28'\, Ødegaard 48'\, 84'
+  (yellow)\nManchester City: Foden 24' (yellow)\, Gvardiol 53' (yellow)\n
+ Venue: Millennium Stadium\, Cardiff\nAttendance: 58056\nReferee: Sam Bar
+ rott\nReport: https://www.bbc.co.uk/sport/football/live/cv4g34g19p2kt\nS
+ ource: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645195-0mbx5zu@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260821T190000Z
+DTEND:20260821T210000Z
+SUMMARY:Arsenal v Coventry City (Premier League)
+LOCATION:Emirates Stadium\, Holloway
+DESCRIPTION:Competition: Premier League\nRound: 1\nKick-off: 2026-08-21T19
+ :00Z (venue clock 20:00)\nResult: Arsenal 3-0 Coventry City\nArsenal: Ha
+ vertz 15'\, Saka 23'\, Gabriel 34' (yellow)\, Ødegaard 49'\nCoventry Ci
+ ty: Yirenkyi 27' (yellow)\nVenue: Emirates Stadium\, Holloway\nAttendanc
+ e: 60098\nReferee: Thomas Bramall\nReport: https://www.premierleague.com
+ /en/match/2645195\nSource: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645206-0jqf0yt@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260831T190000Z
+DTEND:20260831T210000Z
+SUMMARY:Aston Villa v Arsenal (Premier League)
+LOCATION:Villa Park\, Birmingham
+DESCRIPTION:Competition: Premier League\nRound: 2\nKick-off: 2026-08-31T19
+ :00Z (venue clock 20:00)\nResult: Aston Villa 0-1 Arsenal\nAston Villa: 
+ Alysson 80' (yellow)\, McGinn 81' (yellow)\, Maatsen (yellow)\nArsenal: 
+ Tzolis 29' (yellow)\, Saka 59'\nVenue: Villa Park\, Birmingham\nAttendan
+ ce: 36804\nReferee: Jarred Gillett\nReport: https://www.premierleague.co
+ m/en/match/2645206\nSource: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645215-0uaykxs@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260906T153000Z
+DTEND:20260906T173000Z
+SUMMARY:Arsenal v Chelsea (Premier League)
+LOCATION:Emirates Stadium\, Holloway
+DESCRIPTION:Competition: Premier League\nRound: 3\nKick-off: 2026-09-06T15
+ :30Z (venue clock 16:30)\nResult: Arsenal 2-1 Chelsea\nArsenal: Havertz 
+ 25'\, Ødegaard 50'\, Tzolis 58' (yellow)\, Merino (yellow)\nChelsea: Ro
+ gers 2'\, 83' (yellow)\, João Pedro 14' (yellow)\, Palmer 45' (yellow)\
+ , Lacroix 58' (yellow)\nVenue: Emirates Stadium\, Holloway\nAttendance: 
+ 60240\nReferee: Chris Kavanagh\nReport: https://www.premierleague.com/en
+ /match/2645215\nSource: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2049563-0mysmsj@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260909T190000Z
+DTEND:20260909T210000Z
+SUMMARY:Napoli v Arsenal (UEFA Champions League)
+LOCATION:Stadio Diego Armando Maradona\, Naples\, Italy
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 1\nK
+ ick-off: 2026-09-09T19:00Z (venue clock 21:00)\nResult: Napoli 0-1 Arsen
+ al\nNapoli: Gilmour 42' (yellow)\, Lucca 85' (yellow)\nArsenal: Ødegaar
+ d 75'\, (yellow)\nVenue: Stadio Diego Armando Maradona\, Naples\, Italy\
+ nAttendance: 44083\nReferee: Glenn Nyberg (Sweden)\nReport: https://www.
+ uefa.com/uefachampionsleague/match/2049563/\nSource: Wikipedia — 2026
+ –27 Arsenal F.C. season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645233-1hsc3kc@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260912T190000Z
+DTEND:20260912T210000Z
+SUMMARY:Sunderland v Arsenal (Premier League)
+LOCATION:Stadium of Light\, Sunderland
+DESCRIPTION:Competition: Premier League\nRound: 4\nKick-off: 2026-09-12T19
+ :00Z (venue clock 20:00)\nResult: Sunderland 0-2 Arsenal\nSunderland: Ma
+ ndava\, Le Fée 56'\, Ballard 66' (yellow)\, Xhaka 69' (yellow)\, Brobbe
+ y 81' (yellow)\, Mukiele (yellow)\nArsenal: Bruno Guimarães 58'\, Gabri
+ el (yellow)\, Havertz (yellow)\, Saka (pen.)\nVenue: Stadium of Light\, 
+ Sunderland\nAttendance: 48707\nReferee: John Brooks\nReport: https://www
+ .premierleague.com/en/match/2645233\nSource: Wikipedia — 2026–27 Ars
+ enal F.C. season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-w1u8t56w@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260915T190000Z
+DTEND:20260915T210000Z
+SUMMARY:Ipswich Town v Arsenal (EFL Cup)
+LOCATION:Portman Road\, Ipswich
+DESCRIPTION:Competition: EFL Cup\nRound: 3rd Round\nKick-off: 2026-09-15T1
+ 9:00Z (venue clock 20:00)\nResult: Ipswich Town 2-4 Arsenal\nIpswich Tow
+ n: McAteer 34' (yellow)\, Mehmeti 62'\, Núñez 87' (yellow)\, Akpom\nAr
+ senal: Dowman 7'\, Madueke 16'\, Merino 58'\nVenue: Portman Road\, Ipswi
+ ch\nAttendance: 28966\nReferee: Peter Bankes\nReport: https://www.efl.co
+ m/match-centre/g2685172\nSource: Wikipedia — 2026–27 Arsenal F.C. se
+ ason
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645237-0z2u6pb@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260919T140000Z
+DTEND:20260919T160000Z
+SUMMARY:Brighton & Hove Albion v Arsenal (Premier League)
+LOCATION:Falmer Stadium\, Brighton and Hove
+DESCRIPTION:Competition: Premier League\nRound: 5\nKick-off: 2026-09-19T14
+ :00Z (venue clock 15:00)\nResult: Brighton & Hove Albion 3-0 Arsenal\nBr
+ ighton & Hove Albion: Groß 31'\, Kostoulas 33' (yellow)\, 45'\, Kadıo
+ ğlu (yellow)\, Andrés 57'\, Struijk 71' (yellow)\, De Cuyper (yellow)\
+ nArsenal: Rice (yellow)\nVenue: Falmer Stadium\, Brighton and Hove\nAtte
+ ndance: 31944\nReferee: Darren England\nReport: https://www.premierleagu
+ e.com/en/match/2645237\nSource: Wikipedia — 2026–27 Arsenal F.C. sea
+ son
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645245-180kfjc@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261010T113000Z
+DTEND:20261010T133000Z
+SUMMARY:Arsenal v Leeds United (Premier League)
+LOCATION:Emirates Stadium\, Holloway
+DESCRIPTION:Competition: Premier League\nRound: 6\nKick-off: 2026-10-10T11
+ :30Z (venue clock 12:30)\nVenue: Emirates Stadium\, Holloway\nReport: ht
+ tps://www.premierleague.com/en/match/2645245\nSource: Wikipedia — 2026
+ –27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2049572-0a1xwp7@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261013T190000Z
+DTEND:20261013T210000Z
+SUMMARY:Arsenal v Lille (UEFA Champions League)
+LOCATION:Emirates Stadium\, London\, England
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 2\nK
+ ick-off: 2026-10-13T19:00Z (venue clock 20:00)\nVenue: Emirates Stadium\
+ , London\, England\nReport: https://www.uefa.com/uefachampionsleague/mat
+ ch/2049572/\nSource: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645263-0rqr9g2@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261018T153000Z
+DTEND:20261018T173000Z
+SUMMARY:Nottingham Forest v Arsenal (Premier League)
+LOCATION:City Ground\, West Bridgford
+DESCRIPTION:Competition: Premier League\nRound: 7\nKick-off: 2026-10-18T15
+ :30Z (venue clock 16:30)\nVenue: City Ground\, West Bridgford\nReport: h
+ ttps://www.premierleague.com/en/match/2645263\nSource: Wikipedia — 202
+ 6–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2049598-0h5g9tt@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261021T190000Z
+DTEND:20261021T210000Z
+SUMMARY:Bayern Munich v Arsenal (UEFA Champions League)
+LOCATION:Allianz Arena\, Munich\, Germany
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 3\nK
+ ick-off: 2026-10-21T19:00Z (venue clock 21:00)\nVenue: Allianz Arena\, M
+ unich\, Germany\nReport: https://www.uefa.com/uefachampionsleague/match/
+ 2049598/\nSource: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645265-1gw8pjs@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261024T140000Z
+DTEND:20261024T160000Z
+SUMMARY:Arsenal v Everton (Premier League)
+LOCATION:Emirates Stadium\, Holloway
+DESCRIPTION:Competition: Premier League\nRound: 8\nKick-off: 2026-10-24T14
+ :00Z (venue clock 15:00)\nVenue: Emirates Stadium\, Holloway\nReport: ht
+ tps://www.premierleague.com/en/match/2645265/arsenal-vs-everton\nSource:
+  Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-w12zlxxh@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261027T190000Z
+DTEND:20261027T210000Z
+SUMMARY:Fleetwood Town v Arsenal (EFL Cup)
+LOCATION:Highbury Stadium\, Fleetwood
+DESCRIPTION:Competition: EFL Cup\nRound: 4th Round\nKick-off: 2026-10-27T1
+ 9:00Z (venue clock 20:00)\nVenue: Highbury Stadium\, Fleetwood\nReport: 
+ https://www.efl.com/match-centre/g2687771\nSource: Wikipedia — 2026–
+ 27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645281-197mi5f@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261101T163000Z
+DTEND:20261101T183000Z
+SUMMARY:Liverpool v Arsenal (Premier League)
+LOCATION:Anfield\, Liverpool
+DESCRIPTION:Competition: Premier League\nRound: 9\nKick-off: 2026-11-01T16
+ :30Z (venue clock 16:30)\nVenue: Anfield\, Liverpool\nReport: https://ww
+ w.premierleague.com/en/match/2645281/liverpool-vs-arsenal\nSource: Wikip
+ edia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2049621-0b6ilp2@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261104T200000Z
+DTEND:20261104T220000Z
+SUMMARY:Slavia Prague v Arsenal (UEFA Champions League)
+LOCATION:Fortuna Arena\, Prague\, Czech Republic
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 4\nK
+ ick-off: 2026-11-04T20:00Z (venue clock 21:00)\nVenue: Fortuna Arena\, P
+ rague\, Czech Republic\nReport: https://www.uefa.com/uefachampionsleague
+ /match/2049621/\nSource: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645285-0ymq9j9@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261108
+SUMMARY:Arsenal v Hull City (Premier League)
+LOCATION:Emirates Stadium\, Holloway
+DESCRIPTION:Competition: Premier League\nRound: 10\nDate: 2026-11-07 — k
+ ick-off time to be confirmed\nVenue: Emirates Stadium\, Holloway\nReport
+ : https://www.premierleague.com/en/match/2645285/arsenal-vs-hull-city\nS
+ ource: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645303-0oq2qcg@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:Newcastle United v Arsenal (Premier League)
+LOCATION:St James' Park\, Newcastle upon Tyne
+DESCRIPTION:Competition: Premier League\nRound: 11\nDate: 2026-11-21 — k
+ ick-off time to be confirmed\nVenue: St James' Park\, Newcastle upon Tyn
+ e\nReport: https://www.premierleague.com/en/match/2645303/newcastle-unit
+ ed-vs-arsenal\nSource: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2049627-19z1jqd@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261124T200000Z
+DTEND:20261124T220000Z
+SUMMARY:Arsenal v Borussia Dortmund (UEFA Champions League)
+LOCATION:Emirates Stadium\, London\, England
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 5\nK
+ ick-off: 2026-11-24T20:00Z (venue clock 20:00)\nVenue: Emirates Stadium\
+ , London\, England\nReport: https://www.uefa.com/uefachampionsleague/mat
+ ch/2049627/\nSource: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645305-0ioa6xp@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261129
+SUMMARY:Arsenal v Manchester City (Premier League)
+LOCATION:Emirates Stadium\, Holloway
+DESCRIPTION:Competition: Premier League\nRound: 12\nDate: 2026-11-28 — k
+ ick-off time to be confirmed\nVenue: Emirates Stadium\, Holloway\nReport
+ : https://www.premierleague.com/en/match/2645305/arsenal-vs-manchester-c
+ ity\nSource: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645317-1094k8n@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20261202
+DTEND;VALUE=DATE:20261203
+SUMMARY:Brentford v Arsenal (Premier League)
+LOCATION:Brentford Community Stadium\, Brentford
+DESCRIPTION:Competition: Premier League\nRound: 13\nDate: 2026-12-02 — k
+ ick-off time to be confirmed\nVenue: Brentford Community Stadium\, Brent
+ ford\nReport: https://www.premierleague.com/en/match/2645317/brentford-v
+ s-arsenal\nSource: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645334-06xqdjv@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20261205
+DTEND;VALUE=DATE:20261206
+SUMMARY:Tottenham Hotspur v Arsenal (Premier League)
+LOCATION:Tottenham Hotspur Stadium\, Tottenham
+DESCRIPTION:Competition: Premier League\nRound: 14\nDate: 2026-12-05 — k
+ ick-off time to be confirmed\nVenue: Tottenham Hotspur Stadium\, Tottenh
+ am\nReport: https://www.premierleague.com/en/match/2645334/tottenham-hot
+ spur-vs-arsenal\nSource: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2049653-1pdgt8n@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261209T200000Z
+DTEND:20261209T220000Z
+SUMMARY:Arsenal v Real Madrid (UEFA Champions League)
+LOCATION:Emirates Stadium\, London\, England
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 6\nK
+ ick-off: 2026-12-09T20:00Z (venue clock 20:00)\nVenue: Emirates Stadium\
+ , London\, England\nReport: https://www.uefa.com/uefachampionsleague/mat
+ ch/2049653/\nSource: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645335-157ic5i@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20261212
+DTEND;VALUE=DATE:20261213
+SUMMARY:Arsenal v Bournemouth (Premier League)
+LOCATION:Emirates Stadium\, Holloway
+DESCRIPTION:Competition: Premier League\nRound: 15\nDate: 2026-12-12 — k
+ ick-off time to be confirmed\nVenue: Emirates Stadium\, Holloway\nReport
+ : https://www.premierleague.com/en/match/2645335/arsenal-vs-bournemouth\
+ nSource: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645346-04avjdi@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20261219
+DTEND;VALUE=DATE:20261220
+SUMMARY:Arsenal v Manchester United (Premier League)
+LOCATION:Emirates Stadium\, Holloway
+DESCRIPTION:Competition: Premier League\nRound: 16\nDate: 2026-12-19 — k
+ ick-off time to be confirmed\nVenue: Emirates Stadium\, Holloway\nReport
+ : https://www.premierleague.com/en/match/2645346/arsenal-vs-manchester-u
+ nited\nSource: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645357-1vfuo0y@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261227T190000Z
+DTEND:20261227T210000Z
+SUMMARY:Crystal Palace v Arsenal (Premier League)
+LOCATION:Selhurst Park\, Selhurst
+DESCRIPTION:Competition: Premier League\nRound: 17\nKick-off: 2026-12-27T1
+ 9:00Z (venue clock 19:00)\nVenue: Selhurst Park\, Selhurst\nReport: http
+ s://www.premierleague.com/en/match/2645357/crystal-palace-vs-arsenal\nSo
+ urce: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645369-1mhlwa7@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261230T193000Z
+DTEND:20261230T213000Z
+SUMMARY:Fulham v Arsenal (Premier League)
+LOCATION:Craven Cottage\, Fulham
+DESCRIPTION:Competition: Premier League\nRound: 18\nKick-off: 2026-12-30T1
+ 9:30Z (venue clock 19:30)\nVenue: Craven Cottage\, Fulham\nReport: https
+ ://www.premierleague.com/en/match/2645369/fulham-vs-arsenal\nSource: Wik
+ ipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645376-0sb6zbh@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270102T150000Z
+DTEND:20270102T170000Z
+SUMMARY:Arsenal v Ipswich Town (Premier League)
+LOCATION:Emirates Stadium\, Holloway
+DESCRIPTION:Competition: Premier League\nRound: 19\nKick-off: 2027-01-02T1
+ 5:00Z (venue clock 15:00)\nVenue: Emirates Stadium\, Holloway\nReport: h
+ ttps://www.premierleague.com/en/match/2645376/arsenal-vs-ipswich-town\nS
+ ource: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645385-000dx0b@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270105T193000Z
+DTEND:20270105T213000Z
+SUMMARY:Arsenal v Brentford (Premier League)
+LOCATION:Emirates Stadium\, Holloway
+DESCRIPTION:Competition: Premier League\nRound: 20\nKick-off: 2027-01-05T1
+ 9:30Z (venue clock 19:30)\nVenue: Emirates Stadium\, Holloway\nReport: h
+ ttps://www.premierleague.com/en/match/2645385/arsenal-vs-brentford\nSour
+ ce: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-w0zo4202@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270111
+DTEND;VALUE=DATE:20270112
+SUMMARY: v  (FA Cup)
+LOCATION:
+DESCRIPTION:Competition: FA Cup\nRound: 3rd Round\nDate: 2027-01-11 — ki
+ ck-off time to be confirmed\nReport: https://www.bbc.co.uk/sport/footbal
+ l/live/c\nSource: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645400-1mixqqr@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270116
+DTEND;VALUE=DATE:20270117
+SUMMARY:Hull City v Arsenal (Premier League)
+LOCATION:MKM Stadium\, Kingston upon Hull
+DESCRIPTION:Competition: Premier League\nRound: 21\nDate: 2027-01-16 — k
+ ick-off time to be confirmed\nVenue: MKM Stadium\, Kingston upon Hull\nR
+ eport: https://www.premierleague.com/en/match/2645400/hull-city-vs-arsen
+ al\nSource: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2049672-0rht6rz@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270120T200000Z
+DTEND:20270120T220000Z
+SUMMARY:Real Betis v Arsenal (UEFA Champions League)
+LOCATION:La Cartuja\, Seville\, Spain
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 7\nK
+ ick-off: 2027-01-20T20:00Z (venue clock 21:00)\nVenue: La Cartuja\, Sevi
+ lle\, Spain\nNote: Due to renovation works at Benito Villamarín\, the r
+ egular home of Real Betis\, the match will instead be played at La Cartu
+ ja in Seville.\nReport: https://www.uefa.com/uefachampionsleague/match/2
+ 049672/\nSource: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645405-12dzoq2@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270123
+DTEND;VALUE=DATE:20270124
+SUMMARY:Arsenal v Newcastle United (Premier League)
+LOCATION:Emirates Stadium\, Holloway
+DESCRIPTION:Competition: Premier League\nRound: 22\nDate: 2027-01-23 — k
+ ick-off time to be confirmed\nVenue: Emirates Stadium\, Holloway\nReport
+ : https://www.premierleague.com/en/match/2645405/arsenal-vs-newcastle-un
+ ited\nSource: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2049683-0vds2f4@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270127T200000Z
+DTEND:20270127T220000Z
+SUMMARY:Arsenal v Sabah (UEFA Champions League)
+LOCATION:Emirates Stadium\, London\, England
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 8\nK
+ ick-off: 2027-01-27T20:00Z (venue clock 20:00)\nVenue: Emirates Stadium\
+ , London\, England\nReport: https://www.uefa.com/uefachampionsleague/mat
+ ch/2049683/\nSource: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645422-1uvyc8k@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270130
+DTEND;VALUE=DATE:20270131
+SUMMARY:Manchester City v Arsenal (Premier League)
+LOCATION:City of Manchester Stadium\, Manchester
+DESCRIPTION:Competition: Premier League\nRound: 23\nDate: 2027-01-30 — k
+ ick-off time to be confirmed\nVenue: City of Manchester Stadium\, Manche
+ ster\nReport: https://www.premierleague.com/en/match/2645422/manchester-
+ city-vs-arsenal\nSource: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645425-1tfk7bb@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270206
+DTEND;VALUE=DATE:20270207
+SUMMARY:Arsenal v Liverpool (Premier League)
+LOCATION:Emirates Stadium\, Holloway
+DESCRIPTION:Competition: Premier League\nRound: 24\nDate: 2027-02-06 — k
+ ick-off time to be confirmed\nVenue: Emirates Stadium\, Holloway\nReport
+ : https://www.premierleague.com/en/match/2645425/arsenal-vs-liverpool\nS
+ ource: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645441-18uinr9@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270210
+DTEND;VALUE=DATE:20270211
+SUMMARY:Ipswich Town v Arsenal (Premier League)
+LOCATION:Portman Road\, Ipswich
+DESCRIPTION:Competition: Premier League\nRound: 25\nDate: 2027-02-10 — k
+ ick-off time to be confirmed\nVenue: Portman Road\, Ipswich\nReport: htt
+ ps://www.premierleague.com/en/match/2645441/ipswich-town-vs-arsenal\nSou
+ rce: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645446-0hq4b96@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270220
+DTEND;VALUE=DATE:20270221
+SUMMARY:Arsenal v Fulham (Premier League)
+LOCATION:Emirates Stadium\, Holloway
+DESCRIPTION:Competition: Premier League\nRound: 26\nDate: 2027-02-20 — k
+ ick-off time to be confirmed\nVenue: Emirates Stadium\, Holloway\nReport
+ : https://www.premierleague.com/en/match/2645446/arsenal-vs-fulham\nSour
+ ce: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645462-00sd88j@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270227
+DTEND;VALUE=DATE:20270228
+SUMMARY:Manchester United v Arsenal (Premier League)
+LOCATION:Old Trafford\, Trafford
+DESCRIPTION:Competition: Premier League\nRound: 27\nDate: 2027-02-27 — k
+ ick-off time to be confirmed\nVenue: Old Trafford\, Trafford\nReport: ht
+ tps://www.premierleague.com/en/match/2645462/manchester-united-vs-arsena
+ l\nSource: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645466-1lwq1m9@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270303
+DTEND;VALUE=DATE:20270304
+SUMMARY:Arsenal v Crystal Palace (Premier League)
+LOCATION:Emirates Stadium\, Holloway
+DESCRIPTION:Competition: Premier League\nRound: 28\nDate: 2027-03-03 — k
+ ick-off time to be confirmed\nVenue: Emirates Stadium\, Holloway\nReport
+ : https://www.premierleague.com/en/match/2645466/arsenal-vs-crystal-pala
+ ce/overview\nSource: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645477-0btwrz7@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270313
+DTEND;VALUE=DATE:20270314
+SUMMARY:Chelsea v Arsenal (Premier League)
+LOCATION:Stamford Bridge\, Fulham
+DESCRIPTION:Competition: Premier League\nRound: 29\nDate: 2027-03-13 — k
+ ick-off time to be confirmed\nVenue: Stamford Bridge\, Fulham\nReport: h
+ ttps://www.premierleague.com/en/match/2645477/chelsea-vs-arsenal/overvie
+ w\nSource: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645485-17324c4@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270320
+DTEND;VALUE=DATE:20270321
+SUMMARY:Arsenal v Sunderland (Premier League)
+LOCATION:Emirates Stadium\, Holloway
+DESCRIPTION:Competition: Premier League\nRound: 30\nDate: 2027-03-20 — k
+ ick-off time to be confirmed\nVenue: Emirates Stadium\, Holloway\nReport
+ : https://www.premierleague.com/en/match/2645485/arsenal-vs-sunderland\n
+ Source: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645498-0w3pfjz@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270410
+DTEND;VALUE=DATE:20270411
+SUMMARY:Coventry City v Arsenal (Premier League)
+LOCATION:Coventry Building Society Arena\, Coventry
+DESCRIPTION:Competition: Premier League\nRound: 31\nDate: 2027-04-10 — k
+ ick-off time to be confirmed\nVenue: Coventry Building Society Arena\, C
+ oventry\nReport: https://www.premierleague.com/en/match/2645498/coventry
+ -city-vs-arsenal\nSource: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645505-0xucu5u@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270417
+DTEND;VALUE=DATE:20270418
+SUMMARY:Arsenal v Aston Villa (Premier League)
+LOCATION:Emirates Stadium\, Holloway
+DESCRIPTION:Competition: Premier League\nRound: 32\nDate: 2027-04-17 — k
+ ick-off time to be confirmed\nVenue: Emirates Stadium\, Holloway\nReport
+ : https://www.premierleague.com/en/match/2645505/arsenal-vs-aston-villa\
+ nSource: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645515-0kct8o5@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270424
+DTEND;VALUE=DATE:20270425
+SUMMARY:Bournemouth v Arsenal (Premier League)
+LOCATION:Dean Court\, Bournemouth
+DESCRIPTION:Competition: Premier League\nRound: 33\nDate: 2027-04-24 — k
+ ick-off time to be confirmed\nVenue: Dean Court\, Bournemouth\nReport: h
+ ttps://www.premierleague.com/en/match/2645515/bournemouth-vs-arsenal\nSo
+ urce: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645525-09wz2no@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270501
+DTEND;VALUE=DATE:20270502
+SUMMARY:Arsenal v Tottenham Hotspur (Premier League)
+LOCATION:Emirates Stadium\, Holloway
+DESCRIPTION:Competition: Premier League\nRound: 34\nDate: 2027-05-01 — k
+ ick-off time to be confirmed\nVenue: Emirates Stadium\, Holloway\nReport
+ : https://www.premierleague.com/en/match/2645525/arsenal-vs-tottenham-ho
+ tspur\nSource: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645540-00l3cbc@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270508
+DTEND;VALUE=DATE:20270509
+SUMMARY:Leeds United v Arsenal (Premier League)
+LOCATION:Elland Road\, Leeds
+DESCRIPTION:Competition: Premier League\nRound: 35\nDate: 2027-05-08 — k
+ ick-off time to be confirmed\nVenue: Elland Road\, Leeds\nReport: https:
+ //www.premierleague.com/en/match/2645540/leeds-united-vs-arsenal\nSource
+ : Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645545-1b95j8q@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270515
+DTEND;VALUE=DATE:20270516
+SUMMARY:Arsenal v Nottingham Forest (Premier League)
+LOCATION:Emirates Stadium\, Holloway
+DESCRIPTION:Competition: Premier League\nRound: 36\nDate: 2027-05-15 — k
+ ick-off time to be confirmed\nVenue: Emirates Stadium\, Holloway\nReport
+ : https://www.premierleague.com/en/match/2645545/arsenal-vs-nottingham-f
+ orest\nSource: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645558-18vcm42@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270523
+DTEND;VALUE=DATE:20270524
+SUMMARY:Everton v Arsenal (Premier League)
+LOCATION:Hill Dickinson Stadium\, Liverpool
+DESCRIPTION:Competition: Premier League\nRound: 37\nDate: 2027-05-23 — k
+ ick-off time to be confirmed\nVenue: Hill Dickinson Stadium\, Liverpool\
+ nReport: https://www.premierleague.com/en/match/2645558/everton-vs-arsen
+ al\nSource: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645565-0aatxz5@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270530T150000Z
+DTEND:20270530T170000Z
+SUMMARY:Arsenal v Brighton & Hove Albion (Premier League)
+LOCATION:Emirates Stadium\, Holloway
+DESCRIPTION:Competition: Premier League\nRound: 38\nKick-off: 2027-05-30T1
+ 5:00Z (venue clock 16:00)\nVenue: Emirates Stadium\, Holloway\nReport: h
+ ttps://www.premierleague.com/en/match/2645565/arsenal-vs-brighton-and-ho
+ ve-albion\nSource: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+END:VCALENDAR

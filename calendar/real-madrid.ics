@@ -1,0 +1,653 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//SportsCalendar//2026-27//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Real Madrid 2026-27
+X-WR-TIMEZONE:UTC
+X-WR-CALDESC:47 matches\, refreshed 2026-09-30
+BEGIN:VEVENT
+UID:real-madrid-w1peydak@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260822T193000Z
+DTEND:20260822T213000Z
+SUMMARY:Espanyol v Real Madrid (La Liga)
+LOCATION:RCDE Stadium\, Cornellà de Llobregat
+DESCRIPTION:Competition: La Liga\nRound: 1\nKick-off: 2026-08-22T19:30Z (v
+ enue clock 21:30)\nResult: Espanyol 1-2 Real Madrid\nEspanyol: Calatrava
+  30'\nReal Madrid: Bellingham 9'\, Espí 90'\nVenue: RCDE Stadium\, Corn
+ ellà de Llobregat\nAttendance: 33304\nReferee: José María Sánchez Ma
+ rtínez\nReport: https://www.laliga.com/en-GB/match/temporada-2026-2027-
+ laliga-ea-sports-rcd-espanyol-de-barcelona-real-madrid-2\nSource: Wikipe
+ dia — 2026–27 Real Madrid CF season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w02ijwq3@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260826T190000Z
+DTEND:20260826T210000Z
+SUMMARY:Real Madrid v Real Sociedad (La Liga)
+LOCATION:Bernabéu\, Madrid
+DESCRIPTION:Competition: La Liga\nRound: 2\nKick-off: 2026-08-26T19:00Z (v
+ enue clock 21:00)\nResult: Real Madrid 4-1 Real Sociedad\nReal Madrid: M
+ bappé 40'\, Vinícius 68'\nReal Sociedad: Sučić 44'\nVenue: Bernabéu
+ \, Madrid\nAttendance: 72226\nReferee: Mateo Busquets Ferrer\nNote: The 
+ match date was pushed back due to the clubs' player's involvement in the
+  2026 FIFA World Cup.\nReport: https://www.laliga.com/en-GB/match/tempor
+ ada-2026-2027-laliga-ea-sports-real-madrid-real-sociedad-1\nSource: Wiki
+ pedia — 2026–27 Real Madrid CF season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w0lskyx1@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260830T150000Z
+DTEND:20260830T170000Z
+SUMMARY:Real Madrid v Málaga (La Liga)
+LOCATION:Bernabéu\, Madrid
+DESCRIPTION:Competition: La Liga\nRound: 3\nKick-off: 2026-08-30T15:00Z (v
+ enue clock 17:00)\nResult: Real Madrid 4-0 Málaga\nReal Madrid: Belling
+ ham 19'\, Herrero 26' (own goal)\, Mbappé 30'\, Güler\nVenue: Bernabé
+ u\, Madrid\nAttendance: 74799\nReferee: Juan Martínez Munuera\nReport: 
+ https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-
+ real-madrid-malaga-cf-3\nSource: Wikipedia — 2026–27 Real Madrid CF 
+ season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w0b47t0b@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260904T190000Z
+DTEND:20260904T210000Z
+SUMMARY:Real Betis v Real Madrid (La Liga)
+LOCATION:La Cartuja\, Seville
+DESCRIPTION:Competition: La Liga\nRound: 4\nKick-off: 2026-09-04T19:00Z (v
+ enue clock 21:00)\nResult: Real Betis 1-0 Real Madrid\nReal Betis: Parro
+ tt 81'\nVenue: La Cartuja\, Seville\nAttendance: 66046\nReferee: Alejand
+ ro Hernández Hernández\nReport: https://www.laliga.com/en-GB/match/tem
+ porada-2026-2027-laliga-ea-sports-real-betis-real-madrid-4\nSource: Wiki
+ pedia — 2026–27 Real Madrid CF season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-2049553-0ee02wx@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260908T190000Z
+DTEND:20260908T210000Z
+SUMMARY:Real Madrid v Inter Milan (UEFA Champions League)
+LOCATION:Bernabéu\, Madrid\, Spain
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 1\nK
+ ick-off: 2026-09-08T19:00Z (venue clock 21:00)\nResult: Real Madrid 2-1 
+ Inter Milan\nReal Madrid: Mbappé 14'\, Valverde 23'\nInter Milan: Carlo
+ s Augusto 77'\nVenue: Bernabéu\, Madrid\, Spain\nAttendance: 74858\nRef
+ eree: Michael Oliver (England)\nReport: https://www.uefa.com/uefachampio
+ nsleague/match/2049553\nSource: Wikipedia — 2026–27 Real Madrid CF s
+ eason
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w1u4str1@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260912T190000Z
+DTEND:20260912T210000Z
+SUMMARY:Real Madrid v Rayo Vallecano (La Liga)
+LOCATION:Bernabéu\, Madrid
+DESCRIPTION:Competition: La Liga\nRound: 5\nKick-off: 2026-09-12T19:00Z (v
+ enue clock 21:00)\nResult: Real Madrid 4-1 Rayo Vallecano\nReal Madrid: 
+ Mbappé 14' (pen.)\, Carreras 17'\, Bellingham 35'\nRayo Vallecano: Came
+ llo 51'\nVenue: Bernabéu\, Madrid\nAttendance: 71898\nReferee: Víctor 
+ García Verdura\nReport: https://www.laliga.com/en-GB/match/temporada-20
+ 26-2027-laliga-ea-sports-real-madrid-rayo-vallecano-5\nSource: Wikipedia
+  — 2026–27 Real Madrid CF season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w1ydxqu5@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260915T193000Z
+DTEND:20260915T213000Z
+SUMMARY:Elche v Real Madrid (La Liga)
+LOCATION:Martínez Valero\, Elche
+DESCRIPTION:Competition: La Liga\nRound: 6\nKick-off: 2026-09-15T19:30Z (v
+ enue clock 21:30)\nResult: Elche 2-3 Real Madrid\nElche: Osorio 71'\, Ni
+ ño 83'\nReal Madrid: Dituro 25' (own goal)\, Mbappé 33'\, Espí\nVenue
+ : Martínez Valero\, Elche\nAttendance: 30383\nReferee: Jesús Gil Manza
+ no\nReport: https://www.laliga.com/en-GB/match/temporada-2026-2027-lalig
+ a-ea-sports-elche-cf-real-madrid-6\nSource: Wikipedia — 2026–27 Real
+  Madrid CF season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w1p2i7qi@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260920T141500Z
+DTEND:20260920T161500Z
+SUMMARY:Atlético Madrid v Real Madrid (La Liga)
+LOCATION:Riyadh Air Metropolitano\, Madrid
+DESCRIPTION:Competition: La Liga\nRound: 7\nKick-off: 2026-09-20T14:15Z (v
+ enue clock 16:15)\nResult: Atlético Madrid 2-1 Real Madrid\nAtlético M
+ adrid: Grimaldo 53' (pen.)\, David 59'\nReal Madrid: Huijsen\, Rüdiger 
+ 89'\nVenue: Riyadh Air Metropolitano\, Madrid\nAttendance: 70514\nRefere
+ e: Miguel Ángel Ortiz\nReport: https://www.laliga.com/en-GB/match/tempo
+ rada-2026-2027-laliga-ea-sports-atletico-de-madrid-real-madrid-7\nSource
+ : Wikipedia — 2026–27 Real Madrid CF season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w0xxuruh@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261010T190000Z
+DTEND:20261010T210000Z
+SUMMARY:Real Madrid v Villarreal (La Liga)
+LOCATION:Bernabéu\, Madrid
+DESCRIPTION:Competition: La Liga\nRound: 8\nKick-off: 2026-10-10T19:00Z (v
+ enue clock 21:00)\nVenue: Bernabéu\, Madrid\nReport: https://www.laliga
+ .com/en-GB/match/temporada-2026-2027-laliga-ea-sports-real-madrid-villar
+ real-cf-8\nSource: Wikipedia — 2026–27 Real Madrid CF season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-2049581-0wi6sq2@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261014T190000Z
+DTEND:20261014T210000Z
+SUMMARY:Roma v Real Madrid (UEFA Champions League)
+LOCATION:Stadio Olimpico\, Rome\, Italy
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 2\nK
+ ick-off: 2026-10-14T19:00Z (venue clock 21:00)\nVenue: Stadio Olimpico\,
+  Rome\, Italy\nReport: https://www.uefa.com/uefachampionsleague/match/20
+ 49581\nSource: Wikipedia — 2026–27 Real Madrid CF season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w1spa1t9@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261018T190000Z
+DTEND:20261018T210000Z
+SUMMARY:Real Madrid v Sevilla (La Liga)
+LOCATION:Bernabéu\, Madrid
+DESCRIPTION:Competition: La Liga\nRound: 9\nKick-off: 2026-10-18T19:00Z (v
+ enue clock 21:00)\nVenue: Bernabéu\, Madrid\nReport: https://www.laliga
+ .com/en-GB/match/temporada-2026-2027-laliga-ea-sports-real-madrid-sevill
+ a-fc-9\nSource: Wikipedia — 2026–27 Real Madrid CF season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-2049599-0ag11sv@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261021T190000Z
+DTEND:20261021T210000Z
+SUMMARY:Real Madrid v RB Leipzig (UEFA Champions League)
+LOCATION:Bernabéu\, Madrid\, Spain
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 3\nK
+ ick-off: 2026-10-21T19:00Z (venue clock 21:00)\nVenue: Bernabéu\, Madri
+ d\, Spain\nReport: https://www.uefa.com/uefachampionsleague/match/204959
+ 9\nSource: Wikipedia — 2026–27 Real Madrid CF season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w1u23a60@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261025T200000Z
+DTEND:20261025T220000Z
+SUMMARY:Barcelona v Real Madrid (La Liga)
+LOCATION:Spotify Camp Nou\, Barcelona
+DESCRIPTION:Competition: La Liga\nRound: 10\nKick-off: 2026-10-25T20:00Z (
+ venue clock 21:00)\nVenue: Spotify Camp Nou\, Barcelona\nReport: https:/
+ /www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-fc-barc
+ elona-real-madrid-10\nSource: Wikipedia — 2026–27 Real Madrid CF sea
+ son
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w18bk9a2@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261102
+SUMMARY:Racing Santander v Real Madrid (La Liga)
+LOCATION:El Sardinero\, Santander
+DESCRIPTION:Competition: La Liga\nRound: 11\nDate: 2026-11-01 — kick-off
+  time to be confirmed\nVenue: El Sardinero\, Santander\nReport: https://
+ www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-r-racing
+ -club-real-madrid-11\nSource: Wikipedia — 2026–27 Real Madrid CF sea
+ son
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-2049622-1f270fb@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261104T174500Z
+DTEND:20261104T194500Z
+SUMMARY:AEK Athens v Real Madrid (UEFA Champions League)
+LOCATION:Agia Sophia Stadium\, Athens\, Greece
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 4\nK
+ ick-off: 2026-11-04T17:45Z (venue clock 19:45)\nVenue: Agia Sophia Stadi
+ um\, Athens\, Greece\nReport: https://www.uefa.com/uefachampionsleague/m
+ atch/2049622\nSource: Wikipedia — 2026–27 Real Madrid CF season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w1c0tpxi@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20261108
+DTEND;VALUE=DATE:20261109
+SUMMARY:Valencia v Real Madrid (La Liga)
+LOCATION:Mestalla\, Valencia
+DESCRIPTION:Competition: La Liga\nRound: 12\nDate: 2026-11-08 — kick-off
+  time to be confirmed\nVenue: Mestalla\, Valencia\nReport: https://www.l
+ aliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-valencia-cf-r
+ eal-madrid-12\nSource: Wikipedia — 2026–27 Real Madrid CF season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w0qmfwe3@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20261122
+DTEND;VALUE=DATE:20261123
+SUMMARY:Real Madrid v Celta Vigo (La Liga)
+LOCATION:Bernabéu\, Madrid
+DESCRIPTION:Competition: La Liga\nRound: 13\nDate: 2026-11-22 — kick-off
+  time to be confirmed\nVenue: Bernabéu\, Madrid\nReport: https://www.la
+ liga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-real-madrid-rc
+ -celta-13\nSource: Wikipedia — 2026–27 Real Madrid CF season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-2049625-0y9hod8@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261124T200000Z
+DTEND:20261124T220000Z
+SUMMARY:Real Madrid v PSV Eindhoven (UEFA Champions League)
+LOCATION:Bernabéu\, Madrid\, Spain
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 5\nK
+ ick-off: 2026-11-24T20:00Z (venue clock 21:00)\nVenue: Bernabéu\, Madri
+ d\, Spain\nReport: https://www.uefa.com/uefachampionsleague/match/204962
+ 5\nSource: Wikipedia — 2026–27 Real Madrid CF season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w0hut0be@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20261129
+DTEND;VALUE=DATE:20261130
+SUMMARY:Real Madrid v Alavés (La Liga)
+LOCATION:Bernabéu\, Madrid
+DESCRIPTION:Competition: La Liga\nRound: 14\nDate: 2026-11-29 — kick-off
+  time to be confirmed\nVenue: Bernabéu\, Madrid\nReport: https://www.la
+ liga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-real-madrid-de
+ portivo-alaves-14\nSource: Wikipedia — 2026–27 Real Madrid CF season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w032elvd@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20261206
+DTEND;VALUE=DATE:20261207
+SUMMARY:Athletic Bilbao v Real Madrid (La Liga)
+LOCATION:San Mamés\, Bilbao
+DESCRIPTION:Competition: La Liga\nRound: 15\nDate: 2026-12-06 — kick-off
+  time to be confirmed\nVenue: San Mamés\, Bilbao\nReport: https://www.l
+ aliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-athletic-club
+ -real-madrid-15\nSource: Wikipedia — 2026–27 Real Madrid CF season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-2049653-1pdgt8n@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261209T200000Z
+DTEND:20261209T220000Z
+SUMMARY:Arsenal v Real Madrid (UEFA Champions League)
+LOCATION:Emirates Stadium\, London\, England
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 6\nK
+ ick-off: 2026-12-09T20:00Z (venue clock 20:00)\nVenue: Emirates Stadium\
+ , London\, England\nReport: https://www.uefa.com/uefachampionsleague/mat
+ ch/2049653\nSource: Wikipedia — 2026–27 Real Madrid CF season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w1rn4a0s@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20261213
+DTEND;VALUE=DATE:20261214
+SUMMARY:Real Madrid v Osasuna (La Liga)
+LOCATION:Bernabéu\, Madrid
+DESCRIPTION:Competition: La Liga\nRound: 16\nDate: 2026-12-13 — kick-off
+  time to be confirmed\nVenue: Bernabéu\, Madrid\nReport: https://www.la
+ liga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-real-madrid-ca
+ -osasuna-16\nSource: Wikipedia — 2026–27 Real Madrid CF season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w1acay7y@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20261220
+DTEND;VALUE=DATE:20261221
+SUMMARY:Deportivo A Coruña v Real Madrid (La Liga)
+LOCATION:ABANCA-Riazor\, A Coruña
+DESCRIPTION:Competition: La Liga\nRound: 17\nDate: 2026-12-20 — kick-off
+  time to be confirmed\nVenue: ABANCA-Riazor\, A Coruña\nReport: https:/
+ /www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-rc-depo
+ rtivo-real-madrid-17\nSource: Wikipedia — 2026–27 Real Madrid CF sea
+ son
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w1jso09q@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270103
+DTEND;VALUE=DATE:20270104
+SUMMARY:Real Madrid v Getafe (La Liga)
+LOCATION:Bernabéu\, Madrid
+DESCRIPTION:Competition: La Liga\nRound: 18\nDate: 2027-01-03 — kick-off
+  time to be confirmed\nVenue: Bernabéu\, Madrid\nReport: https://www.la
+ liga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-real-madrid-ge
+ tafe-cf-18\nSource: Wikipedia — 2026–27 Real Madrid CF season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w1i65j43@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270110
+DTEND;VALUE=DATE:20270111
+SUMMARY:Real Madrid v Levante (La Liga)
+LOCATION:Bernabéu\, Madrid
+DESCRIPTION:Competition: La Liga\nRound: 19\nDate: 2027-01-10 — kick-off
+  time to be confirmed\nVenue: Bernabéu\, Madrid\nReport: https://www.la
+ liga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-real-madrid-le
+ vante-ud-19\nSource: Wikipedia — 2026–27 Real Madrid CF season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w0qg23dm@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270117
+DTEND;VALUE=DATE:20270118
+SUMMARY:Málaga v Real Madrid (La Liga)
+LOCATION:La Rosaleda\, Málaga
+DESCRIPTION:Competition: La Liga\nRound: 20\nDate: 2027-01-17 — kick-off
+  time to be confirmed\nVenue: La Rosaleda\, Málaga\nReport: https://www
+ .laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-malaga-cf-r
+ eal-madrid-20\nSource: Wikipedia — 2026–27 Real Madrid CF season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-2049661-1qmjgcc@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270119T200000Z
+DTEND:20270119T220000Z
+SUMMARY:Real Madrid v LASK (UEFA Champions League)
+LOCATION:Bernabéu\, Madrid\, Spain
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 7\nK
+ ick-off: 2027-01-19T20:00Z (venue clock 21:00)\nVenue: Bernabéu\, Madri
+ d\, Spain\nReport: https://www.uefa.com/uefachampionsleague/match/204966
+ 1\nSource: Wikipedia — 2026–27 Real Madrid CF season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w0cjuqj2@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270124
+DTEND;VALUE=DATE:20270125
+SUMMARY:Real Madrid v Real Betis (La Liga)
+LOCATION:Bernabéu\, Madrid
+DESCRIPTION:Competition: La Liga\nRound: 21\nDate: 2027-01-24 — kick-off
+  time to be confirmed\nVenue: Bernabéu\, Madrid\nReport: https://www.la
+ liga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-real-madrid-re
+ al-betis-21\nSource: Wikipedia — 2026–27 Real Madrid CF season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-2049693-0lppxby@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270127T200000Z
+DTEND:20270127T220000Z
+SUMMARY:Shakhtar Donetsk v Real Madrid (UEFA Champions League)
+LOCATION:Stamford Bridge\, London\, England
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 8\nK
+ ick-off: 2027-01-27T20:00Z (venue clock 20:00)\nVenue: Stamford Bridge\,
+  London\, England\nReport: https://www.uefa.com/uefachampionsleague/matc
+ h/2049693\nSource: Wikipedia — 2026–27 Real Madrid CF season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w1ecc4hp@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270131
+DTEND;VALUE=DATE:20270201
+SUMMARY:Rayo Vallecano v Real Madrid (La Liga)
+LOCATION:Vallecas\, Madrid
+DESCRIPTION:Competition: La Liga\nRound: 22\nDate: 2027-01-31 — kick-off
+  time to be confirmed\nVenue: Vallecas\, Madrid\nReport: https://www.lal
+ iga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-rayo-vallecano-
+ real-madrid-22\nSource: Wikipedia — 2026–27 Real Madrid CF season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w048l3ox@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270203T190000Z
+DTEND:20270203T210000Z
+SUMMARY:Real Sociedad v Real Madrid (Supercopa de España)
+LOCATION:Beşiktaş Stadium\, Istanbul\, Turkey
+DESCRIPTION:Competition: Supercopa de España\nRound: Semi-finals\nKick-of
+ f: 2027-02-03T19:00Z (venue clock 22:00)\nVenue: Beşiktaş Stadium\, Is
+ tanbul\, Turkey\nSource: Wikipedia — 2026–27 Real Madrid CF season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w1vuo06t@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270207
+DTEND;VALUE=DATE:20270208
+SUMMARY:Real Sociedad v Real Madrid (La Liga)
+LOCATION:Anoeta\, San Sebastián
+DESCRIPTION:Competition: La Liga\nRound: 23\nDate: 2027-02-07 — kick-off
+  time to be confirmed\nVenue: Anoeta\, San Sebastián\nReport: https://w
+ ww.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-real-soci
+ edad-real-madrid-23\nSource: Wikipedia — 2026–27 Real Madrid CF seas
+ on
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w11ync46@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270214
+DTEND;VALUE=DATE:20270215
+SUMMARY:Real Madrid v Athletic Bilbao (La Liga)
+LOCATION:Bernabéu\, Madrid
+DESCRIPTION:Competition: La Liga\nRound: 24\nDate: 2027-02-14 — kick-off
+  time to be confirmed\nVenue: Bernabéu\, Madrid\nReport: https://www.la
+ liga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-real-madrid-at
+ hletic-club-24\nSource: Wikipedia — 2026–27 Real Madrid CF season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w1u7h003@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270221
+DTEND;VALUE=DATE:20270222
+SUMMARY:Sevilla v Real Madrid (La Liga)
+LOCATION:Ramón Sánchez-Pizjuán\, Seville
+DESCRIPTION:Competition: La Liga\nRound: 25\nDate: 2027-02-21 — kick-off
+  time to be confirmed\nVenue: Ramón Sánchez-Pizjuán\, Seville\nReport
+ : https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sport
+ s-sevilla-fc-real-madrid-25\nSource: Wikipedia — 2026–27 Real Madrid
+  CF season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w1m1tbtv@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270228
+DTEND;VALUE=DATE:20270301
+SUMMARY:Real Madrid v Valencia (La Liga)
+LOCATION:Bernabéu\, Madrid
+DESCRIPTION:Competition: La Liga\nRound: 26\nDate: 2027-02-28 — kick-off
+  time to be confirmed\nVenue: Bernabéu\, Madrid\nReport: https://www.la
+ liga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-real-madrid-va
+ lencia-cf-26\nSource: Wikipedia — 2026–27 Real Madrid CF season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w1b8aj22@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270307
+DTEND;VALUE=DATE:20270308
+SUMMARY:Villarreal v Real Madrid (La Liga)
+LOCATION:La Cerámica\, Villarreal
+DESCRIPTION:Competition: La Liga\nRound: 27\nDate: 2027-03-07 — kick-off
+  time to be confirmed\nVenue: La Cerámica\, Villarreal\nReport: https:/
+ /www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-villarr
+ eal-cf-real-madrid-27\nSource: Wikipedia — 2026–27 Real Madrid CF se
+ ason
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w1k1db7h@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270314
+DTEND;VALUE=DATE:20270315
+SUMMARY:Real Madrid v Espanyol (La Liga)
+LOCATION:Bernabéu\, Madrid
+DESCRIPTION:Competition: La Liga\nRound: 28\nDate: 2027-03-14 — kick-off
+  time to be confirmed\nVenue: Bernabéu\, Madrid\nReport: https://www.la
+ liga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-real-madrid-rc
+ d-espanyol-de-barcelona-28\nSource: Wikipedia — 2026–27 Real Madrid 
+ CF season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w01hmhl0@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270321
+DTEND;VALUE=DATE:20270322
+SUMMARY:Celta Vigo v Real Madrid (La Liga)
+LOCATION:ABANCA Balaídos\, Vigo
+DESCRIPTION:Competition: La Liga\nRound: 29\nDate: 2027-03-21 — kick-off
+  time to be confirmed\nVenue: ABANCA Balaídos\, Vigo\nReport: https://w
+ ww.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-rc-celta-
+ real-madrid-29\nSource: Wikipedia — 2026–27 Real Madrid CF season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w1ivzxee@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270404
+DTEND;VALUE=DATE:20270405
+SUMMARY:Real Madrid v Atlético Madrid (La Liga)
+LOCATION:Bernabéu\, Madrid
+DESCRIPTION:Competition: La Liga\nRound: 30\nDate: 2027-04-04 — kick-off
+  time to be confirmed\nVenue: Bernabéu\, Madrid\nReport: https://www.la
+ liga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-real-madrid-at
+ letico-de-madrid-30\nSource: Wikipedia — 2026–27 Real Madrid CF seas
+ on
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w0248ego@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270411
+DTEND;VALUE=DATE:20270412
+SUMMARY:Osasuna v Real Madrid (La Liga)
+LOCATION:El Sadar\, Pamplona
+DESCRIPTION:Competition: La Liga\nRound: 31\nDate: 2027-04-11 — kick-off
+  time to be confirmed\nVenue: El Sadar\, Pamplona\nReport: https://www.l
+ aliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-ca-osasuna-re
+ al-madrid-31\nSource: Wikipedia — 2026–27 Real Madrid CF season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w0pomokj@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270418
+DTEND;VALUE=DATE:20270419
+SUMMARY:Getafe v Real Madrid (La Liga)
+LOCATION:Coliseum\, Getafe
+DESCRIPTION:Competition: La Liga\nRound: 32\nDate: 2027-04-18 — kick-off
+  time to be confirmed\nVenue: Coliseum\, Getafe\nReport: https://www.lal
+ iga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-getafe-cf-real-
+ madrid-32\nSource: Wikipedia — 2026–27 Real Madrid CF season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w0rc85um@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270421
+DTEND;VALUE=DATE:20270422
+SUMMARY:Real Madrid v Elche (La Liga)
+LOCATION:Bernabéu\, Madrid
+DESCRIPTION:Competition: La Liga\nRound: 33\nDate: 2027-04-21 — kick-off
+  time to be confirmed\nVenue: Bernabéu\, Madrid\nReport: https://www.la
+ liga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-real-madrid-el
+ che-cf-33\nSource: Wikipedia — 2026–27 Real Madrid CF season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w1dklxsy@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270502
+DTEND;VALUE=DATE:20270503
+SUMMARY:Levante v Real Madrid (La Liga)
+LOCATION:Ciutat de València\, Valencia
+DESCRIPTION:Competition: La Liga\nRound: 34\nDate: 2027-05-02 — kick-off
+  time to be confirmed\nVenue: Ciutat de València\, Valencia\nReport: ht
+ tps://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-le
+ vante-ud-real-madrid-34\nSource: Wikipedia — 2026–27 Real Madrid CF 
+ season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w0mnchax@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270509
+DTEND;VALUE=DATE:20270510
+SUMMARY:Real Madrid v Barcelona (La Liga)
+LOCATION:Bernabéu\, Madrid
+DESCRIPTION:Competition: La Liga\nRound: 35\nDate: 2027-05-09 — kick-off
+  time to be confirmed\nVenue: Bernabéu\, Madrid\nReport: https://www.la
+ liga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-real-madrid-fc
+ -barcelona-35\nSource: Wikipedia — 2026–27 Real Madrid CF season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w0xm47p0@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270516
+DTEND;VALUE=DATE:20270517
+SUMMARY:Real Madrid v Racing Santander (La Liga)
+LOCATION:Bernabéu\, Madrid
+DESCRIPTION:Competition: La Liga\nRound: 36\nDate: 2027-05-16 — kick-off
+  time to be confirmed\nVenue: Bernabéu\, Madrid\nReport: https://www.la
+ liga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-real-madrid-r-
+ racing-club-36\nSource: Wikipedia — 2026–27 Real Madrid CF season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w020gpje@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270523
+DTEND;VALUE=DATE:20270524
+SUMMARY:Alavés v Real Madrid (La Liga)
+LOCATION:Mendizorrotza\, Vitoria-Gasteiz
+DESCRIPTION:Competition: La Liga\nRound: 37\nDate: 2027-05-23 — kick-off
+  time to be confirmed\nVenue: Mendizorrotza\, Vitoria-Gasteiz\nReport: h
+ ttps://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-d
+ eportivo-alaves-real-madrid-37\nSource: Wikipedia — 2026–27 Real Mad
+ rid CF season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w1753n18@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270530
+DTEND;VALUE=DATE:20270531
+SUMMARY:Real Madrid v Deportivo A Coruña (La Liga)
+LOCATION:Bernabéu\, Madrid
+DESCRIPTION:Competition: La Liga\nRound: 38\nDate: 2027-05-30 — kick-off
+  time to be confirmed\nVenue: Bernabéu\, Madrid\nReport: https://www.la
+ liga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-real-madrid-rc
+ -deportivo-38\nSource: Wikipedia — 2026–27 Real Madrid CF season
+STATUS:TENTATIVE
+END:VEVENT
+END:VCALENDAR

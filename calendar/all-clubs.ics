@@ -1,0 +1,3819 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//SportsCalendar//2026-27//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Sports Calendar — all clubs 2026-27
+X-WR-TIMEZONE:UTC
+X-WR-CALDESC:275 matches\, refreshed 2026-09-30
+BEGIN:VEVENT
+UID:psg-2048319-1rxhoji@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260812T190000Z
+DTEND:20260812T210000Z
+SUMMARY:Paris Saint-Germain v Aston Villa (UEFA Super Cup)
+LOCATION:Stadion Salzburg\, Salzburg\, Austria
+DESCRIPTION:Competition: UEFA Super Cup\nRound: Final\nKick-off: 2026-08-1
+ 2T19:00Z (venue clock 21:00)\nResult: Paris Saint-Germain 2-1 Aston Vill
+ a\nParis Saint-Germain: Kvaratskhelia 20'\, Doué 61'\nAston Villa: Madj
+ o 45'\, Torres 51' (yellow)\, João Gomes 64' (yellow)\, McGinn 72' (yel
+ low)\nVenue: Stadion Salzburg\, Salzburg\, Austria\nAttendance: 27681\nR
+ eferee: Omar Artan (Somalia)\nReport: https://www.uefa.com/uefasupercup/
+ match/2048319/\nSource: Wikipedia — 2026–27 Paris Saint-Germain FC s
+ eason
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-w19wy5ck@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260816T140000Z
+DTEND:20260816T160000Z
+SUMMARY:Arsenal v Manchester City (FA Community Shield)
+LOCATION:Millennium Stadium\, Cardiff
+DESCRIPTION:Tracked clubs in this tie: Arsenal\, Manchester City\nCompetit
+ ion: FA Community Shield\nRound: Final\nKick-off: 2026-08-16T14:00Z (ven
+ ue clock 15:00)\nResult: Arsenal 3-0 Manchester City\nArsenal: Calafiori
+  1'\, 38' (yellow)\, Havertz 28'\, Ødegaard 48'\, 84' (yellow)\nManches
+ ter City: Foden 24' (yellow)\, Gvardiol 53' (yellow)\nVenue: Millennium 
+ Stadium\, Cardiff\nAttendance: 58056\nReferee: Sam Barrott\nReport: http
+ s://www.bbc.co.uk/sport/football/live/cv4g34g19p2kt\nSource: Wikipedia 
+ — 2026–27 Arsenal F.C. season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w033jd2j@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260816T184500Z
+DTEND:20260816T204500Z
+SUMMARY:Lens v Paris Saint-Germain (Trophée des Champions)
+LOCATION:Stade Bollaert-Delelis\, Lens
+DESCRIPTION:Competition: Trophée des Champions\nRound: Final\nKick-off: 2
+ 026-08-16T18:45Z (venue clock 20:45)\nResult: Lens 1-0 Paris Saint-Germa
+ in\nLens: Thauvin 32'\, Antonio\, Bulatović 90' (yellow)\nParis Saint-G
+ ermain: Doué 64' (yellow)\, Mendes\, Ruiz 89' (yellow)\, Hakimi 90' (ye
+ llow)\nVenue: Stade Bollaert-Delelis\, Lens\nAttendance: 38223\nReferee:
+  Jérémie Pignard\nReport: https://ligue1.com/en/match-sheet/l1_champio
+ nship_match_2636517\nSource: Wikipedia — 2026–27 Paris Saint-Germain
+  FC season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645195-0mbx5zu@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260821T190000Z
+DTEND:20260821T210000Z
+SUMMARY:Arsenal v Coventry City (Premier League)
+LOCATION:Emirates Stadium\, Holloway
+DESCRIPTION:Competition: Premier League\nRound: 1\nKick-off: 2026-08-21T19
+ :00Z (venue clock 20:00)\nResult: Arsenal 3-0 Coventry City\nArsenal: Ha
+ vertz 15'\, Saka 23'\, Gabriel 34' (yellow)\, Ødegaard 49'\nCoventry Ci
+ ty: Yirenkyi 27' (yellow)\nVenue: Emirates Stadium\, Holloway\nAttendanc
+ e: 60098\nReferee: Thomas Bramall\nReport: https://www.premierleague.com
+ /en/match/2645195\nSource: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w1peydak@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260822T193000Z
+DTEND:20260822T213000Z
+SUMMARY:Espanyol v Real Madrid (La Liga)
+LOCATION:RCDE Stadium\, Cornellà de Llobregat
+DESCRIPTION:Competition: La Liga\nRound: 1\nKick-off: 2026-08-22T19:30Z (v
+ enue clock 21:30)\nResult: Espanyol 1-2 Real Madrid\nEspanyol: Calatrava
+  30'\nReal Madrid: Bellingham 9'\, Espí 90'\nVenue: RCDE Stadium\, Corn
+ ellà de Llobregat\nAttendance: 33304\nReferee: José María Sánchez Ma
+ rtínez\nReport: https://www.laliga.com/en-GB/match/temporada-2026-2027-
+ laliga-ea-sports-rcd-espanyol-de-barcelona-real-madrid-2\nSource: Wikipe
+ dia — 2026–27 Real Madrid CF season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-w0epfmjq@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260822T183000Z
+DTEND:20260822T203000Z
+SUMMARY:Borussia Dortmund v Bayern Munich (Franz Beckenbauer Supercup)
+LOCATION:Signal Iduna Park\, Dortmund
+DESCRIPTION:Competition: Franz Beckenbauer Supercup\nRound: Final\nKick-of
+ f: 2026-08-22T18:30Z (venue clock 20:30)\nResult: Borussia Dortmund 1-2 
+ Bayern Munich\nBorussia Dortmund: Silva 75'\, Bensebaini\nBayern Munich:
+  Brown 28'\, Díaz (yellow)\, Olise\nVenue: Signal Iduna Park\, Dortmund
+ \nAttendance: 81365\nReferee: Daniel Schlager\nReport: https://datencent
+ er.dfb.de/datencenter/franz-beckenbauer-supercup/2026/finale/2412838\nSo
+ urce: Wikipedia — 2026–27 FC Bayern Munich season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w0noadlz@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260823T193000Z
+DTEND:20260823T213000Z
+SUMMARY:Elche v Barcelona (La Liga)
+LOCATION:Martínez Valero\, Elche
+DESCRIPTION:Competition: La Liga\nRound: 2\nKick-off: 2026-08-23T19:30Z (v
+ enue clock 21:30)\nResult: Elche 0-5 Barcelona\nElche: Houary 33' (yello
+ w)\nBarcelona: Raphinha 14' (pen.)\, Adeyemi\, Fermín 71'\nVenue: Mart
+ ínez Valero\, Elche\nAttendance: 30704\nReferee: Alejandro Quintero Gon
+ zález\nReport: https://www.laliga.com/en-GB/match/temporada-2026-2027-l
+ aliga-ea-sports-elche-cf-fc-barcelona-2\nSource: Wikipedia — 2026–27
+  FC Barcelona season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645202-0ajmtkw@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260823T130000Z
+DTEND:20260823T150000Z
+SUMMARY:Manchester City v Bournemouth (Premier League)
+LOCATION:Etihad Stadium\, Manchester
+DESCRIPTION:Competition: Premier League\nRound: 1\nKick-off: 2026-08-23T13
+ :00Z (venue clock 14:00)\nResult: Manchester City 2-1 Bournemouth\nManch
+ ester City: Foden 78' (yellow)\, Guéhi 84'\, Gvardiol\nBournemouth: Tav
+ ernier 26'\, Evanilson (yellow)\, Silva 85' (yellow)\nVenue: Etihad Stad
+ ium\, Manchester\nAttendance: 60645\nReferee: Jarred Gillett\nReport: ht
+ tps://www.premierleague.com/match/2645202\nSource: Wikipedia — 2026–
+ 27 Manchester City F.C. season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w0z4wo1e@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260823T184500Z
+DTEND:20260823T204500Z
+SUMMARY:Rennes v Paris Saint-Germain (Ligue 1)
+LOCATION:Roazhon Park\, Rennes
+DESCRIPTION:Competition: Ligue 1\nRound: 1\nKick-off: 2026-08-23T18:45Z (v
+ enue clock 20:45)\nResult: Rennes 2-2 Paris Saint-Germain\nRennes: Szyma
+ ński 9'\, Lepaul 38'\, Thomasson 42' (yellow)\, Al-Taamari 63' (yellow)
+ \nParis Saint-Germain: Torres 71'\, Marquinhos 78' (yellow)\, Hakimi 84'
+  (yellow)\nVenue: Roazhon Park\, Rennes\nAttendance: 28255\nReferee: Bas
+ tien Dechepy\nReport: https://ligue1.com/en/match-sheet/l1_championship_
+ match_73827\nSource: Wikipedia — 2026–27 Paris Saint-Germain FC seas
+ on
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w02ijwq3@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260826T190000Z
+DTEND:20260826T210000Z
+SUMMARY:Real Madrid v Real Sociedad (La Liga)
+LOCATION:Bernabéu\, Madrid
+DESCRIPTION:Competition: La Liga\nRound: 2\nKick-off: 2026-08-26T19:00Z (v
+ enue clock 21:00)\nResult: Real Madrid 4-1 Real Sociedad\nReal Madrid: M
+ bappé 40'\, Vinícius 68'\nReal Sociedad: Sučić 44'\nVenue: Bernabéu
+ \, Madrid\nAttendance: 72226\nReferee: Mateo Busquets Ferrer\nNote: The 
+ match date was pushed back due to the clubs' player's involvement in the
+  2026 FIFA World Cup.\nReport: https://www.laliga.com/en-GB/match/tempor
+ ada-2026-2027-laliga-ea-sports-real-madrid-real-sociedad-1\nSource: Wiki
+ pedia — 2026–27 Real Madrid CF season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w144inwd@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260827T190000Z
+DTEND:20260827T210000Z
+SUMMARY:Barcelona v Athletic Bilbao (La Liga)
+LOCATION:Camp Nou\, Barcelona
+DESCRIPTION:Competition: La Liga\nRound: 1\nKick-off: 2026-08-27T19:00Z (v
+ enue clock 21:00)\nResult: Barcelona 2-0 Athletic Bilbao\nBarcelona: Esp
+ art 27' (yellow)\, Raphinha 37'\, Fermín 82'\nAthletic Bilbao: Guruzeta
+  48' (yellow)\, Louis-Jean 61' (yellow)\nVenue: Camp Nou\, Barcelona\nAt
+ tendance: 59326\nReferee: Miguel Ángel Ortiz Arias\nNote: Matchday 1 wa
+ s rescheduled to allow players participating in the 2026 FIFA World Cup 
+ ample time for rest.\nReport: https://www.laliga.com/en-GB/match/tempora
+ da-2026-2027-laliga-ea-sports-fc-barcelona-athletic-club-1\nSource: Wiki
+ pedia — 2026–27 FC Barcelona season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645209-03h84uh@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260828T190000Z
+DTEND:20260828T210000Z
+SUMMARY:Crystal Palace v Manchester City (Premier League)
+LOCATION:Selhurst Park\, Selhurst
+DESCRIPTION:Competition: Premier League\nRound: 2\nKick-off: 2026-08-28T19
+ :00Z (venue clock 20:00)\nResult: Crystal Palace 1-4 Manchester City\nCr
+ ystal Palace: Donnarumma 56' (own goal)\, Khalaili 68' (yellow)\nManches
+ ter City: Haaland 17'\, Cherki 33' (yellow)\, 54'\, Anderson 55' (yellow
+ )\nVenue: Selhurst Park\, Selhurst\nAttendance: 25149\nReferee: Andrew M
+ adley\nNote: Fixture was initially scheduled for 29 August\, but was res
+ cheduled for live Sky Sports broadcasting.\nReport: https://www.premierl
+ eague.com/match/2645209\nSource: Wikipedia — 2026–27 Manchester City
+  F.C. season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-w06vdu0b@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260828T183000Z
+DTEND:20260828T203000Z
+SUMMARY:Bayern Munich v VfB Stuttgart (Bundesliga)
+LOCATION:Allianz Arena\, Munich
+DESCRIPTION:Competition: Bundesliga\nRound: 1\nKick-off: 2026-08-28T18:30Z
+  (venue clock 20:30)\nResult: Bayern Munich 5-1 VfB Stuttgart\nBayern Mu
+ nich: Upamecano 21'\, Olise 55'\, Vagnoman 58' (own goal)\, Kim 81' (yel
+ low)\, Pavlović 82'\, Díaz\nVfB Stuttgart: Vagnoman 52'\, Chabot 62' (
+ yellow)\, Jeltsch 68' (yellow)\, Prömel (yellow)\nVenue: Allianz Arena\
+ , Munich\nAttendance: 75000\nReferee: Sören Storks\nReport: https://dat
+ encenter.dfb.de/datencenter/bundesliga/2026-2027/1-spieltag/fc-bayern-mu
+ enchen-vfb-stuttgart-2419234\nSource: Wikipedia — 2026–27 FC Bayern 
+ Munich season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w1t9lhvg@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260828T184500Z
+DTEND:20260828T204500Z
+SUMMARY:Lille v Paris Saint-Germain (Ligue 1)
+LOCATION:Stade Pierre-Mauroy\, Villeneuve-d'Ascq
+DESCRIPTION:Competition: Ligue 1\nRound: 2\nKick-off: 2026-08-28T18:45Z (v
+ enue clock 20:45)\nResult: Lille 2-2 Paris Saint-Germain\nLille: Haralds
+ son 21'\, André 52' (yellow)\, Bakwa 84'\, Perraud (yellow)\nParis Sain
+ t-Germain: Ruiz 39' (yellow)\, Vitinha\, Marquinhos\nVenue: Stade Pierre
+ -Mauroy\, Villeneuve-d'Ascq\nAttendance: 47793\nReferee: Éric Wattellie
+ r\nReport: https://ligue1.com/en/match-sheet/l1_championship_match_73832
+ \nSource: Wikipedia — 2026–27 Paris Saint-Germain FC season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w0lskyx1@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260830T150000Z
+DTEND:20260830T170000Z
+SUMMARY:Real Madrid v Málaga (La Liga)
+LOCATION:Bernabéu\, Madrid
+DESCRIPTION:Competition: La Liga\nRound: 3\nKick-off: 2026-08-30T15:00Z (v
+ enue clock 17:00)\nResult: Real Madrid 4-0 Málaga\nReal Madrid: Belling
+ ham 19'\, Herrero 26' (own goal)\, Mbappé 30'\, Güler\nVenue: Bernabé
+ u\, Madrid\nAttendance: 74799\nReferee: Juan Martínez Munuera\nReport: 
+ https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-
+ real-madrid-malaga-cf-3\nSource: Wikipedia — 2026–27 Real Madrid CF 
+ season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w0smcgoj@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260831T193000Z
+DTEND:20260831T213000Z
+SUMMARY:Barcelona v Rayo Vallecano (La Liga)
+LOCATION:Camp Nou\, Barcelona
+DESCRIPTION:Competition: La Liga\nRound: 3\nKick-off: 2026-08-31T19:30Z (v
+ enue clock 21:30)\nResult: Barcelona 5-2 Rayo Vallecano\nBarcelona: Raph
+ inha 19'\, Yamal 21'\, Lejeune 51' (own goal)\nRayo Vallecano: Camello 1
+ 2'\, Pedrosa 90' (yellow)\nVenue: Camp Nou\, Barcelona\nAttendance: 5776
+ 8\nReferee: Francisco José Hernández Maeso\nReport: https://www.laliga
+ .com/en-GB/match/temporada-2026-2027-laliga-ea-sports-fc-barcelona-rayo-
+ vallecano-3\nSource: Wikipedia — 2026–27 FC Barcelona season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645206-0jqf0yt@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260831T190000Z
+DTEND:20260831T210000Z
+SUMMARY:Aston Villa v Arsenal (Premier League)
+LOCATION:Villa Park\, Birmingham
+DESCRIPTION:Competition: Premier League\nRound: 2\nKick-off: 2026-08-31T19
+ :00Z (venue clock 20:00)\nResult: Aston Villa 0-1 Arsenal\nAston Villa: 
+ Alysson 80' (yellow)\, McGinn 81' (yellow)\, Maatsen (yellow)\nArsenal: 
+ Tzolis 29' (yellow)\, Saka 59'\nVenue: Villa Park\, Birmingham\nAttendan
+ ce: 36804\nReferee: Jarred Gillett\nReport: https://www.premierleague.co
+ m/en/match/2645206\nSource: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-w0oub2sd@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260902T184500Z
+DTEND:20260902T204500Z
+SUMMARY:VfL Osnabrück v Bayern Munich (DFB-Pokal)
+LOCATION:Stadion an der Bremer Brücke\, Osnabrück
+DESCRIPTION:Competition: DFB-Pokal\nRound: First round\nKick-off: 2026-09-
+ 02T18:45Z (venue clock 20:45)\nResult: VfL Osnabrück 1-4 Bayern Munich\
+ nVfL Osnabrück: Meißner 5'\nBayern Munich: Kane 18'\, Bischof 24'\, Ol
+ ise 73'\nVenue: Stadion an der Bremer Brücke\, Osnabrück\nAttendance: 
+ 15741\nReferee: Richard Hempel\nReport: https://datencenter.dfb.de/daten
+ center/dfb-pokal/2026-27/1-runde/vfl-osnabrueck-fc-bayern-muenchen-24183
+ 27\nSource: Wikipedia — 2026–27 FC Bayern Munich season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w0b47t0b@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260904T190000Z
+DTEND:20260904T210000Z
+SUMMARY:Real Betis v Real Madrid (La Liga)
+LOCATION:La Cartuja\, Seville
+DESCRIPTION:Competition: La Liga\nRound: 4\nKick-off: 2026-09-04T19:00Z (v
+ enue clock 21:00)\nResult: Real Betis 1-0 Real Madrid\nReal Betis: Parro
+ tt 81'\nVenue: La Cartuja\, Seville\nAttendance: 66046\nReferee: Alejand
+ ro Hernández Hernández\nReport: https://www.laliga.com/en-GB/match/tem
+ porada-2026-2027-laliga-ea-sports-real-betis-real-madrid-4\nSource: Wiki
+ pedia — 2026–27 Real Madrid CF season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w1o82qc0@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260904T190500Z
+DTEND:20260904T210500Z
+SUMMARY:Paris Saint-Germain v Monaco (Ligue 1)
+LOCATION:Parc des Princes\, Paris
+DESCRIPTION:Competition: Ligue 1\nRound: 3\nKick-off: 2026-09-04T19:05Z (v
+ enue clock 21:05)\nResult: Paris Saint-Germain 1-2 Monaco\nParis Saint-G
+ ermain: Marquinhos 31'\, Hernandez 68' (yellow)\nMonaco: Nazinho 58'\, T
+ eze 68' (yellow)\, Idumbo 72'\nVenue: Parc des Princes\, Paris\nAttendan
+ ce: 46945\nReferee: Jérôme Brisard\nReport: https://ligue1.com/en/matc
+ h-sheet/l1_championship_match_73845\nSource: Wikipedia — 2026–27 Par
+ is Saint-Germain FC season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645222-0kbmzds@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260905T140000Z
+DTEND:20260905T160000Z
+SUMMARY:Manchester City v Coventry City (Premier League)
+LOCATION:Etihad Stadium\, Manchester
+DESCRIPTION:Competition: Premier League\nRound: 3\nKick-off: 2026-09-05T14
+ :00Z (venue clock 15:00)\nResult: Manchester City 1-0 Coventry City\nMan
+ chester City: Haaland 26'\, Khusanov (yellow)\nCoventry City: Van Ewijk 
+ 19' (yellow)\, Pinnock (yellow)\nVenue: Etihad Stadium\, Manchester\nAtt
+ endance: 60765\nReferee: Paul Tierney\nReport: https://www.premierleague
+ .com/match/2645222\nSource: Wikipedia — 2026–27 Manchester City F.C.
+  season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-w0st1gay@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260905T163000Z
+DTEND:20260905T183000Z
+SUMMARY:Schalke 04 v Bayern Munich (Bundesliga)
+LOCATION:Veltins-Arena\, Gelsenkirchen
+DESCRIPTION:Competition: Bundesliga\nRound: 2\nKick-off: 2026-09-05T16:30Z
+  (venue clock 18:30)\nResult: Schalke 04 0-0 Bayern Munich\nSchalke 04: 
+ Dina Ebimbe 31' (yellow)\, Katić 73' (yellow)\nBayern Munich: Upamecano
+  35' (yellow)\, Pavlović 72' (yellow)\nVenue: Veltins-Arena\, Gelsenkir
+ chen\nAttendance: 62094\nReferee: Robert Schröder\nReport: https://date
+ ncenter.dfb.de/datencenter/bundesliga/2026-2027/2-spieltag/fc-schalke-04
+ -fc-bayern-muenchen-2419266\nSource: Wikipedia — 2026–27 FC Bayern M
+ unich season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w11f69q5@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260906T141500Z
+DTEND:20260906T161500Z
+SUMMARY:Valencia v Barcelona (La Liga)
+LOCATION:Mestalla\, Valencia
+DESCRIPTION:Competition: La Liga\nRound: 4\nKick-off: 2026-09-06T14:15Z (v
+ enue clock 16:15)\nResult: Valencia 0-5 Barcelona\nValencia: Martínez 8
+ 1' (yellow)\nBarcelona: Yamal 6'\, Fermín 22'\, 65' (yellow)\, Cubarsí
+  (yellow)\, Rodri 47' (yellow)\, Raphinha 50'\, Pedri 79'\nVenue: Mestal
+ la\, Valencia\nAttendance: 47319\nReferee: Isidro Díaz de Mera Escudero
+ s\nReport: https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga
+ -ea-sports-valencia-cf-fc-barcelona-4\nSource: Wikipedia — 2026–27 F
+ C Barcelona season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645215-0uaykxs@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260906T153000Z
+DTEND:20260906T173000Z
+SUMMARY:Arsenal v Chelsea (Premier League)
+LOCATION:Emirates Stadium\, Holloway
+DESCRIPTION:Competition: Premier League\nRound: 3\nKick-off: 2026-09-06T15
+ :30Z (venue clock 16:30)\nResult: Arsenal 2-1 Chelsea\nArsenal: Havertz 
+ 25'\, Ødegaard 50'\, Tzolis 58' (yellow)\, Merino (yellow)\nChelsea: Ro
+ gers 2'\, 83' (yellow)\, João Pedro 14' (yellow)\, Palmer 45' (yellow)\
+ , Lacroix 58' (yellow)\nVenue: Emirates Stadium\, Holloway\nAttendance: 
+ 60240\nReferee: Chris Kavanagh\nReport: https://www.premierleague.com/en
+ /match/2645215\nSource: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-2049553-0ee02wx@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260908T190000Z
+DTEND:20260908T210000Z
+SUMMARY:Real Madrid v Inter Milan (UEFA Champions League)
+LOCATION:Bernabéu\, Madrid\, Spain
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 1\nK
+ ick-off: 2026-09-08T19:00Z (venue clock 21:00)\nResult: Real Madrid 2-1 
+ Inter Milan\nReal Madrid: Mbappé 14'\, Valverde 23'\nInter Milan: Carlo
+ s Augusto 77'\nVenue: Bernabéu\, Madrid\, Spain\nAttendance: 74858\nRef
+ eree: Michael Oliver (England)\nReport: https://www.uefa.com/uefachampio
+ nsleague/match/2049553\nSource: Wikipedia — 2026–27 Real Madrid CF s
+ eason
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2049555-0hd53qm@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260908T190000Z
+DTEND:20260908T210000Z
+SUMMARY:Porto v Manchester City (UEFA Champions League)
+LOCATION:Estádio do Dragão\, Porto\, Portugal
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 1\nK
+ ick-off: 2026-09-08T19:00Z (venue clock 20:00)\nResult: Porto 0-2 Manche
+ ster City\nPorto: Rosario (yellow)\nManchester City: Gvardiol 37' (yello
+ w)\, Haaland 47'\, (yellow)\, Donnarumma 49' (yellow)\nVenue: Estádio d
+ o Dragão\, Porto\, Portugal\nAttendance: 49106\nReferee: Szymon Marcini
+ ak (Poland)\nReport: https://www.uefa.com/uefachampionsleague/match/2049
+ 555/\nSource: Wikipedia — 2026–27 Manchester City F.C. season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-2049561-154hm16@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260909T164500Z
+DTEND:20260909T184500Z
+SUMMARY:Barcelona v Feyenoord (UEFA Champions League)
+LOCATION:Camp Nou\, Barcelona\, Spain
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 1\nK
+ ick-off: 2026-09-09T16:45Z (venue clock 18:45)\nResult: Barcelona 5-1 Fe
+ yenoord\nBarcelona: Raphinha 3'\, Adeyemi 22'\, Olmo 54' (yellow)\, Yama
+ l 77'\, Gabriel Jesus 85'\nFeyenoord: Vanhoutte 27' (yellow)\, Steijn 82
+ '\nVenue: Camp Nou\, Barcelona\, Spain\nAttendance: 45838\nReferee: Sven
+  Jablonski (Germany)\nReport: https://www.uefa.com/uefachampionsleague/m
+ atch/2049561/\nSource: Wikipedia — 2026–27 FC Barcelona season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2049563-0mysmsj@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260909T190000Z
+DTEND:20260909T210000Z
+SUMMARY:Napoli v Arsenal (UEFA Champions League)
+LOCATION:Stadio Diego Armando Maradona\, Naples\, Italy
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 1\nK
+ ick-off: 2026-09-09T19:00Z (venue clock 21:00)\nResult: Napoli 0-1 Arsen
+ al\nNapoli: Gilmour 42' (yellow)\, Lucca 85' (yellow)\nArsenal: Ødegaar
+ d 75'\, (yellow)\nVenue: Stadio Diego Armando Maradona\, Naples\, Italy\
+ nAttendance: 44083\nReferee: Glenn Nyberg (Sweden)\nReport: https://www.
+ uefa.com/uefachampionsleague/match/2049563/\nSource: Wikipedia — 2026
+ –27 Arsenal F.C. season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-2049559-1pv1phy@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260909T190000Z
+DTEND:20260909T210000Z
+SUMMARY:Paris Saint-Germain v Slovan Bratislava (UEFA Champions League)
+LOCATION:Parc des Princes\, Paris\, France
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 1\nK
+ ick-off: 2026-09-09T19:00Z (venue clock 21:00)\nResult: Paris Saint-Germ
+ ain 6-1 Slovan Bratislava\nParis Saint-Germain: Dembélé 17'\, Torres 3
+ 1'\, Ruiz 88'\nSlovan Bratislava: Blackman 53' (yellow)\, Su. Camara 59'
+ \nVenue: Parc des Princes\, Paris\, France\nAttendance: 47511\nReferee: 
+ Mykola Balakin (Ukraine)\nReport: https://www.uefa.com/uefachampionsleag
+ ue/match/2049559/\nSource: Wikipedia — 2026–27 Paris Saint-Germain F
+ C season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-2049565-1immye4@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260910T190000Z
+DTEND:20260910T210000Z
+SUMMARY:Bayern Munich v Bodø/Glimt (UEFA Champions League)
+LOCATION:Allianz Arena\, Munich\, Germany
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 1\nK
+ ick-off: 2026-09-10T19:00Z (venue clock 21:00)\nResult: Bayern Munich 5-
+ 0 Bodø/Glimt\nBayern Munich: Musiala 47'\, Kane 61'\, Davies 77'\, Olis
+ e 83'\nBodø/Glimt: Fet 58' (yellow)\, Bjørtuft\nVenue: Allianz Arena\,
+  Munich\, Germany\nAttendance: 75000\nReferee: Rade Obrenović (Slovenia
+ )\nReport: https://www.uefa.com/uefachampionsleague/match/2049565/\nSour
+ ce: Wikipedia — 2026–27 FC Bayern Munich season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w1u4str1@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260912T190000Z
+DTEND:20260912T210000Z
+SUMMARY:Real Madrid v Rayo Vallecano (La Liga)
+LOCATION:Bernabéu\, Madrid
+DESCRIPTION:Competition: La Liga\nRound: 5\nKick-off: 2026-09-12T19:00Z (v
+ enue clock 21:00)\nResult: Real Madrid 4-1 Rayo Vallecano\nReal Madrid: 
+ Mbappé 14' (pen.)\, Carreras 17'\, Bellingham 35'\nRayo Vallecano: Came
+ llo 51'\nVenue: Bernabéu\, Madrid\nAttendance: 71898\nReferee: Víctor 
+ García Verdura\nReport: https://www.laliga.com/en-GB/match/temporada-20
+ 26-2027-laliga-ea-sports-real-madrid-rayo-vallecano-5\nSource: Wikipedia
+  — 2026–27 Real Madrid CF season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645233-1hsc3kc@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260912T190000Z
+DTEND:20260912T210000Z
+SUMMARY:Sunderland v Arsenal (Premier League)
+LOCATION:Stadium of Light\, Sunderland
+DESCRIPTION:Competition: Premier League\nRound: 4\nKick-off: 2026-09-12T19
+ :00Z (venue clock 20:00)\nResult: Sunderland 0-2 Arsenal\nSunderland: Ma
+ ndava\, Le Fée 56'\, Ballard 66' (yellow)\, Xhaka 69' (yellow)\, Brobbe
+ y 81' (yellow)\, Mukiele (yellow)\nArsenal: Bruno Guimarães 58'\, Gabri
+ el (yellow)\, Havertz (yellow)\, Saka (pen.)\nVenue: Stadium of Light\, 
+ Sunderland\nAttendance: 48707\nReferee: John Brooks\nReport: https://www
+ .premierleague.com/en/match/2645233\nSource: Wikipedia — 2026–27 Ars
+ enal F.C. season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w1g00155@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260913T141500Z
+DTEND:20260913T161500Z
+SUMMARY:Levante v Barcelona (La Liga)
+LOCATION:Ciutat de València\, Valencia
+DESCRIPTION:Competition: La Liga\nRound: 5\nKick-off: 2026-09-13T14:15Z (v
+ enue clock 16:15)\nResult: Levante 2-4 Barcelona\nLevante: Sotelo (yello
+ w)\, Romero 79'\, Brugué 88'\nBarcelona: Espart 5'\, Yamal 19'\, Martí
+ n (yellow)\, Adeyemi\nVenue: Ciutat de València\, Valencia\nAttendance:
+  23630\nReferee: Jon Ander González Esteban\nReport: https://www.laliga
+ .com/en-GB/match/temporada-2026-2027-laliga-ea-sports-levante-ud-fc-barc
+ elona-5\nSource: Wikipedia — 2026–27 FC Barcelona season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645232-0eyxjyh@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260913T153000Z
+DTEND:20260913T173000Z
+SUMMARY:Manchester United v Manchester City (Premier League)
+LOCATION:Old Trafford\, Trafford
+DESCRIPTION:Competition: Premier League\nRound: 4\nKick-off: 2026-09-13T15
+ :30Z (venue clock 16:30)\nResult: Manchester United 0-1 Manchester City\
+ nManchester United: Maguire 81' (yellow)\nManchester City: Foden\, Haala
+ nd 60'\, Gvardiol 79' (yellow)\, Fernández 80' (yellow)\nVenue: Old Tra
+ fford\, Trafford\nAttendance: 74161\nReferee: Michael Oliver\nNote: Fixt
+ ure was initially scheduled for 12 September\, but was rescheduled for l
+ ive Sky Sports broadcasting.\nReport: https://www.premierleague.com/matc
+ h/2645232\nSource: Wikipedia — 2026–27 Manchester City F.C. season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-w1vv338w@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260913T153000Z
+DTEND:20260913T173000Z
+SUMMARY:SV Elversberg v Bayern Munich (Bundesliga)
+LOCATION:Ursapharm-Arena\, Spiesen-Elversberg
+DESCRIPTION:Competition: Bundesliga\nRound: 3\nKick-off: 2026-09-13T15:30Z
+  (venue clock 17:30)\nResult: SV Elversberg 1-2 Bayern Munich\nSV Elvers
+ berg: Onyeka 7' (yellow)\, Krattenmacher 61'\, Keidel 63' (yellow)\nBaye
+ rn Munich: Karl 26'\, Kane 72'\nVenue: Ursapharm-Arena\, Spiesen-Elversb
+ erg\nAttendance: 9307\nReferee: Sascha Stegemann\nReport: https://datenc
+ enter.dfb.de/datencenter/bundesliga/2026-2027/3-spieltag/sv-elversberg-f
+ c-bayern-muenchen-2419301\nSource: Wikipedia — 2026–27 FC Bayern Mun
+ ich season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w1v4ks2t@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260913T184500Z
+DTEND:20260913T204500Z
+SUMMARY:Brest v Paris Saint-Germain (Ligue 1)
+LOCATION:Stade Francis-Le Blé\, Brest
+DESCRIPTION:Competition: Ligue 1\nRound: 4\nKick-off: 2026-09-13T18:45Z (v
+ enue clock 20:45)\nResult: Brest 0-1 Paris Saint-Germain\nBrest: Doumbia
+  31' (yellow)\nParis Saint-Germain: Torres 5'\, Vitinha 84' (yellow)\, F
+ ernández 87' (yellow)\nVenue: Stade Francis-Le Blé\, Brest\nAttendance
+ : 14944\nReferee: Willy Delajod\nReport: https://ligue1.com/en/match-she
+ et/l1_championship_match_73849\nSource: Wikipedia — 2026–27 Paris Sa
+ int-Germain FC season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w1ydxqu5@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260915T193000Z
+DTEND:20260915T213000Z
+SUMMARY:Elche v Real Madrid (La Liga)
+LOCATION:Martínez Valero\, Elche
+DESCRIPTION:Competition: La Liga\nRound: 6\nKick-off: 2026-09-15T19:30Z (v
+ enue clock 21:30)\nResult: Elche 2-3 Real Madrid\nElche: Osorio 71'\, Ni
+ ño 83'\nReal Madrid: Dituro 25' (own goal)\, Mbappé 33'\, Espí\nVenue
+ : Martínez Valero\, Elche\nAttendance: 30383\nReferee: Jesús Gil Manza
+ no\nReport: https://www.laliga.com/en-GB/match/temporada-2026-2027-lalig
+ a-ea-sports-elche-cf-real-madrid-6\nSource: Wikipedia — 2026–27 Real
+  Madrid CF season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-w1u8t56w@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260915T190000Z
+DTEND:20260915T210000Z
+SUMMARY:Ipswich Town v Arsenal (EFL Cup)
+LOCATION:Portman Road\, Ipswich
+DESCRIPTION:Competition: EFL Cup\nRound: 3rd Round\nKick-off: 2026-09-15T1
+ 9:00Z (venue clock 20:00)\nResult: Ipswich Town 2-4 Arsenal\nIpswich Tow
+ n: McAteer 34' (yellow)\, Mehmeti 62'\, Núñez 87' (yellow)\, Akpom\nAr
+ senal: Dowman 7'\, Madueke 16'\, Merino 58'\nVenue: Portman Road\, Ipswi
+ ch\nAttendance: 28966\nReferee: Peter Bankes\nReport: https://www.efl.co
+ m/match-centre/g2685172\nSource: Wikipedia — 2026–27 Arsenal F.C. se
+ ason
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w1t4knt9@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260916T193000Z
+DTEND:20260916T213000Z
+SUMMARY:Barcelona v Racing Santander (La Liga)
+LOCATION:Camp Nou\, Barcelona
+DESCRIPTION:Competition: La Liga\nRound: 6\nKick-off: 2026-09-16T19:30Z (v
+ enue clock 21:30)\nResult: Barcelona 7-2 Racing Santander\nBarcelona: Ca
+ ncelo 8'\, 69' (yellow)\, Raphinha 25' (pen.)\, Villalibre 36' (own goal
+ )\, Yamal \, (yellow)\, 89'\, Adeyemi 60' (yellow)\, Gabriel Jesus 79'\n
+ Racing Santander: Pedro Felipe 23' (yellow)\, Gueye 30'\, Zabiri 60' (ye
+ llow)\, 65'\nVenue: Camp Nou\, Barcelona\nAttendance: 50568\nReferee: Jo
+ sé Luis Munuera Montero\nReport: https://www.laliga.com/en-GB/match/tem
+ porada-2026-2027-laliga-ea-sports-fc-barcelona-r-racing-club-6\nSource: 
+ Wikipedia — 2026–27 FC Barcelona season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-w1tly7hh@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260917T183000Z
+DTEND:20260917T203000Z
+SUMMARY:Manchester City v Norwich City (EFL Cup)
+LOCATION:Etihad Stadium\, Manchester
+DESCRIPTION:Competition: EFL Cup\nRound: Third round\nKick-off: 2026-09-17
+ T18:30Z (venue clock 19:30)\nResult: Manchester City 5-0 Norwich City\nM
+ anchester City: Samba 29'\, Cherki 32'\, Allan 48'\, McAidoo 90'\nNorwic
+ h City: Fisher 30' (yellow)\nVenue: Etihad Stadium\, Manchester\nAttenda
+ nce: 32451\nReferee: Ruebyn Ricardo\nReport: https://www.efl.com/match-c
+ entre/g2685170\nSource: Wikipedia — 2026–27 Manchester City F.C. sea
+ son
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-w0i502x6@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260918T183000Z
+DTEND:20260918T203000Z
+SUMMARY:Bayern Munich v Union Berlin (Bundesliga)
+LOCATION:Allianz Arena\, Munich
+DESCRIPTION:Competition: Bundesliga\nRound: 4\nKick-off: 2026-09-18T18:30Z
+  (venue clock 20:30)\nResult: Bayern Munich 7-0 Union Berlin\nBayern Mun
+ ich: Musiala 18'\, Kane 39' (pen.)\, Olise 43'\, Upamecano (yellow)\, Sa
+ ibari 70'\nUnion Berlin: Uduokhai 38' (yellow)\, Khedira 42' (yellow)\, 
+ Burcu 78' (yellow)\nVenue: Allianz Arena\, Munich\nAttendance: 75000\nRe
+ feree: Benjamin Brand\nReport: https://datencenter.dfb.de/datencenter/bu
+ ndesliga/2026-2027/4-spieltag/fc-bayern-muenchen-1-fc-union-berlin-24192
+ 95\nSource: Wikipedia — 2026–27 FC Bayern Munich season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w0rf7dqo@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260919T190000Z
+DTEND:20260919T210000Z
+SUMMARY:Sevilla v Barcelona (La Liga)
+LOCATION:Ramón Sánchez-Pizjuán\, Seville
+DESCRIPTION:Competition: La Liga\nRound: 7\nKick-off: 2026-09-19T19:00Z (v
+ enue clock 21:00)\nResult: Sevilla 1-3 Barcelona\nSevilla: Fofana 19'\, 
+ Agoumé 80' (yellow)\nBarcelona: Raphinha 22'\nVenue: Ramón Sánchez-Pi
+ zjuán\, Seville\nAttendance: 41145\nReferee: Juan Martínez Munuera\nRe
+ port: https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-s
+ ports-sevilla-fc-fc-barcelona-7\nSource: Wikipedia — 2026–27 FC Barc
+ elona season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645237-0z2u6pb@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260919T140000Z
+DTEND:20260919T160000Z
+SUMMARY:Brighton & Hove Albion v Arsenal (Premier League)
+LOCATION:Falmer Stadium\, Brighton and Hove
+DESCRIPTION:Competition: Premier League\nRound: 5\nKick-off: 2026-09-19T14
+ :00Z (venue clock 15:00)\nResult: Brighton & Hove Albion 3-0 Arsenal\nBr
+ ighton & Hove Albion: Groß 31'\, Kostoulas 33' (yellow)\, 45'\, Kadıo
+ ğlu (yellow)\, Andrés 57'\, Struijk 71' (yellow)\, De Cuyper (yellow)\
+ nArsenal: Rice (yellow)\nVenue: Falmer Stadium\, Brighton and Hove\nAtte
+ ndance: 31944\nReferee: Darren England\nReport: https://www.premierleagu
+ e.com/en/match/2645237\nSource: Wikipedia — 2026–27 Arsenal F.C. sea
+ son
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w1p2i7qi@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260920T141500Z
+DTEND:20260920T161500Z
+SUMMARY:Atlético Madrid v Real Madrid (La Liga)
+LOCATION:Riyadh Air Metropolitano\, Madrid
+DESCRIPTION:Competition: La Liga\nRound: 7\nKick-off: 2026-09-20T14:15Z (v
+ enue clock 16:15)\nResult: Atlético Madrid 2-1 Real Madrid\nAtlético M
+ adrid: Grimaldo 53' (pen.)\, David 59'\nReal Madrid: Huijsen\, Rüdiger 
+ 89'\nVenue: Riyadh Air Metropolitano\, Madrid\nAttendance: 70514\nRefere
+ e: Miguel Ángel Ortiz\nReport: https://www.laliga.com/en-GB/match/tempo
+ rada-2026-2027-laliga-ea-sports-atletico-de-madrid-real-madrid-7\nSource
+ : Wikipedia — 2026–27 Real Madrid CF season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645241-09ur9wa@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260920T130000Z
+DTEND:20260920T150000Z
+SUMMARY:Manchester City v Sunderland (Premier League)
+LOCATION:Etihad Stadium\, Manchester
+DESCRIPTION:Competition: Premier League\nRound: 5\nKick-off: 2026-09-20T13
+ :00Z (venue clock 14:00)\nResult: Manchester City 5-3 Sunderland\nManche
+ ster City: Fernández 9'\, Cherki 29'\, Semenyo 43'\, Haaland 81'\nSunde
+ rland: Methalie 8' (yellow)\, Brobbey 12'\nVenue: Etihad Stadium\, Manch
+ ester\nAttendance: 60312\nReferee: Robert Jones\nNote: Fixture was initi
+ ally scheduled for 19 September\, but was pushed back a day due to Manch
+ ester City's involvement in the EFL Cup on the preceding Thursday.\nRepo
+ rt: https://www.premierleague.com/match/2645241\nSource: Wikipedia — 2
+ 026–27 Manchester City F.C. season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w1kq84gn@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260920T184500Z
+DTEND:20260920T204500Z
+SUMMARY:Marseille v Paris Saint-Germain (Ligue 1)
+LOCATION:Stade Vélodrome\, Marseille
+DESCRIPTION:Competition: Ligue 1\nRound: 5\nKick-off: 2026-09-20T18:45Z (v
+ enue clock 20:45)\nResult: Marseille 1-2 Paris Saint-Germain\nMarseille:
+  Weah\, Gomes 72'\, 90' (yellow)\, Abdallah 81' (yellow)\nParis Saint-Ge
+ rmain: Mendes 39' (yellow)\, Torres 66'\, Marquinhos 74'\nVenue: Stade V
+ élodrome\, Marseille\nAttendance: 61499\nReferee: François Letexier\nR
+ eport: https://ligue1.com/en/match-sheet/l1_championship_match_73861\nSo
+ urce: Wikipedia — 2026–27 Paris Saint-Germain FC season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w0xxuruh@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261010T190000Z
+DTEND:20261010T210000Z
+SUMMARY:Real Madrid v Villarreal (La Liga)
+LOCATION:Bernabéu\, Madrid
+DESCRIPTION:Competition: La Liga\nRound: 8\nKick-off: 2026-10-10T19:00Z (v
+ enue clock 21:00)\nVenue: Bernabéu\, Madrid\nReport: https://www.laliga
+ .com/en-GB/match/temporada-2026-2027-laliga-ea-sports-real-madrid-villar
+ real-cf-8\nSource: Wikipedia — 2026–27 Real Madrid CF season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w1au1lbp@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261010T163000Z
+DTEND:20261010T183000Z
+SUMMARY:Barcelona v Getafe (La Liga)
+LOCATION:Camp Nou\, Barcelona
+DESCRIPTION:Competition: La Liga\nRound: 8\nKick-off: 2026-10-10T16:30Z (v
+ enue clock 18:30)\nVenue: Camp Nou\, Barcelona\nReport: https://www.lali
+ ga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-fc-barcelona-get
+ afe-cf-8\nSource: Wikipedia — 2026–27 FC Barcelona season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645245-180kfjc@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261010T113000Z
+DTEND:20261010T133000Z
+SUMMARY:Arsenal v Leeds United (Premier League)
+LOCATION:Emirates Stadium\, Holloway
+DESCRIPTION:Competition: Premier League\nRound: 6\nKick-off: 2026-10-10T11
+ :30Z (venue clock 12:30)\nVenue: Emirates Stadium\, Holloway\nReport: ht
+ tps://www.premierleague.com/en/match/2645245\nSource: Wikipedia — 2026
+ –27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-w0zvoexi@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261010T133000Z
+DTEND:20261010T153000Z
+SUMMARY:FC Augsburg v Bayern Munich (Bundesliga)
+LOCATION:WWK Arena\, Augsburg
+DESCRIPTION:Competition: Bundesliga\nRound: 5\nKick-off: 2026-10-10T13:30Z
+  (venue clock 15:30)\nVenue: WWK Arena\, Augsburg\nReport: https://daten
+ center.dfb.de/datencenter/bundesliga/2026-2027/5-spieltag/fc-augsburg-fc
+ -bayern-muenchen-2419326\nSource: Wikipedia — 2026–27 FC Bayern Muni
+ ch season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w03uvst2@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261010T184500Z
+DTEND:20261010T204500Z
+SUMMARY:Paris Saint-Germain v Le Mans (Ligue 1)
+LOCATION:Parc des Princes\, Paris
+DESCRIPTION:Competition: Ligue 1\nRound: 6\nKick-off: 2026-10-10T18:45Z (v
+ enue clock 20:45)\nVenue: Parc des Princes\, Paris\nReport: https://ligu
+ e1.com/en/match-sheet/l1_championship_match_73872\nSource: Wikipedia —
+  2026–27 Paris Saint-Germain FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645252-11z130k@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261011T153000Z
+DTEND:20261011T173000Z
+SUMMARY:Liverpool v Manchester City (Premier League)
+LOCATION:Anfield\, Liverpool
+DESCRIPTION:Competition: Premier League\nRound: 6\nKick-off: 2026-10-11T15
+ :30Z (venue clock 16:30)\nVenue: Anfield\, Liverpool\nNote: Fixture was 
+ initially scheduled for 12 September\, but was rescheduled for live Sky 
+ Sports broadcasting.\nReport: https://www.premierleague.com/match/264525
+ 2\nSource: Wikipedia — 2026–27 Manchester City F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-2049576-13hx80o@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261013T190000Z
+DTEND:20261013T210000Z
+SUMMARY:Galatasaray v Barcelona (UEFA Champions League)
+LOCATION:Rams Park\, Istanbul\, Turkey
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 2\nK
+ ick-off: 2026-10-13T19:00Z (venue clock 22:00)\nVenue: Rams Park\, Istan
+ bul\, Turkey\nReport: https://www.uefa.com/uefachampionsleague/match/204
+ 9576/\nSource: Wikipedia — 2026–27 FC Barcelona season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2049572-0a1xwp7@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261013T190000Z
+DTEND:20261013T210000Z
+SUMMARY:Arsenal v Lille (UEFA Champions League)
+LOCATION:Emirates Stadium\, London\, England
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 2\nK
+ ick-off: 2026-10-13T19:00Z (venue clock 20:00)\nVenue: Emirates Stadium\
+ , London\, England\nReport: https://www.uefa.com/uefachampionsleague/mat
+ ch/2049572/\nSource: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-2049578-13so5za@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261013T190000Z
+DTEND:20261013T210000Z
+SUMMARY:Viking v Bayern Munich (UEFA Champions League)
+LOCATION:Viking Stadion\, Stavanger\, Norway
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 2\nK
+ ick-off: 2026-10-13T19:00Z (venue clock 21:00)\nVenue: Viking Stadion\, 
+ Stavanger\, Norway\nReport: https://www.uefa.com/uefachampionsleague/mat
+ ch/2049578/\nSource: Wikipedia — 2026–27 FC Bayern Munich season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-2049581-0wi6sq2@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261014T190000Z
+DTEND:20261014T210000Z
+SUMMARY:Roma v Real Madrid (UEFA Champions League)
+LOCATION:Stadio Olimpico\, Rome\, Italy
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 2\nK
+ ick-off: 2026-10-14T19:00Z (venue clock 21:00)\nVenue: Stadio Olimpico\,
+  Rome\, Italy\nReport: https://www.uefa.com/uefachampionsleague/match/20
+ 49581\nSource: Wikipedia — 2026–27 Real Madrid CF season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2049580-04w7ttd@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261014T190000Z
+DTEND:20261014T210000Z
+SUMMARY:Manchester City v Paris Saint-Germain (UEFA Champions League)
+LOCATION:Etihad Stadium\, Manchester\, England
+DESCRIPTION:Tracked clubs in this tie: Manchester City\, Paris Saint-Germa
+ in\nCompetition: UEFA Champions League (League phase)\nRound: 2\nKick-of
+ f: 2026-10-14T19:00Z (venue clock 20:00)\nVenue: Etihad Stadium\, Manche
+ ster\, England\nReport: https://www.uefa.com/uefachampionsleague/match/2
+ 049580/\nSource: Wikipedia — 2026–27 Manchester City F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w0r7g3q3@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261017T163000Z
+DTEND:20261017T183000Z
+SUMMARY:Real Betis v Barcelona (La Liga)
+LOCATION:La Cartuja\, Seville
+DESCRIPTION:Competition: La Liga\nRound: 9\nKick-off: 2026-10-17T16:30Z (v
+ enue clock 18:30)\nVenue: La Cartuja\, Seville\nReport: https://www.lali
+ ga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-real-betis-fc-ba
+ rcelona-9\nSource: Wikipedia — 2026–27 FC Barcelona season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645261-08t2f1j@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261017T140000Z
+DTEND:20261017T160000Z
+SUMMARY:Manchester City v Ipswich Town (Premier League)
+LOCATION:Etihad Stadium\, Manchester
+DESCRIPTION:Competition: Premier League\nRound: 7\nKick-off: 2026-10-17T14
+ :00Z (venue clock 15:00)\nVenue: Etihad Stadium\, Manchester\nReport: ht
+ tps://www.premierleague.com/match/2645261\nSource: Wikipedia — 2026–
+ 27 Manchester City F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-w1ldhu52@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261017T163000Z
+DTEND:20261017T183000Z
+SUMMARY:Bayern Munich v RB Leipzig (Bundesliga)
+LOCATION:Allianz Arena\, Munich
+DESCRIPTION:Competition: Bundesliga\nRound: 6\nKick-off: 2026-10-17T16:30Z
+  (venue clock 18:30)\nVenue: Allianz Arena\, Munich\nReport: https://dat
+ encenter.dfb.de/datencenter/bundesliga/2026-2027/6-spieltag/fc-bayern-mu
+ enchen-rb-leipzig-2419337\nSource: Wikipedia — 2026–27 FC Bayern Mun
+ ich season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w0pcqrrx@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261017T151500Z
+DTEND:20261017T171500Z
+SUMMARY:Strasbourg v Paris Saint-Germain (Ligue 1)
+LOCATION:Stade de la Meinau\, Strasbourg
+DESCRIPTION:Competition: Ligue 1\nRound: 7\nKick-off: 2026-10-17T15:15Z (v
+ enue clock 17:15)\nVenue: Stade de la Meinau\, Strasbourg\nReport: https
+ ://ligue1.com/en/match-sheet/l1_championship_match_73882\nSource: Wikipe
+ dia — 2026–27 Paris Saint-Germain FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w1spa1t9@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261018T190000Z
+DTEND:20261018T210000Z
+SUMMARY:Real Madrid v Sevilla (La Liga)
+LOCATION:Bernabéu\, Madrid
+DESCRIPTION:Competition: La Liga\nRound: 9\nKick-off: 2026-10-18T19:00Z (v
+ enue clock 21:00)\nVenue: Bernabéu\, Madrid\nReport: https://www.laliga
+ .com/en-GB/match/temporada-2026-2027-laliga-ea-sports-real-madrid-sevill
+ a-fc-9\nSource: Wikipedia — 2026–27 Real Madrid CF season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645263-0rqr9g2@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261018T153000Z
+DTEND:20261018T173000Z
+SUMMARY:Nottingham Forest v Arsenal (Premier League)
+LOCATION:City Ground\, West Bridgford
+DESCRIPTION:Competition: Premier League\nRound: 7\nKick-off: 2026-10-18T15
+ :30Z (venue clock 16:30)\nVenue: City Ground\, West Bridgford\nReport: h
+ ttps://www.premierleague.com/en/match/2645263\nSource: Wikipedia — 202
+ 6–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-2049589-0snfs2o@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261020T190000Z
+DTEND:20261020T210000Z
+SUMMARY:Paris Saint-Germain v Barcelona (UEFA Champions League)
+LOCATION:Parc des Princes\, Paris\, France
+DESCRIPTION:Tracked clubs in this tie: FC Barcelona\, Paris Saint-Germain\
+ nCompetition: UEFA Champions League (League phase)\nRound: 3\nKick-off: 
+ 2026-10-20T19:00Z (venue clock 21:00)\nVenue: Parc des Princes\, Paris\,
+  France\nReport: https://www.uefa.com/uefachampionsleague/match/2049589/
+ \nSource: Wikipedia — 2026–27 FC Barcelona season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2049591-0x37ssu@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261020T190000Z
+DTEND:20261020T210000Z
+SUMMARY:Manchester City v AEK Athens (UEFA Champions League)
+LOCATION:Etihad Stadium\, Manchester\, England
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 3\nK
+ ick-off: 2026-10-20T19:00Z (venue clock 20:00)\nVenue: Etihad Stadium\, 
+ Manchester\, England\nReport: https://www.uefa.com/uefachampionsleague/m
+ atch/2049591/\nSource: Wikipedia — 2026–27 Manchester City F.C. seas
+ on
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-2049599-0ag11sv@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261021T190000Z
+DTEND:20261021T210000Z
+SUMMARY:Real Madrid v RB Leipzig (UEFA Champions League)
+LOCATION:Bernabéu\, Madrid\, Spain
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 3\nK
+ ick-off: 2026-10-21T19:00Z (venue clock 21:00)\nVenue: Bernabéu\, Madri
+ d\, Spain\nReport: https://www.uefa.com/uefachampionsleague/match/204959
+ 9\nSource: Wikipedia — 2026–27 Real Madrid CF season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2049598-0h5g9tt@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261021T190000Z
+DTEND:20261021T210000Z
+SUMMARY:Bayern Munich v Arsenal (UEFA Champions League)
+LOCATION:Allianz Arena\, Munich\, Germany
+DESCRIPTION:Tracked clubs in this tie: Arsenal\, Bayern Munich\nCompetitio
+ n: UEFA Champions League (League phase)\nRound: 3\nKick-off: 2026-10-21T
+ 19:00Z (venue clock 21:00)\nVenue: Allianz Arena\, Munich\, Germany\nRep
+ ort: https://www.uefa.com/uefachampionsleague/match/2049598/\nSource: Wi
+ kipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645265-1gw8pjs@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261024T140000Z
+DTEND:20261024T160000Z
+SUMMARY:Arsenal v Everton (Premier League)
+LOCATION:Emirates Stadium\, Holloway
+DESCRIPTION:Competition: Premier League\nRound: 8\nKick-off: 2026-10-24T14
+ :00Z (venue clock 15:00)\nVenue: Emirates Stadium\, Holloway\nReport: ht
+ tps://www.premierleague.com/en/match/2645265/arsenal-vs-everton\nSource:
+  Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645266-13b0s8j@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261024T113000Z
+DTEND:20261024T133000Z
+SUMMARY:Aston Villa v Manchester City (Premier League)
+LOCATION:Villa Park\, Birmingham
+DESCRIPTION:Competition: Premier League\nRound: 8\nKick-off: 2026-10-24T11
+ :30Z (venue clock 12:30)\nVenue: Villa Park\, Birmingham\nNote: Fixture 
+ was initially scheduled for 12 September\, but was rescheduled for live 
+ TNT Sports broadcasting.\nReport: https://www.premierleague.com/match/26
+ 45266\nSource: Wikipedia — 2026–27 Manchester City F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w1u23a60@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261025T200000Z
+DTEND:20261025T220000Z
+SUMMARY:Barcelona v Real Madrid (La Liga)
+LOCATION:Spotify Camp Nou\, Barcelona
+DESCRIPTION:Tracked clubs in this tie: Real Madrid\, FC Barcelona\nCompeti
+ tion: La Liga\nRound: 10\nKick-off: 2026-10-25T20:00Z (venue clock 21:00
+ )\nVenue: Spotify Camp Nou\, Barcelona\nReport: https://www.laliga.com/e
+ n-GB/match/temporada-2026-2027-laliga-ea-sports-fc-barcelona-real-madrid
+ -10\nSource: Wikipedia — 2026–27 Real Madrid CF season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-w1sy0n4n@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261025T163000Z
+DTEND:20261025T183000Z
+SUMMARY:SC Freiburg v Bayern Munich (Bundesliga)
+LOCATION:Europa-Park Stadion\, Freiburg
+DESCRIPTION:Competition: Bundesliga\nRound: 7\nKick-off: 2026-10-25T16:30Z
+  (venue clock 17:30)\nVenue: Europa-Park Stadion\, Freiburg\nReport: htt
+ ps://datencenter.dfb.de/datencenter/bundesliga/2026-2027/7-spieltag/sc-f
+ reiburg-fc-bayern-muenchen-2419368\nSource: Wikipedia — 2026–27 FC B
+ ayern Munich season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w0oghwmq@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261025T194500Z
+DTEND:20261025T214500Z
+SUMMARY:Paris Saint-Germain v Lyon (Ligue 1)
+LOCATION:Parc des Princes\, Paris
+DESCRIPTION:Competition: Ligue 1\nRound: 8\nKick-off: 2026-10-25T19:45Z (v
+ enue clock 20:45)\nVenue: Parc des Princes\, Paris\nReport: https://ligu
+ e1.com/en/match-sheet/l1_championship_match_73890\nSource: Wikipedia —
+  2026–27 Paris Saint-Germain FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-w12zlxxh@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261027T190000Z
+DTEND:20261027T210000Z
+SUMMARY:Fleetwood Town v Arsenal (EFL Cup)
+LOCATION:Highbury Stadium\, Fleetwood
+DESCRIPTION:Competition: EFL Cup\nRound: 4th Round\nKick-off: 2026-10-27T1
+ 9:00Z (venue clock 20:00)\nVenue: Highbury Stadium\, Fleetwood\nReport: 
+ https://www.efl.com/match-centre/g2687771\nSource: Wikipedia — 2026–
+ 27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-w0cu7ohe@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261028T193000Z
+DTEND:20261028T213000Z
+SUMMARY:Manchester City v Brighton & Hove Albion (EFL Cup)
+LOCATION:Etihad Stadium\, Manchester
+DESCRIPTION:Competition: EFL Cup\nRound: Fourth round\nKick-off: 2026-10-2
+ 8T19:30Z (venue clock 19:30)\nVenue: Etihad Stadium\, Manchester\nReport
+ : https://www.efl.com/match-centre/g2687772\nSource: Wikipedia — 2026
+ –27 Manchester City F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-w0yl39im@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261028T194500Z
+DTEND:20261028T214500Z
+SUMMARY:Bayern Munich v 1. FC Magdeburg (DFB-Pokal)
+LOCATION:Allianz Arena\, Munich
+DESCRIPTION:Competition: DFB-Pokal\nRound: Second round\nKick-off: 2026-10
+ -28T19:45Z (venue clock 20:45)\nVenue: Allianz Arena\, Munich\nReport: h
+ ttps://datencenter.dfb.de/datencenter/dfb-pokal/2026-27/2-runde/fc-bayer
+ n-muenchen-1-fc-magdeburg-2430558\nSource: Wikipedia — 2026–27 FC Ba
+ yern Munich season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w19dz6c5@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261030T180000Z
+DTEND:20261030T200000Z
+SUMMARY:Le Havre v Paris Saint-Germain (Ligue 1)
+LOCATION:Stade Océane\, Le Havre
+DESCRIPTION:Competition: Ligue 1\nRound: 9\nKick-off: 2026-10-30T18:00Z (v
+ enue clock 19:00)\nVenue: Stade Océane\, Le Havre\nReport: https://ligu
+ e1.com/en/match-sheet/l1_championship_match_73893/stats\nSource: Wikiped
+ ia — 2026–27 Paris Saint-Germain FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645282-0opssyi@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261031T150000Z
+DTEND:20261031T170000Z
+SUMMARY:Manchester City v Brighton & Hove Albion (Premier League)
+LOCATION:Etihad Stadium\, Manchester
+DESCRIPTION:Competition: Premier League\nRound: 9\nKick-off: 2026-10-31T15
+ :00Z (venue clock 15:00)\nVenue: Etihad Stadium\, Manchester\nReport: ht
+ tps://www.premierleague.com/match/2645282\nSource: Wikipedia — 2026–
+ 27 Manchester City F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-w0byz9u5@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261031T173000Z
+DTEND:20261031T193000Z
+SUMMARY:Bayern Munich v Borussia Dortmund (Bundesliga)
+LOCATION:Allianz Arena\, Munich
+DESCRIPTION:Competition: Bundesliga\nRound: 8\nKick-off: 2026-10-31T17:30Z
+  (venue clock 18:30)\nVenue: Allianz Arena\, Munich\nReport: https://dat
+ encenter.dfb.de/datencenter/bundesliga/2026-2027/8-spieltag/fc-bayern-mu
+ enchen-borussia-dortmund-2419379\nSource: Wikipedia — 2026–27 FC Bay
+ ern Munich season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w18bk9a2@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261102
+SUMMARY:Racing Santander v Real Madrid (La Liga)
+LOCATION:El Sardinero\, Santander
+DESCRIPTION:Competition: La Liga\nRound: 11\nDate: 2026-11-01 — kick-off
+  time to be confirmed\nVenue: El Sardinero\, Santander\nReport: https://
+ www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-r-racing
+ -club-real-madrid-11\nSource: Wikipedia — 2026–27 Real Madrid CF sea
+ son
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w192a178@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261102
+SUMMARY:Barcelona v Alavés (La Liga)
+LOCATION:Camp Nou\, Barcelona
+DESCRIPTION:Competition: La Liga\nRound: 11\nDate: 2026-11-01 — kick-off
+  time to be confirmed\nVenue: Camp Nou\, Barcelona\nReport: https://www.
+ laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-fc-barcelona
+ -deportivo-alaves-11\nSource: Wikipedia — 2026–27 FC Barcelona seaso
+ n
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645281-197mi5f@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261101T163000Z
+DTEND:20261101T183000Z
+SUMMARY:Liverpool v Arsenal (Premier League)
+LOCATION:Anfield\, Liverpool
+DESCRIPTION:Competition: Premier League\nRound: 9\nKick-off: 2026-11-01T16
+ :30Z (venue clock 16:30)\nVenue: Anfield\, Liverpool\nReport: https://ww
+ w.premierleague.com/en/match/2645281/liverpool-vs-arsenal\nSource: Wikip
+ edia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-2049607-1rrrs87@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261103T200000Z
+DTEND:20261103T220000Z
+SUMMARY:Barcelona v Aston Villa (UEFA Champions League)
+LOCATION:Camp Nou\, Barcelona\, Spain
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 4\nK
+ ick-off: 2026-11-03T20:00Z (venue clock 21:00)\nVenue: Camp Nou\, Barcel
+ ona\, Spain\nReport: https://www.uefa.com/uefachampionsleague/match/2049
+ 607/\nSource: Wikipedia — 2026–27 FC Barcelona season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-2049608-0w7fure@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261103T200000Z
+DTEND:20261103T220000Z
+SUMMARY:Atlético Madrid v Bayern Munich (UEFA Champions League)
+LOCATION:Metropolitano Stadium\, Madrid\, Spain
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 4\nK
+ ick-off: 2026-11-03T20:00Z (venue clock 21:00)\nVenue: Metropolitano Sta
+ dium\, Madrid\, Spain\nReport: https://www.uefa.com/uefachampionsleague/
+ match/2049608/\nSource: Wikipedia — 2026–27 FC Bayern Munich season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-2049612-1vkwsh5@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261103T200000Z
+DTEND:20261103T220000Z
+SUMMARY:Villarreal v Paris Saint-Germain (UEFA Champions League)
+LOCATION:Estadio de la Cerámica\, Villarreal\, Spain
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 4\nK
+ ick-off: 2026-11-03T20:00Z (venue clock 21:00)\nVenue: Estadio de la Cer
+ ámica\, Villarreal\, Spain\nReport: https://www.uefa.com/uefachampionsl
+ eague/match/2049612/\nSource: Wikipedia — 2026–27 Paris Saint-Germai
+ n FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-2049622-1f270fb@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261104T174500Z
+DTEND:20261104T194500Z
+SUMMARY:AEK Athens v Real Madrid (UEFA Champions League)
+LOCATION:Agia Sophia Stadium\, Athens\, Greece
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 4\nK
+ ick-off: 2026-11-04T17:45Z (venue clock 19:45)\nVenue: Agia Sophia Stadi
+ um\, Athens\, Greece\nReport: https://www.uefa.com/uefachampionsleague/m
+ atch/2049622\nSource: Wikipedia — 2026–27 Real Madrid CF season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2049621-0b6ilp2@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261104T200000Z
+DTEND:20261104T220000Z
+SUMMARY:Slavia Prague v Arsenal (UEFA Champions League)
+LOCATION:Fortuna Arena\, Prague\, Czech Republic
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 4\nK
+ ick-off: 2026-11-04T20:00Z (venue clock 21:00)\nVenue: Fortuna Arena\, P
+ rague\, Czech Republic\nReport: https://www.uefa.com/uefachampionsleague
+ /match/2049621/\nSource: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2049619-1fsv13t@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261104T200000Z
+DTEND:20261104T220000Z
+SUMMARY:RB Leipzig v Manchester City (UEFA Champions League)
+LOCATION:Red Bull Arena\, Leipzig\, Germany
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 4\nK
+ ick-off: 2026-11-04T20:00Z (venue clock 21:00)\nVenue: Red Bull Arena\, 
+ Leipzig\, Germany\nReport: https://www.uefa.com/uefachampionsleague/matc
+ h/2049619/\nSource: Wikipedia — 2026–27 Manchester City F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645285-0ymq9j9@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261108
+SUMMARY:Arsenal v Hull City (Premier League)
+LOCATION:Emirates Stadium\, Holloway
+DESCRIPTION:Competition: Premier League\nRound: 10\nDate: 2026-11-07 — k
+ ick-off time to be confirmed\nVenue: Emirates Stadium\, Holloway\nReport
+ : https://www.premierleague.com/en/match/2645285/arsenal-vs-hull-city\nS
+ ource: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645293-0zh9lyq@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261107T173000Z
+DTEND:20261107T193000Z
+SUMMARY:Nottingham Forest v Manchester City (Premier League)
+LOCATION:City Ground\, West Bridgford
+DESCRIPTION:Competition: Premier League\nRound: 10\nKick-off: 2026-11-07T1
+ 7:30Z (venue clock 17:30)\nVenue: City Ground\, West Bridgford\nNote: Fi
+ xture was initially scheduled for a 15:00 kick-off\, but was pushed back
+  for live Sky Sports broadcasting.\nReport: https://www.premierleague.co
+ m/match/2645293\nSource: Wikipedia — 2026–27 Manchester City F.C. se
+ ason
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-w0zuhezg@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261107T143000Z
+DTEND:20261107T163000Z
+SUMMARY:Mainz 05 v Bayern Munich (Bundesliga)
+LOCATION:Mewa Arena\, Mainz
+DESCRIPTION:Competition: Bundesliga\nRound: 9\nKick-off: 2026-11-07T14:30Z
+  (venue clock 15:30)\nVenue: Mewa Arena\, Mainz\nReport: https://datence
+ nter.dfb.de/datencenter/bundesliga/2026-2027/9-spieltag/1-fsv-mainz-05-f
+ c-bayern-muenchen-2419411\nSource: Wikipedia — 2026–27 FC Bayern Mun
+ ich season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w16bklzt@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261107T194500Z
+DTEND:20261107T214500Z
+SUMMARY:Paris Saint-Germain v Troyes (Ligue 1)
+LOCATION:Parc des Princes\, Paris
+DESCRIPTION:Competition: Ligue 1\nRound: 10\nKick-off: 2026-11-07T19:45Z (
+ venue clock 20:45)\nVenue: Parc des Princes\, Paris\nReport: https://lig
+ ue1.com/en/match-sheet/l1_championship_match_73908\nSource: Wikipedia 
+ — 2026–27 Paris Saint-Germain FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w1c0tpxi@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20261108
+DTEND;VALUE=DATE:20261109
+SUMMARY:Valencia v Real Madrid (La Liga)
+LOCATION:Mestalla\, Valencia
+DESCRIPTION:Competition: La Liga\nRound: 12\nDate: 2026-11-08 — kick-off
+  time to be confirmed\nVenue: Mestalla\, Valencia\nReport: https://www.l
+ aliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-valencia-cf-r
+ eal-madrid-12\nSource: Wikipedia — 2026–27 Real Madrid CF season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w0hnqlu1@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20261108
+DTEND;VALUE=DATE:20261109
+SUMMARY:Atlético Madrid v Barcelona (La Liga)
+LOCATION:Riyadh Air Metropolitano\, Madrid
+DESCRIPTION:Competition: La Liga\nRound: 12\nDate: 2026-11-08 — kick-off
+  time to be confirmed\nVenue: Riyadh Air Metropolitano\, Madrid\nReport:
+  https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports
+ -atletico-de-madrid-fc-barcelona-12\nSource: Wikipedia — 2026–27 FC 
+ Barcelona season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-w15ny19g@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261120T193000Z
+DTEND:20261120T213000Z
+SUMMARY:Bayern Munich v 1. FC Köln (Bundesliga)
+LOCATION:Allianz Arena\, Munich
+DESCRIPTION:Competition: Bundesliga\nRound: 10\nKick-off: 2026-11-20T19:30
+ Z (venue clock 20:30)\nVenue: Allianz Arena\, Munich\nReport: https://da
+ tencenter.dfb.de/datencenter/bundesliga/2026-2027/10-spieltag/fc-bayern-
+ muenchen-1-fc-koeln-2419425\nSource: Wikipedia — 2026–27 FC Bayern M
+ unich season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645303-0oq2qcg@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:Newcastle United v Arsenal (Premier League)
+LOCATION:St James' Park\, Newcastle upon Tyne
+DESCRIPTION:Competition: Premier League\nRound: 11\nDate: 2026-11-21 — k
+ ick-off time to be confirmed\nVenue: St James' Park\, Newcastle upon Tyn
+ e\nReport: https://www.premierleague.com/en/match/2645303/newcastle-unit
+ ed-vs-arsenal\nSource: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645302-1owp74n@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261121T123000Z
+DTEND:20261121T143000Z
+SUMMARY:Manchester City v Fulham (Premier League)
+LOCATION:Etihad Stadium\, Manchester
+DESCRIPTION:Competition: Premier League\nRound: 11\nKick-off: 2026-11-21T1
+ 2:30Z (venue clock 12:30)\nVenue: Etihad Stadium\, Manchester\nNote: Fix
+ ture was initially scheduled for a 15:00 kick-off\, but was brought forw
+ ard for live TNT Sports broadcasting.\nReport: https://www.premierleague
+ .com/match/2645302\nSource: Wikipedia — 2026–27 Manchester City F.C.
+  season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w1i7u8lk@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261121T161500Z
+DTEND:20261121T181500Z
+SUMMARY:Nice v Paris Saint-Germain (Ligue 1)
+LOCATION:Allianz Riviera\, Nice
+DESCRIPTION:Competition: Ligue 1\nRound: 11\nKick-off: 2026-11-21T16:15Z (
+ venue clock 17:15)\nVenue: Allianz Riviera\, Nice\nReport: https://ligue
+ 1.com/en/match-sheet/l1_championship_match_73908\nSource: Wikipedia — 
+ 2026–27 Paris Saint-Germain FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w0qmfwe3@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20261122
+DTEND;VALUE=DATE:20261123
+SUMMARY:Real Madrid v Celta Vigo (La Liga)
+LOCATION:Bernabéu\, Madrid
+DESCRIPTION:Competition: La Liga\nRound: 13\nDate: 2026-11-22 — kick-off
+  time to be confirmed\nVenue: Bernabéu\, Madrid\nReport: https://www.la
+ liga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-real-madrid-rc
+ -celta-13\nSource: Wikipedia — 2026–27 Real Madrid CF season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w0s3m19p@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20261122
+DTEND;VALUE=DATE:20261123
+SUMMARY:Barcelona v Villarreal (La Liga)
+LOCATION:Camp Nou\, Barcelona
+DESCRIPTION:Competition: La Liga\nRound: 13\nDate: 2026-11-22 — kick-off
+  time to be confirmed\nVenue: Camp Nou\, Barcelona\nReport: https://www.
+ laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-fc-barcelona
+ -villarreal-cf-13\nSource: Wikipedia — 2026–27 FC Barcelona season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-2049625-0y9hod8@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261124T200000Z
+DTEND:20261124T220000Z
+SUMMARY:Real Madrid v PSV Eindhoven (UEFA Champions League)
+LOCATION:Bernabéu\, Madrid\, Spain
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 5\nK
+ ick-off: 2026-11-24T20:00Z (venue clock 21:00)\nVenue: Bernabéu\, Madri
+ d\, Spain\nReport: https://www.uefa.com/uefachampionsleague/match/204962
+ 5\nSource: Wikipedia — 2026–27 Real Madrid CF season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2049627-19z1jqd@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261124T200000Z
+DTEND:20261124T220000Z
+SUMMARY:Arsenal v Borussia Dortmund (UEFA Champions League)
+LOCATION:Emirates Stadium\, London\, England
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 5\nK
+ ick-off: 2026-11-24T20:00Z (venue clock 20:00)\nVenue: Emirates Stadium\
+ , London\, England\nReport: https://www.uefa.com/uefachampionsleague/mat
+ ch/2049627/\nSource: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2049626-1p2gfl8@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261124T200000Z
+DTEND:20261124T220000Z
+SUMMARY:Manchester City v Napoli (UEFA Champions League)
+LOCATION:Etihad Stadium\, Manchester\, England
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 5\nK
+ ick-off: 2026-11-24T20:00Z (venue clock 20:00)\nVenue: Etihad Stadium\, 
+ Manchester\, England\nReport: https://www.uefa.com/uefachampionsleague/m
+ atch/2049626/\nSource: Wikipedia — 2026–27 Manchester City F.C. seas
+ on
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-2049642-0yumlv7@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261125T174500Z
+DTEND:20261125T194500Z
+SUMMARY:Sabah v Barcelona (UEFA Champions League)
+LOCATION:Baku Olympic Stadium\, Baku\, Azerbaijan
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 5\nK
+ ick-off: 2026-11-25T17:45Z (venue clock 21:45)\nVenue: Baku Olympic Stad
+ ium\, Baku\, Azerbaijan\nReport: https://www.uefa.com/uefachampionsleagu
+ e/match/2049642/\nSource: Wikipedia — 2026–27 FC Barcelona season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-2049639-1cuwi2e@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261125T200000Z
+DTEND:20261125T220000Z
+SUMMARY:Lille v Bayern Munich (UEFA Champions League)
+LOCATION:Stade Pierre-Mauroy\, Villeneuve-d'Ascq\, France
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 5\nK
+ ick-off: 2026-11-25T20:00Z (venue clock 21:00)\nVenue: Stade Pierre-Maur
+ oy\, Villeneuve-d'Ascq\, France\nReport: https://www.uefa.com/uefachampi
+ onsleague/match/2049639/\nSource: Wikipedia — 2026–27 FC Bayern Muni
+ ch season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-2049634-0zx93rs@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261125T200000Z
+DTEND:20261125T220000Z
+SUMMARY:Paris Saint-Germain v Roma (UEFA Champions League)
+LOCATION:Parc des Princes\, Paris\, France
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 5\nK
+ ick-off: 2026-11-25T20:00Z (venue clock 21:00)\nVenue: Parc des Princes\
+ , Paris\, France\nReport: https://www.uefa.com/uefachampionsleague/match
+ /2049634/\nSource: Wikipedia — 2026–27 Paris Saint-Germain FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645305-0ioa6xp@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261129
+SUMMARY:Arsenal v Manchester City (Premier League)
+LOCATION:Emirates Stadium\, Holloway
+DESCRIPTION:Competition: Premier League\nRound: 12\nDate: 2026-11-28 — k
+ ick-off time to be confirmed\nVenue: Emirates Stadium\, Holloway\nReport
+ : https://www.premierleague.com/en/match/2645305/arsenal-vs-manchester-c
+ ity\nSource: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-w0ymn6b7@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261128T143000Z
+DTEND:20261128T163000Z
+SUMMARY:Hamburger SV v Bayern Munich (Bundesliga)
+LOCATION:Volksparkstadion\, Hamburg
+DESCRIPTION:Competition: Bundesliga\nRound: 11\nKick-off: 2026-11-28T14:30
+ Z (venue clock 15:30)\nVenue: Volksparkstadion\, Hamburg\nReport: https:
+ //datencenter.dfb.de/datencenter/bundesliga/2026-2027/11-spieltag/hambur
+ ger-sv-fc-bayern-muenchen-2419450\nSource: Wikipedia — 2026–27 FC Ba
+ yern Munich season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w1wi4r2l@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261128T194500Z
+DTEND:20261128T214500Z
+SUMMARY:Paris Saint-Germain v Lorient (Ligue 1)
+LOCATION:Parc des Princes\, Paris
+DESCRIPTION:Competition: Ligue 1\nRound: 12\nKick-off: 2026-11-28T19:45Z (
+ venue clock 20:45)\nVenue: Parc des Princes\, Paris\nReport: https://lig
+ ue1.com/en/match-sheet/l1_championship_match_73927\nSource: Wikipedia 
+ — 2026–27 Paris Saint-Germain FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w0hut0be@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20261129
+DTEND;VALUE=DATE:20261130
+SUMMARY:Real Madrid v Alavés (La Liga)
+LOCATION:Bernabéu\, Madrid
+DESCRIPTION:Competition: La Liga\nRound: 14\nDate: 2026-11-29 — kick-off
+  time to be confirmed\nVenue: Bernabéu\, Madrid\nReport: https://www.la
+ liga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-real-madrid-de
+ portivo-alaves-14\nSource: Wikipedia — 2026–27 Real Madrid CF season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w1xasco0@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20261129
+DTEND;VALUE=DATE:20261130
+SUMMARY:Deportivo A Coruña v Barcelona (La Liga)
+LOCATION:ABANCA-Riazor\, A Coruña
+DESCRIPTION:Competition: La Liga\nRound: 14\nDate: 2026-11-29 — kick-off
+  time to be confirmed\nVenue: ABANCA-Riazor\, A Coruña\nReport: https:/
+ /www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-rc-depo
+ rtivo-fc-barcelona-14\nSource: Wikipedia — 2026–27 FC Barcelona seas
+ on
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645305-1jcofxa@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261129T163000Z
+DTEND:20261129T183000Z
+SUMMARY:Arsenal v Manchester City (Premier League)
+LOCATION:Emirates Stadium\, Holloway
+DESCRIPTION:Competition: Premier League\nRound: 12\nKick-off: 2026-11-29T1
+ 6:30Z (venue clock 16:30)\nVenue: Emirates Stadium\, Holloway\nNote: Fix
+ ture was initially scheduled for 28 November\, but was pushed back a day
+  for live Sky Sports broadcasting.\nReport: https://www.premierleague.co
+ m/match/2645305\nSource: Wikipedia — 2026–27 Manchester City F.C. se
+ ason
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645317-1094k8n@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20261202
+DTEND;VALUE=DATE:20261203
+SUMMARY:Brentford v Arsenal (Premier League)
+LOCATION:Brentford Community Stadium\, Brentford
+DESCRIPTION:Competition: Premier League\nRound: 13\nDate: 2026-12-02 — k
+ ick-off time to be confirmed\nVenue: Brentford Community Stadium\, Brent
+ ford\nReport: https://www.premierleague.com/en/match/2645317/brentford-v
+ s-arsenal\nSource: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645322-0vk9hie@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261202T150000Z
+DTEND:20261202T170000Z
+SUMMARY:Manchester City v Leeds United (Premier League)
+LOCATION:Etihad Stadium\, Manchester
+DESCRIPTION:Competition: Premier League\nRound: 13\nKick-off: 2026-12-02T1
+ 5:00Z (venue clock 15:00)\nVenue: Etihad Stadium\, Manchester\nReport: h
+ ttps://www.premierleague.com/match/2645322\nSource: Wikipedia — 2026
+ –27 Manchester City F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645334-06xqdjv@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20261205
+DTEND;VALUE=DATE:20261206
+SUMMARY:Tottenham Hotspur v Arsenal (Premier League)
+LOCATION:Tottenham Hotspur Stadium\, Tottenham
+DESCRIPTION:Competition: Premier League\nRound: 14\nDate: 2026-12-05 — k
+ ick-off time to be confirmed\nVenue: Tottenham Hotspur Stadium\, Tottenh
+ am\nReport: https://www.premierleague.com/en/match/2645334/tottenham-hot
+ spur-vs-arsenal\nSource: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645327-1mooj6j@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261205T150000Z
+DTEND:20261205T170000Z
+SUMMARY:Brentford v Manchester City (Premier League)
+LOCATION:Brentford Community Stadium\, Brentford
+DESCRIPTION:Competition: Premier League\nRound: 14\nKick-off: 2026-12-05T1
+ 5:00Z (venue clock 15:00)\nVenue: Brentford Community Stadium\, Brentfor
+ d\nReport: https://www.premierleague.com/match/2645327\nSource: Wikipedi
+ a — 2026–27 Manchester City F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w032elvd@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20261206
+DTEND;VALUE=DATE:20261207
+SUMMARY:Athletic Bilbao v Real Madrid (La Liga)
+LOCATION:San Mamés\, Bilbao
+DESCRIPTION:Competition: La Liga\nRound: 15\nDate: 2026-12-06 — kick-off
+  time to be confirmed\nVenue: San Mamés\, Bilbao\nReport: https://www.l
+ aliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-athletic-club
+ -real-madrid-15\nSource: Wikipedia — 2026–27 Real Madrid CF season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w186z92i@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20261206
+DTEND;VALUE=DATE:20261207
+SUMMARY:Barcelona v Celta Vigo (La Liga)
+LOCATION:Camp Nou\, Barcelona
+DESCRIPTION:Competition: La Liga\nRound: 15\nDate: 2026-12-06 — kick-off
+  time to be confirmed\nVenue: Camp Nou\, Barcelona\nReport: https://www.
+ laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-fc-barcelona
+ -rc-celta-15\nSource: Wikipedia — 2026–27 FC Barcelona season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-w0zm39rd@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20261206
+DTEND;VALUE=DATE:20261207
+SUMMARY:Bayern Munich v SC Paderborn (Bundesliga)
+LOCATION:Allianz Arena\, Munich
+DESCRIPTION:Competition: Bundesliga\nRound: 12\nDate: 2026-12-06 — kick-
+ off time to be confirmed\nVenue: Allianz Arena\, Munich\nReport: https:/
+ /datencenter.dfb.de/datencenter/bundesliga/2026-2027/12-spieltag/fc-baye
+ rn-muenchen-sc-paderborn-07-2419453\nSource: Wikipedia — 2026–27 FC 
+ Bayern Munich season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w0qtetlb@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20261206
+DTEND;VALUE=DATE:20261207
+SUMMARY:Toulouse v Paris Saint-Germain (Ligue 1)
+LOCATION:Stadium de Toulouse\, Toulouse
+DESCRIPTION:Competition: Ligue 1\nRound: 13\nDate: 2026-12-06 — kick-off
+  time to be confirmed\nVenue: Stadium de Toulouse\, Toulouse\nReport: ht
+ tps://ligue1.com/en/match-sheet/l1_championship_match_73936\nSource: Wik
+ ipedia — 2026–27 Paris Saint-Germain FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-2049644-0u5mxpv@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261208T200000Z
+DTEND:20261208T220000Z
+SUMMARY:Barcelona v Manchester City (UEFA Champions League)
+LOCATION:Camp Nou\, Barcelona\, Spain
+DESCRIPTION:Tracked clubs in this tie: FC Barcelona\, Manchester City\nCom
+ petition: UEFA Champions League (League phase)\nRound: 6\nKick-off: 2026
+ -12-08T20:00Z (venue clock 21:00)\nVenue: Camp Nou\, Barcelona\, Spain\n
+ Report: https://www.uefa.com/uefachampionsleague/match/2049644/\nSource:
+  Wikipedia — 2026–27 FC Barcelona season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-2049643-070oaqs@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261208T200000Z
+DTEND:20261208T220000Z
+SUMMARY:Bayern Munich v Slavia Prague (UEFA Champions League)
+LOCATION:Allianz Arena\, Munich\, Germany
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 6\nK
+ ick-off: 2026-12-08T20:00Z (venue clock 21:00)\nVenue: Allianz Arena\, M
+ unich\, Germany\nReport: https://www.uefa.com/uefachampionsleague/match/
+ 2049643/\nSource: Wikipedia — 2026–27 FC Bayern Munich season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-2049646-08dv57w@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261208T200000Z
+DTEND:20261208T220000Z
+SUMMARY:Aston Villa v Paris Saint-Germain (UEFA Champions League)
+LOCATION:Villa Park\, Birmingham\, England
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 6\nK
+ ick-off: 2026-12-08T20:00Z (venue clock 20:00)\nVenue: Villa Park\, Birm
+ ingham\, England\nReport: https://www.uefa.com/uefachampionsleague/match
+ /2049646/\nSource: Wikipedia — 2026–27 Paris Saint-Germain FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-2049653-1pdgt8n@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261209T200000Z
+DTEND:20261209T220000Z
+SUMMARY:Arsenal v Real Madrid (UEFA Champions League)
+LOCATION:Emirates Stadium\, London\, England
+DESCRIPTION:Tracked clubs in this tie: Real Madrid\, Arsenal\nCompetition:
+  UEFA Champions League (League phase)\nRound: 6\nKick-off: 2026-12-09T20
+ :00Z (venue clock 20:00)\nVenue: Emirates Stadium\, London\, England\nRe
+ port: https://www.uefa.com/uefachampionsleague/match/2049653\nSource: Wi
+ kipedia — 2026–27 Real Madrid CF season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645335-157ic5i@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20261212
+DTEND;VALUE=DATE:20261213
+SUMMARY:Arsenal v Bournemouth (Premier League)
+LOCATION:Emirates Stadium\, Holloway
+DESCRIPTION:Competition: Premier League\nRound: 15\nDate: 2026-12-12 — k
+ ick-off time to be confirmed\nVenue: Emirates Stadium\, Holloway\nReport
+ : https://www.premierleague.com/en/match/2645335/arsenal-vs-bournemouth\
+ nSource: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645343-0n0hmuc@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261212T150000Z
+DTEND:20261212T170000Z
+SUMMARY:Manchester City v Chelsea (Premier League)
+LOCATION:Etihad Stadium\, Manchester
+DESCRIPTION:Competition: Premier League\nRound: 15\nKick-off: 2026-12-12T1
+ 5:00Z (venue clock 15:00)\nVenue: Etihad Stadium\, Manchester\nReport: h
+ ttps://www.premierleague.com/match/2645343\nSource: Wikipedia — 2026
+ –27 Manchester City F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w1rn4a0s@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20261213
+DTEND;VALUE=DATE:20261214
+SUMMARY:Real Madrid v Osasuna (La Liga)
+LOCATION:Bernabéu\, Madrid
+DESCRIPTION:Competition: La Liga\nRound: 16\nDate: 2026-12-13 — kick-off
+  time to be confirmed\nVenue: Bernabéu\, Madrid\nReport: https://www.la
+ liga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-real-madrid-ca
+ -osasuna-16\nSource: Wikipedia — 2026–27 Real Madrid CF season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w0gavrcb@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20261213
+DTEND;VALUE=DATE:20261214
+SUMMARY:Málaga v Barcelona (La Liga)
+LOCATION:La Rosaleda\, Málaga
+DESCRIPTION:Competition: La Liga\nRound: 16\nDate: 2026-12-13 — kick-off
+  time to be confirmed\nVenue: La Rosaleda\, Málaga\nReport: https://www
+ .laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-malaga-cf-f
+ c-barcelona-16\nSource: Wikipedia — 2026–27 FC Barcelona season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-w0eno39j@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20261213
+DTEND;VALUE=DATE:20261214
+SUMMARY:TSG Hoffenheim v Bayern Munich (Bundesliga)
+LOCATION:PreZero Arena\, Sinsheim
+DESCRIPTION:Competition: Bundesliga\nRound: 13\nDate: 2026-12-13 — kick-
+ off time to be confirmed\nVenue: PreZero Arena\, Sinsheim\nReport: https
+ ://datencenter.dfb.de/datencenter/bundesliga/2026-2027/13-spieltag/tsg-h
+ offenheim-fc-bayern-muenchen-2419476\nSource: Wikipedia — 2026–27 FC
+  Bayern Munich season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w01pfn7f@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20261213
+DTEND;VALUE=DATE:20261214
+SUMMARY:Paris Saint-Germain v Paris FC (Ligue 1)
+LOCATION:Parc des Princes\, Paris
+DESCRIPTION:Competition: Ligue 1\nRound: 14\nDate: 2026-12-13 — kick-off
+  time to be confirmed\nVenue: Parc des Princes\, Paris\nReport: https://
+ ligue1.com/en/match-sheet/l1_championship_match_73945\nSource: Wikipedia
+  — 2026–27 Paris Saint-Germain FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w0q8ip8w@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20261216
+DTEND;VALUE=DATE:20261217
+SUMMARY:Paris Saint-Germain v TBD (FIFA Intercontinental Cup)
+LOCATION:TBD
+DESCRIPTION:Competition: FIFA Intercontinental Cup\nRound: Final\nDate: 20
+ 26-12-16 — kick-off time to be confirmed\nSource: Wikipedia — 2026
+ –27 Paris Saint-Germain FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645346-04avjdi@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20261219
+DTEND;VALUE=DATE:20261220
+SUMMARY:Arsenal v Manchester United (Premier League)
+LOCATION:Emirates Stadium\, Holloway
+DESCRIPTION:Competition: Premier League\nRound: 16\nDate: 2026-12-19 — k
+ ick-off time to be confirmed\nVenue: Emirates Stadium\, Holloway\nReport
+ : https://www.premierleague.com/en/match/2645346/arsenal-vs-manchester-u
+ nited\nSource: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645352-11as3ty@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261219T150000Z
+DTEND:20261219T170000Z
+SUMMARY:Manchester City v Hull City (Premier League)
+LOCATION:Etihad Stadium\, Manchester
+DESCRIPTION:Competition: Premier League\nRound: 16\nKick-off: 2026-12-19T1
+ 5:00Z (venue clock 15:00)\nVenue: Etihad Stadium\, Manchester\nReport: h
+ ttps://www.premierleague.com/match/2645352\nSource: Wikipedia — 2026
+ –27 Manchester City F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w1acay7y@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20261220
+DTEND;VALUE=DATE:20261221
+SUMMARY:Deportivo A Coruña v Real Madrid (La Liga)
+LOCATION:ABANCA-Riazor\, A Coruña
+DESCRIPTION:Competition: La Liga\nRound: 17\nDate: 2026-12-20 — kick-off
+  time to be confirmed\nVenue: ABANCA-Riazor\, A Coruña\nReport: https:/
+ /www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-rc-depo
+ rtivo-real-madrid-17\nSource: Wikipedia — 2026–27 Real Madrid CF sea
+ son
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w0o4mrlk@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20261220
+DTEND;VALUE=DATE:20261221
+SUMMARY:Barcelona v Real Sociedad (La Liga)
+LOCATION:Camp Nou\, Barcelona
+DESCRIPTION:Competition: La Liga\nRound: 17\nDate: 2026-12-20 — kick-off
+  time to be confirmed\nVenue: Camp Nou\, Barcelona\nReport: https://www.
+ laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-fc-barcelona
+ -real-sociedad-17\nSource: Wikipedia — 2026–27 FC Barcelona season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-w11k3i70@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20261220
+DTEND;VALUE=DATE:20261221
+SUMMARY:Bayern Munich v Werder Bremen (Bundesliga)
+LOCATION:Allianz Arena\, Munich
+DESCRIPTION:Competition: Bundesliga\nRound: 14\nDate: 2026-12-20 — kick-
+ off time to be confirmed\nVenue: Allianz Arena\, Munich\nReport: https:/
+ /datencenter.dfb.de/datencenter/bundesliga/2026-2027/14-spieltag/fc-baye
+ rn-muenchen-werder-bremen-2419478\nSource: Wikipedia — 2026–27 FC Ba
+ yern Munich season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w09okkf4@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20261221
+DTEND;VALUE=DATE:20261222
+SUMMARY: v  (Coupe de France)
+LOCATION:
+DESCRIPTION:Competition: Coupe de France\nRound: Round of 64\nDate: 2026-1
+ 2-21 — kick-off time to be confirmed\nSource: Wikipedia — 2026–27 
+ Paris Saint-Germain FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645363-0p8lkkd@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261226T150000Z
+DTEND:20261226T170000Z
+SUMMARY:Newcastle United v Manchester City (Premier League)
+LOCATION:St James' Park\, Newcastle upon Tyne
+DESCRIPTION:Competition: Premier League\nRound: 17\nKick-off: 2026-12-26T1
+ 5:00Z (venue clock 15:00)\nVenue: St James' Park\, Newcastle upon Tyne\n
+ Note: Fixture was initially scheduled for a 15:00 kick-off\, but was pus
+ hed back for live Sky Sports broadcasting.\nReport: https://www.premierl
+ eague.com/match/2645363\nSource: Wikipedia — 2026–27 Manchester City
+  F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645357-1vfuo0y@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261227T190000Z
+DTEND:20261227T210000Z
+SUMMARY:Crystal Palace v Arsenal (Premier League)
+LOCATION:Selhurst Park\, Selhurst
+DESCRIPTION:Competition: Premier League\nRound: 17\nKick-off: 2026-12-27T1
+ 9:00Z (venue clock 19:00)\nVenue: Selhurst Park\, Selhurst\nReport: http
+ s://www.premierleague.com/en/match/2645357/crystal-palace-vs-arsenal\nSo
+ urce: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645368-0i4ipvg@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261229T201500Z
+DTEND:20261229T221500Z
+SUMMARY:Everton v Manchester City (Premier League)
+LOCATION:Hill Dickinson Stadium\, Liverpool
+DESCRIPTION:Competition: Premier League\nRound: 18\nKick-off: 2026-12-29T2
+ 0:15Z (venue clock 20:15)\nVenue: Hill Dickinson Stadium\, Liverpool\nNo
+ te: Fixture was initially scheduled for 30 December\, but was brought fo
+ rward a day for live Sky Sports broadcasting.\nReport: https://www.premi
+ erleague.com/match/2645368\nSource: Wikipedia — 2026–27 Manchester C
+ ity F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645369-1mhlwa7@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261230T193000Z
+DTEND:20261230T213000Z
+SUMMARY:Fulham v Arsenal (Premier League)
+LOCATION:Craven Cottage\, Fulham
+DESCRIPTION:Competition: Premier League\nRound: 18\nKick-off: 2026-12-30T1
+ 9:30Z (venue clock 19:30)\nVenue: Craven Cottage\, Fulham\nReport: https
+ ://www.premierleague.com/en/match/2645369/fulham-vs-arsenal\nSource: Wik
+ ipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645376-0sb6zbh@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270102T150000Z
+DTEND:20270102T170000Z
+SUMMARY:Arsenal v Ipswich Town (Premier League)
+LOCATION:Emirates Stadium\, Holloway
+DESCRIPTION:Competition: Premier League\nRound: 19\nKick-off: 2027-01-02T1
+ 5:00Z (venue clock 15:00)\nVenue: Emirates Stadium\, Holloway\nReport: h
+ ttps://www.premierleague.com/en/match/2645376/arsenal-vs-ipswich-town\nS
+ ource: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w1jso09q@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270103
+DTEND;VALUE=DATE:20270104
+SUMMARY:Real Madrid v Getafe (La Liga)
+LOCATION:Bernabéu\, Madrid
+DESCRIPTION:Competition: La Liga\nRound: 18\nDate: 2027-01-03 — kick-off
+  time to be confirmed\nVenue: Bernabéu\, Madrid\nReport: https://www.la
+ liga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-real-madrid-ge
+ tafe-cf-18\nSource: Wikipedia — 2026–27 Real Madrid CF season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w0mddv4d@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270103
+DTEND;VALUE=DATE:20270104
+SUMMARY:Espanyol v Barcelona (La Liga)
+LOCATION:Cornellà-El Prat\, Cornellà de Llobregat
+DESCRIPTION:Competition: La Liga\nRound: 18\nDate: 2027-01-03 — kick-off
+  time to be confirmed\nVenue: Cornellà-El Prat\, Cornellà de Llobregat
+ \nReport: https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-
+ ea-sports-rcd-espanyol-de-barcelona-fc-barcelona-18\nSource: Wikipedia 
+ — 2026–27 FC Barcelona season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645382-1f71aaj@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270103T163000Z
+DTEND:20270103T183000Z
+SUMMARY:Manchester City v Tottenham Hotspur (Premier League)
+LOCATION:Etihad Stadium\, Manchester
+DESCRIPTION:Competition: Premier League\nRound: 19\nKick-off: 2027-01-03T1
+ 6:30Z (venue clock 16:30)\nVenue: Etihad Stadium\, Manchester\nNote: Fix
+ ture was initially scheduled for 2 January\, but was pushed back a day f
+ or live Sky Sports broadcasting.\nReport: https://www.premierleague.com/
+ match/2645382\nSource: Wikipedia — 2026–27 Manchester City F.C. seas
+ on
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w0e8hmw5@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270103T194500Z
+DTEND:20270103T214500Z
+SUMMARY:Lens v Paris Saint-Germain (Ligue 1)
+LOCATION:Stade Bollaert-Delelis\, Lens
+DESCRIPTION:Competition: Ligue 1\nRound: 15\nKick-off: 2027-01-03T19:45Z (
+ venue clock 20:45)\nVenue: Stade Bollaert-Delelis\, Lens\nReport: https:
+ //ligue1.com/en/match-sheet/l1_championship_match_73949\nSource: Wikiped
+ ia — 2026–27 Paris Saint-Germain FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645385-000dx0b@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270105T193000Z
+DTEND:20270105T213000Z
+SUMMARY:Arsenal v Brentford (Premier League)
+LOCATION:Emirates Stadium\, Holloway
+DESCRIPTION:Competition: Premier League\nRound: 20\nKick-off: 2027-01-05T1
+ 9:30Z (venue clock 19:30)\nVenue: Emirates Stadium\, Holloway\nReport: h
+ ttps://www.premierleague.com/en/match/2645385/arsenal-vs-brentford\nSour
+ ce: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645391-1hxtfsn@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270106T201500Z
+DTEND:20270106T221500Z
+SUMMARY:Leeds United v Manchester City (Premier League)
+LOCATION:Elland Road\, Leeds
+DESCRIPTION:Competition: Premier League\nRound: 20\nKick-off: 2027-01-06T2
+ 0:15Z (venue clock 20:15)\nVenue: Elland Road\, Leeds\nNote: Fixture was
+  initially scheduled for a 15:00 kick-off\, but was pushed back for live
+  Sky Sports broadcasting.\nReport: https://www.premierleague.com/match/2
+ 645391\nSource: Wikipedia — 2026–27 Manchester City F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w1i65j43@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270110
+DTEND;VALUE=DATE:20270111
+SUMMARY:Real Madrid v Levante (La Liga)
+LOCATION:Bernabéu\, Madrid
+DESCRIPTION:Competition: La Liga\nRound: 19\nDate: 2027-01-10 — kick-off
+  time to be confirmed\nVenue: Bernabéu\, Madrid\nReport: https://www.la
+ liga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-real-madrid-le
+ vante-ud-19\nSource: Wikipedia — 2026–27 Real Madrid CF season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w0vb286e@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270110
+DTEND;VALUE=DATE:20270111
+SUMMARY:Osasuna v Barcelona (La Liga)
+LOCATION:El Sadar\, Pamplona
+DESCRIPTION:Competition: La Liga\nRound: 19\nDate: 2027-01-10 — kick-off
+  time to be confirmed\nVenue: El Sadar\, Pamplona\nReport: https://www.l
+ aliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-ca-osasuna-fc
+ -barcelona-19\nSource: Wikipedia — 2026–27 FC Barcelona season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-w1vpd3yf@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270110
+DTEND;VALUE=DATE:20270111
+SUMMARY:Borussia Mönchengladbach v Bayern Munich (Bundesliga)
+LOCATION:Borussia-Park\, Mönchengladbach
+DESCRIPTION:Competition: Bundesliga\nRound: 15\nDate: 2027-01-10 — kick-
+ off time to be confirmed\nVenue: Borussia-Park\, Mönchengladbach\nRepor
+ t: https://datencenter.dfb.de/datencenter/bundesliga/2026-2027/15-spielt
+ ag/borussia-moenchengladbach-fc-bayern-muenchen-2419517\nSource: Wikiped
+ ia — 2026–27 FC Bayern Munich season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-w0zo4202@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270111
+DTEND;VALUE=DATE:20270112
+SUMMARY: v  (FA Cup)
+LOCATION:
+DESCRIPTION:Competition: FA Cup\nRound: 3rd Round\nDate: 2027-01-11 — ki
+ ck-off time to be confirmed\nReport: https://www.bbc.co.uk/sport/footbal
+ l/live/c\nSource: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-w0hhc56b@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270114
+DTEND;VALUE=DATE:20270115
+SUMMARY:Bayern Munich v Bayer Leverkusen (Bundesliga)
+LOCATION:Allianz Arena\, Munich
+DESCRIPTION:Competition: Bundesliga\nRound: 16\nDate: 2027-01-14 — kick-
+ off time to be confirmed\nVenue: Allianz Arena\, Munich\nReport: https:/
+ /datencenter.dfb.de/datencenter/bundesliga/2026-2027/16-spieltag/fc-baye
+ rn-muenchen-bayer-leverkusen-2419509\nSource: Wikipedia — 2026–27 FC
+  Bayern Munich season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645400-1mixqqr@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270116
+DTEND;VALUE=DATE:20270117
+SUMMARY:Hull City v Arsenal (Premier League)
+LOCATION:MKM Stadium\, Kingston upon Hull
+DESCRIPTION:Competition: Premier League\nRound: 21\nDate: 2027-01-16 — k
+ ick-off time to be confirmed\nVenue: MKM Stadium\, Kingston upon Hull\nR
+ eport: https://www.premierleague.com/en/match/2645400/hull-city-vs-arsen
+ al\nSource: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645402-04xnggg@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270116T150000Z
+DTEND:20270116T170000Z
+SUMMARY:Manchester City v Nottingham Forest (Premier League)
+LOCATION:Etihad Stadium\, Manchester
+DESCRIPTION:Competition: Premier League\nRound: 21\nKick-off: 2027-01-16T1
+ 5:00Z (venue clock 15:00)\nVenue: Etihad Stadium\, Manchester\nReport: h
+ ttps://www.premierleague.com/match/2645402\nSource: Wikipedia — 2026
+ –27 Manchester City F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w0qg23dm@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270117
+DTEND;VALUE=DATE:20270118
+SUMMARY:Málaga v Real Madrid (La Liga)
+LOCATION:La Rosaleda\, Málaga
+DESCRIPTION:Competition: La Liga\nRound: 20\nDate: 2027-01-17 — kick-off
+  time to be confirmed\nVenue: La Rosaleda\, Málaga\nReport: https://www
+ .laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-malaga-cf-r
+ eal-madrid-20\nSource: Wikipedia — 2026–27 Real Madrid CF season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w1461p10@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270117
+DTEND;VALUE=DATE:20270118
+SUMMARY:Barcelona v Elche (La Liga)
+LOCATION:Camp Nou\, Barcelona
+DESCRIPTION:Competition: La Liga\nRound: 20\nDate: 2027-01-17 — kick-off
+  time to be confirmed\nVenue: Camp Nou\, Barcelona\nReport: https://www.
+ laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-fc-barcelona
+ -elche-cf-20\nSource: Wikipedia — 2026–27 FC Barcelona season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-w1wgj5pm@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270117
+DTEND;VALUE=DATE:20270118
+SUMMARY:Eintracht Frankfurt v Bayern Munich (Bundesliga)
+LOCATION:Deutsche Bank Park\, Frankfurt
+DESCRIPTION:Competition: Bundesliga\nRound: 17\nDate: 2027-01-17 — kick-
+ off time to be confirmed\nVenue: Deutsche Bank Park\, Frankfurt\nReport:
+  https://datencenter.dfb.de/datencenter/bundesliga/2026-2027/17-spieltag
+ /eintracht-frankfurt-fc-bayern-muenchen-2419548\nSource: Wikipedia — 2
+ 026–27 FC Bayern Munich season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w180dw34@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270117
+DTEND;VALUE=DATE:20270118
+SUMMARY:Angers v Paris Saint-Germain (Ligue 1)
+LOCATION:Stade Raymond Kopa\, Angers
+DESCRIPTION:Competition: Ligue 1\nRound: 16\nDate: 2027-01-17 — kick-off
+  time to be confirmed\nVenue: Stade Raymond Kopa\, Angers\nReport: https
+ ://ligue1.com/en/match-sheet/l1_championship_match_73956\nSource: Wikipe
+ dia — 2026–27 Paris Saint-Germain FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-2049661-1qmjgcc@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270119T200000Z
+DTEND:20270119T220000Z
+SUMMARY:Real Madrid v LASK (UEFA Champions League)
+LOCATION:Bernabéu\, Madrid\, Spain
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 7\nK
+ ick-off: 2027-01-19T20:00Z (venue clock 21:00)\nVenue: Bernabéu\, Madri
+ d\, Spain\nReport: https://www.uefa.com/uefachampionsleague/match/204966
+ 1\nSource: Wikipedia — 2026–27 Real Madrid CF season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-2049670-1ck6ifm@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270120T200000Z
+DTEND:20270120T220000Z
+SUMMARY:Sporting CP v Barcelona (UEFA Champions League)
+LOCATION:Estádio José Alvalade\, Lisbon\, Portugal
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 7\nK
+ ick-off: 2027-01-20T20:00Z (venue clock 20:00)\nVenue: Estádio José Al
+ valade\, Lisbon\, Portugal\nReport: https://www.uefa.com/uefachampionsle
+ ague/match/2049670/\nSource: Wikipedia — 2026–27 FC Barcelona season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2049672-0rht6rz@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270120T200000Z
+DTEND:20270120T220000Z
+SUMMARY:Real Betis v Arsenal (UEFA Champions League)
+LOCATION:La Cartuja\, Seville\, Spain
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 7\nK
+ ick-off: 2027-01-20T20:00Z (venue clock 21:00)\nVenue: La Cartuja\, Sevi
+ lle\, Spain\nNote: Due to renovation works at Benito Villamarín\, the r
+ egular home of Real Betis\, the match will instead be played at La Cartu
+ ja in Seville.\nReport: https://www.uefa.com/uefachampionsleague/match/2
+ 049672/\nSource: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2049676-1wyyqhh@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270120T200000Z
+DTEND:20270120T220000Z
+SUMMARY:Lens v Manchester City (UEFA Champions League)
+LOCATION:Stade Bollaert-Delelis\, Lens\, France
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 7\nK
+ ick-off: 2027-01-20T20:00Z (venue clock 21:00)\nVenue: Stade Bollaert-De
+ lelis\, Lens\, France\nReport: https://www.uefa.com/uefachampionsleague/
+ match/2049676/\nSource: Wikipedia — 2026–27 Manchester City F.C. sea
+ son
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-2049671-0mxgfug@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270120T200000Z
+DTEND:20270120T220000Z
+SUMMARY:Manchester United v Bayern Munich (UEFA Champions League)
+LOCATION:Old Trafford\, Manchester\, England
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 7\nK
+ ick-off: 2027-01-20T20:00Z (venue clock 20:00)\nVenue: Old Trafford\, Ma
+ nchester\, England\nReport: https://www.uefa.com/uefachampionsleague/mat
+ ch/2049671/\nSource: Wikipedia — 2026–27 FC Bayern Munich season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-2049675-1uywxne@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270120T200000Z
+DTEND:20270120T220000Z
+SUMMARY:Como v Paris Saint-Germain (UEFA Champions League)
+LOCATION:Stadio Giuseppe Sinigaglia\, Como\, Italy
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 7\nK
+ ick-off: 2027-01-20T20:00Z (venue clock 21:00)\nVenue: Stadio Giuseppe S
+ inigaglia\, Como\, Italy\nReport: https://www.uefa.com/uefachampionsleag
+ ue/match/2049675/\nSource: Wikipedia — 2026–27 Paris Saint-Germain F
+ C season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645405-12dzoq2@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270123
+DTEND;VALUE=DATE:20270124
+SUMMARY:Arsenal v Newcastle United (Premier League)
+LOCATION:Emirates Stadium\, Holloway
+DESCRIPTION:Competition: Premier League\nRound: 22\nDate: 2027-01-23 — k
+ ick-off time to be confirmed\nVenue: Emirates Stadium\, Holloway\nReport
+ : https://www.premierleague.com/en/match/2645405/arsenal-vs-newcastle-un
+ ited\nSource: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645406-0dhw372@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270123T150000Z
+DTEND:20270123T170000Z
+SUMMARY:Brighton & Hove Albion v Manchester City (Premier League)
+LOCATION:Falmer Stadium\, Brighton and Hove
+DESCRIPTION:Competition: Premier League\nRound: 22\nKick-off: 2027-01-23T1
+ 5:00Z (venue clock 15:00)\nVenue: Falmer Stadium\, Brighton and Hove\nRe
+ port: https://www.premierleague.com/match/2645406\nSource: Wikipedia —
+  2026–27 Manchester City F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w0cjuqj2@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270124
+DTEND;VALUE=DATE:20270125
+SUMMARY:Real Madrid v Real Betis (La Liga)
+LOCATION:Bernabéu\, Madrid
+DESCRIPTION:Competition: La Liga\nRound: 21\nDate: 2027-01-24 — kick-off
+  time to be confirmed\nVenue: Bernabéu\, Madrid\nReport: https://www.la
+ liga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-real-madrid-re
+ al-betis-21\nSource: Wikipedia — 2026–27 Real Madrid CF season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w1l8cwtt@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270124
+DTEND;VALUE=DATE:20270125
+SUMMARY:Alavés v Barcelona (La Liga)
+LOCATION:Mendizorrotza\, Vitoria-Gasteiz
+DESCRIPTION:Competition: La Liga\nRound: 21\nDate: 2027-01-24 — kick-off
+  time to be confirmed\nVenue: Mendizorrotza\, Vitoria-Gasteiz\nReport: h
+ ttps://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-d
+ eportivo-alaves-fc-barcelona-21\nSource: Wikipedia — 2026–27 FC Barc
+ elona season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-w0uogqa7@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270124
+DTEND;VALUE=DATE:20270125
+SUMMARY:VfB Stuttgart v Bayern Munich (Bundesliga)
+LOCATION:MHPArena\, Stuttgart
+DESCRIPTION:Competition: Bundesliga\nRound: 18\nDate: 2027-01-24 — kick-
+ off time to be confirmed\nVenue: MHPArena\, Stuttgart\nReport: https://d
+ atencenter.dfb.de/datencenter/bundesliga/2026-2027/18-spieltag/vfb-stutt
+ gart-fc-bayern-muenchen-2419554\nSource: Wikipedia — 2026–27 FC Baye
+ rn Munich season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w1yuagzg@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270124
+DTEND;VALUE=DATE:20270125
+SUMMARY:Paris Saint-Germain v Auxerre (Ligue 1)
+LOCATION:Parc des Princes\, Paris
+DESCRIPTION:Competition: Ligue 1\nRound: 17\nDate: 2027-01-24 — kick-off
+  time to be confirmed\nVenue: Parc des Princes\, Paris\nReport: https://
+ ligue1.com/en/match-sheet/l1_championship_match_73970\nSource: Wikipedia
+  — 2026–27 Paris Saint-Germain FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-2049693-0lppxby@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270127T200000Z
+DTEND:20270127T220000Z
+SUMMARY:Shakhtar Donetsk v Real Madrid (UEFA Champions League)
+LOCATION:Stamford Bridge\, London\, England
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 8\nK
+ ick-off: 2027-01-27T20:00Z (venue clock 20:00)\nVenue: Stamford Bridge\,
+  London\, England\nReport: https://www.uefa.com/uefachampionsleague/matc
+ h/2049693\nSource: Wikipedia — 2026–27 Real Madrid CF season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-2049684-1hgocic@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270127T200000Z
+DTEND:20270127T220000Z
+SUMMARY:Barcelona v Como (UEFA Champions League)
+LOCATION:Camp Nou\, Barcelona\, Spain
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 8\nK
+ ick-off: 2027-01-27T20:00Z (venue clock 21:00)\nVenue: Camp Nou\, Barcel
+ ona\, Spain\nReport: https://www.uefa.com/uefachampionsleague/match/2049
+ 684/\nSource: Wikipedia — 2026–27 FC Barcelona season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2049683-0vds2f4@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270127T200000Z
+DTEND:20270127T220000Z
+SUMMARY:Arsenal v Sabah (UEFA Champions League)
+LOCATION:Emirates Stadium\, London\, England
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 8\nK
+ ick-off: 2027-01-27T20:00Z (venue clock 20:00)\nVenue: Emirates Stadium\
+ , London\, England\nReport: https://www.uefa.com/uefachampionsleague/mat
+ ch/2049683/\nSource: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2049682-07gsif9@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270127T200000Z
+DTEND:20270127T220000Z
+SUMMARY:Manchester City v Sporting CP (UEFA Champions League)
+LOCATION:Etihad Stadium\, Manchester\, England
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 8\nK
+ ick-off: 2027-01-27T20:00Z (venue clock 20:00)\nVenue: Etihad Stadium\, 
+ Manchester\, England\nReport: https://www.uefa.com/uefachampionsleague/m
+ atch/2049682/\nSource: Wikipedia — 2026–27 Manchester City F.C. seas
+ on
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-2049680-10fr6ll@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270127T200000Z
+DTEND:20270127T220000Z
+SUMMARY:Bayern Munich v Real Betis (UEFA Champions League)
+LOCATION:Allianz Arena\, Munich\, Germany
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 8\nK
+ ick-off: 2027-01-27T20:00Z (venue clock 21:00)\nVenue: Allianz Arena\, M
+ unich\, Germany\nReport: https://www.uefa.com/uefachampionsleague/match/
+ 2049680/\nSource: Wikipedia — 2026–27 FC Bayern Munich season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-2049679-1qm2k3f@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270127T200000Z
+DTEND:20270127T220000Z
+SUMMARY:Paris Saint-Germain v Galatasaray (UEFA Champions League)
+LOCATION:Parc des Princes\, Paris\, France
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 8\nK
+ ick-off: 2027-01-27T20:00Z (venue clock 21:00)\nVenue: Parc des Princes\
+ , Paris\, France\nReport: https://www.uefa.com/uefachampionsleague/match
+ /2049679/\nSource: Wikipedia — 2026–27 Paris Saint-Germain FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645422-1uvyc8k@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270130
+DTEND;VALUE=DATE:20270131
+SUMMARY:Manchester City v Arsenal (Premier League)
+LOCATION:City of Manchester Stadium\, Manchester
+DESCRIPTION:Tracked clubs in this tie: Arsenal\, Manchester City\nCompetit
+ ion: Premier League\nRound: 23\nDate: 2027-01-30 — kick-off time to be
+  confirmed\nVenue: City of Manchester Stadium\, Manchester\nReport: http
+ s://www.premierleague.com/en/match/2645422/manchester-city-vs-arsenal\nS
+ ource: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w1ecc4hp@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270131
+DTEND;VALUE=DATE:20270201
+SUMMARY:Rayo Vallecano v Real Madrid (La Liga)
+LOCATION:Vallecas\, Madrid
+DESCRIPTION:Competition: La Liga\nRound: 22\nDate: 2027-01-31 — kick-off
+  time to be confirmed\nVenue: Vallecas\, Madrid\nReport: https://www.lal
+ iga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-rayo-vallecano-
+ real-madrid-22\nSource: Wikipedia — 2026–27 Real Madrid CF season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w0bm0mf2@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270131
+DTEND;VALUE=DATE:20270201
+SUMMARY:Barcelona v Valencia (La Liga)
+LOCATION:Camp Nou\, Barcelona
+DESCRIPTION:Competition: La Liga\nRound: 22\nDate: 2027-01-31 — kick-off
+  time to be confirmed\nVenue: Camp Nou\, Barcelona\nReport: https://www.
+ laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-fc-barcelona
+ -valencia-cf-22\nSource: Wikipedia — 2026–27 FC Barcelona season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-w14ndywu@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270131
+DTEND;VALUE=DATE:20270201
+SUMMARY:Bayern Munich v Schalke 04 (Bundesliga)
+LOCATION:Allianz Arena\, Munich
+DESCRIPTION:Competition: Bundesliga\nRound: 19\nDate: 2027-01-31 — kick-
+ off time to be confirmed\nVenue: Allianz Arena\, Munich\nReport: https:/
+ /datencenter.dfb.de/datencenter/bundesliga/2026-2027/19-spieltag/fc-baye
+ rn-muenchen-fc-schalke-04-2419574\nSource: Wikipedia — 2026–27 FC Ba
+ yern Munich season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w13c04vh@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270131
+DTEND;VALUE=DATE:20270201
+SUMMARY:Monaco v Paris Saint-Germain (Ligue 1)
+LOCATION:Stade Louis II\, Monaco
+DESCRIPTION:Competition: Ligue 1\nRound: 18\nDate: 2027-01-31 — kick-off
+  time to be confirmed\nVenue: Stade Louis II\, Monaco\nReport: https://l
+ igue1.com/en/match-sheet/l1_championship_match_73979\nSource: Wikipedia 
+ — 2026–27 Paris Saint-Germain FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w0febwte@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270202T190000Z
+DTEND:20270202T210000Z
+SUMMARY:Barcelona v Atlético Madrid (Supercopa de España)
+LOCATION:Şükrü Saracoğlu Stadium\, Istanbul\, Turkey
+DESCRIPTION:Competition: Supercopa de España\nRound: Semi-finals\nKick-of
+ f: 2027-02-02T19:00Z (venue clock 22:00)\nVenue: Şükrü Saracoğlu Sta
+ dium\, Istanbul\, Turkey\nSource: Wikipedia — 2026–27 FC Barcelona s
+ eason
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w048l3ox@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270203T190000Z
+DTEND:20270203T210000Z
+SUMMARY:Real Sociedad v Real Madrid (Supercopa de España)
+LOCATION:Beşiktaş Stadium\, Istanbul\, Turkey
+DESCRIPTION:Competition: Supercopa de España\nRound: Semi-finals\nKick-of
+ f: 2027-02-03T19:00Z (venue clock 22:00)\nVenue: Beşiktaş Stadium\, Is
+ tanbul\, Turkey\nSource: Wikipedia — 2026–27 Real Madrid CF season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645425-1tfk7bb@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270206
+DTEND;VALUE=DATE:20270207
+SUMMARY:Arsenal v Liverpool (Premier League)
+LOCATION:Emirates Stadium\, Holloway
+DESCRIPTION:Competition: Premier League\nRound: 24\nDate: 2027-02-06 — k
+ ick-off time to be confirmed\nVenue: Emirates Stadium\, Holloway\nReport
+ : https://www.premierleague.com/en/match/2645425/arsenal-vs-liverpool\nS
+ ource: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645429-0lt0xhj@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270206T150000Z
+DTEND:20270206T170000Z
+SUMMARY:Fulham v Manchester City (Premier League)
+LOCATION:Craven Cottage\, Fulham
+DESCRIPTION:Competition: Premier League\nRound: 24\nKick-off: 2027-02-06T1
+ 5:00Z (venue clock 15:00)\nVenue: Craven Cottage\, Fulham\nReport: https
+ ://www.premierleague.com/match/2645429\nSource: Wikipedia — 2026–27 
+ Manchester City F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w1vuo06t@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270207
+DTEND;VALUE=DATE:20270208
+SUMMARY:Real Sociedad v Real Madrid (La Liga)
+LOCATION:Anoeta\, San Sebastián
+DESCRIPTION:Competition: La Liga\nRound: 23\nDate: 2027-02-07 — kick-off
+  time to be confirmed\nVenue: Anoeta\, San Sebastián\nReport: https://w
+ ww.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-real-soci
+ edad-real-madrid-23\nSource: Wikipedia — 2026–27 Real Madrid CF seas
+ on
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w0nvthgn@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270207
+DTEND;VALUE=DATE:20270208
+SUMMARY:Barcelona v Atlético Madrid (La Liga)
+LOCATION:Camp Nou\, Barcelona
+DESCRIPTION:Competition: La Liga\nRound: 23\nDate: 2027-02-07 — kick-off
+  time to be confirmed\nVenue: Camp Nou\, Barcelona\nReport: https://www.
+ laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-fc-barcelona
+ -atletico-de-madrid-23\nSource: Wikipedia — 2026–27 FC Barcelona sea
+ son
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-w0q2xojh@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270207
+DTEND;VALUE=DATE:20270208
+SUMMARY:Bayern Munich v SV Elversberg (Bundesliga)
+LOCATION:Allianz Arena\, Munich
+DESCRIPTION:Competition: Bundesliga\nRound: 20\nDate: 2027-02-07 — kick-
+ off time to be confirmed\nVenue: Allianz Arena\, Munich\nReport: https:/
+ /datencenter.dfb.de/datencenter/bundesliga/2026-2027/20-spieltag/fc-baye
+ rn-muenchen-sv-elversberg-2419576\nSource: Wikipedia — 2026–27 FC Ba
+ yern Munich season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w12fvdxk@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270207T194500Z
+DTEND:20270207T214500Z
+SUMMARY:Paris Saint-Germain v Marseille (Ligue 1)
+LOCATION:Parc des Princes\, Paris
+DESCRIPTION:Competition: Ligue 1\nRound: 19\nKick-off: 2027-02-07T19:45Z (
+ venue clock 20:45)\nVenue: Parc des Princes\, Paris\nReport: https://lig
+ ue1.com/en/match-sheet/l1_championship_match_73988\nSource: Wikipedia 
+ — 2026–27 Paris Saint-Germain FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645441-18uinr9@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270210
+DTEND;VALUE=DATE:20270211
+SUMMARY:Ipswich Town v Arsenal (Premier League)
+LOCATION:Portman Road\, Ipswich
+DESCRIPTION:Competition: Premier League\nRound: 25\nDate: 2027-02-10 — k
+ ick-off time to be confirmed\nVenue: Portman Road\, Ipswich\nReport: htt
+ ps://www.premierleague.com/en/match/2645441/ipswich-town-vs-arsenal\nSou
+ rce: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645444-0dlsc7q@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270210T150000Z
+DTEND:20270210T170000Z
+SUMMARY:Tottenham Hotspur v Manchester City (Premier League)
+LOCATION:Tottenham Hotspur Stadium\, Tottenham
+DESCRIPTION:Competition: Premier League\nRound: 25\nKick-off: 2027-02-10T1
+ 5:00Z (venue clock 15:00)\nVenue: Tottenham Hotspur Stadium\, Tottenham\
+ nReport: https://www.premierleague.com/match/2645444\nSource: Wikipedia 
+ — 2026–27 Manchester City F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w11ync46@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270214
+DTEND;VALUE=DATE:20270215
+SUMMARY:Real Madrid v Athletic Bilbao (La Liga)
+LOCATION:Bernabéu\, Madrid
+DESCRIPTION:Competition: La Liga\nRound: 24\nDate: 2027-02-14 — kick-off
+  time to be confirmed\nVenue: Bernabéu\, Madrid\nReport: https://www.la
+ liga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-real-madrid-at
+ hletic-club-24\nSource: Wikipedia — 2026–27 Real Madrid CF season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w0pbguuh@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270214
+DTEND;VALUE=DATE:20270215
+SUMMARY:Villarreal v Barcelona (La Liga)
+LOCATION:La Cerámica\, Villarreal
+DESCRIPTION:Competition: La Liga\nRound: 24\nDate: 2027-02-14 — kick-off
+  time to be confirmed\nVenue: La Cerámica\, Villarreal\nReport: https:/
+ /www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-villarr
+ eal-cf-fc-barcelona-24\nSource: Wikipedia — 2026–27 FC Barcelona sea
+ son
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-w139vtn4@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270214
+DTEND;VALUE=DATE:20270215
+SUMMARY:Union Berlin v Bayern Munich (Bundesliga)
+LOCATION:Stadion An der Alten Försterei\, Berlin
+DESCRIPTION:Competition: Bundesliga\nRound: 21\nDate: 2027-02-14 — kick-
+ off time to be confirmed\nVenue: Stadion An der Alten Försterei\, Berli
+ n\nReport: https://datencenter.dfb.de/datencenter/bundesliga/2026-2027/2
+ 1-spieltag/1-fc-union-berlin-fc-bayern-muenchen-2419612\nSource: Wikiped
+ ia — 2026–27 FC Bayern Munich season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w1yz17vc@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270214
+DTEND;VALUE=DATE:20270215
+SUMMARY:Le Mans v Paris Saint-Germain (Ligue 1)
+LOCATION:Stade Marie-Marvingt\, Le Mans
+DESCRIPTION:Competition: Ligue 1\nRound: 20\nDate: 2027-02-14 — kick-off
+  time to be confirmed\nVenue: Stade Marie-Marvingt\, Le Mans\nReport: ht
+ tps://ligue1.com/en/match-sheet/l1_championship_match_73994\nSource: Wik
+ ipedia — 2026–27 Paris Saint-Germain FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645446-0hq4b96@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270220
+DTEND;VALUE=DATE:20270221
+SUMMARY:Arsenal v Fulham (Premier League)
+LOCATION:Emirates Stadium\, Holloway
+DESCRIPTION:Competition: Premier League\nRound: 26\nDate: 2027-02-20 — k
+ ick-off time to be confirmed\nVenue: Emirates Stadium\, Holloway\nReport
+ : https://www.premierleague.com/en/match/2645446/arsenal-vs-fulham\nSour
+ ce: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645452-0u0jv0t@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270220T150000Z
+DTEND:20270220T170000Z
+SUMMARY:Manchester City v Newcastle United (Premier League)
+LOCATION:Etihad Stadium\, Manchester
+DESCRIPTION:Competition: Premier League\nRound: 26\nKick-off: 2027-02-20T1
+ 5:00Z (venue clock 15:00)\nVenue: Etihad Stadium\, Manchester\nReport: h
+ ttps://www.premierleague.com/match/2645452\nSource: Wikipedia — 2026
+ –27 Manchester City F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w1u7h003@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270221
+DTEND;VALUE=DATE:20270222
+SUMMARY:Sevilla v Real Madrid (La Liga)
+LOCATION:Ramón Sánchez-Pizjuán\, Seville
+DESCRIPTION:Competition: La Liga\nRound: 25\nDate: 2027-02-21 — kick-off
+  time to be confirmed\nVenue: Ramón Sánchez-Pizjuán\, Seville\nReport
+ : https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sport
+ s-sevilla-fc-real-madrid-25\nSource: Wikipedia — 2026–27 Real Madrid
+  CF season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w0wmicr2@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270221
+DTEND;VALUE=DATE:20270222
+SUMMARY:Barcelona v Levante (La Liga)
+LOCATION:Camp Nou\, Barcelona
+DESCRIPTION:Competition: La Liga\nRound: 25\nDate: 2027-02-21 — kick-off
+  time to be confirmed\nVenue: Camp Nou\, Barcelona\nReport: https://www.
+ laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-fc-barcelona
+ -levante-ud-25\nSource: Wikipedia — 2026–27 FC Barcelona season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-w1ow30qc@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270221
+DTEND;VALUE=DATE:20270222
+SUMMARY:Bayern Munich v FC Augsburg (Bundesliga)
+LOCATION:Allianz Arena\, Munich
+DESCRIPTION:Competition: Bundesliga\nRound: 22\nDate: 2027-02-21 — kick-
+ off time to be confirmed\nVenue: Allianz Arena\, Munich\nReport: https:/
+ /datencenter.dfb.de/datencenter/bundesliga/2026-2027/22-spieltag/fc-baye
+ rn-muenchen-fc-augsburg-2419619\nSource: Wikipedia — 2026–27 FC Baye
+ rn Munich season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w0dm7jje@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270221
+DTEND;VALUE=DATE:20270222
+SUMMARY:Paris Saint-Germain v Brest (Ligue 1)
+LOCATION:Parc des Princes\, Paris
+DESCRIPTION:Competition: Ligue 1\nRound: 21\nDate: 2027-02-21 — kick-off
+  time to be confirmed\nVenue: Parc des Princes\, Paris\nReport: https://
+ ligue1.com/en/match-sheet/l1_championship_match_74007\nSource: Wikipedia
+  — 2026–27 Paris Saint-Germain FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645462-00sd88j@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270227
+DTEND;VALUE=DATE:20270228
+SUMMARY:Manchester United v Arsenal (Premier League)
+LOCATION:Old Trafford\, Trafford
+DESCRIPTION:Competition: Premier League\nRound: 27\nDate: 2027-02-27 — k
+ ick-off time to be confirmed\nVenue: Old Trafford\, Trafford\nReport: ht
+ tps://www.premierleague.com/en/match/2645462/manchester-united-vs-arsena
+ l\nSource: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645460-08uyz0j@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270227T150000Z
+DTEND:20270227T170000Z
+SUMMARY:Hull City v Manchester City (Premier League)
+LOCATION:MKM Stadium\, Kingston upon Hull
+DESCRIPTION:Competition: Premier League\nRound: 27\nKick-off: 2027-02-27T1
+ 5:00Z (venue clock 15:00)\nVenue: MKM Stadium\, Kingston upon Hull\nRepo
+ rt: https://www.premierleague.com/match/2645460\nSource: Wikipedia — 2
+ 026–27 Manchester City F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w1m1tbtv@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270228
+DTEND;VALUE=DATE:20270301
+SUMMARY:Real Madrid v Valencia (La Liga)
+LOCATION:Bernabéu\, Madrid
+DESCRIPTION:Competition: La Liga\nRound: 26\nDate: 2027-02-28 — kick-off
+  time to be confirmed\nVenue: Bernabéu\, Madrid\nReport: https://www.la
+ liga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-real-madrid-va
+ lencia-cf-26\nSource: Wikipedia — 2026–27 Real Madrid CF season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w1v0y285@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270228
+DTEND;VALUE=DATE:20270301
+SUMMARY:Athletic Bilbao v Barcelona (La Liga)
+LOCATION:San Mamés\, Bilbao
+DESCRIPTION:Competition: La Liga\nRound: 26\nDate: 2027-02-28 — kick-off
+  time to be confirmed\nVenue: San Mamés\, Bilbao\nReport: https://www.l
+ aliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-athletic-club
+ -fc-barcelona-26\nSource: Wikipedia — 2026–27 FC Barcelona season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-w1og7uea@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270228
+DTEND;VALUE=DATE:20270301
+SUMMARY:RB Leipzig v Bayern Munich (Bundesliga)
+LOCATION:Red Bull Arena\, Leipzig
+DESCRIPTION:Competition: Bundesliga\nRound: 23\nDate: 2027-02-28 — kick-
+ off time to be confirmed\nVenue: Red Bull Arena\, Leipzig\nReport: https
+ ://datencenter.dfb.de/datencenter/bundesliga/2026-2027/23-spieltag/rb-le
+ ipzig-fc-bayern-muenchen-2419641\nSource: Wikipedia — 2026–27 FC Bay
+ ern Munich season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w0fhp6n7@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270228T194500Z
+DTEND:20270228T214500Z
+SUMMARY:Paris Saint-Germain v Lens (Ligue 1)
+LOCATION:Parc des Princes\, Paris
+DESCRIPTION:Competition: Ligue 1\nRound: 22\nKick-off: 2027-02-28T19:45Z (
+ venue clock 20:45)\nVenue: Parc des Princes\, Paris\nReport: https://lig
+ ue1.com/en/match-sheet/l1_championship_match_74016\nSource: Wikipedia 
+ — 2026–27 Paris Saint-Germain FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645466-1lwq1m9@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270303
+DTEND;VALUE=DATE:20270304
+SUMMARY:Arsenal v Crystal Palace (Premier League)
+LOCATION:Emirates Stadium\, Holloway
+DESCRIPTION:Competition: Premier League\nRound: 28\nDate: 2027-03-03 — k
+ ick-off time to be confirmed\nVenue: Emirates Stadium\, Holloway\nReport
+ : https://www.premierleague.com/en/match/2645466/arsenal-vs-crystal-pala
+ ce/overview\nSource: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645472-0e9dhzr@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270303T150000Z
+DTEND:20270303T170000Z
+SUMMARY:Manchester City v Everton (Premier League)
+LOCATION:Etihad Stadium\, Manchester
+DESCRIPTION:Competition: Premier League\nRound: 28\nKick-off: 2027-03-03T1
+ 5:00Z (venue clock 15:00)\nVenue: Etihad Stadium\, Manchester\nReport: h
+ ttps://www.premierleague.com/match/2645472\nSource: Wikipedia — 2026
+ –27 Manchester City F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-w16y89f9@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270304
+DTEND;VALUE=DATE:20270305
+SUMMARY:Bayern Munich v SC Freiburg (Bundesliga)
+LOCATION:Allianz Arena\, Munich
+DESCRIPTION:Competition: Bundesliga\nRound: 24\nDate: 2027-03-04 — kick-
+ off time to be confirmed\nVenue: Allianz Arena\, Munich\nReport: https:/
+ /datencenter.dfb.de/datencenter/bundesliga/2026-2027/24-spieltag/fc-baye
+ rn-muenchen-sc-freiburg-2419666\nSource: Wikipedia — 2026–27 FC Baye
+ rn Munich season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w1b8aj22@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270307
+DTEND;VALUE=DATE:20270308
+SUMMARY:Villarreal v Real Madrid (La Liga)
+LOCATION:La Cerámica\, Villarreal
+DESCRIPTION:Competition: La Liga\nRound: 27\nDate: 2027-03-07 — kick-off
+  time to be confirmed\nVenue: La Cerámica\, Villarreal\nReport: https:/
+ /www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-villarr
+ eal-cf-real-madrid-27\nSource: Wikipedia — 2026–27 Real Madrid CF se
+ ason
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w0q6mwtb@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270307
+DTEND;VALUE=DATE:20270308
+SUMMARY:Barcelona v Real Betis (La Liga)
+LOCATION:Camp Nou\, Barcelona
+DESCRIPTION:Competition: La Liga\nRound: 27\nDate: 2027-03-07 — kick-off
+  time to be confirmed\nVenue: Camp Nou\, Barcelona\nReport: https://www.
+ laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-fc-barcelona
+ -real-betis-27\nSource: Wikipedia — 2026–27 FC Barcelona season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-w1dvcjrn@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270307
+DTEND;VALUE=DATE:20270308
+SUMMARY:Borussia Dortmund v Bayern Munich (Bundesliga)
+LOCATION:Signal Iduna Park\, Dortmund
+DESCRIPTION:Competition: Bundesliga\nRound: 25\nDate: 2027-03-07 — kick-
+ off time to be confirmed\nVenue: Signal Iduna Park\, Dortmund\nReport: h
+ ttps://datencenter.dfb.de/datencenter/bundesliga/2026-2027/25-spieltag/b
+ orussia-dortmund-fc-bayern-muenchen-2419685\nSource: Wikipedia — 2026
+ –27 FC Bayern Munich season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w0vy871i@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270307
+DTEND;VALUE=DATE:20270308
+SUMMARY:Paris Saint-Germain v Rennes (Ligue 1)
+LOCATION:Parc des Princes\, Paris
+DESCRIPTION:Competition: Ligue 1\nRound: 23\nDate: 2027-03-07 — kick-off
+  time to be confirmed\nVenue: Parc des Princes\, Paris\nSource: Wikipedi
+ a — 2026–27 Paris Saint-Germain FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645477-0btwrz7@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270313
+DTEND;VALUE=DATE:20270314
+SUMMARY:Chelsea v Arsenal (Premier League)
+LOCATION:Stamford Bridge\, Fulham
+DESCRIPTION:Competition: Premier League\nRound: 29\nDate: 2027-03-13 — k
+ ick-off time to be confirmed\nVenue: Stamford Bridge\, Fulham\nReport: h
+ ttps://www.premierleague.com/en/match/2645477/chelsea-vs-arsenal/overvie
+ w\nSource: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645478-1hw24g4@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270313T150000Z
+DTEND:20270313T170000Z
+SUMMARY:Coventry City v Manchester City (Premier League)
+LOCATION:Coventry Building Society Arena\, Coventry
+DESCRIPTION:Competition: Premier League\nRound: 29\nKick-off: 2027-03-13T1
+ 5:00Z (venue clock 15:00)\nVenue: Coventry Building Society Arena\, Cove
+ ntry\nReport: https://www.premierleague.com/match/2645478\nSource: Wikip
+ edia — 2026–27 Manchester City F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w1k1db7h@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270314
+DTEND;VALUE=DATE:20270315
+SUMMARY:Real Madrid v Espanyol (La Liga)
+LOCATION:Bernabéu\, Madrid
+DESCRIPTION:Competition: La Liga\nRound: 28\nDate: 2027-03-14 — kick-off
+  time to be confirmed\nVenue: Bernabéu\, Madrid\nReport: https://www.la
+ liga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-real-madrid-rc
+ d-espanyol-de-barcelona-28\nSource: Wikipedia — 2026–27 Real Madrid 
+ CF season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w1axw83s@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270314
+DTEND;VALUE=DATE:20270315
+SUMMARY:Barcelona v Deportivo A Coruña (La Liga)
+LOCATION:Camp Nou\, Barcelona
+DESCRIPTION:Competition: La Liga\nRound: 28\nDate: 2027-03-14 — kick-off
+  time to be confirmed\nVenue: Camp Nou\, Barcelona\nReport: https://www.
+ laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-fc-barcelona
+ -rc-deportivo-28\nSource: Wikipedia — 2026–27 FC Barcelona season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-w1vbew60@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270314
+DTEND;VALUE=DATE:20270315
+SUMMARY:Bayern Munich v Mainz 05 (Bundesliga)
+LOCATION:Allianz Arena\, Munich
+DESCRIPTION:Competition: Bundesliga\nRound: 26\nDate: 2027-03-14 — kick-
+ off time to be confirmed\nVenue: Allianz Arena\, Munich\nReport: https:/
+ /datencenter.dfb.de/datencenter/bundesliga/2026-2027/26-spieltag/fc-baye
+ rn-muenchen-1-fsv-mainz-05-2419704\nSource: Wikipedia — 2026–27 FC B
+ ayern Munich season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w15urvkr@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270314
+DTEND;VALUE=DATE:20270315
+SUMMARY:Auxerre v Paris Saint-Germain (Ligue 1)
+LOCATION:Stade de l'Abbé-Deschamps\, Auxerre
+DESCRIPTION:Competition: Ligue 1\nRound: 24\nDate: 2027-03-14 — kick-off
+  time to be confirmed\nVenue: Stade de l'Abbé-Deschamps\, Auxerre\nRepo
+ rt: https://ligue1.com/en/match-sheet/l1_championship_match_74028\nSourc
+ e: Wikipedia — 2026–27 Paris Saint-Germain FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645485-17324c4@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270320
+DTEND;VALUE=DATE:20270321
+SUMMARY:Arsenal v Sunderland (Premier League)
+LOCATION:Emirates Stadium\, Holloway
+DESCRIPTION:Competition: Premier League\nRound: 30\nDate: 2027-03-20 — k
+ ick-off time to be confirmed\nVenue: Emirates Stadium\, Holloway\nReport
+ : https://www.premierleague.com/en/match/2645485/arsenal-vs-sunderland\n
+ Source: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645492-1k6kiy4@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270320T150000Z
+DTEND:20270320T170000Z
+SUMMARY:Manchester City v Manchester United (Premier League)
+LOCATION:Etihad Stadium\, Manchester
+DESCRIPTION:Competition: Premier League\nRound: 30\nKick-off: 2027-03-20T1
+ 5:00Z (venue clock 15:00)\nVenue: Etihad Stadium\, Manchester\nReport: h
+ ttps://www.premierleague.com/match/2645492\nSource: Wikipedia — 2026
+ –27 Manchester City F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w01hmhl0@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270321
+DTEND;VALUE=DATE:20270322
+SUMMARY:Celta Vigo v Real Madrid (La Liga)
+LOCATION:ABANCA Balaídos\, Vigo
+DESCRIPTION:Competition: La Liga\nRound: 29\nDate: 2027-03-21 — kick-off
+  time to be confirmed\nVenue: ABANCA Balaídos\, Vigo\nReport: https://w
+ ww.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-rc-celta-
+ real-madrid-29\nSource: Wikipedia — 2026–27 Real Madrid CF season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w07xdmyy@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270321
+DTEND;VALUE=DATE:20270322
+SUMMARY:Rayo Vallecano v Barcelona (La Liga)
+LOCATION:Vallecas\, Madrid
+DESCRIPTION:Competition: La Liga\nRound: 29\nDate: 2027-03-21 — kick-off
+  time to be confirmed\nVenue: Vallecas\, Madrid\nReport: https://www.lal
+ iga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-rayo-vallecano-
+ fc-barcelona-29\nSource: Wikipedia — 2026–27 FC Barcelona season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-w1g9vqr3@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270321
+DTEND;VALUE=DATE:20270322
+SUMMARY:1. FC Köln v Bayern Munich (Bundesliga)
+LOCATION:RheinEnergieStadion\, Cologne
+DESCRIPTION:Competition: Bundesliga\nRound: 27\nDate: 2027-03-21 — kick-
+ off time to be confirmed\nVenue: RheinEnergieStadion\, Cologne\nReport: 
+ https://datencenter.dfb.de/datencenter/bundesliga/2026-2027/27-spieltag/
+ 1-fc-koeln-fc-bayern-muenchen-2419753\nSource: Wikipedia — 2026–27 F
+ C Bayern Munich season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w053i1s7@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270321
+DTEND;VALUE=DATE:20270322
+SUMMARY:Paris Saint-Germain v Strasbourg (Ligue 1)
+LOCATION:Parc des Princes\, Paris
+DESCRIPTION:Competition: Ligue 1\nRound: 25\nDate: 2027-03-21 — kick-off
+  time to be confirmed\nVenue: Parc des Princes\, Paris\nReport: https://
+ ligue1.com/en/match-sheet/l1_championship_match_74042\nSource: Wikipedia
+  — 2026–27 Paris Saint-Germain FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w1ivzxee@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270404
+DTEND;VALUE=DATE:20270405
+SUMMARY:Real Madrid v Atlético Madrid (La Liga)
+LOCATION:Bernabéu\, Madrid
+DESCRIPTION:Competition: La Liga\nRound: 30\nDate: 2027-04-04 — kick-off
+  time to be confirmed\nVenue: Bernabéu\, Madrid\nReport: https://www.la
+ liga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-real-madrid-at
+ letico-de-madrid-30\nSource: Wikipedia — 2026–27 Real Madrid CF seas
+ on
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w13l3biq@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270404
+DTEND;VALUE=DATE:20270405
+SUMMARY:Barcelona v Sevilla (La Liga)
+LOCATION:Camp Nou\, Barcelona
+DESCRIPTION:Competition: La Liga\nRound: 30\nDate: 2027-04-04 — kick-off
+  time to be confirmed\nVenue: Camp Nou\, Barcelona\nReport: https://www.
+ laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-fc-barcelona
+ -sevilla-fc-30\nSource: Wikipedia — 2026–27 FC Barcelona season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-w11ky72m@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270404
+DTEND;VALUE=DATE:20270405
+SUMMARY:Bayern Munich v Hamburger SV (Bundesliga)
+LOCATION:Allianz Arena\, Munich
+DESCRIPTION:Competition: Bundesliga\nRound: 28\nDate: 2027-04-04 — kick-
+ off time to be confirmed\nVenue: Allianz Arena\, Munich\nReport: https:/
+ /datencenter.dfb.de/datencenter/bundesliga/2026-2027/28-spieltag/fc-baye
+ rn-muenchen-hamburger-sv-2419779\nSource: Wikipedia — 2026–27 FC Bay
+ ern Munich season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w0642dvf@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270404
+DTEND;VALUE=DATE:20270405
+SUMMARY:Paris FC v Paris Saint-Germain (Ligue 1)
+LOCATION:Stade Jean-Bouin\, Paris
+DESCRIPTION:Competition: Ligue 1\nRound: 26\nDate: 2027-04-04 — kick-off
+  time to be confirmed\nVenue: Stade Jean-Bouin\, Paris\nReport: https://
+ ligue1.com/en/match-sheet/l1_championship_match_74053\nSource: Wikipedia
+  — 2026–27 Paris Saint-Germain FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645498-0w3pfjz@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270410
+DTEND;VALUE=DATE:20270411
+SUMMARY:Coventry City v Arsenal (Premier League)
+LOCATION:Coventry Building Society Arena\, Coventry
+DESCRIPTION:Competition: Premier League\nRound: 31\nDate: 2027-04-10 — k
+ ick-off time to be confirmed\nVenue: Coventry Building Society Arena\, C
+ oventry\nReport: https://www.premierleague.com/en/match/2645498/coventry
+ -city-vs-arsenal\nSource: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645495-00dyrqb@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270410T140000Z
+DTEND:20270410T160000Z
+SUMMARY:Bournemouth v Manchester City (Premier League)
+LOCATION:Dean Court\, Bournemouth
+DESCRIPTION:Competition: Premier League\nRound: 31\nKick-off: 2027-04-10T1
+ 4:00Z (venue clock 15:00)\nVenue: Dean Court\, Bournemouth\nReport: http
+ s://www.premierleague.com/match/2645495\nSource: Wikipedia — 2026–27
+  Manchester City F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w0248ego@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270411
+DTEND;VALUE=DATE:20270412
+SUMMARY:Osasuna v Real Madrid (La Liga)
+LOCATION:El Sadar\, Pamplona
+DESCRIPTION:Competition: La Liga\nRound: 31\nDate: 2027-04-11 — kick-off
+  time to be confirmed\nVenue: El Sadar\, Pamplona\nReport: https://www.l
+ aliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-ca-osasuna-re
+ al-madrid-31\nSource: Wikipedia — 2026–27 Real Madrid CF season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w1mj8xu2@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270411
+DTEND;VALUE=DATE:20270412
+SUMMARY:Racing Santander v Barcelona (La Liga)
+LOCATION:El Sardinero\, Santander
+DESCRIPTION:Competition: La Liga\nRound: 31\nDate: 2027-04-11 — kick-off
+  time to be confirmed\nVenue: El Sardinero\, Santander\nReport: https://
+ www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-r-racing
+ -club-fc-barcelona-31\nSource: Wikipedia — 2026–27 FC Barcelona seas
+ on
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-w03elp2z@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270411
+DTEND;VALUE=DATE:20270412
+SUMMARY:SC Paderborn v Bayern Munich (Bundesliga)
+LOCATION:Home Deluxe Arena\, Paderborn
+DESCRIPTION:Competition: Bundesliga\nRound: 29\nDate: 2027-04-11 — kick-
+ off time to be confirmed\nVenue: Home Deluxe Arena\, Paderborn\nReport: 
+ https://datencenter.dfb.de/datencenter/bundesliga/2026-2027/29-spieltag/
+ sc-paderborn-07-fc-bayern-muenchen-2419803\nSource: Wikipedia — 2026
+ –27 FC Bayern Munich season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w1pkocly@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270411
+DTEND;VALUE=DATE:20270412
+SUMMARY:Paris Saint-Germain v Le Havre (Ligue 1)
+LOCATION:Parc des Princes\, Paris
+DESCRIPTION:Competition: Ligue 1\nRound: 27\nDate: 2027-04-11 — kick-off
+  time to be confirmed\nVenue: Parc des Princes\, Paris\nReport: https://
+ ligue1.com/en/match-sheet/l1_championship_match_74062\nSource: Wikipedia
+  — 2026–27 Paris Saint-Germain FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645505-0xucu5u@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270417
+DTEND;VALUE=DATE:20270418
+SUMMARY:Arsenal v Aston Villa (Premier League)
+LOCATION:Emirates Stadium\, Holloway
+DESCRIPTION:Competition: Premier League\nRound: 32\nDate: 2027-04-17 — k
+ ick-off time to be confirmed\nVenue: Emirates Stadium\, Holloway\nReport
+ : https://www.premierleague.com/en/match/2645505/arsenal-vs-aston-villa\
+ nSource: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645512-03bh0tq@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270417T140000Z
+DTEND:20270417T160000Z
+SUMMARY:Manchester City v Crystal Palace (Premier League)
+LOCATION:Etihad Stadium\, Manchester
+DESCRIPTION:Competition: Premier League\nRound: 32\nKick-off: 2027-04-17T1
+ 4:00Z (venue clock 15:00)\nVenue: Etihad Stadium\, Manchester\nReport: h
+ ttps://www.premierleague.com/match/2645512\nSource: Wikipedia — 2026
+ –27 Manchester City F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w0pomokj@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270418
+DTEND;VALUE=DATE:20270419
+SUMMARY:Getafe v Real Madrid (La Liga)
+LOCATION:Coliseum\, Getafe
+DESCRIPTION:Competition: La Liga\nRound: 32\nDate: 2027-04-18 — kick-off
+  time to be confirmed\nVenue: Coliseum\, Getafe\nReport: https://www.lal
+ iga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-getafe-cf-real-
+ madrid-32\nSource: Wikipedia — 2026–27 Real Madrid CF season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w086ouwe@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270418
+DTEND;VALUE=DATE:20270419
+SUMMARY:Barcelona v Espanyol (La Liga)
+LOCATION:Camp Nou\, Barcelona
+DESCRIPTION:Competition: La Liga\nRound: 32\nDate: 2027-04-18 — kick-off
+  time to be confirmed\nVenue: Camp Nou\, Barcelona\nReport: https://www.
+ laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-fc-barcelona
+ -rcd-espanyol-de-barcelona-32\nSource: Wikipedia — 2026–27 FC Barcel
+ ona season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-w17wtbi2@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270418
+DTEND;VALUE=DATE:20270419
+SUMMARY:Bayern Munich v TSG Hoffenheim (Bundesliga)
+LOCATION:Allianz Arena\, Munich
+DESCRIPTION:Competition: Bundesliga\nRound: 30\nDate: 2027-04-18 — kick-
+ off time to be confirmed\nVenue: Allianz Arena\, Munich\nReport: https:/
+ /datencenter.dfb.de/datencenter/bundesliga/2026-2027/30-spieltag/fc-baye
+ rn-muenchen-tsg-hoffenheim-2419806\nSource: Wikipedia — 2026–27 FC B
+ ayern Munich season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w1mn7vmq@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270418
+DTEND;VALUE=DATE:20270419
+SUMMARY:Paris Saint-Germain v Lille (Ligue 1)
+LOCATION:Parc des Princes\, Paris
+DESCRIPTION:Competition: Ligue 1\nRound: 28\nDate: 2027-04-18 — kick-off
+  time to be confirmed\nVenue: Parc des Princes\, Paris\nReport: https://
+ ligue1.com/en/match-sheet/l1_championship_match_74070\nSource: Wikipedia
+  — 2026–27 Paris Saint-Germain FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w0rc85um@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270421
+DTEND;VALUE=DATE:20270422
+SUMMARY:Real Madrid v Elche (La Liga)
+LOCATION:Bernabéu\, Madrid
+DESCRIPTION:Competition: La Liga\nRound: 33\nDate: 2027-04-21 — kick-off
+  time to be confirmed\nVenue: Bernabéu\, Madrid\nReport: https://www.la
+ liga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-real-madrid-el
+ che-cf-33\nSource: Wikipedia — 2026–27 Real Madrid CF season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w0r9ai1d@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270421
+DTEND;VALUE=DATE:20270422
+SUMMARY:Celta Vigo v Barcelona (La Liga)
+LOCATION:ABANCA-Balaídos\, Vigo
+DESCRIPTION:Competition: La Liga\nRound: 33\nDate: 2027-04-21 — kick-off
+  time to be confirmed\nVenue: ABANCA-Balaídos\, Vigo\nReport: https://w
+ ww.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-rc-celta-
+ fc-barcelona-33\nSource: Wikipedia — 2026–27 FC Barcelona season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645515-0kct8o5@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270424
+DTEND;VALUE=DATE:20270425
+SUMMARY:Bournemouth v Arsenal (Premier League)
+LOCATION:Dean Court\, Bournemouth
+DESCRIPTION:Competition: Premier League\nRound: 33\nDate: 2027-04-24 — k
+ ick-off time to be confirmed\nVenue: Dean Court\, Bournemouth\nReport: h
+ ttps://www.premierleague.com/en/match/2645515/bournemouth-vs-arsenal\nSo
+ urce: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645518-11rqzr7@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270424T140000Z
+DTEND:20270424T160000Z
+SUMMARY:Chelsea v Manchester City (Premier League)
+LOCATION:Stamford Bridge\, Fulham
+DESCRIPTION:Competition: Premier League\nRound: 33\nKick-off: 2027-04-24T1
+ 4:00Z (venue clock 15:00)\nVenue: Stamford Bridge\, Fulham\nReport: http
+ s://www.premierleague.com/match/2645518\nSource: Wikipedia — 2026–27
+  Manchester City F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-w1vj08tb@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270425
+DTEND;VALUE=DATE:20270426
+SUMMARY:Werder Bremen v Bayern Munich (Bundesliga)
+LOCATION:Weserstadion\, Bremen
+DESCRIPTION:Competition: Bundesliga\nRound: 31\nDate: 2027-04-25 — kick-
+ off time to be confirmed\nVenue: Weserstadion\, Bremen\nReport: https://
+ datencenter.dfb.de/datencenter/bundesliga/2026-2027/31-spieltag/werder-b
+ remen-fc-bayern-muenchen-2419833\nSource: Wikipedia — 2026–27 FC Bay
+ ern Munich season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w0tbeauf@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270425
+DTEND;VALUE=DATE:20270426
+SUMMARY:Lorient v Paris Saint-Germain (Ligue 1)
+LOCATION:Stade du Moustoir\, Lorient
+DESCRIPTION:Competition: Ligue 1\nRound: 29\nDate: 2027-04-25 — kick-off
+  time to be confirmed\nVenue: Stade du Moustoir\, Lorient\nReport: https
+ ://ligue1.com/en/match-sheet/l1_championship_match_74075\nSource: Wikipe
+ dia — 2026–27 Paris Saint-Germain FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645525-09wz2no@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270501
+DTEND;VALUE=DATE:20270502
+SUMMARY:Arsenal v Tottenham Hotspur (Premier League)
+LOCATION:Emirates Stadium\, Holloway
+DESCRIPTION:Competition: Premier League\nRound: 34\nDate: 2027-05-01 — k
+ ick-off time to be confirmed\nVenue: Emirates Stadium\, Holloway\nReport
+ : https://www.premierleague.com/en/match/2645525/arsenal-vs-tottenham-ho
+ tspur\nSource: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645533-07dog6s@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270501T140000Z
+DTEND:20270501T160000Z
+SUMMARY:Manchester City v Brentford (Premier League)
+LOCATION:Etihad Stadium\, Manchester
+DESCRIPTION:Competition: Premier League\nRound: 34\nKick-off: 2027-05-01T1
+ 4:00Z (venue clock 15:00)\nVenue: Etihad Stadium\, Manchester\nReport: h
+ ttps://www.premierleague.com/match/2645533\nSource: Wikipedia — 2026
+ –27 Manchester City F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w1dklxsy@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270502
+DTEND;VALUE=DATE:20270503
+SUMMARY:Levante v Real Madrid (La Liga)
+LOCATION:Ciutat de València\, Valencia
+DESCRIPTION:Competition: La Liga\nRound: 34\nDate: 2027-05-02 — kick-off
+  time to be confirmed\nVenue: Ciutat de València\, Valencia\nReport: ht
+ tps://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-le
+ vante-ud-real-madrid-34\nSource: Wikipedia — 2026–27 Real Madrid CF 
+ season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w1gg15ad@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270502
+DTEND;VALUE=DATE:20270503
+SUMMARY:Barcelona v Osasuna (La Liga)
+LOCATION:Camp Nou\, Barcelona
+DESCRIPTION:Competition: La Liga\nRound: 34\nDate: 2027-05-02 — kick-off
+  time to be confirmed\nVenue: Camp Nou\, Barcelona\nReport: https://www.
+ laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-fc-barcelona
+ -ca-osasuna-34\nSource: Wikipedia — 2026–27 FC Barcelona season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w1kpba7s@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270502
+DTEND;VALUE=DATE:20270503
+SUMMARY:Paris Saint-Germain v Angers (Ligue 1)
+LOCATION:Parc des Princes\, Paris
+DESCRIPTION:Competition: Ligue 1\nRound: 30\nDate: 2027-05-02 — kick-off
+  time to be confirmed\nVenue: Parc des Princes\, Paris\nReport: https://
+ ligue1.com/en/match-sheet/l1_championship_match_74086\nSource: Wikipedia
+  — 2026–27 Paris Saint-Germain FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645540-00l3cbc@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270508
+DTEND;VALUE=DATE:20270509
+SUMMARY:Leeds United v Arsenal (Premier League)
+LOCATION:Elland Road\, Leeds
+DESCRIPTION:Competition: Premier League\nRound: 35\nDate: 2027-05-08 — k
+ ick-off time to be confirmed\nVenue: Elland Road\, Leeds\nReport: https:
+ //www.premierleague.com/en/match/2645540/leeds-united-vs-arsenal\nSource
+ : Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645541-0ipc8ef@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270508T140000Z
+DTEND:20270508T160000Z
+SUMMARY:Manchester City v Liverpool (Premier League)
+LOCATION:Etihad Stadium\, Manchester
+DESCRIPTION:Competition: Premier League\nRound: 35\nKick-off: 2027-05-08T1
+ 4:00Z (venue clock 15:00)\nVenue: Etihad Stadium\, Manchester\nReport: h
+ ttps://www.premierleague.com/match/2645541\nSource: Wikipedia — 2026
+ –27 Manchester City F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w0mnchax@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270509
+DTEND;VALUE=DATE:20270510
+SUMMARY:Real Madrid v Barcelona (La Liga)
+LOCATION:Bernabéu\, Madrid
+DESCRIPTION:Tracked clubs in this tie: Real Madrid\, FC Barcelona\nCompeti
+ tion: La Liga\nRound: 35\nDate: 2027-05-09 — kick-off time to be confi
+ rmed\nVenue: Bernabéu\, Madrid\nReport: https://www.laliga.com/en-GB/ma
+ tch/temporada-2026-2027-laliga-ea-sports-real-madrid-fc-barcelona-35\nSo
+ urce: Wikipedia — 2026–27 Real Madrid CF season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-w082crjr@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270509
+DTEND;VALUE=DATE:20270510
+SUMMARY:Bayern Munich v Borussia Mönchengladbach (Bundesliga)
+LOCATION:Allianz Arena\, Munich
+DESCRIPTION:Competition: Bundesliga\nRound: 32\nDate: 2027-05-09 — kick-
+ off time to be confirmed\nVenue: Allianz Arena\, Munich\nReport: https:/
+ /datencenter.dfb.de/datencenter/bundesliga/2026-2027/32-spieltag/fc-baye
+ rn-muenchen-borussia-moenchengladbach-2419835\nSource: Wikipedia — 202
+ 6–27 FC Bayern Munich season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w1wjsr2p@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270509T184500Z
+DTEND:20270509T204500Z
+SUMMARY:Lyon v Paris Saint-Germain (Ligue 1)
+LOCATION:Parc Olympique Lyonnais\, Décines-Charpieu
+DESCRIPTION:Competition: Ligue 1\nRound: 31\nKick-off: 2027-05-09T18:45Z (
+ venue clock 20:45)\nVenue: Parc Olympique Lyonnais\, Décines-Charpieu\n
+ Report: https://ligue1.com/en/match-sheet/l1_championship_match_74096\nS
+ ource: Wikipedia — 2026–27 Paris Saint-Germain FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645545-1b95j8q@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270515
+DTEND;VALUE=DATE:20270516
+SUMMARY:Arsenal v Nottingham Forest (Premier League)
+LOCATION:Emirates Stadium\, Holloway
+DESCRIPTION:Competition: Premier League\nRound: 36\nDate: 2027-05-15 — k
+ ick-off time to be confirmed\nVenue: Emirates Stadium\, Holloway\nReport
+ : https://www.premierleague.com/en/match/2645545/arsenal-vs-nottingham-f
+ orest\nSource: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645551-028b610@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270515T140000Z
+DTEND:20270515T160000Z
+SUMMARY:Ipswich Town v Manchester City (Premier League)
+LOCATION:Portman Road\, Ipswich
+DESCRIPTION:Competition: Premier League\nRound: 36\nKick-off: 2027-05-15T1
+ 4:00Z (venue clock 15:00)\nVenue: Portman Road\, Ipswich\nReport: https:
+ //www.premierleague.com/match/2645551\nSource: Wikipedia — 2026–27 M
+ anchester City F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w0xm47p0@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270516
+DTEND;VALUE=DATE:20270517
+SUMMARY:Real Madrid v Racing Santander (La Liga)
+LOCATION:Bernabéu\, Madrid
+DESCRIPTION:Competition: La Liga\nRound: 36\nDate: 2027-05-16 — kick-off
+  time to be confirmed\nVenue: Bernabéu\, Madrid\nReport: https://www.la
+ liga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-real-madrid-r-
+ racing-club-36\nSource: Wikipedia — 2026–27 Real Madrid CF season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w04qvmws@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270516
+DTEND;VALUE=DATE:20270517
+SUMMARY:Real Sociedad v Barcelona (La Liga)
+LOCATION:Anoeta\, San Sebastián
+DESCRIPTION:Competition: La Liga\nRound: 36\nDate: 2027-05-16 — kick-off
+  time to be confirmed\nVenue: Anoeta\, San Sebastián\nReport: https://w
+ ww.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-real-soci
+ edad-fc-barcelona-36\nSource: Wikipedia — 2026–27 FC Barcelona seaso
+ n
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-w02rwnj3@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270516
+DTEND;VALUE=DATE:20270517
+SUMMARY:Bayer Leverkusen v Bayern Munich (Bundesliga)
+LOCATION:BayArena\, Leverkusen
+DESCRIPTION:Competition: Bundesliga\nRound: 33\nDate: 2027-05-16 — kick-
+ off time to be confirmed\nVenue: BayArena\, Leverkusen\nReport: https://
+ datencenter.dfb.de/datencenter/bundesliga/2026-2027/33-spieltag/bayer-le
+ verkusen-fc-bayern-muenchen-2419799\nSource: Wikipedia — 2026–27 FC 
+ Bayern Munich season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w0wy8t6u@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270516
+DTEND;VALUE=DATE:20270517
+SUMMARY:Paris Saint-Germain v Nice (Ligue 1)
+LOCATION:Parc des Princes\, Paris
+DESCRIPTION:Competition: Ligue 1\nRound: 32\nDate: 2027-05-16 — kick-off
+  time to be confirmed\nVenue: Parc des Princes\, Paris\nReport: https://
+ ligue1.com/en/match-sheet/l1_championship_match_74106\nSource: Wikipedia
+  — 2026–27 Paris Saint-Germain FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-w0x38vsw@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270522T133000Z
+DTEND:20270522T153000Z
+SUMMARY:Bayern Munich v Eintracht Frankfurt (Bundesliga)
+LOCATION:Allianz Arena\, Munich
+DESCRIPTION:Competition: Bundesliga\nRound: 34\nKick-off: 2027-05-22T13:30
+ Z (venue clock 15:30)\nVenue: Allianz Arena\, Munich\nReport: https://da
+ tencenter.dfb.de/datencenter/bundesliga/2026-2027/34-spieltag/fc-bayern-
+ muenchen-eintracht-frankfurt-2419811\nSource: Wikipedia — 2026–27 FC
+  Bayern Munich season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w0vrpwv8@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270522T190000Z
+DTEND:20270522T210000Z
+SUMMARY:Troyes v Paris Saint-Germain (Ligue 1)
+LOCATION:Stade de l'Aube\, Troyes
+DESCRIPTION:Competition: Ligue 1\nRound: 33\nKick-off: 2027-05-22T19:00Z (
+ venue clock 21:00)\nVenue: Stade de l'Aube\, Troyes\nReport: https://lig
+ ue1.com/en/match-sheet/l1_championship_match_74117\nSource: Wikipedia 
+ — 2026–27 Paris Saint-Germain FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w020gpje@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270523
+DTEND;VALUE=DATE:20270524
+SUMMARY:Alavés v Real Madrid (La Liga)
+LOCATION:Mendizorrotza\, Vitoria-Gasteiz
+DESCRIPTION:Competition: La Liga\nRound: 37\nDate: 2027-05-23 — kick-off
+  time to be confirmed\nVenue: Mendizorrotza\, Vitoria-Gasteiz\nReport: h
+ ttps://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-d
+ eportivo-alaves-real-madrid-37\nSource: Wikipedia — 2026–27 Real Mad
+ rid CF season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w127cxgx@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270523
+DTEND;VALUE=DATE:20270524
+SUMMARY:Barcelona v Málaga (La Liga)
+LOCATION:Camp Nou\, Barcelona
+DESCRIPTION:Competition: La Liga\nRound: 37\nDate: 2027-05-23 — kick-off
+  time to be confirmed\nVenue: Camp Nou\, Barcelona\nReport: http://lalig
+ a.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-fc-barcelona-mala
+ ga-cf-37\nSource: Wikipedia — 2026–27 FC Barcelona season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645558-18vcm42@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270523
+DTEND;VALUE=DATE:20270524
+SUMMARY:Everton v Arsenal (Premier League)
+LOCATION:Hill Dickinson Stadium\, Liverpool
+DESCRIPTION:Competition: Premier League\nRound: 37\nDate: 2027-05-23 — k
+ ick-off time to be confirmed\nVenue: Hill Dickinson Stadium\, Liverpool\
+ nReport: https://www.premierleague.com/en/match/2645558/everton-vs-arsen
+ al\nSource: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645551-1txgsnh@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270523T140000Z
+DTEND:20270523T160000Z
+SUMMARY:Manchester City v Aston Villa (Premier League)
+LOCATION:Etihad Stadium\, Manchester
+DESCRIPTION:Competition: Premier League\nRound: 37\nKick-off: 2027-05-23T1
+ 4:00Z (venue clock 15:00)\nVenue: Etihad Stadium\, Manchester\nReport: h
+ ttps://www.premierleague.com/match/2645551\nSource: Wikipedia — 2026
+ –27 Manchester City F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:psg-w0oqhh5d@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270529T190000Z
+DTEND:20270529T210000Z
+SUMMARY:Paris Saint-Germain v Toulouse (Ligue 1)
+LOCATION:Parc des Princes\, Paris
+DESCRIPTION:Competition: Ligue 1\nRound: 34\nKick-off: 2027-05-29T19:00Z (
+ venue clock 21:00)\nVenue: Parc des Princes\, Paris\nReport: https://lig
+ ue1.com/en/match-sheet/l1_championship_match_74124\nSource: Wikipedia 
+ — 2026–27 Paris Saint-Germain FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w1753n18@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270530
+DTEND;VALUE=DATE:20270531
+SUMMARY:Real Madrid v Deportivo A Coruña (La Liga)
+LOCATION:Bernabéu\, Madrid
+DESCRIPTION:Competition: La Liga\nRound: 38\nDate: 2027-05-30 — kick-off
+  time to be confirmed\nVenue: Bernabéu\, Madrid\nReport: https://www.la
+ liga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-real-madrid-rc
+ -deportivo-38\nSource: Wikipedia — 2026–27 Real Madrid CF season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w1chob96@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270530
+DTEND;VALUE=DATE:20270531
+SUMMARY:Getafe v Barcelona (La Liga)
+LOCATION:Coliseum\, Getafe
+DESCRIPTION:Competition: La Liga\nRound: 38\nDate: 2027-05-30 — kick-off
+  time to be confirmed\nVenue: Coliseum\, Getafe\nReport: https://www.lal
+ iga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-getafe-cf-fc-ba
+ rcelona-38\nSource: Wikipedia — 2026–27 FC Barcelona season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645565-0aatxz5@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270530T150000Z
+DTEND:20270530T170000Z
+SUMMARY:Arsenal v Brighton & Hove Albion (Premier League)
+LOCATION:Emirates Stadium\, Holloway
+DESCRIPTION:Competition: Premier League\nRound: 38\nKick-off: 2027-05-30T1
+ 5:00Z (venue clock 16:00)\nVenue: Emirates Stadium\, Holloway\nReport: h
+ ttps://www.premierleague.com/en/match/2645565/arsenal-vs-brighton-and-ho
+ ve-albion\nSource: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645574-0e1gzpo@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270530T150000Z
+DTEND:20270530T170000Z
+SUMMARY:Sunderland v Manchester City (Premier League)
+LOCATION:Stadium of Light\, Sunderland
+DESCRIPTION:Competition: Premier League\nRound: 38\nKick-off: 2027-05-30T1
+ 5:00Z (venue clock 16:00)\nVenue: Stadium of Light\, Sunderland\nReport:
+  https://www.premierleague.com/match/2645574\nSource: Wikipedia — 2026
+ –27 Manchester City F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+END:VCALENDAR

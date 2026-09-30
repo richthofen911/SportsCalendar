@@ -1,0 +1,16 @@
+{
+  "name": "sports-calendar",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Local fixture calendar for six European clubs, built from Wikipedia season pages",
+  "scripts": {
+    "refresh": "node tools/build.mjs",
+    "refresh:force": "node tools/build.mjs --force",
+    "serve": "node tools/serve.mjs",
+    "verify": "node tools/verify.mjs"
+  },
+  "engines": {
+    "node": ">=20.11"
+  }
+}

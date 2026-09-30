@@ -1,0 +1,659 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//SportsCalendar//2026-27//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:FC Barcelona 2026-27
+X-WR-TIMEZONE:UTC
+X-WR-CALDESC:47 matches\, refreshed 2026-09-30
+BEGIN:VEVENT
+UID:barcelona-w0noadlz@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260823T193000Z
+DTEND:20260823T213000Z
+SUMMARY:Elche v Barcelona (La Liga)
+LOCATION:Martínez Valero\, Elche
+DESCRIPTION:Competition: La Liga\nRound: 2\nKick-off: 2026-08-23T19:30Z (v
+ enue clock 21:30)\nResult: Elche 0-5 Barcelona\nElche: Houary 33' (yello
+ w)\nBarcelona: Raphinha 14' (pen.)\, Adeyemi\, Fermín 71'\nVenue: Mart
+ ínez Valero\, Elche\nAttendance: 30704\nReferee: Alejandro Quintero Gon
+ zález\nReport: https://www.laliga.com/en-GB/match/temporada-2026-2027-l
+ aliga-ea-sports-elche-cf-fc-barcelona-2\nSource: Wikipedia — 2026–27
+  FC Barcelona season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w144inwd@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260827T190000Z
+DTEND:20260827T210000Z
+SUMMARY:Barcelona v Athletic Bilbao (La Liga)
+LOCATION:Camp Nou\, Barcelona
+DESCRIPTION:Competition: La Liga\nRound: 1\nKick-off: 2026-08-27T19:00Z (v
+ enue clock 21:00)\nResult: Barcelona 2-0 Athletic Bilbao\nBarcelona: Esp
+ art 27' (yellow)\, Raphinha 37'\, Fermín 82'\nAthletic Bilbao: Guruzeta
+  48' (yellow)\, Louis-Jean 61' (yellow)\nVenue: Camp Nou\, Barcelona\nAt
+ tendance: 59326\nReferee: Miguel Ángel Ortiz Arias\nNote: Matchday 1 wa
+ s rescheduled to allow players participating in the 2026 FIFA World Cup 
+ ample time for rest.\nReport: https://www.laliga.com/en-GB/match/tempora
+ da-2026-2027-laliga-ea-sports-fc-barcelona-athletic-club-1\nSource: Wiki
+ pedia — 2026–27 FC Barcelona season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w0smcgoj@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260831T193000Z
+DTEND:20260831T213000Z
+SUMMARY:Barcelona v Rayo Vallecano (La Liga)
+LOCATION:Camp Nou\, Barcelona
+DESCRIPTION:Competition: La Liga\nRound: 3\nKick-off: 2026-08-31T19:30Z (v
+ enue clock 21:30)\nResult: Barcelona 5-2 Rayo Vallecano\nBarcelona: Raph
+ inha 19'\, Yamal 21'\, Lejeune 51' (own goal)\nRayo Vallecano: Camello 1
+ 2'\, Pedrosa 90' (yellow)\nVenue: Camp Nou\, Barcelona\nAttendance: 5776
+ 8\nReferee: Francisco José Hernández Maeso\nReport: https://www.laliga
+ .com/en-GB/match/temporada-2026-2027-laliga-ea-sports-fc-barcelona-rayo-
+ vallecano-3\nSource: Wikipedia — 2026–27 FC Barcelona season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w11f69q5@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260906T141500Z
+DTEND:20260906T161500Z
+SUMMARY:Valencia v Barcelona (La Liga)
+LOCATION:Mestalla\, Valencia
+DESCRIPTION:Competition: La Liga\nRound: 4\nKick-off: 2026-09-06T14:15Z (v
+ enue clock 16:15)\nResult: Valencia 0-5 Barcelona\nValencia: Martínez 8
+ 1' (yellow)\nBarcelona: Yamal 6'\, Fermín 22'\, 65' (yellow)\, Cubarsí
+  (yellow)\, Rodri 47' (yellow)\, Raphinha 50'\, Pedri 79'\nVenue: Mestal
+ la\, Valencia\nAttendance: 47319\nReferee: Isidro Díaz de Mera Escudero
+ s\nReport: https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga
+ -ea-sports-valencia-cf-fc-barcelona-4\nSource: Wikipedia — 2026–27 F
+ C Barcelona season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-2049561-154hm16@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260909T164500Z
+DTEND:20260909T184500Z
+SUMMARY:Barcelona v Feyenoord (UEFA Champions League)
+LOCATION:Camp Nou\, Barcelona\, Spain
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 1\nK
+ ick-off: 2026-09-09T16:45Z (venue clock 18:45)\nResult: Barcelona 5-1 Fe
+ yenoord\nBarcelona: Raphinha 3'\, Adeyemi 22'\, Olmo 54' (yellow)\, Yama
+ l 77'\, Gabriel Jesus 85'\nFeyenoord: Vanhoutte 27' (yellow)\, Steijn 82
+ '\nVenue: Camp Nou\, Barcelona\, Spain\nAttendance: 45838\nReferee: Sven
+  Jablonski (Germany)\nReport: https://www.uefa.com/uefachampionsleague/m
+ atch/2049561/\nSource: Wikipedia — 2026–27 FC Barcelona season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w1g00155@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260913T141500Z
+DTEND:20260913T161500Z
+SUMMARY:Levante v Barcelona (La Liga)
+LOCATION:Ciutat de València\, Valencia
+DESCRIPTION:Competition: La Liga\nRound: 5\nKick-off: 2026-09-13T14:15Z (v
+ enue clock 16:15)\nResult: Levante 2-4 Barcelona\nLevante: Sotelo (yello
+ w)\, Romero 79'\, Brugué 88'\nBarcelona: Espart 5'\, Yamal 19'\, Martí
+ n (yellow)\, Adeyemi\nVenue: Ciutat de València\, Valencia\nAttendance:
+  23630\nReferee: Jon Ander González Esteban\nReport: https://www.laliga
+ .com/en-GB/match/temporada-2026-2027-laliga-ea-sports-levante-ud-fc-barc
+ elona-5\nSource: Wikipedia — 2026–27 FC Barcelona season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w1t4knt9@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260916T193000Z
+DTEND:20260916T213000Z
+SUMMARY:Barcelona v Racing Santander (La Liga)
+LOCATION:Camp Nou\, Barcelona
+DESCRIPTION:Competition: La Liga\nRound: 6\nKick-off: 2026-09-16T19:30Z (v
+ enue clock 21:30)\nResult: Barcelona 7-2 Racing Santander\nBarcelona: Ca
+ ncelo 8'\, 69' (yellow)\, Raphinha 25' (pen.)\, Villalibre 36' (own goal
+ )\, Yamal \, (yellow)\, 89'\, Adeyemi 60' (yellow)\, Gabriel Jesus 79'\n
+ Racing Santander: Pedro Felipe 23' (yellow)\, Gueye 30'\, Zabiri 60' (ye
+ llow)\, 65'\nVenue: Camp Nou\, Barcelona\nAttendance: 50568\nReferee: Jo
+ sé Luis Munuera Montero\nReport: https://www.laliga.com/en-GB/match/tem
+ porada-2026-2027-laliga-ea-sports-fc-barcelona-r-racing-club-6\nSource: 
+ Wikipedia — 2026–27 FC Barcelona season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w0rf7dqo@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260919T190000Z
+DTEND:20260919T210000Z
+SUMMARY:Sevilla v Barcelona (La Liga)
+LOCATION:Ramón Sánchez-Pizjuán\, Seville
+DESCRIPTION:Competition: La Liga\nRound: 7\nKick-off: 2026-09-19T19:00Z (v
+ enue clock 21:00)\nResult: Sevilla 1-3 Barcelona\nSevilla: Fofana 19'\, 
+ Agoumé 80' (yellow)\nBarcelona: Raphinha 22'\nVenue: Ramón Sánchez-Pi
+ zjuán\, Seville\nAttendance: 41145\nReferee: Juan Martínez Munuera\nRe
+ port: https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-s
+ ports-sevilla-fc-fc-barcelona-7\nSource: Wikipedia — 2026–27 FC Barc
+ elona season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w1au1lbp@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261010T163000Z
+DTEND:20261010T183000Z
+SUMMARY:Barcelona v Getafe (La Liga)
+LOCATION:Camp Nou\, Barcelona
+DESCRIPTION:Competition: La Liga\nRound: 8\nKick-off: 2026-10-10T16:30Z (v
+ enue clock 18:30)\nVenue: Camp Nou\, Barcelona\nReport: https://www.lali
+ ga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-fc-barcelona-get
+ afe-cf-8\nSource: Wikipedia — 2026–27 FC Barcelona season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-2049576-13hx80o@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261013T190000Z
+DTEND:20261013T210000Z
+SUMMARY:Galatasaray v Barcelona (UEFA Champions League)
+LOCATION:Rams Park\, Istanbul\, Turkey
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 2\nK
+ ick-off: 2026-10-13T19:00Z (venue clock 22:00)\nVenue: Rams Park\, Istan
+ bul\, Turkey\nReport: https://www.uefa.com/uefachampionsleague/match/204
+ 9576/\nSource: Wikipedia — 2026–27 FC Barcelona season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w0r7g3q3@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261017T163000Z
+DTEND:20261017T183000Z
+SUMMARY:Real Betis v Barcelona (La Liga)
+LOCATION:La Cartuja\, Seville
+DESCRIPTION:Competition: La Liga\nRound: 9\nKick-off: 2026-10-17T16:30Z (v
+ enue clock 18:30)\nVenue: La Cartuja\, Seville\nReport: https://www.lali
+ ga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-real-betis-fc-ba
+ rcelona-9\nSource: Wikipedia — 2026–27 FC Barcelona season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-2049589-0snfs2o@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261020T190000Z
+DTEND:20261020T210000Z
+SUMMARY:Paris Saint-Germain v Barcelona (UEFA Champions League)
+LOCATION:Parc des Princes\, Paris\, France
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 3\nK
+ ick-off: 2026-10-20T19:00Z (venue clock 21:00)\nVenue: Parc des Princes\
+ , Paris\, France\nReport: https://www.uefa.com/uefachampionsleague/match
+ /2049589/\nSource: Wikipedia — 2026–27 FC Barcelona season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w1u23a60@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261025T200000Z
+DTEND:20261025T220000Z
+SUMMARY:Barcelona v Real Madrid (La Liga)
+LOCATION:Camp Nou\, Barcelona
+DESCRIPTION:Competition: La Liga\nRound: 10\nKick-off: 2026-10-25T20:00Z (
+ venue clock 21:00)\nVenue: Camp Nou\, Barcelona\nReport: https://www.lal
+ iga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-fc-barcelona-re
+ al-madrid-10\nSource: Wikipedia — 2026–27 FC Barcelona season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w192a178@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261102
+SUMMARY:Barcelona v Alavés (La Liga)
+LOCATION:Camp Nou\, Barcelona
+DESCRIPTION:Competition: La Liga\nRound: 11\nDate: 2026-11-01 — kick-off
+  time to be confirmed\nVenue: Camp Nou\, Barcelona\nReport: https://www.
+ laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-fc-barcelona
+ -deportivo-alaves-11\nSource: Wikipedia — 2026–27 FC Barcelona seaso
+ n
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-2049607-1rrrs87@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261103T200000Z
+DTEND:20261103T220000Z
+SUMMARY:Barcelona v Aston Villa (UEFA Champions League)
+LOCATION:Camp Nou\, Barcelona\, Spain
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 4\nK
+ ick-off: 2026-11-03T20:00Z (venue clock 21:00)\nVenue: Camp Nou\, Barcel
+ ona\, Spain\nReport: https://www.uefa.com/uefachampionsleague/match/2049
+ 607/\nSource: Wikipedia — 2026–27 FC Barcelona season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w0hnqlu1@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20261108
+DTEND;VALUE=DATE:20261109
+SUMMARY:Atlético Madrid v Barcelona (La Liga)
+LOCATION:Riyadh Air Metropolitano\, Madrid
+DESCRIPTION:Competition: La Liga\nRound: 12\nDate: 2026-11-08 — kick-off
+  time to be confirmed\nVenue: Riyadh Air Metropolitano\, Madrid\nReport:
+  https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports
+ -atletico-de-madrid-fc-barcelona-12\nSource: Wikipedia — 2026–27 FC 
+ Barcelona season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w0s3m19p@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20261122
+DTEND;VALUE=DATE:20261123
+SUMMARY:Barcelona v Villarreal (La Liga)
+LOCATION:Camp Nou\, Barcelona
+DESCRIPTION:Competition: La Liga\nRound: 13\nDate: 2026-11-22 — kick-off
+  time to be confirmed\nVenue: Camp Nou\, Barcelona\nReport: https://www.
+ laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-fc-barcelona
+ -villarreal-cf-13\nSource: Wikipedia — 2026–27 FC Barcelona season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-2049642-0yumlv7@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261125T174500Z
+DTEND:20261125T194500Z
+SUMMARY:Sabah v Barcelona (UEFA Champions League)
+LOCATION:Baku Olympic Stadium\, Baku\, Azerbaijan
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 5\nK
+ ick-off: 2026-11-25T17:45Z (venue clock 21:45)\nVenue: Baku Olympic Stad
+ ium\, Baku\, Azerbaijan\nReport: https://www.uefa.com/uefachampionsleagu
+ e/match/2049642/\nSource: Wikipedia — 2026–27 FC Barcelona season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w1xasco0@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20261129
+DTEND;VALUE=DATE:20261130
+SUMMARY:Deportivo A Coruña v Barcelona (La Liga)
+LOCATION:ABANCA-Riazor\, A Coruña
+DESCRIPTION:Competition: La Liga\nRound: 14\nDate: 2026-11-29 — kick-off
+  time to be confirmed\nVenue: ABANCA-Riazor\, A Coruña\nReport: https:/
+ /www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-rc-depo
+ rtivo-fc-barcelona-14\nSource: Wikipedia — 2026–27 FC Barcelona seas
+ on
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w186z92i@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20261206
+DTEND;VALUE=DATE:20261207
+SUMMARY:Barcelona v Celta Vigo (La Liga)
+LOCATION:Camp Nou\, Barcelona
+DESCRIPTION:Competition: La Liga\nRound: 15\nDate: 2026-12-06 — kick-off
+  time to be confirmed\nVenue: Camp Nou\, Barcelona\nReport: https://www.
+ laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-fc-barcelona
+ -rc-celta-15\nSource: Wikipedia — 2026–27 FC Barcelona season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-2049644-0u5mxpv@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261208T200000Z
+DTEND:20261208T220000Z
+SUMMARY:Barcelona v Manchester City (UEFA Champions League)
+LOCATION:Camp Nou\, Barcelona\, Spain
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 6\nK
+ ick-off: 2026-12-08T20:00Z (venue clock 21:00)\nVenue: Camp Nou\, Barcel
+ ona\, Spain\nReport: https://www.uefa.com/uefachampionsleague/match/2049
+ 644/\nSource: Wikipedia — 2026–27 FC Barcelona season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w0gavrcb@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20261213
+DTEND;VALUE=DATE:20261214
+SUMMARY:Málaga v Barcelona (La Liga)
+LOCATION:La Rosaleda\, Málaga
+DESCRIPTION:Competition: La Liga\nRound: 16\nDate: 2026-12-13 — kick-off
+  time to be confirmed\nVenue: La Rosaleda\, Málaga\nReport: https://www
+ .laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-malaga-cf-f
+ c-barcelona-16\nSource: Wikipedia — 2026–27 FC Barcelona season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w0o4mrlk@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20261220
+DTEND;VALUE=DATE:20261221
+SUMMARY:Barcelona v Real Sociedad (La Liga)
+LOCATION:Camp Nou\, Barcelona
+DESCRIPTION:Competition: La Liga\nRound: 17\nDate: 2026-12-20 — kick-off
+  time to be confirmed\nVenue: Camp Nou\, Barcelona\nReport: https://www.
+ laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-fc-barcelona
+ -real-sociedad-17\nSource: Wikipedia — 2026–27 FC Barcelona season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w0mddv4d@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270103
+DTEND;VALUE=DATE:20270104
+SUMMARY:Espanyol v Barcelona (La Liga)
+LOCATION:Cornellà-El Prat\, Cornellà de Llobregat
+DESCRIPTION:Competition: La Liga\nRound: 18\nDate: 2027-01-03 — kick-off
+  time to be confirmed\nVenue: Cornellà-El Prat\, Cornellà de Llobregat
+ \nReport: https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-
+ ea-sports-rcd-espanyol-de-barcelona-fc-barcelona-18\nSource: Wikipedia 
+ — 2026–27 FC Barcelona season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w0vb286e@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270110
+DTEND;VALUE=DATE:20270111
+SUMMARY:Osasuna v Barcelona (La Liga)
+LOCATION:El Sadar\, Pamplona
+DESCRIPTION:Competition: La Liga\nRound: 19\nDate: 2027-01-10 — kick-off
+  time to be confirmed\nVenue: El Sadar\, Pamplona\nReport: https://www.l
+ aliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-ca-osasuna-fc
+ -barcelona-19\nSource: Wikipedia — 2026–27 FC Barcelona season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w1461p10@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270117
+DTEND;VALUE=DATE:20270118
+SUMMARY:Barcelona v Elche (La Liga)
+LOCATION:Camp Nou\, Barcelona
+DESCRIPTION:Competition: La Liga\nRound: 20\nDate: 2027-01-17 — kick-off
+  time to be confirmed\nVenue: Camp Nou\, Barcelona\nReport: https://www.
+ laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-fc-barcelona
+ -elche-cf-20\nSource: Wikipedia — 2026–27 FC Barcelona season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-2049670-1ck6ifm@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270120T200000Z
+DTEND:20270120T220000Z
+SUMMARY:Sporting CP v Barcelona (UEFA Champions League)
+LOCATION:Estádio José Alvalade\, Lisbon\, Portugal
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 7\nK
+ ick-off: 2027-01-20T20:00Z (venue clock 20:00)\nVenue: Estádio José Al
+ valade\, Lisbon\, Portugal\nReport: https://www.uefa.com/uefachampionsle
+ ague/match/2049670/\nSource: Wikipedia — 2026–27 FC Barcelona season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w1l8cwtt@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270124
+DTEND;VALUE=DATE:20270125
+SUMMARY:Alavés v Barcelona (La Liga)
+LOCATION:Mendizorrotza\, Vitoria-Gasteiz
+DESCRIPTION:Competition: La Liga\nRound: 21\nDate: 2027-01-24 — kick-off
+  time to be confirmed\nVenue: Mendizorrotza\, Vitoria-Gasteiz\nReport: h
+ ttps://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-d
+ eportivo-alaves-fc-barcelona-21\nSource: Wikipedia — 2026–27 FC Barc
+ elona season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-2049684-1hgocic@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270127T200000Z
+DTEND:20270127T220000Z
+SUMMARY:Barcelona v Como (UEFA Champions League)
+LOCATION:Camp Nou\, Barcelona\, Spain
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 8\nK
+ ick-off: 2027-01-27T20:00Z (venue clock 21:00)\nVenue: Camp Nou\, Barcel
+ ona\, Spain\nReport: https://www.uefa.com/uefachampionsleague/match/2049
+ 684/\nSource: Wikipedia — 2026–27 FC Barcelona season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w0bm0mf2@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270131
+DTEND;VALUE=DATE:20270201
+SUMMARY:Barcelona v Valencia (La Liga)
+LOCATION:Camp Nou\, Barcelona
+DESCRIPTION:Competition: La Liga\nRound: 22\nDate: 2027-01-31 — kick-off
+  time to be confirmed\nVenue: Camp Nou\, Barcelona\nReport: https://www.
+ laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-fc-barcelona
+ -valencia-cf-22\nSource: Wikipedia — 2026–27 FC Barcelona season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w0febwte@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270202T190000Z
+DTEND:20270202T210000Z
+SUMMARY:Barcelona v Atlético Madrid (Supercopa de España)
+LOCATION:Şükrü Saracoğlu Stadium\, Istanbul\, Turkey
+DESCRIPTION:Competition: Supercopa de España\nRound: Semi-finals\nKick-of
+ f: 2027-02-02T19:00Z (venue clock 22:00)\nVenue: Şükrü Saracoğlu Sta
+ dium\, Istanbul\, Turkey\nSource: Wikipedia — 2026–27 FC Barcelona s
+ eason
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w0nvthgn@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270207
+DTEND;VALUE=DATE:20270208
+SUMMARY:Barcelona v Atlético Madrid (La Liga)
+LOCATION:Camp Nou\, Barcelona
+DESCRIPTION:Competition: La Liga\nRound: 23\nDate: 2027-02-07 — kick-off
+  time to be confirmed\nVenue: Camp Nou\, Barcelona\nReport: https://www.
+ laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-fc-barcelona
+ -atletico-de-madrid-23\nSource: Wikipedia — 2026–27 FC Barcelona sea
+ son
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w0pbguuh@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270214
+DTEND;VALUE=DATE:20270215
+SUMMARY:Villarreal v Barcelona (La Liga)
+LOCATION:La Cerámica\, Villarreal
+DESCRIPTION:Competition: La Liga\nRound: 24\nDate: 2027-02-14 — kick-off
+  time to be confirmed\nVenue: La Cerámica\, Villarreal\nReport: https:/
+ /www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-villarr
+ eal-cf-fc-barcelona-24\nSource: Wikipedia — 2026–27 FC Barcelona sea
+ son
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w0wmicr2@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270221
+DTEND;VALUE=DATE:20270222
+SUMMARY:Barcelona v Levante (La Liga)
+LOCATION:Camp Nou\, Barcelona
+DESCRIPTION:Competition: La Liga\nRound: 25\nDate: 2027-02-21 — kick-off
+  time to be confirmed\nVenue: Camp Nou\, Barcelona\nReport: https://www.
+ laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-fc-barcelona
+ -levante-ud-25\nSource: Wikipedia — 2026–27 FC Barcelona season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w1v0y285@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270228
+DTEND;VALUE=DATE:20270301
+SUMMARY:Athletic Bilbao v Barcelona (La Liga)
+LOCATION:San Mamés\, Bilbao
+DESCRIPTION:Competition: La Liga\nRound: 26\nDate: 2027-02-28 — kick-off
+  time to be confirmed\nVenue: San Mamés\, Bilbao\nReport: https://www.l
+ aliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-athletic-club
+ -fc-barcelona-26\nSource: Wikipedia — 2026–27 FC Barcelona season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w0q6mwtb@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270307
+DTEND;VALUE=DATE:20270308
+SUMMARY:Barcelona v Real Betis (La Liga)
+LOCATION:Camp Nou\, Barcelona
+DESCRIPTION:Competition: La Liga\nRound: 27\nDate: 2027-03-07 — kick-off
+  time to be confirmed\nVenue: Camp Nou\, Barcelona\nReport: https://www.
+ laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-fc-barcelona
+ -real-betis-27\nSource: Wikipedia — 2026–27 FC Barcelona season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w1axw83s@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270314
+DTEND;VALUE=DATE:20270315
+SUMMARY:Barcelona v Deportivo A Coruña (La Liga)
+LOCATION:Camp Nou\, Barcelona
+DESCRIPTION:Competition: La Liga\nRound: 28\nDate: 2027-03-14 — kick-off
+  time to be confirmed\nVenue: Camp Nou\, Barcelona\nReport: https://www.
+ laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-fc-barcelona
+ -rc-deportivo-28\nSource: Wikipedia — 2026–27 FC Barcelona season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w07xdmyy@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270321
+DTEND;VALUE=DATE:20270322
+SUMMARY:Rayo Vallecano v Barcelona (La Liga)
+LOCATION:Vallecas\, Madrid
+DESCRIPTION:Competition: La Liga\nRound: 29\nDate: 2027-03-21 — kick-off
+  time to be confirmed\nVenue: Vallecas\, Madrid\nReport: https://www.lal
+ iga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-rayo-vallecano-
+ fc-barcelona-29\nSource: Wikipedia — 2026–27 FC Barcelona season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w13l3biq@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270404
+DTEND;VALUE=DATE:20270405
+SUMMARY:Barcelona v Sevilla (La Liga)
+LOCATION:Camp Nou\, Barcelona
+DESCRIPTION:Competition: La Liga\nRound: 30\nDate: 2027-04-04 — kick-off
+  time to be confirmed\nVenue: Camp Nou\, Barcelona\nReport: https://www.
+ laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-fc-barcelona
+ -sevilla-fc-30\nSource: Wikipedia — 2026–27 FC Barcelona season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w1mj8xu2@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270411
+DTEND;VALUE=DATE:20270412
+SUMMARY:Racing Santander v Barcelona (La Liga)
+LOCATION:El Sardinero\, Santander
+DESCRIPTION:Competition: La Liga\nRound: 31\nDate: 2027-04-11 — kick-off
+  time to be confirmed\nVenue: El Sardinero\, Santander\nReport: https://
+ www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-r-racing
+ -club-fc-barcelona-31\nSource: Wikipedia — 2026–27 FC Barcelona seas
+ on
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w086ouwe@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270418
+DTEND;VALUE=DATE:20270419
+SUMMARY:Barcelona v Espanyol (La Liga)
+LOCATION:Camp Nou\, Barcelona
+DESCRIPTION:Competition: La Liga\nRound: 32\nDate: 2027-04-18 — kick-off
+  time to be confirmed\nVenue: Camp Nou\, Barcelona\nReport: https://www.
+ laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-fc-barcelona
+ -rcd-espanyol-de-barcelona-32\nSource: Wikipedia — 2026–27 FC Barcel
+ ona season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w0r9ai1d@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270421
+DTEND;VALUE=DATE:20270422
+SUMMARY:Celta Vigo v Barcelona (La Liga)
+LOCATION:ABANCA-Balaídos\, Vigo
+DESCRIPTION:Competition: La Liga\nRound: 33\nDate: 2027-04-21 — kick-off
+  time to be confirmed\nVenue: ABANCA-Balaídos\, Vigo\nReport: https://w
+ ww.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-rc-celta-
+ fc-barcelona-33\nSource: Wikipedia — 2026–27 FC Barcelona season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w1gg15ad@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270502
+DTEND;VALUE=DATE:20270503
+SUMMARY:Barcelona v Osasuna (La Liga)
+LOCATION:Camp Nou\, Barcelona
+DESCRIPTION:Competition: La Liga\nRound: 34\nDate: 2027-05-02 — kick-off
+  time to be confirmed\nVenue: Camp Nou\, Barcelona\nReport: https://www.
+ laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-fc-barcelona
+ -ca-osasuna-34\nSource: Wikipedia — 2026–27 FC Barcelona season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w0mnchax@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270509
+DTEND;VALUE=DATE:20270510
+SUMMARY:Real Madrid v Barcelona (La Liga)
+LOCATION:Bernabéu\, Madrid
+DESCRIPTION:Competition: La Liga\nRound: 35\nDate: 2027-05-09 — kick-off
+  time to be confirmed\nVenue: Bernabéu\, Madrid\nReport: https://www.la
+ liga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-real-madrid-fc
+ -barcelona-35\nSource: Wikipedia — 2026–27 FC Barcelona season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w04qvmws@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270516
+DTEND;VALUE=DATE:20270517
+SUMMARY:Real Sociedad v Barcelona (La Liga)
+LOCATION:Anoeta\, San Sebastián
+DESCRIPTION:Competition: La Liga\nRound: 36\nDate: 2027-05-16 — kick-off
+  time to be confirmed\nVenue: Anoeta\, San Sebastián\nReport: https://w
+ ww.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-real-soci
+ edad-fc-barcelona-36\nSource: Wikipedia — 2026–27 FC Barcelona seaso
+ n
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w127cxgx@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270523
+DTEND;VALUE=DATE:20270524
+SUMMARY:Barcelona v Málaga (La Liga)
+LOCATION:Camp Nou\, Barcelona
+DESCRIPTION:Competition: La Liga\nRound: 37\nDate: 2027-05-23 — kick-off
+  time to be confirmed\nVenue: Camp Nou\, Barcelona\nReport: http://lalig
+ a.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-fc-barcelona-mala
+ ga-cf-37\nSource: Wikipedia — 2026–27 FC Barcelona season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w1chob96@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART;VALUE=DATE:20270530
+DTEND;VALUE=DATE:20270531
+SUMMARY:Getafe v Barcelona (La Liga)
+LOCATION:Coliseum\, Getafe
+DESCRIPTION:Competition: La Liga\nRound: 38\nDate: 2027-05-30 — kick-off
+  time to be confirmed\nVenue: Coliseum\, Getafe\nReport: https://www.lal
+ iga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-getafe-cf-fc-ba
+ rcelona-38\nSource: Wikipedia — 2026–27 FC Barcelona season
+STATUS:TENTATIVE
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,113 @@
+{
+  "generatedAt": "2026-09-30T17:46:54.125Z",
+  "report": {
+    "skipped": [
+      {
+        "club": "man-city",
+        "why": "club not found in team1/team2",
+        "competition": "FA Cup",
+        "date": "2027-01-11",
+        "team1": "TBD",
+        "team2": "TBD"
+      }
+    ],
+    "duplicates": [],
+    "noDate": [],
+    "byClub": {
+      "real-madrid": {
+        "total": 47,
+        "played": 8,
+        "upcoming": 39,
+        "unknownResult": 0,
+        "comps": [
+          "La Liga",
+          "Supercopa de España",
+          "UEFA Champions League"
+        ]
+      },
+      "barcelona": {
+        "total": 47,
+        "played": 8,
+        "upcoming": 39,
+        "unknownResult": 0,
+        "comps": [
+          "La Liga",
+          "Supercopa de España",
+          "UEFA Champions League"
+        ]
+      },
+      "arsenal": {
+        "total": 50,
+        "played": 8,
+        "upcoming": 42,
+        "unknownResult": 0,
+        "comps": [
+          "FA Community Shield",
+          "Premier League",
+          "FA Cup",
+          "EFL Cup",
+          "UEFA Champions League"
+        ]
+      },
+      "man-city": {
+        "total": 49,
+        "played": 8,
+        "upcoming": 41,
+        "unknownResult": 0,
+        "comps": [
+          "Premier League",
+          "EFL Cup",
+          "FA Community Shield",
+          "UEFA Champions League"
+        ]
+      },
+      "bayern": {
+        "total": 45,
+        "played": 7,
+        "upcoming": 38,
+        "unknownResult": 0,
+        "comps": [
+          "Bundesliga",
+          "DFB-Pokal",
+          "Franz Beckenbauer Supercup",
+          "UEFA Champions League"
+        ]
+      },
+      "psg": {
+        "total": 46,
+        "played": 8,
+        "upcoming": 38,
+        "unknownResult": 0,
+        "comps": [
+          "Ligue 1",
+          "Coupe de France",
+          "Trophée des Champions",
+          "UEFA Champions League",
+          "UEFA Super Cup",
+          "FIFA Intercontinental Cup"
+        ]
+      }
+    }
+  },
+  "timeConfidence": {
+    "exact": 163,
+    "none": 121
+  },
+  "comps": {
+    "UEFA Super Cup": 1,
+    "FA Community Shield": 2,
+    "Trophée des Champions": 1,
+    "Premier League": 76,
+    "La Liga": 76,
+    "Franz Beckenbauer Supercup": 1,
+    "Ligue 1": 34,
+    "Bundesliga": 34,
+    "DFB-Pokal": 2,
+    "UEFA Champions League": 48,
+    "EFL Cup": 4,
+    "FIFA Intercontinental Cup": 1,
+    "Coupe de France": 1,
+    "FA Cup": 1,
+    "Supercopa de España": 2
+  }
+}

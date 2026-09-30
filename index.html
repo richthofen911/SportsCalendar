@@ -1,0 +1,788 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f6f6f4" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#13151a" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Fixtures" />
+    <title>Sports Calendar — 2026-27 fixtures</title>
+    <style>
+      :root {
+        --bg: #f6f6f4;
+        --panel: #ffffff;
+        --ink: #1b1d21;
+        --muted: #6b7280;
+        --line: #e2e2dd;
+        --today: #1b1d21;
+        --radius: 10px;
+        --win: #16a34a;
+        --loss: #dc2626;
+        --draw: #ca8a04;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #13151a;
+          --panel: #1b1e24;
+          --ink: #eef0f3;
+          --muted: #98a1ae;
+          --line: #2a2e36;
+          --today: #eef0f3;
+        }
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font: 14px/1.45 ui-sans-serif, -apple-system, "Segoe UI", Roboto, sans-serif;
+      }
+      header {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px 20px;
+        align-items: baseline;
+        padding: 18px 22px 14px;
+        border-bottom: 1px solid var(--line);
+        background: var(--panel);
+      }
+      h1 { font-size: 17px; margin: 0; letter-spacing: 0.2px; }
+      h1 .season { color: var(--muted); font-weight: 500; margin-left: 6px; }
+      .meta { color: var(--muted); font-size: 12.5px; }
+      .meta a { color: inherit; }
+      .grow { flex: 1 1 auto; }
+
+      .controls {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 14px;
+        align-items: center;
+        padding: 12px 22px;
+        border-bottom: 1px solid var(--line);
+        background: var(--panel);
+        position: sticky;
+        top: 0;
+        z-index: 3;
+      }
+      .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+      .chip {
+        border: 1px solid var(--line);
+        background: transparent;
+        color: inherit;
+        border-radius: 999px;
+        padding: 4px 11px 4px 9px;
+        font: inherit;
+        font-size: 12.5px;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+      }
+      .chip .dot {
+        width: 9px; height: 9px; border-radius: 50%;
+        background: var(--c, #888);
+        box-shadow: 0 0 0 1px rgba(0,0,0,.18) inset;
+      }
+      .chip[aria-pressed="true"] { background: var(--c); border-color: transparent; color: #fff; }
+      .chip[aria-pressed="true"] .dot { background: rgba(255,255,255,.9); }
+      select, input[type="search"] {
+        font: inherit; font-size: 12.5px;
+        padding: 5px 8px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--bg);
+        color: inherit;
+      }
+      input[type="search"] { min-width: 170px; }
+      .seg { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+      .seg button {
+        font: inherit; font-size: 12.5px; padding: 5px 11px; border: 0;
+        background: transparent; color: var(--muted); cursor: pointer;
+      }
+      .seg button[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
+      .nav { display: inline-flex; align-items: center; gap: 6px; }
+      .nav button {
+        font: inherit; font-size: 13px; padding: 4px 10px;
+        border: 1px solid var(--line); border-radius: 8px;
+        background: var(--bg); color: inherit; cursor: pointer;
+      }
+      .nav .label { font-weight: 600; min-width: 132px; text-align: center; }
+
+      summary { cursor: pointer; color: var(--muted); font-size: 12.5px; }
+      .ics { display: flex; flex-wrap: wrap; gap: 8px; padding: 8px 0 0; }
+      .ics a { font-size: 12.5px; color: var(--muted); }
+
+      main { padding: 16px 22px 60px; }
+      .tally { color: var(--muted); font-size: 12.5px; margin: 0 0 10px; display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+      .pill {
+        border: 1px solid var(--line); background: var(--panel); color: inherit;
+        border-radius: 999px; padding: 2px 10px; font-size: 12px; cursor: pointer;
+      }
+
+      .dows { display: grid; grid-template-columns: repeat(7, 1fr); gap: 6px; margin-bottom: 6px; }
+      .dows div { color: var(--muted); font-size: 11.5px; text-transform: uppercase; letter-spacing: .06em; padding-left: 2px; }
+      .grid { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 6px; }
+      .cell {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        min-height: 104px;
+        padding: 6px 7px;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+      }
+      .cell.out { opacity: .38; }
+      .cell .d { font-size: 12px; color: var(--muted); display: flex; justify-content: space-between; align-items: center; }
+      .cell.now .d b {
+        background: var(--today); color: var(--bg);
+        width: 19px; height: 19px; border-radius: 50%;
+        display: grid; place-items: center; font-size: 11.5px;
+      }
+      .ev {
+        border: 0; border-left: 3px solid var(--c, #888); border-radius: 5px;
+        background: color-mix(in srgb, var(--c) 12%, var(--panel));
+        color: inherit; text-align: left; cursor: pointer;
+        font: inherit; font-size: 11.5px; line-height: 1.35;
+        padding: 3px 6px; display: block; width: 100%;
+      }
+      .ev .t { color: var(--muted); font-variant-numeric: tabular-nums; }
+      .ev .x { font-weight: 600; }
+      .ev.win { box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--win) 60%, transparent); }
+      .ev.loss { box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--loss) 60%, transparent); }
+      .ev.draw { box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--draw) 55%, transparent); }
+      .more { font-size: 11px; color: var(--muted); background: none; border: 0; cursor: pointer; text-align: left; padding: 0 2px; }
+
+      .list { display: flex; flex-direction: column; gap: 18px; }
+      .list h3 { margin: 0 0 6px; font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+      .rows { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+      .row, .rhead {
+        display: grid;
+        grid-template-columns: 138px minmax(210px, 1.5fr) minmax(150px, 1fr) 128px 76px minmax(150px, 1fr);
+        gap: 10px;
+        padding: 9px 12px;
+        border-bottom: 1px solid var(--line);
+        align-items: baseline;
+      }
+      .row { font-size: 13px; cursor: pointer; }
+      .row:last-child { border-bottom: 0; }
+      .row:hover { background: color-mix(in srgb, var(--ink) 5%, var(--panel)); }
+      .rhead { color: var(--muted); font-weight: 500; font-size: 11.5px; text-transform: uppercase; letter-spacing: .06em; }
+      .c-when { white-space: nowrap; font-variant-numeric: tabular-nums; }
+      .c-score { font-variant-numeric: tabular-nums; font-weight: 600; white-space: nowrap; }
+      .cbadge { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: var(--c); margin-right: 6px; }
+      .tbc { color: var(--muted); font-size: 11px; border: 1px solid var(--line); border-radius: 4px; padding: 0 4px; margin-left: 6px; }
+      .ground { color: var(--muted); font-size: 11.5px; }
+
+      .drawer {
+        position: fixed; inset: 0 auto 0 0; width: min(430px, 92vw);
+        background: var(--panel); border-left: 1px solid var(--line);
+        box-shadow: -12px 0 30px rgba(0,0,0,.16);
+        padding: 18px 20px; overflow: auto; z-index: 10;
+      }
+      .drawer[hidden] { display: none; }
+      .drawer h2 { margin: 0 0 4px; font-size: 16px; }
+      .drawer .sub { color: var(--muted); font-size: 12.5px; margin-bottom: 14px; }
+      .drawer dl { margin: 0; display: grid; grid-template-columns: 96px 1fr; gap: 8px 10px; }
+      .drawer dt { color: var(--muted); font-size: 11.5px; text-transform: uppercase; letter-spacing: .05em; padding-top: 2px; }
+      .drawer dd { margin: 0; font-size: 13.5px; }
+      .drawer .close { float: right; border: 1px solid var(--line); background: var(--bg); color: inherit; border-radius: 8px; padding: 3px 9px; cursor: pointer; }
+      .backdrop { position: fixed; inset: 0; background: rgba(10,12,16,.35); z-index: 9; }
+      .backdrop[hidden] { display: none; }
+      .empty { color: var(--muted); padding: 40px 0; text-align: center; }
+      .notice { color: var(--muted); font-size: 13px; margin: 0 0 12px; }
+      .refresh {
+        border: 1px solid var(--line); background: var(--bg); color: inherit;
+        border-radius: 8px; padding: 5px 11px; font: inherit; font-size: 12.5px; cursor: pointer;
+      }
+      .refresh[hidden] { display: none; }
+      .refresh[disabled] { opacity: .6; cursor: progress; }
+
+      @media (max-width: 820px) {
+        header { padding: 14px 14px 12px; gap: 8px 14px; }
+        h1 { font-size: 16px; }
+        main { padding: 12px 12px calc(28px + env(safe-area-inset-bottom)); }
+        .controls {
+          padding: 8px 12px calc(8px + env(safe-area-inset-left));
+          gap: 8px;
+        }
+        /* club chips scroll sideways instead of eating half the screen */
+        .chips {
+          flex-wrap: nowrap;
+          overflow-x: auto;
+          width: 100%;
+          padding-bottom: 4px;
+          scrollbar-width: none;
+        }
+        .chips::-webkit-scrollbar { display: none; }
+        .chip { flex: 0 0 auto; padding: 7px 12px; font-size: 13px; }
+        select, input[type="search"], .nav button, .refresh { font-size: 13px; padding: 7px 10px; }
+        .seg button { font-size: 12.5px; padding: 7px 8px; }
+        input[type="search"] { flex: 1 1 140px; min-width: 0; }
+        .grow { display: none; }
+        /* a 7-column grid is unreadable at this width, so the agenda is the only view */
+        #viewSeg { display: none; }
+        #tzSeg { order: 4; }
+        #monthNav { display: none !important; }
+        .tally { font-size: 12px; }
+
+        /* agenda becomes a card per fixture */
+        .rhead { display: none; }
+        .row {
+          grid-template-columns: 1fr auto;
+          grid-template-areas:
+            "when    score"
+            "fixture fixture"
+            "comp    clubs"
+            "venue   venue";
+          gap: 2px 10px;
+          padding: 13px 14px;
+          min-height: 44px;
+        }
+        .c-when { grid-area: when; font-weight: 600; }
+        .c-fixture { grid-area: fixture; font-size: 15px; margin-top: 2px; }
+        .c-comp { grid-area: comp; color: var(--muted); font-size: 12.5px; }
+        .c-clubs { grid-area: clubs; text-align: right; font-size: 12.5px; }
+        .c-score { grid-area: score; text-align: right; font-size: 15px; }
+        .c-venue { grid-area: venue; color: var(--muted); font-size: 12.5px; margin-top: 3px; }
+        .dash { display: none; }
+
+        /* three compact rows: clubs · filters · toggles */
+        #compSelect { order: 1; flex: 1 1 150px; min-width: 0; }
+        #search { order: 2; flex: 1 1 140px; }
+        #statusSeg { order: 3; }
+        #viewSeg { order: 4; }
+        #tzSeg { order: 5; }
+        .nav { order: 6; }
+
+        /* the detail panel becomes a bottom sheet */
+        .drawer {
+          inset: auto 0 0 0;
+          width: auto;
+          max-height: 86vh;
+          border-left: 0;
+          border-top: 1px solid var(--line);
+          border-radius: 14px 14px 0 0;
+          padding: 16px 16px calc(20px + env(safe-area-inset-bottom));
+          box-shadow: 0 -12px 30px rgba(0,0,0,.2);
+        }
+        .drawer dl { grid-template-columns: 84px 1fr; }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Sports Calendar<span class="season" id="seasonLabel"></span></h1>
+      <div class="meta" id="metaLine"></div>
+      <div class="grow"></div>
+      <button class="refresh" id="refreshBtn" hidden>Refresh data</button>
+      <details>
+        <summary>Calendar files (.ics)</summary>
+        <div class="ics" id="icsLinks"></div>
+      </details>
+    </header>
+
+    <div class="controls">
+      <div class="chips" id="clubChips"></div>
+      <select id="compSelect" aria-label="Competition"></select>
+      <div class="seg" id="statusSeg" role="group" aria-label="Status">
+        <button id="stUpcoming" aria-pressed="true">Upcoming</button>
+        <button id="stPlayed" aria-pressed="false">Played</button>
+        <button id="stAll" aria-pressed="false">All</button>
+      </div>
+      <input type="search" id="search" placeholder="opponent, venue…" aria-label="Search" />
+      <div class="seg" id="viewSeg" role="group" aria-label="View">
+        <button id="vMonth" aria-pressed="true">Month</button>
+        <button id="vList" aria-pressed="false">List</button>
+      </div>
+      <div class="seg" id="tzSeg" role="group" aria-label="Time zone">
+        <button id="tzLocal" aria-pressed="true">Local</button>
+        <button id="tzUtc" aria-pressed="false">UTC</button>
+      </div>
+      <div class="grow"></div>
+      <div class="nav" id="monthNav">
+        <button id="prev" title="Previous month">‹</button>
+        <span class="label" id="monthLabel"></span>
+        <button id="next" title="Next month">›</button>
+        <button id="today">Today</button>
+      </div>
+    </div>
+
+    <main>
+      <p class="tally" id="tally"></p>
+      <div id="view"></div>
+    </main>
+
+    <div class="backdrop" id="backdrop" hidden></div>
+    <aside class="drawer" id="drawer" hidden></aside>
+
+    <script src="data/matches.js"></script>
+    <script>
+      const DATA = window.MATCHES_DATA;
+      const CLUBS = Object.fromEntries(DATA.clubs.map((c) => [c.id, c]));
+      const MONTHS = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+      const DOWS = ["Mon","Tue","Wed","Thu","Fri","Sat","Sun"];
+      const NOISE = new Set(["fc","cf","afc","ac","sc","fk","sk","cp","if","ca","club","de","the","04","05","09","1899","1900","1907","2004"]);
+
+      const narrow = window.matchMedia("(max-width: 820px)");
+      const state = {
+        view: narrow.matches ? "list" : "month",
+        status: "upcoming",
+        tz: "local",
+        clubs: new Set(DATA.clubs.map((c) => c.id)),
+        competition: "all",
+        q: "",
+        day: null,
+        ym: null,
+      };
+
+      function push(map, key, value) {
+        const list = map.get(key);
+        if (list) list.push(value);
+        else map.set(key, [value]);
+      }
+
+      // ---- identity helpers (mirror tools/parse.mjs) ----
+      function slug(name) {
+        return String(name || "")
+          .normalize("NFD")
+          .replace(/[\u0300-\u036f]/g, "")
+          .toLowerCase()
+          .replace(/\./g, "")
+          .replace(/[^a-z0-9]+/g, " ")
+          .split(" ")
+          .filter((t) => t.length > 1 && !NOISE.has(t))
+          .join(" ");
+      }
+      const ALIAS_SLUGS = Object.fromEntries(
+        DATA.clubs.map((c) => [c.id, (c.aliases || [c.name]).map(slug)])
+      );
+      function sideOf(match, clubId) {
+        const keys = ALIAS_SLUGS[clubId] || [];
+        const h = slug(match.homeTeam);
+        const a = slug(match.awayTeam);
+        const hit = (k, side) => (k === side || side.startsWith(k) || side.endsWith(k) ? true : false);
+        if (keys.some((k) => hit(k, h))) return "home";
+        if (keys.some((k) => hit(k, a))) return "away";
+        return null;
+      }
+
+      // ---- one entry per fixture, even when two tracked clubs feature ----
+      const fixtureMap = new Map();
+      for (const m of DATA.matches) {
+        const key = m.fixtureKey || m.id;
+        const found = fixtureMap.get(key);
+        if (found) {
+          if (!found.clubs.includes(m.club)) found.clubs.push(m.club);
+          continue;
+        }
+        fixtureMap.set(key, { ...m, clubs: [m.club] });
+      }
+      const fixtures = [...fixtureMap.values()];
+      const sortKeyOf = (m) => m.kickoffUtc || `${m.date} 99:99`;
+      fixtures.sort((a, b) => (sortKeyOf(a) < sortKeyOf(b) ? -1 : sortKeyOf(a) > sortKeyOf(b) ? 1 : 0));
+
+      // ---- time rendering ----
+      function utcDate(m) {
+        return m.kickoffUtc ? new Date(m.kickoffUtc) : null;
+      }
+      // Kick-offs are stored in UTC; for the local view shift to wall-clock.
+      function localised(m) {
+        const d = utcDate(m);
+        if (!d) return null;
+        // For the UTC view, shift the instant so local getters read back UTC fields.
+        return state.tz === "utc" ? new Date(d.getTime() + d.getTimezoneOffset() * 60000) : d;
+      }
+      function localZoneId() {
+        return Intl.DateTimeFormat().resolvedOptions().timeZone || "UTC";
+      }
+      function shown(m) {
+        return localised(m) || new Date(`${m.date}T12:00:00`);
+      }
+      function clockOf(m) {
+        const d = localised(m);
+        if (!d) return "";
+        return `${String(d.getHours()).padStart(2, "0")}:${String(d.getMinutes()).padStart(2, "0")}`;
+      }
+      function dayKeyOf(m) {
+        return keyOf(shown(m));
+      }
+      function keyOf(d) {
+        return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+      }
+      function zoneLabel() {
+        return state.tz === "utc" ? "UTC" : localZoneId().split("/").pop().replace(/_/g, " ");
+      }
+      function longWhen(m) {
+        const d = shown(m);
+        const wd = DOWS[(d.getDay() + 6) % 7];
+        const date = `${wd} ${d.getDate()} ${MONTHS[d.getMonth()]} ${d.getFullYear()}`;
+        return clockOf(m) ? `${date}, ${clockOf(m)} ${zoneLabel()}` : `${date} — kick-off time not yet confirmed`;
+      }
+
+      // ---- derived display values ----
+      function label(m, side) {
+        const name = side === "home" ? m.homeTeam : m.awayTeam;
+        for (const id of m.clubs) {
+          if (sideOf(m, id) === side) return CLUBS[id].short;
+        }
+        return trimName(name);
+      }
+      function trimName(name) {
+        return slug(name).replace(/\b\w/g, (c) => c.toUpperCase()).split(" ").slice(0, 2).join(" ");
+      }
+      function resultClass(m) {
+        if (!m.score || m.clubs.length !== 1) return "";
+        const id = m.clubs[0];
+        const [h, a] = m.score.split("-").map(Number);
+        const mine = sideOf(m, id) === "home" ? h : a;
+        const theirs = sideOf(m, id) === "home" ? a : h;
+        return mine > theirs ? "win" : mine < theirs ? "loss" : "draw";
+      }
+
+      // ---- filtering ----
+      function visible() {
+        const q = state.q.trim().toLowerCase();
+        return fixtures.filter((m) => {
+          if (!m.clubs.some((c) => state.clubs.has(c))) return false;
+          if (state.competition !== "all" && m.competition !== state.competition) return false;
+          if (state.status === "upcoming" && m.status !== "upcoming") return false;
+          if (state.status === "played" && m.status !== "played") return false;
+          if (state.day && dayKeyOf(m) !== state.day) return false;
+          if (q) {
+            const hay = `${m.homeTeam} ${m.awayTeam} ${m.venue} ${m.location} ${m.competition} ${m.opponent}`.toLowerCase();
+            if (!hay.includes(q)) return false;
+          }
+          return true;
+        });
+      }
+
+      // Open on the first month that actually has something to show:
+      // today if it still has fixtures, otherwise the next one due.
+      function defaultMonth() {
+        const today = keyOf(new Date()).slice(0, 7);
+        const pool = state.status === "played" ? fixtures : fixtures.filter((m) => m.status === "upcoming");
+        if (pool.some((m) => dayKeyOf(m).startsWith(today))) return today;
+        const next = [...pool].sort((a, b) => (sortKeyOf(a) < sortKeyOf(b) ? -1 : 1))[0];
+        return next ? dayKeyOf(next).slice(0, 7) : today;
+      }
+
+      // ---- rendering ----
+      function render() {
+        for (const el of document.querySelectorAll(".chip")) {
+          el.setAttribute("aria-pressed", String(state.clubs.has(el.dataset.club)));
+        }
+        if (!state.ym) state.ym = defaultMonth();
+        const rows = visible();
+        renderTally(rows);
+        const [y, mo] = state.ym.split("-").map(Number);
+        document.getElementById("monthLabel").textContent = `${MONTHS[mo - 1]} ${y}`;
+        document.getElementById("monthNav").style.display = state.view === "month" ? "inline-flex" : "none";
+        document.getElementById("view").innerHTML = state.view === "month" ? monthHtml(rows) : listHtml(rows);
+        bindClicks();
+      }
+
+      function renderTally(rows) {
+        const upcoming = rows.filter((m) => m.status === "upcoming").length;
+        const played = rows.filter((m) => m.status === "played").length;
+        const tbc = rows.filter((m) => !m.kickoffUtc).length;
+        const parts = [
+          `${rows.length} fixtures`,
+          `${upcoming} upcoming`,
+          `${played} played`,
+          tbc ? `${tbc} kick-off TBC` : "",
+          `times in ${zoneLabel()}`,
+        ].filter(Boolean);
+        const dayPill = state.day
+          ? `<button class="pill" id="clearDay">only ${state.day.slice(8)} ${MONTHS[Number(state.day.slice(5, 7)) - 1]} ✕</button>`
+          : "";
+        document.getElementById("tally").innerHTML = `${parts.join(" · ")} ${dayPill}`;
+      }
+
+      function monthHtml(rows) {
+        const [y, mo] = state.ym.split("-").map(Number);
+        const bucket = new Map();
+        for (const m of rows) push(bucket, dayKeyOf(m), m);
+        const first = new Date(y, mo - 1, 1);
+        const offset = (first.getDay() + 6) % 7;
+        const days = new Date(y, mo, 0).getDate();
+        const todayKey = keyOf(new Date());
+        const cells = [];
+        for (let i = offset; i > 0; i--) cells.push(cellHtml(new Date(y, mo - 1, 1 - i), bucket, true, todayKey));
+        for (let d = 1; d <= days; d++) cells.push(cellHtml(new Date(y, mo - 1, d), bucket, false, todayKey));
+        let tail = 1;
+        while (cells.length % 7) cells.push(cellHtml(new Date(y, mo, tail++), bucket, true, todayKey));
+        const inMonth = rows.filter((m) => dayKeyOf(m).startsWith(state.ym)).length;
+        let notice = "";
+        if (!inMonth) {
+          const elsewhere = rows.find((m) => dayKeyOf(m).slice(0, 7) !== state.ym);
+          notice = rows.length
+            ? `<div class="notice">Nothing in ${MONTHS[mo - 1]} ${y} with these filters. ` +
+              (elsewhere
+                ? `<button class="pill" data-jump="${dayKeyOf(elsewhere).slice(0, 7)}">Jump to ${MONTHS[Number(dayKeyOf(elsewhere).slice(5, 7)) - 1]}</button>`
+                : "") +
+              `</div>`
+            : `<div class="empty">No fixtures match these filters.</div>`;
+        }
+        return `${notice}<div class="dows">${DOWS.map((d) => `<div>${d}</div>`).join("")}</div><div class="grid">${cells.join("")}</div>`;
+      }
+
+      function cellHtml(d, bucket, outside, todayKey) {
+        const k = keyOf(d);
+        const list = bucket.get(k) || [];
+        const head = `<div class="d"><b>${d.getDate()}</b><span>${DOWS[(d.getDay() + 6) % 7]}</span></div>`;
+        if (!list.length) return `<div class="cell${outside ? " out" : ""}">${head}</div>`;
+        const chips = list.slice(0, 3).map(chipHtml).join("");
+        const more = list.length > 3 ? `<button class="more" data-day="${k}">+${list.length - 3} more</button>` : "";
+        return `<div class="cell${outside ? " out" : ""}${k === todayKey ? " now" : ""}">${head}${chips}${more}</div>`;
+      }
+
+      function chipHtml(m) {
+        const color = CLUBS[m.clubs[0]].color;
+        const time = clockOf(m) || "—";
+        const ground = m.clubs.length === 1 ? ` ${sideOf(m, m.clubs[0]) === "home" ? "H" : "A"}` : "";
+        const line = m.score
+          ? `${label(m, "home")} ${m.score} ${label(m, "away")}`
+          : `${label(m, "home")} v ${label(m, "away")}`;
+        return `<button class="ev ${resultClass(m)}" style="--c:${color}" data-fixture="${m.fixtureKey}"
+          title="${m.competition}${m.round ? " · round " + m.round : ""}">
+          <span class="t">${time}${ground}</span> <span class="x">${line}</span>${m.kickoffUtc ? "" : ' <span class="t">TBC</span>'}
+        </button>`;
+      }
+
+      function listHtml(rows) {
+        if (!rows.length) return `<div class="empty">No fixtures match these filters.</div>`;
+        const groups = new Map();
+        for (const m of rows) push(groups, dayKeyOf(m).slice(0, 7), m);
+        return `<div class="list">${[...groups].map(([k, list]) => {
+          const [y, mo] = k.split("-").map(Number);
+          return `<section><h3>${MONTHS[mo - 1]} ${y} · ${list.length} fixture${list.length === 1 ? "" : "s"}</h3>${tableHtml(list)}</section>`;
+        }).join("")}</div>`;
+      }
+
+      function tableHtml(list) {
+        const head = `<div class="rhead"><span>Kick-off</span><span>Fixture</span><span>Competition</span><span>Your clubs</span><span>Score</span><span>Venue</span></div>`;
+        const rows = list
+          .map((m) => {
+            const badges = m.clubs
+              .map((id) => `<span class="cbadge" style="--c:${CLUBS[id].color}" title="${CLUBS[id].name}"></span>`)
+              .join("");
+            const grounds = m.clubs
+              .map((id) => `${CLUBS[id].short} ${sideOf(m, id) === "home" ? "(H)" : "(A)"}`)
+              .join(", ");
+            const d = shown(m);
+            const when = `${String(d.getDate()).padStart(2, "0")} ${MONTHS[d.getMonth()].slice(0, 3)} ${clockOf(m) || ""}${
+              m.kickoffUtc ? "" : '<span class="tbc">TBC</span>'}`;
+            return `<div class="row" data-fixture="${m.fixtureKey}">
+              <span class="c-when">${when}</span>
+              <span class="c-fixture">${m.homeTeam} v ${m.awayTeam}</span>
+              <span class="c-comp">${m.competition}${m.phase ? ` <span class="ground">· ${m.phase}</span>` : ""}${m.round ? ` <span class="ground">· rd ${m.round}</span>` : ""}</span>
+              <span class="c-clubs">${badges}${grounds}</span>
+              <span class="c-score">${m.score ? `${m.score}${m.scoreExtra ? ` ${m.scoreExtra}` : ""}` : '<i class="dash">—</i>'}</span>
+              <span class="c-venue">${[m.venue, m.location].filter(Boolean).join(", ") || "—"}</span>
+            </div>`;
+          })
+          .join("");
+        return `<div class="rows">${head}${rows}</div>`;
+      }
+
+      function drawerHtml(m) {
+        // The heading already carries the fixture, date and time.
+        const rows = [];
+        rows.push(["Competition", `${m.competition}${m.phase ? ` — ${m.phase}` : ""}${m.round ? ` · round ${m.round}` : ""}`]);
+        if (m.kickoffUtc) rows.push(["UTC", m.kickoffUtc + (m.localClock ? ` (venue clock ${m.localClock})` : "")]);
+        if (m.timeConfidence === "assumed") rows.push(["Time note", "zone inferred from the venue"]);
+        rows.push([
+          "Your clubs",
+          m.clubs.map((id) => `${CLUBS[id].name} — ${sideOf(m, id) === "home" ? "home" : "away"}`).join("<br>"),
+        ]);
+        if (m.score) rows.push(["Result", `${m.homeTeam} ${m.score.replace("-", "–")} ${m.awayTeam}${m.scoreExtra ? ` (${m.scoreExtra})` : ""}`]);
+        if (m.homeEvents) rows.push([m.homeTeam, m.homeEvents]);
+        if (m.awayEvents) rows.push([m.awayTeam, m.awayEvents]);
+        if (m.venue) rows.push(["Venue", [m.venue, m.location].filter(Boolean).join(", ")]);
+        if (m.attendance) rows.push(["Attendance", Number(m.attendance).toLocaleString()]);
+        if (m.referee) rows.push(["Referee", m.referee]);
+        if (m.notes) rows.push(["Note", m.notes]);
+        if (m.report) rows.push(["Report", `<a href="${m.report}" target="_blank" rel="noopener">official match page</a>`]);
+        rows.push(["Source", `Wikipedia — ${m.sourcePage}`]);
+        const title = m.score ? `${m.homeTeam} ${m.score} ${m.awayTeam}` : `${m.homeTeam} v ${m.awayTeam}`;
+        return `<button class="close" id="drawerClose">close</button>
+          <h2>${title}</h2>
+          <div class="sub">${m.competition}${m.round ? ` · round ${m.round}` : ""} · ${longWhen(m)}</div>
+          <dl>${rows.map(([k, v]) => `<dt>${k}</dt><dd>${v}</dd>`).join("")}</dl>`;
+      }
+
+      function bindClicks() {
+        for (const el of document.querySelectorAll("[data-fixture]")) {
+          el.addEventListener("click", () => {
+            const m = fixtureMap.get(el.dataset.fixture);
+            if (!m) return;
+            const d = document.getElementById("drawer");
+            d.innerHTML = drawerHtml(m);
+            d.hidden = false;
+            document.getElementById("backdrop").hidden = false;
+            document.getElementById("drawerClose").addEventListener("click", closeDrawer);
+          });
+        }
+        for (const el of document.querySelectorAll("[data-day]")) {
+          el.addEventListener("click", () => {
+            state.day = el.dataset.day;
+            state.view = "list";
+            document.getElementById("vMonth").setAttribute("aria-pressed", "false");
+            document.getElementById("vList").setAttribute("aria-pressed", "true");
+            render();
+          });
+        }
+        for (const el of document.querySelectorAll("[data-jump]")) {
+          el.addEventListener("click", () => {
+            state.ym = el.dataset.jump;
+            render();
+          });
+        }
+        const clear = document.getElementById("clearDay");
+        if (clear)
+          clear.addEventListener("click", () => {
+            state.day = null;
+            render();
+          });
+      }
+      function closeDrawer() {
+        document.getElementById("drawer").hidden = true;
+        document.getElementById("backdrop").hidden = true;
+      }
+
+      function syncViewButtons() {
+        document.getElementById("vMonth").setAttribute("aria-pressed", String(state.view === "month"));
+        document.getElementById("vList").setAttribute("aria-pressed", String(state.view === "list"));
+      }
+
+      async function refreshFromServer(btn) {
+        btn.disabled = true;
+        btn.textContent = "Fetching…";
+        try {
+          const res = await fetch("/api/refresh", { method: "POST" });
+          const body = await res.json();
+          if (!res.ok || !body.ok) throw new Error(body.error || `HTTP ${res.status}`);
+          location.reload();
+          return;
+        } catch (err) {
+          btn.textContent = "Refresh failed";
+          setTimeout(() => {
+            btn.textContent = "Refresh data";
+          }, 4000);
+          console.error("refresh failed:", err);
+        } finally {
+          btn.disabled = false;
+        }
+      }
+
+      function pressPair(offId, onId) {
+        document.getElementById(offId).setAttribute("aria-pressed", "false");
+        document.getElementById(onId).setAttribute("aria-pressed", "true");
+      }
+
+      function buildChrome() {
+        document.getElementById("seasonLabel").textContent = ` ${DATA.season}`;
+        document.getElementById("metaLine").innerHTML =
+          `${fixtures.length} fixtures across ${DATA.clubs.length} clubs<br>` +
+          `refreshed ${DATA.generatedAt.slice(0, 16).replace("T", " ")} · source: ${DATA.source}`;
+        document.getElementById("icsLinks").innerHTML =
+          [`<a href="calendar/all-clubs.ics" download>all clubs</a>`]
+            .concat(DATA.clubs.map((c) => `<a href="calendar/${c.id}.ics" download>${c.name}</a>`))
+            .join("");
+        document.getElementById("clubChips").innerHTML = DATA.clubs
+          .map(
+            (c) =>
+              `<button class="chip" data-club="${c.id}" style="--c:${c.color}" aria-pressed="true">` +
+              `<span class="dot"></span>${c.name}</button>`
+          )
+          .join("");
+        document.getElementById("compSelect").innerHTML = ["all", ...[...new Set(fixtures.map((m) => m.competition))].sort()]
+          .map((c) => `<option value="${c}">${c === "all" ? "All competitions" : c}</option>`)
+          .join("");
+      }
+
+      function wireUp() {
+        document.getElementById("clubChips").addEventListener("click", (e) => {
+          const btn = e.target.closest(".chip");
+          if (!btn) return;
+          state.clubs.has(btn.dataset.club) ? state.clubs.delete(btn.dataset.club) : state.clubs.add(btn.dataset.club);
+          if (!state.clubs.size) DATA.clubs.forEach((c) => state.clubs.add(c.id));
+          render();
+        });
+        document.getElementById("compSelect").addEventListener("change", (e) => {
+          state.competition = e.target.value;
+          render();
+        });
+        const statusButtons = { stUpcoming: "upcoming", stPlayed: "played", stAll: "all" };
+        for (const [id, value] of Object.entries(statusButtons)) {
+          document.getElementById(id).addEventListener("click", () => {
+            state.status = value;
+            for (const k of Object.keys(statusButtons)) {
+              document.getElementById(k).setAttribute("aria-pressed", String(k === id));
+            }
+            render();
+          });
+        }
+        document.getElementById("vMonth").addEventListener("click", () => {
+          state.view = "month";
+          pressPair("vList", "vMonth");
+          render();
+        });
+        document.getElementById("vList").addEventListener("click", () => {
+          state.view = "list";
+          pressPair("vMonth", "vList");
+          render();
+        });
+        document.getElementById("tzLocal").addEventListener("click", () => {
+          state.tz = "local";
+          pressPair("tzUtc", "tzLocal");
+          render();
+        });
+        document.getElementById("tzUtc").addEventListener("click", () => {
+          state.tz = "utc";
+          pressPair("tzLocal", "tzUtc");
+          render();
+        });
+        document.getElementById("search").addEventListener("input", (e) => {
+          state.q = e.target.value;
+          render();
+        });
+        document.getElementById("prev").addEventListener("click", () => shiftMonth(-1));
+        document.getElementById("next").addEventListener("click", () => shiftMonth(1));
+        document.getElementById("today").addEventListener("click", () => {
+          const now = new Date();
+          state.ym = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}`;
+          render();
+        });
+        document.getElementById("backdrop").addEventListener("click", closeDrawer);
+        const refreshBtn = document.getElementById("refreshBtn");
+        // Only meaningful when a server is running; over file:// there is nothing to call.
+        if (location.protocol.startsWith("http")) {
+          refreshBtn.hidden = false;
+          refreshBtn.addEventListener("click", () => refreshFromServer(refreshBtn));
+        }
+        document.addEventListener("keydown", (e) => {
+          if (e.key === "Escape") closeDrawer();
+          if (e.target.matches("input, select")) return;
+          if (e.key === "ArrowLeft") shiftMonth(-1);
+          if (e.key === "ArrowRight") shiftMonth(1);
+        });
+      }
+
+      function shiftMonth(delta) {
+        const [y, mo] = state.ym.split("-").map(Number);
+        const d = new Date(y, mo - 1 + delta, 1);
+        state.ym = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}`;
+        render();
+      }
+
+      buildChrome();
+      wireUp();
+      syncViewButtons();
+      render();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,695 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//SportsCalendar//2026-27//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Manchester City 2026-27
+X-WR-TIMEZONE:UTC
+X-WR-CALDESC:49 matches\, refreshed 2026-09-30
+BEGIN:VEVENT
+UID:man-city-w19wy5ck@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260816T140000Z
+DTEND:20260816T160000Z
+SUMMARY:Arsenal v Manchester City (FA Community Shield)
+LOCATION:Millennium Stadium\, Cardiff
+DESCRIPTION:Competition: FA Community Shield\nRound: Final\nKick-off: 2026
+ -08-16T14:00Z (venue clock 15:00)\nResult: Arsenal 3-0 Manchester City\n
+ Arsenal: Calafiori 1'\, 38' (yellow)\, Havertz 28'\, Ødegaard 48'\, 84'
+  (yellow)\nManchester City: Foden 24' (yellow)\, Gvardiol 53' (yellow)\n
+ Venue: Millennium Stadium\, Cardiff\nAttendance: 58056\nReferee: Sam Bar
+ rott\nReport: https://www.bbc.co.uk/sport/football/live/cv4g34g19p2kt\nS
+ ource: Wikipedia — 2026–27 Manchester City F.C. season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645202-0ajmtkw@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260823T130000Z
+DTEND:20260823T150000Z
+SUMMARY:Manchester City v Bournemouth (Premier League)
+LOCATION:Etihad Stadium\, Manchester
+DESCRIPTION:Competition: Premier League\nRound: 1\nKick-off: 2026-08-23T13
+ :00Z (venue clock 14:00)\nResult: Manchester City 2-1 Bournemouth\nManch
+ ester City: Foden 78' (yellow)\, Guéhi 84'\, Gvardiol\nBournemouth: Tav
+ ernier 26'\, Evanilson (yellow)\, Silva 85' (yellow)\nVenue: Etihad Stad
+ ium\, Manchester\nAttendance: 60645\nReferee: Jarred Gillett\nReport: ht
+ tps://www.premierleague.com/match/2645202\nSource: Wikipedia — 2026–
+ 27 Manchester City F.C. season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645209-03h84uh@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260828T190000Z
+DTEND:20260828T210000Z
+SUMMARY:Crystal Palace v Manchester City (Premier League)
+LOCATION:Selhurst Park\, Selhurst
+DESCRIPTION:Competition: Premier League\nRound: 2\nKick-off: 2026-08-28T19
+ :00Z (venue clock 20:00)\nResult: Crystal Palace 1-4 Manchester City\nCr
+ ystal Palace: Donnarumma 56' (own goal)\, Khalaili 68' (yellow)\nManches
+ ter City: Haaland 17'\, Cherki 33' (yellow)\, 54'\, Anderson 55' (yellow
+ )\nVenue: Selhurst Park\, Selhurst\nAttendance: 25149\nReferee: Andrew M
+ adley\nNote: Fixture was initially scheduled for 29 August\, but was res
+ cheduled for live Sky Sports broadcasting.\nReport: https://www.premierl
+ eague.com/match/2645209\nSource: Wikipedia — 2026–27 Manchester City
+  F.C. season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645222-0kbmzds@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260905T140000Z
+DTEND:20260905T160000Z
+SUMMARY:Manchester City v Coventry City (Premier League)
+LOCATION:Etihad Stadium\, Manchester
+DESCRIPTION:Competition: Premier League\nRound: 3\nKick-off: 2026-09-05T14
+ :00Z (venue clock 15:00)\nResult: Manchester City 1-0 Coventry City\nMan
+ chester City: Haaland 26'\, Khusanov (yellow)\nCoventry City: Van Ewijk 
+ 19' (yellow)\, Pinnock (yellow)\nVenue: Etihad Stadium\, Manchester\nAtt
+ endance: 60765\nReferee: Paul Tierney\nReport: https://www.premierleague
+ .com/match/2645222\nSource: Wikipedia — 2026–27 Manchester City F.C.
+  season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2049555-0hd53qm@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260908T190000Z
+DTEND:20260908T210000Z
+SUMMARY:Porto v Manchester City (UEFA Champions League)
+LOCATION:Estádio do Dragão\, Porto\, Portugal
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 1\nK
+ ick-off: 2026-09-08T19:00Z (venue clock 20:00)\nResult: Porto 0-2 Manche
+ ster City\nPorto: Rosario (yellow)\nManchester City: Gvardiol 37' (yello
+ w)\, Haaland 47'\, (yellow)\, Donnarumma 49' (yellow)\nVenue: Estádio d
+ o Dragão\, Porto\, Portugal\nAttendance: 49106\nReferee: Szymon Marcini
+ ak (Poland)\nReport: https://www.uefa.com/uefachampionsleague/match/2049
+ 555/\nSource: Wikipedia — 2026–27 Manchester City F.C. season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645232-0eyxjyh@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260913T153000Z
+DTEND:20260913T173000Z
+SUMMARY:Manchester United v Manchester City (Premier League)
+LOCATION:Old Trafford\, Trafford
+DESCRIPTION:Competition: Premier League\nRound: 4\nKick-off: 2026-09-13T15
+ :30Z (venue clock 16:30)\nResult: Manchester United 0-1 Manchester City\
+ nManchester United: Maguire 81' (yellow)\nManchester City: Foden\, Haala
+ nd 60'\, Gvardiol 79' (yellow)\, Fernández 80' (yellow)\nVenue: Old Tra
+ fford\, Trafford\nAttendance: 74161\nReferee: Michael Oliver\nNote: Fixt
+ ure was initially scheduled for 12 September\, but was rescheduled for l
+ ive Sky Sports broadcasting.\nReport: https://www.premierleague.com/matc
+ h/2645232\nSource: Wikipedia — 2026–27 Manchester City F.C. season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-w1tly7hh@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260917T183000Z
+DTEND:20260917T203000Z
+SUMMARY:Manchester City v Norwich City (EFL Cup)
+LOCATION:Etihad Stadium\, Manchester
+DESCRIPTION:Competition: EFL Cup\nRound: Third round\nKick-off: 2026-09-17
+ T18:30Z (venue clock 19:30)\nResult: Manchester City 5-0 Norwich City\nM
+ anchester City: Samba 29'\, Cherki 32'\, Allan 48'\, McAidoo 90'\nNorwic
+ h City: Fisher 30' (yellow)\nVenue: Etihad Stadium\, Manchester\nAttenda
+ nce: 32451\nReferee: Ruebyn Ricardo\nReport: https://www.efl.com/match-c
+ entre/g2685170\nSource: Wikipedia — 2026–27 Manchester City F.C. sea
+ son
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645241-09ur9wa@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20260920T130000Z
+DTEND:20260920T150000Z
+SUMMARY:Manchester City v Sunderland (Premier League)
+LOCATION:Etihad Stadium\, Manchester
+DESCRIPTION:Competition: Premier League\nRound: 5\nKick-off: 2026-09-20T13
+ :00Z (venue clock 14:00)\nResult: Manchester City 5-3 Sunderland\nManche
+ ster City: Fernández 9'\, Cherki 29'\, Semenyo 43'\, Haaland 81'\nSunde
+ rland: Methalie 8' (yellow)\, Brobbey 12'\nVenue: Etihad Stadium\, Manch
+ ester\nAttendance: 60312\nReferee: Robert Jones\nNote: Fixture was initi
+ ally scheduled for 19 September\, but was pushed back a day due to Manch
+ ester City's involvement in the EFL Cup on the preceding Thursday.\nRepo
+ rt: https://www.premierleague.com/match/2645241\nSource: Wikipedia — 2
+ 026–27 Manchester City F.C. season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645252-11z130k@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261011T153000Z
+DTEND:20261011T173000Z
+SUMMARY:Liverpool v Manchester City (Premier League)
+LOCATION:Anfield\, Liverpool
+DESCRIPTION:Competition: Premier League\nRound: 6\nKick-off: 2026-10-11T15
+ :30Z (venue clock 16:30)\nVenue: Anfield\, Liverpool\nNote: Fixture was 
+ initially scheduled for 12 September\, but was rescheduled for live Sky 
+ Sports broadcasting.\nReport: https://www.premierleague.com/match/264525
+ 2\nSource: Wikipedia — 2026–27 Manchester City F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2049580-04w7ttd@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261014T190000Z
+DTEND:20261014T210000Z
+SUMMARY:Manchester City v Paris Saint-Germain (UEFA Champions League)
+LOCATION:Etihad Stadium\, Manchester\, England
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 2\nK
+ ick-off: 2026-10-14T19:00Z (venue clock 20:00)\nVenue: Etihad Stadium\, 
+ Manchester\, England\nReport: https://www.uefa.com/uefachampionsleague/m
+ atch/2049580/\nSource: Wikipedia — 2026–27 Manchester City F.C. seas
+ on
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645261-08t2f1j@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261017T140000Z
+DTEND:20261017T160000Z
+SUMMARY:Manchester City v Ipswich Town (Premier League)
+LOCATION:Etihad Stadium\, Manchester
+DESCRIPTION:Competition: Premier League\nRound: 7\nKick-off: 2026-10-17T14
+ :00Z (venue clock 15:00)\nVenue: Etihad Stadium\, Manchester\nReport: ht
+ tps://www.premierleague.com/match/2645261\nSource: Wikipedia — 2026–
+ 27 Manchester City F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2049591-0x37ssu@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261020T190000Z
+DTEND:20261020T210000Z
+SUMMARY:Manchester City v AEK Athens (UEFA Champions League)
+LOCATION:Etihad Stadium\, Manchester\, England
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 3\nK
+ ick-off: 2026-10-20T19:00Z (venue clock 20:00)\nVenue: Etihad Stadium\, 
+ Manchester\, England\nReport: https://www.uefa.com/uefachampionsleague/m
+ atch/2049591/\nSource: Wikipedia — 2026–27 Manchester City F.C. seas
+ on
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645266-13b0s8j@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261024T113000Z
+DTEND:20261024T133000Z
+SUMMARY:Aston Villa v Manchester City (Premier League)
+LOCATION:Villa Park\, Birmingham
+DESCRIPTION:Competition: Premier League\nRound: 8\nKick-off: 2026-10-24T11
+ :30Z (venue clock 12:30)\nVenue: Villa Park\, Birmingham\nNote: Fixture 
+ was initially scheduled for 12 September\, but was rescheduled for live 
+ TNT Sports broadcasting.\nReport: https://www.premierleague.com/match/26
+ 45266\nSource: Wikipedia — 2026–27 Manchester City F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-w0cu7ohe@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261028T193000Z
+DTEND:20261028T213000Z
+SUMMARY:Manchester City v Brighton & Hove Albion (EFL Cup)
+LOCATION:Etihad Stadium\, Manchester
+DESCRIPTION:Competition: EFL Cup\nRound: Fourth round\nKick-off: 2026-10-2
+ 8T19:30Z (venue clock 19:30)\nVenue: Etihad Stadium\, Manchester\nReport
+ : https://www.efl.com/match-centre/g2687772\nSource: Wikipedia — 2026
+ –27 Manchester City F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645282-0opssyi@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261031T150000Z
+DTEND:20261031T170000Z
+SUMMARY:Manchester City v Brighton & Hove Albion (Premier League)
+LOCATION:Etihad Stadium\, Manchester
+DESCRIPTION:Competition: Premier League\nRound: 9\nKick-off: 2026-10-31T15
+ :00Z (venue clock 15:00)\nVenue: Etihad Stadium\, Manchester\nReport: ht
+ tps://www.premierleague.com/match/2645282\nSource: Wikipedia — 2026–
+ 27 Manchester City F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2049619-1fsv13t@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261104T200000Z
+DTEND:20261104T220000Z
+SUMMARY:RB Leipzig v Manchester City (UEFA Champions League)
+LOCATION:Red Bull Arena\, Leipzig\, Germany
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 4\nK
+ ick-off: 2026-11-04T20:00Z (venue clock 21:00)\nVenue: Red Bull Arena\, 
+ Leipzig\, Germany\nReport: https://www.uefa.com/uefachampionsleague/matc
+ h/2049619/\nSource: Wikipedia — 2026–27 Manchester City F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645293-0zh9lyq@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261107T173000Z
+DTEND:20261107T193000Z
+SUMMARY:Nottingham Forest v Manchester City (Premier League)
+LOCATION:City Ground\, West Bridgford
+DESCRIPTION:Competition: Premier League\nRound: 10\nKick-off: 2026-11-07T1
+ 7:30Z (venue clock 17:30)\nVenue: City Ground\, West Bridgford\nNote: Fi
+ xture was initially scheduled for a 15:00 kick-off\, but was pushed back
+  for live Sky Sports broadcasting.\nReport: https://www.premierleague.co
+ m/match/2645293\nSource: Wikipedia — 2026–27 Manchester City F.C. se
+ ason
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645302-1owp74n@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261121T123000Z
+DTEND:20261121T143000Z
+SUMMARY:Manchester City v Fulham (Premier League)
+LOCATION:Etihad Stadium\, Manchester
+DESCRIPTION:Competition: Premier League\nRound: 11\nKick-off: 2026-11-21T1
+ 2:30Z (venue clock 12:30)\nVenue: Etihad Stadium\, Manchester\nNote: Fix
+ ture was initially scheduled for a 15:00 kick-off\, but was brought forw
+ ard for live TNT Sports broadcasting.\nReport: https://www.premierleague
+ .com/match/2645302\nSource: Wikipedia — 2026–27 Manchester City F.C.
+  season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2049626-1p2gfl8@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261124T200000Z
+DTEND:20261124T220000Z
+SUMMARY:Manchester City v Napoli (UEFA Champions League)
+LOCATION:Etihad Stadium\, Manchester\, England
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 5\nK
+ ick-off: 2026-11-24T20:00Z (venue clock 20:00)\nVenue: Etihad Stadium\, 
+ Manchester\, England\nReport: https://www.uefa.com/uefachampionsleague/m
+ atch/2049626/\nSource: Wikipedia — 2026–27 Manchester City F.C. seas
+ on
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645305-1jcofxa@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261129T163000Z
+DTEND:20261129T183000Z
+SUMMARY:Arsenal v Manchester City (Premier League)
+LOCATION:Emirates Stadium\, Holloway
+DESCRIPTION:Competition: Premier League\nRound: 12\nKick-off: 2026-11-29T1
+ 6:30Z (venue clock 16:30)\nVenue: Emirates Stadium\, Holloway\nNote: Fix
+ ture was initially scheduled for 28 November\, but was pushed back a day
+  for live Sky Sports broadcasting.\nReport: https://www.premierleague.co
+ m/match/2645305\nSource: Wikipedia — 2026–27 Manchester City F.C. se
+ ason
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645322-0vk9hie@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261202T150000Z
+DTEND:20261202T170000Z
+SUMMARY:Manchester City v Leeds United (Premier League)
+LOCATION:Etihad Stadium\, Manchester
+DESCRIPTION:Competition: Premier League\nRound: 13\nKick-off: 2026-12-02T1
+ 5:00Z (venue clock 15:00)\nVenue: Etihad Stadium\, Manchester\nReport: h
+ ttps://www.premierleague.com/match/2645322\nSource: Wikipedia — 2026
+ –27 Manchester City F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645327-1mooj6j@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261205T150000Z
+DTEND:20261205T170000Z
+SUMMARY:Brentford v Manchester City (Premier League)
+LOCATION:Brentford Community Stadium\, Brentford
+DESCRIPTION:Competition: Premier League\nRound: 14\nKick-off: 2026-12-05T1
+ 5:00Z (venue clock 15:00)\nVenue: Brentford Community Stadium\, Brentfor
+ d\nReport: https://www.premierleague.com/match/2645327\nSource: Wikipedi
+ a — 2026–27 Manchester City F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2049644-0u5mxpv@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261208T200000Z
+DTEND:20261208T220000Z
+SUMMARY:Barcelona v Manchester City (UEFA Champions League)
+LOCATION:Camp Nou\, Barcelona\, Spain
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 6\nK
+ ick-off: 2026-12-08T20:00Z (venue clock 21:00)\nVenue: Camp Nou\, Barcel
+ ona\, Spain\nReport: https://www.uefa.com/uefachampionsleague/match/2049
+ 644/\nSource: Wikipedia — 2026–27 Manchester City F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645343-0n0hmuc@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261212T150000Z
+DTEND:20261212T170000Z
+SUMMARY:Manchester City v Chelsea (Premier League)
+LOCATION:Etihad Stadium\, Manchester
+DESCRIPTION:Competition: Premier League\nRound: 15\nKick-off: 2026-12-12T1
+ 5:00Z (venue clock 15:00)\nVenue: Etihad Stadium\, Manchester\nReport: h
+ ttps://www.premierleague.com/match/2645343\nSource: Wikipedia — 2026
+ –27 Manchester City F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645352-11as3ty@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261219T150000Z
+DTEND:20261219T170000Z
+SUMMARY:Manchester City v Hull City (Premier League)
+LOCATION:Etihad Stadium\, Manchester
+DESCRIPTION:Competition: Premier League\nRound: 16\nKick-off: 2026-12-19T1
+ 5:00Z (venue clock 15:00)\nVenue: Etihad Stadium\, Manchester\nReport: h
+ ttps://www.premierleague.com/match/2645352\nSource: Wikipedia — 2026
+ –27 Manchester City F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645363-0p8lkkd@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261226T150000Z
+DTEND:20261226T170000Z
+SUMMARY:Newcastle United v Manchester City (Premier League)
+LOCATION:St James' Park\, Newcastle upon Tyne
+DESCRIPTION:Competition: Premier League\nRound: 17\nKick-off: 2026-12-26T1
+ 5:00Z (venue clock 15:00)\nVenue: St James' Park\, Newcastle upon Tyne\n
+ Note: Fixture was initially scheduled for a 15:00 kick-off\, but was pus
+ hed back for live Sky Sports broadcasting.\nReport: https://www.premierl
+ eague.com/match/2645363\nSource: Wikipedia — 2026–27 Manchester City
+  F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645368-0i4ipvg@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20261229T201500Z
+DTEND:20261229T221500Z
+SUMMARY:Everton v Manchester City (Premier League)
+LOCATION:Hill Dickinson Stadium\, Liverpool
+DESCRIPTION:Competition: Premier League\nRound: 18\nKick-off: 2026-12-29T2
+ 0:15Z (venue clock 20:15)\nVenue: Hill Dickinson Stadium\, Liverpool\nNo
+ te: Fixture was initially scheduled for 30 December\, but was brought fo
+ rward a day for live Sky Sports broadcasting.\nReport: https://www.premi
+ erleague.com/match/2645368\nSource: Wikipedia — 2026–27 Manchester C
+ ity F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645382-1f71aaj@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270103T163000Z
+DTEND:20270103T183000Z
+SUMMARY:Manchester City v Tottenham Hotspur (Premier League)
+LOCATION:Etihad Stadium\, Manchester
+DESCRIPTION:Competition: Premier League\nRound: 19\nKick-off: 2027-01-03T1
+ 6:30Z (venue clock 16:30)\nVenue: Etihad Stadium\, Manchester\nNote: Fix
+ ture was initially scheduled for 2 January\, but was pushed back a day f
+ or live Sky Sports broadcasting.\nReport: https://www.premierleague.com/
+ match/2645382\nSource: Wikipedia — 2026–27 Manchester City F.C. seas
+ on
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645391-1hxtfsn@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270106T201500Z
+DTEND:20270106T221500Z
+SUMMARY:Leeds United v Manchester City (Premier League)
+LOCATION:Elland Road\, Leeds
+DESCRIPTION:Competition: Premier League\nRound: 20\nKick-off: 2027-01-06T2
+ 0:15Z (venue clock 20:15)\nVenue: Elland Road\, Leeds\nNote: Fixture was
+  initially scheduled for a 15:00 kick-off\, but was pushed back for live
+  Sky Sports broadcasting.\nReport: https://www.premierleague.com/match/2
+ 645391\nSource: Wikipedia — 2026–27 Manchester City F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645402-04xnggg@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270116T150000Z
+DTEND:20270116T170000Z
+SUMMARY:Manchester City v Nottingham Forest (Premier League)
+LOCATION:Etihad Stadium\, Manchester
+DESCRIPTION:Competition: Premier League\nRound: 21\nKick-off: 2027-01-16T1
+ 5:00Z (venue clock 15:00)\nVenue: Etihad Stadium\, Manchester\nReport: h
+ ttps://www.premierleague.com/match/2645402\nSource: Wikipedia — 2026
+ –27 Manchester City F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2049676-1wyyqhh@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270120T200000Z
+DTEND:20270120T220000Z
+SUMMARY:Lens v Manchester City (UEFA Champions League)
+LOCATION:Stade Bollaert-Delelis\, Lens\, France
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 7\nK
+ ick-off: 2027-01-20T20:00Z (venue clock 21:00)\nVenue: Stade Bollaert-De
+ lelis\, Lens\, France\nReport: https://www.uefa.com/uefachampionsleague/
+ match/2049676/\nSource: Wikipedia — 2026–27 Manchester City F.C. sea
+ son
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645406-0dhw372@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270123T150000Z
+DTEND:20270123T170000Z
+SUMMARY:Brighton & Hove Albion v Manchester City (Premier League)
+LOCATION:Falmer Stadium\, Brighton and Hove
+DESCRIPTION:Competition: Premier League\nRound: 22\nKick-off: 2027-01-23T1
+ 5:00Z (venue clock 15:00)\nVenue: Falmer Stadium\, Brighton and Hove\nRe
+ port: https://www.premierleague.com/match/2645406\nSource: Wikipedia —
+  2026–27 Manchester City F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2049682-07gsif9@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270127T200000Z
+DTEND:20270127T220000Z
+SUMMARY:Manchester City v Sporting CP (UEFA Champions League)
+LOCATION:Etihad Stadium\, Manchester\, England
+DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 8\nK
+ ick-off: 2027-01-27T20:00Z (venue clock 20:00)\nVenue: Etihad Stadium\, 
+ Manchester\, England\nReport: https://www.uefa.com/uefachampionsleague/m
+ atch/2049682/\nSource: Wikipedia — 2026–27 Manchester City F.C. seas
+ on
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645422-1uvyc8k@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270130T150000Z
+DTEND:20270130T170000Z
+SUMMARY:Manchester City v Arsenal (Premier League)
+LOCATION:Etihad Stadium\, Manchester
+DESCRIPTION:Competition: Premier League\nRound: 23\nKick-off: 2027-01-30T1
+ 5:00Z (venue clock 15:00)\nVenue: Etihad Stadium\, Manchester\nReport: h
+ ttps://www.premierleague.com/match/2645422\nSource: Wikipedia — 2026
+ –27 Manchester City F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645429-0lt0xhj@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270206T150000Z
+DTEND:20270206T170000Z
+SUMMARY:Fulham v Manchester City (Premier League)
+LOCATION:Craven Cottage\, Fulham
+DESCRIPTION:Competition: Premier League\nRound: 24\nKick-off: 2027-02-06T1
+ 5:00Z (venue clock 15:00)\nVenue: Craven Cottage\, Fulham\nReport: https
+ ://www.premierleague.com/match/2645429\nSource: Wikipedia — 2026–27 
+ Manchester City F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645444-0dlsc7q@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270210T150000Z
+DTEND:20270210T170000Z
+SUMMARY:Tottenham Hotspur v Manchester City (Premier League)
+LOCATION:Tottenham Hotspur Stadium\, Tottenham
+DESCRIPTION:Competition: Premier League\nRound: 25\nKick-off: 2027-02-10T1
+ 5:00Z (venue clock 15:00)\nVenue: Tottenham Hotspur Stadium\, Tottenham\
+ nReport: https://www.premierleague.com/match/2645444\nSource: Wikipedia 
+ — 2026–27 Manchester City F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645452-0u0jv0t@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270220T150000Z
+DTEND:20270220T170000Z
+SUMMARY:Manchester City v Newcastle United (Premier League)
+LOCATION:Etihad Stadium\, Manchester
+DESCRIPTION:Competition: Premier League\nRound: 26\nKick-off: 2027-02-20T1
+ 5:00Z (venue clock 15:00)\nVenue: Etihad Stadium\, Manchester\nReport: h
+ ttps://www.premierleague.com/match/2645452\nSource: Wikipedia — 2026
+ –27 Manchester City F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645460-08uyz0j@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270227T150000Z
+DTEND:20270227T170000Z
+SUMMARY:Hull City v Manchester City (Premier League)
+LOCATION:MKM Stadium\, Kingston upon Hull
+DESCRIPTION:Competition: Premier League\nRound: 27\nKick-off: 2027-02-27T1
+ 5:00Z (venue clock 15:00)\nVenue: MKM Stadium\, Kingston upon Hull\nRepo
+ rt: https://www.premierleague.com/match/2645460\nSource: Wikipedia — 2
+ 026–27 Manchester City F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645472-0e9dhzr@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270303T150000Z
+DTEND:20270303T170000Z
+SUMMARY:Manchester City v Everton (Premier League)
+LOCATION:Etihad Stadium\, Manchester
+DESCRIPTION:Competition: Premier League\nRound: 28\nKick-off: 2027-03-03T1
+ 5:00Z (venue clock 15:00)\nVenue: Etihad Stadium\, Manchester\nReport: h
+ ttps://www.premierleague.com/match/2645472\nSource: Wikipedia — 2026
+ –27 Manchester City F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645478-1hw24g4@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270313T150000Z
+DTEND:20270313T170000Z
+SUMMARY:Coventry City v Manchester City (Premier League)
+LOCATION:Coventry Building Society Arena\, Coventry
+DESCRIPTION:Competition: Premier League\nRound: 29\nKick-off: 2027-03-13T1
+ 5:00Z (venue clock 15:00)\nVenue: Coventry Building Society Arena\, Cove
+ ntry\nReport: https://www.premierleague.com/match/2645478\nSource: Wikip
+ edia — 2026–27 Manchester City F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645492-1k6kiy4@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270320T150000Z
+DTEND:20270320T170000Z
+SUMMARY:Manchester City v Manchester United (Premier League)
+LOCATION:Etihad Stadium\, Manchester
+DESCRIPTION:Competition: Premier League\nRound: 30\nKick-off: 2027-03-20T1
+ 5:00Z (venue clock 15:00)\nVenue: Etihad Stadium\, Manchester\nReport: h
+ ttps://www.premierleague.com/match/2645492\nSource: Wikipedia — 2026
+ –27 Manchester City F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645495-00dyrqb@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270410T140000Z
+DTEND:20270410T160000Z
+SUMMARY:Bournemouth v Manchester City (Premier League)
+LOCATION:Dean Court\, Bournemouth
+DESCRIPTION:Competition: Premier League\nRound: 31\nKick-off: 2027-04-10T1
+ 4:00Z (venue clock 15:00)\nVenue: Dean Court\, Bournemouth\nReport: http
+ s://www.premierleague.com/match/2645495\nSource: Wikipedia — 2026–27
+  Manchester City F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645512-03bh0tq@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270417T140000Z
+DTEND:20270417T160000Z
+SUMMARY:Manchester City v Crystal Palace (Premier League)
+LOCATION:Etihad Stadium\, Manchester
+DESCRIPTION:Competition: Premier League\nRound: 32\nKick-off: 2027-04-17T1
+ 4:00Z (venue clock 15:00)\nVenue: Etihad Stadium\, Manchester\nReport: h
+ ttps://www.premierleague.com/match/2645512\nSource: Wikipedia — 2026
+ –27 Manchester City F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645518-11rqzr7@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270424T140000Z
+DTEND:20270424T160000Z
+SUMMARY:Chelsea v Manchester City (Premier League)
+LOCATION:Stamford Bridge\, Fulham
+DESCRIPTION:Competition: Premier League\nRound: 33\nKick-off: 2027-04-24T1
+ 4:00Z (venue clock 15:00)\nVenue: Stamford Bridge\, Fulham\nReport: http
+ s://www.premierleague.com/match/2645518\nSource: Wikipedia — 2026–27
+  Manchester City F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645533-07dog6s@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270501T140000Z
+DTEND:20270501T160000Z
+SUMMARY:Manchester City v Brentford (Premier League)
+LOCATION:Etihad Stadium\, Manchester
+DESCRIPTION:Competition: Premier League\nRound: 34\nKick-off: 2027-05-01T1
+ 4:00Z (venue clock 15:00)\nVenue: Etihad Stadium\, Manchester\nReport: h
+ ttps://www.premierleague.com/match/2645533\nSource: Wikipedia — 2026
+ –27 Manchester City F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645541-0ipc8ef@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270508T140000Z
+DTEND:20270508T160000Z
+SUMMARY:Manchester City v Liverpool (Premier League)
+LOCATION:Etihad Stadium\, Manchester
+DESCRIPTION:Competition: Premier League\nRound: 35\nKick-off: 2027-05-08T1
+ 4:00Z (venue clock 15:00)\nVenue: Etihad Stadium\, Manchester\nReport: h
+ ttps://www.premierleague.com/match/2645541\nSource: Wikipedia — 2026
+ –27 Manchester City F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645551-028b610@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270515T140000Z
+DTEND:20270515T160000Z
+SUMMARY:Ipswich Town v Manchester City (Premier League)
+LOCATION:Portman Road\, Ipswich
+DESCRIPTION:Competition: Premier League\nRound: 36\nKick-off: 2027-05-15T1
+ 4:00Z (venue clock 15:00)\nVenue: Portman Road\, Ipswich\nReport: https:
+ //www.premierleague.com/match/2645551\nSource: Wikipedia — 2026–27 M
+ anchester City F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645551-1txgsnh@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270523T140000Z
+DTEND:20270523T160000Z
+SUMMARY:Manchester City v Aston Villa (Premier League)
+LOCATION:Etihad Stadium\, Manchester
+DESCRIPTION:Competition: Premier League\nRound: 37\nKick-off: 2027-05-23T1
+ 4:00Z (venue clock 15:00)\nVenue: Etihad Stadium\, Manchester\nReport: h
+ ttps://www.premierleague.com/match/2645551\nSource: Wikipedia — 2026
+ –27 Manchester City F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:man-city-2645574-0e1gzpo@sportscalendar.local
+DTSTAMP:20260930T174654Z
+DTSTART:20270530T150000Z
+DTEND:20270530T170000Z
+SUMMARY:Sunderland v Manchester City (Premier League)
+LOCATION:Stadium of Light\, Sunderland
+DESCRIPTION:Competition: Premier League\nRound: 38\nKick-off: 2027-05-30T1
+ 5:00Z (venue clock 16:00)\nVenue: Stadium of Light\, Sunderland\nReport:
+  https://www.premierleague.com/match/2645574\nSource: Wikipedia — 2026
+ –27 Manchester City F.C. season
+STATUS:TENTATIVE
+END:VEVENT
+END:VCALENDAR
