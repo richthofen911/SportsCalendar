@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T17:46:54.125Z",
+  "generatedAt": "2026-09-30T19:22:16.683Z",
   "report": {
     "skipped": [
       {
@@ -109,5 +109,25 @@
     "Coupe de France": 1,
     "FA Cup": 1,
     "Supercopa de España": 2
+  },
+  "f1Report": {
+    "unmatchedF1": [],
+    "extraEspn": [
+      {
+        "name": "Gulf Air Bahrain Grand Prix",
+        "race": "2026-04-12T15:00Z",
+        "weekend": "2026-04-10T11:30Z"
+      },
+      {
+        "name": "STC Saudi Arabian Grand Prix",
+        "race": "2026-04-19T17:00Z",
+        "weekend": "2026-04-17T13:30Z"
+      }
+    ],
+    "dateSpread": []
+  },
+  "standingsReport": {
+    "problems": [],
+    "orphanCodes": []
   }
 }

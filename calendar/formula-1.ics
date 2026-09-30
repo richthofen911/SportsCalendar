@@ -1,0 +1,324 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//SportsCalendar//2026-27//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Formula 1 2026
+X-WR-TIMEZONE:UTC
+X-WR-CALDESC:23 events\, refreshed 2026-09-30
+BEGIN:VEVENT
+UID:f1-2026-01@sportscalendar.local
+DTSTAMP:20260930T192216Z
+DTSTART:20260308T040000Z
+DTEND:20260308T060000Z
+SUMMARY:Australian Grand Prix (Formula 1 · Round 1)
+LOCATION:Albert Park Circuit\, Melbourne\, Australia
+DESCRIPTION:Round 1 of the 2026 Formula One World Championship\nCircuit: A
+ lbert Park Circuit\, Melbourne\, Australia\nWeekend opens: 2026-03-06T01
+ :30Z\nRace start: 2026-03-08T04:00Z\nWinner: George Russell (Mercedes)\n
+ Pole position: George Russell\nFastest lap: Max Verstappen\nSource: Wiki
+ pedia calendar\; start times from ESPN
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:f1-2026-02@sportscalendar.local
+DTSTAMP:20260930T192216Z
+DTSTART:20260315T070000Z
+DTEND:20260315T090000Z
+SUMMARY:Chinese Grand Prix (Formula 1 · Round 2)
+LOCATION:Shanghai International Circuit\, Shanghai\, China
+DESCRIPTION:Round 2 of the 2026 Formula One World Championship\nCircuit: S
+ hanghai International Circuit\, Shanghai\, China\nWeekend opens: 2026-03
+ -13T03:30Z\nRace start: 2026-03-15T07:00Z\nWinner: Kimi Antonelli (Merce
+ des)\nPole position: Kimi Antonelli\nFastest lap: Kimi Antonelli\nSource
+ : Wikipedia calendar\; start times from ESPN
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:f1-2026-03@sportscalendar.local
+DTSTAMP:20260930T192216Z
+DTSTART:20260329T050000Z
+DTEND:20260329T070000Z
+SUMMARY:Japanese Grand Prix (Formula 1 · Round 3)
+LOCATION:Suzuka Circuit\, Suzuka\, Japan
+DESCRIPTION:Round 3 of the 2026 Formula One World Championship\nCircuit: S
+ uzuka Circuit\, Suzuka\, Japan\nWeekend opens: 2026-03-27T02:30Z\nRace s
+ tart: 2026-03-29T05:00Z\nWinner: Kimi Antonelli (Mercedes)\nPole positio
+ n: Kimi Antonelli\nFastest lap: Kimi Antonelli\nSource: Wikipedia calend
+ ar\; start times from ESPN
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:f1-2026-04@sportscalendar.local
+DTSTAMP:20260930T192216Z
+DTSTART:20260503T170000Z
+DTEND:20260503T190000Z
+SUMMARY:Miami Grand Prix (Formula 1 · Round 4)
+LOCATION:Miami International Autodrome\, Miami Gardens\, Florida\, United 
+ States
+DESCRIPTION:Round 4 of the 2026 Formula One World Championship\nCircuit: M
+ iami International Autodrome\, Miami Gardens\, Florida\, United States\n
+ Weekend opens: 2026-05-01T16:00Z\nRace start: 2026-05-03T17:00Z\nWinner:
+  Kimi Antonelli (Mercedes)\nPole position: Kimi Antonelli\nFastest lap: 
+ Lando Norris\nSource: Wikipedia calendar\; start times from ESPN
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:f1-2026-05@sportscalendar.local
+DTSTAMP:20260930T192216Z
+DTSTART:20260524T200000Z
+DTEND:20260524T220000Z
+SUMMARY:Canadian Grand Prix (Formula 1 · Round 5)
+LOCATION:Circuit Gilles Villeneuve\, Montreal\, Canada
+DESCRIPTION:Round 5 of the 2026 Formula One World Championship\nCircuit: C
+ ircuit Gilles Villeneuve\, Montreal\, Canada\nWeekend opens: 2026-05-22T
+ 16:30Z\nRace start: 2026-05-24T20:00Z\nWinner: Kimi Antonelli (Mercedes)
+ \nPole position: George Russell\nFastest lap: Kimi Antonelli\nSource: Wi
+ kipedia calendar\; start times from ESPN
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:f1-2026-06@sportscalendar.local
+DTSTAMP:20260930T192216Z
+DTSTART:20260607T130000Z
+DTEND:20260607T150000Z
+SUMMARY:Monaco Grand Prix (Formula 1 · Round 6)
+LOCATION:Circuit de Monaco\, Monaco\, Monaco
+DESCRIPTION:Round 6 of the 2026 Formula One World Championship\nCircuit: C
+ ircuit de Monaco\, Monaco\, Monaco\nWeekend opens: 2026-06-05T11:30Z\nRa
+ ce start: 2026-06-07T13:00Z\nWinner: Kimi Antonelli (Mercedes)\nPole pos
+ ition: Kimi Antonelli\nFastest lap: Kimi Antonelli\nSource: Wikipedia ca
+ lendar\; start times from ESPN
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:f1-2026-07@sportscalendar.local
+DTSTAMP:20260930T192216Z
+DTSTART:20260614T130000Z
+DTEND:20260614T150000Z
+SUMMARY:Barcelona-Catalunya Grand Prix (Formula 1 · Round 7)
+LOCATION:Circuit de Barcelona-Catalunya\, Montmeló\, Spain
+DESCRIPTION:Round 7 of the 2026 Formula One World Championship\nCircuit: C
+ ircuit de Barcelona-Catalunya\, Montmeló\, Spain\nWeekend opens: 2026-0
+ 6-12T11:30Z\nRace start: 2026-06-14T13:00Z\nWinner: Lewis Hamilton (Ferr
+ ari)\nPole position: George Russell\nFastest lap: Lewis Hamilton\nSource
+ : Wikipedia calendar\; start times from ESPN
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:f1-2026-08@sportscalendar.local
+DTSTAMP:20260930T192216Z
+DTSTART:20260628T130000Z
+DTEND:20260628T150000Z
+SUMMARY:Austrian Grand Prix (Formula 1 · Round 8)
+LOCATION:Red Bull Ring\, Spielberg\, Austria
+DESCRIPTION:Round 8 of the 2026 Formula One World Championship\nCircuit: R
+ ed Bull Ring\, Spielberg\, Austria\nWeekend opens: 2026-06-26T11:30Z\nRa
+ ce start: 2026-06-28T13:00Z\nWinner: George Russell (Mercedes)\nPole pos
+ ition: George Russell\nFastest lap: Kimi Antonelli\nSource: Wikipedia ca
+ lendar\; start times from ESPN
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:f1-2026-09@sportscalendar.local
+DTSTAMP:20260930T192216Z
+DTSTART:20260705T140000Z
+DTEND:20260705T160000Z
+SUMMARY:British Grand Prix (Formula 1 · Round 9)
+LOCATION:Silverstone Circuit\, Silverstone\, United Kingdom
+DESCRIPTION:Round 9 of the 2026 Formula One World Championship\nCircuit: S
+ ilverstone Circuit\, Silverstone\, United Kingdom\nWeekend opens: 2026-0
+ 7-03T11:30Z\nRace start: 2026-07-05T14:00Z\nWinner: Charles Leclerc (Fer
+ rari)\nPole position: Kimi Antonelli\nFastest lap: Kimi Antonelli\nSourc
+ e: Wikipedia calendar\; start times from ESPN
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:f1-2026-10@sportscalendar.local
+DTSTAMP:20260930T192216Z
+DTSTART:20260719T130000Z
+DTEND:20260719T150000Z
+SUMMARY:Belgian Grand Prix (Formula 1 · Round 10)
+LOCATION:Circuit de Spa-Francorchamps\, Stavelot\, Belgium
+DESCRIPTION:Round 10 of the 2026 Formula One World Championship\nCircuit: 
+ Circuit de Spa-Francorchamps\, Stavelot\, Belgium\nWeekend opens: 2026-0
+ 7-17T11:30Z\nRace start: 2026-07-19T13:00Z\nWinner: Kimi Antonelli (Merc
+ edes)\nPole position: Kimi Antonelli\nFastest lap: Lando Norris\nSource:
+  Wikipedia calendar\; start times from ESPN
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:f1-2026-11@sportscalendar.local
+DTSTAMP:20260930T192216Z
+DTSTART:20260726T130000Z
+DTEND:20260726T150000Z
+SUMMARY:Hungarian Grand Prix (Formula 1 · Round 11)
+LOCATION:Hungaroring\, Mogyoród\, Hungary
+DESCRIPTION:Round 11 of the 2026 Formula One World Championship\nCircuit: 
+ Hungaroring\, Mogyoród\, Hungary\nWeekend opens: 2026-07-24T11:30Z\nRac
+ e start: 2026-07-26T13:00Z\nWinner: Lando Norris (McLaren-Mercedes)\nPol
+ e position: Lando Norris\nFastest lap: Charles Leclerc\nSource: Wikipedi
+ a calendar\; start times from ESPN
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:f1-2026-12@sportscalendar.local
+DTSTAMP:20260930T192216Z
+DTSTART:20260823T130000Z
+DTEND:20260823T150000Z
+SUMMARY:Dutch Grand Prix (Formula 1 · Round 12)
+LOCATION:Circuit Zandvoort\, Zandvoort\, Netherlands
+DESCRIPTION:Round 12 of the 2026 Formula One World Championship\nCircuit: 
+ Circuit Zandvoort\, Zandvoort\, Netherlands\nWeekend opens: 2026-08-21T1
+ 0:30Z\nRace start: 2026-08-23T13:00Z\nWinner: Lando Norris (McLaren-Merc
+ edes)\nPole position: Lando Norris\nFastest lap: Charles Leclerc\nSource
+ : Wikipedia calendar\; start times from ESPN
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:f1-2026-13@sportscalendar.local
+DTSTAMP:20260930T192216Z
+DTSTART:20260906T130000Z
+DTEND:20260906T150000Z
+SUMMARY:Italian Grand Prix (Formula 1 · Round 13)
+LOCATION:Monza Circuit\, Monza\, Italy
+DESCRIPTION:Round 13 of the 2026 Formula One World Championship\nCircuit: 
+ Monza Circuit\, Monza\, Italy\nWeekend opens: 2026-09-04T10:30Z\nRace st
+ art: 2026-09-06T13:00Z\nWinner: Kimi Antonelli (Mercedes)\nPole position
+ : Pierre Gasly\nFastest lap: Kimi Antonelli\nSource: Wikipedia calendar\
+ ; start times from ESPN
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:f1-2026-14@sportscalendar.local
+DTSTAMP:20260930T192216Z
+DTSTART:20260913T130000Z
+DTEND:20260913T150000Z
+SUMMARY:Spanish Grand Prix (Formula 1 · Round 14)
+LOCATION:Madring\, Madrid\, Spain
+DESCRIPTION:Round 14 of the 2026 Formula One World Championship\nCircuit: 
+ Madring\, Madrid\, Spain\nWeekend opens: 2026-09-11T11:30Z\nRace start: 
+ 2026-09-13T13:00Z\nWinner: Kimi Antonelli (Mercedes)\nPole position: Lan
+ do Norris\nFastest lap: George Russell\nSource: Wikipedia calendar\; sta
+ rt times from ESPN
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:f1-2026-15@sportscalendar.local
+DTSTAMP:20260930T192216Z
+DTSTART:20260926T110000Z
+DTEND:20260926T130000Z
+SUMMARY:Azerbaijan Grand Prix (Formula 1 · Round 15)
+LOCATION:Baku City Circuit\, Baku\, Azerbaijan
+DESCRIPTION:Round 15 of the 2026 Formula One World Championship\nCircuit: 
+ Baku City Circuit\, Baku\, Azerbaijan\nWeekend opens: 2026-09-24T08:30Z\
+ nRace start: 2026-09-26T11:00Z\nWinner: George Russell (Mercedes)\nPole 
+ position: George Russell\nFastest lap: George Russell\nSource: Wikipedia
+  calendar\; start times from ESPN
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:f1-2026-16@sportscalendar.local
+DTSTAMP:20260930T192216Z
+DTSTART:20261004T070000Z
+DTEND:20261004T090000Z
+SUMMARY:Bahrain Grand Prix (Formula 1 · Round 16)
+LOCATION:Sepang International Circuit\, Sepang\, Malaysia
+DESCRIPTION:Round 16 of the 2026 Formula One World Championship\nCircuit: 
+ Sepang International Circuit\, Sepang\, Malaysia\nWeekend opens: 2026-10
+ -02T04:30Z\nRace start: 2026-10-04T07:00Z\nSource: Wikipedia calendar\; 
+ start times from ESPN
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:f1-2026-17@sportscalendar.local
+DTSTAMP:20260930T192216Z
+DTSTART:20261011T120000Z
+DTEND:20261011T140000Z
+SUMMARY:Singapore Grand Prix (Formula 1 · Round 17)
+LOCATION:Marina Bay Street Circuit\, Singapore\, Singapore
+DESCRIPTION:Round 17 of the 2026 Formula One World Championship\nCircuit: 
+ Marina Bay Street Circuit\, Singapore\, Singapore\nWeekend opens: 2026-1
+ 0-09T08:30Z\nRace start: 2026-10-11T12:00Z\nSource: Wikipedia calendar\;
+  start times from ESPN
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:f1-2026-18@sportscalendar.local
+DTSTAMP:20260930T192216Z
+DTSTART:20261025T200000Z
+DTEND:20261025T220000Z
+SUMMARY:United States Grand Prix (Formula 1 · Round 18)
+LOCATION:Circuit of the Americas\, Austin\, Texas\, United States
+DESCRIPTION:Round 18 of the 2026 Formula One World Championship\nCircuit: 
+ Circuit of the Americas\, Austin\, Texas\, United States\nWeekend opens:
+  2026-10-23T17:30Z\nRace start: 2026-10-25T20:00Z\nSource: Wikipedia cal
+ endar\; start times from ESPN
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:f1-2026-19@sportscalendar.local
+DTSTAMP:20260930T192216Z
+DTSTART:20261101T200000Z
+DTEND:20261101T220000Z
+SUMMARY:Mexico City Grand Prix (Formula 1 · Round 19)
+LOCATION:Autódromo Hermanos Rodríguez\, Mexico City\, Mexico
+DESCRIPTION:Round 19 of the 2026 Formula One World Championship\nCircuit: 
+ Autódromo Hermanos Rodríguez\, Mexico City\, Mexico\nWeekend opens: 20
+ 26-10-30T18:30Z\nRace start: 2026-11-01T20:00Z\nSource: Wikipedia calend
+ ar\; start times from ESPN
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:f1-2026-20@sportscalendar.local
+DTSTAMP:20260930T192216Z
+DTSTART:20261108T170000Z
+DTEND:20261108T190000Z
+SUMMARY:São Paulo Grand Prix (Formula 1 · Round 20)
+LOCATION:Interlagos Circuit\, São Paulo\, Brazil
+DESCRIPTION:Round 20 of the 2026 Formula One World Championship\nCircuit: 
+ Interlagos Circuit\, São Paulo\, Brazil\nWeekend opens: 2026-11-06T15:3
+ 0Z\nRace start: 2026-11-08T17:00Z\nSource: Wikipedia calendar\; start ti
+ mes from ESPN
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:f1-2026-21@sportscalendar.local
+DTSTAMP:20260930T192216Z
+DTSTART:20261122T040000Z
+DTEND:20261122T060000Z
+SUMMARY:Las Vegas Grand Prix (Formula 1 · Round 21)
+LOCATION:Las Vegas Strip Circuit\, Paradise\, Nevada\, United States
+DESCRIPTION:Round 21 of the 2026 Formula One World Championship\nCircuit: 
+ Las Vegas Strip Circuit\, Paradise\, Nevada\, United States\nWeekend ope
+ ns: 2026-11-20T00:30Z\nRace start: 2026-11-22T04:00Z\nSource: Wikipedia 
+ calendar\; start times from ESPN
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:f1-2026-22@sportscalendar.local
+DTSTAMP:20260930T192216Z
+DTSTART:20261129T160000Z
+DTEND:20261129T180000Z
+SUMMARY:Qatar Grand Prix (Formula 1 · Round 22)
+LOCATION:Lusail International Circuit\, Lusail\, Qatar
+DESCRIPTION:Round 22 of the 2026 Formula One World Championship\nCircuit: 
+ Lusail International Circuit\, Lusail\, Qatar\nWeekend opens: 2026-11-27
+ T13:30Z\nRace start: 2026-11-29T16:00Z\nSource: Wikipedia calendar\; sta
+ rt times from ESPN
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:f1-2026-23@sportscalendar.local
+DTSTAMP:20260930T192216Z
+DTSTART:20261206T130000Z
+DTEND:20261206T150000Z
+SUMMARY:Abu Dhabi Grand Prix (Formula 1 · Round 23)
+LOCATION:Yas Marina Circuit\, Abu Dhabi\, United Arab Emirates
+DESCRIPTION:Round 23 of the 2026 Formula One World Championship\nCircuit: 
+ Yas Marina Circuit\, Abu Dhabi\, United Arab Emirates\nWeekend opens: 20
+ 26-12-04T09:30Z\nRace start: 2026-12-06T13:00Z\nSource: Wikipedia calend
+ ar\; start times from ESPN
+STATUS:TENTATIVE
+END:VEVENT
+END:VCALENDAR

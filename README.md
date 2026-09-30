@@ -1,9 +1,13 @@
 # Sports Calendar — 2026-27
 
-A local fixture calendar for six clubs: Real Madrid, FC Barcelona, Arsenal,
-Manchester City, Bayern Munich and Paris Saint-Germain. Every first-team tie of
-the current season that has been played or is scheduled — league, domestic cup,
-super cup, Champions League and intercontinental matches.
+A local calendar with two categories, each independently toggleable:
+
+- **Football** — every first-team tie of the current season for Real Madrid, FC
+  Barcelona, Arsenal, Manchester City, Bayern Munich and Paris Saint-Germain
+  (league, domestic cup, super cup, Champions League, intercontinental), plus
+  **league tables** for the Premier League, La Liga, Bundesliga and Ligue 1.
+- **Formula 1** — all 23 rounds of the 2026 championship: circuit, race start
+  time, weekend opening, and the winner, pole sitter and fastest lap once run.
 
 No accounts, no API keys, no build step, nothing running in the background.
 
@@ -24,11 +28,49 @@ npm run serve            # prints the Wi-Fi URL, e.g. http://192.168.0.16:4173/
 Open that URL on a phone on the same Wi-Fi. Nothing is uploaded anywhere — the
 server only reads files from this folder and binds to your LAN.
 
-On a small screen the calendar drops the month grid (seven columns are
-unreadable at that width) and shows the agenda instead: one card per fixture,
-grouped by month, landing on your next games. Filters scroll horizontally, and
-fixture details open as a bottom sheet. On iPhone, **Share → Add to Home Screen**
-gives it its own icon and full-width status bar.
+## Categories and standings
+
+The chips at the left of the filter bar (**Football**, **Formula 1**) show or
+hide a whole category everywhere at once — grid, agenda, search and the month
+counts. The choice is remembered.
+
+**Calendar / Standings** switches the panel. Standings shows the four league
+tables — position, played, W-D-L, goals, GD, points — with your six clubs
+marked by their own colour. The tables are *computed* from each season's
+results rather than copied from a screen, and they are re-derived on every
+refresh, so a matchday moves the table.
+
+## One layout control
+
+The **Auto · Month · List · Phone** control in the filter bar sets both the
+presentation and the view, so there is nothing else to switch:
+
+| Choice | What you get |
+| --- | --- |
+| **Auto** (default) | Phone layout on a phone, month grid on a desktop |
+| **Month** | Desktop layout, calendar grid with the month navigator |
+| **List** | Desktop layout, agenda table with column headers |
+| **Phone** | Cards instead of the grid and the table, fixture details as a bottom sheet, tighter filter bar |
+
+Auto detects on viewport width *and* pointer type, so a phone held sideways still
+gets the phone layout. Any explicit choice is remembered in that browser, and
+Auto is one tap away if you want the device decision back.
+
+On iPhone, **Share → Add to Home Screen** gives it its own icon and a full-width
+status bar.
+
+### Where the list starts
+
+*Upcoming* opens at the top, on the next fixture. *Played* and *All* are read
+backwards from now, so they land on today instead of on the season's opening
+weekend: *All* scrolls to a **Today** divider with the results you have missed
+just above it, and *Played* goes to the most recent result. Month view follows
+the same rule — *Played* and *All* open on the current month, *Upcoming* on the
+month with the next game. Changing the status or the view re-lands the scroll;
+typing in search or toggling a club leaves it where you were.
+
+On iPhone, **Share → Add to Home Screen** gives it its own icon and a full-width
+status bar.
 
 Keep the terminal open while you use it, and note that a sleeping Mac stops
 serving — `caffeinate -i npm run serve` holds the machine awake while it runs.
@@ -66,8 +108,9 @@ Under **Calendar files (.ics)** in the header, or directly from `calendar/`:
 
 | File | Contents |
 | --- | --- |
-| `all-clubs.ics` | every fixture, one entry each |
+| `all-events.ics` | every fixture and race, one entry each |
 | `real-madrid.ics`, `barcelona.ics`, `arsenal.ics`, `man-city.ics`, `bayern.ics`, `psg.ics` | that club's own run of fixtures |
+| `formula-1.ics` | the 23 Grands Prix |
 
 - **Apple Calendar** — open the file, choose the target calendar, then add again
   later to update (imported events are copies, not a live feed).
@@ -85,6 +128,8 @@ tools/build.mjs     fetch → parse → data + .ics, with a printed report
 tools/parse.mjs     Wikipedia markup → normalised matches
 tools/wiki.mjs      throttled fetch with .cache/
 tools/ics.mjs       RFC 5545 writer (CRLF, 75-octet folding, escaping)
+tools/f1.mjs        F1 calendar + results, ESPN start times
+tools/standings.mjs league results -> tables
 tools/serve.mjs     LAN static server + /api/refresh
 tools/verify.mjs    cross-check against ESPN
 tools/clubs.mjs     the six clubs, colours and source pages
@@ -95,6 +140,11 @@ calendar/           .ics files (generated)
 
 ## What the data can't know
 
+- **F1 times** come from ESPN's public feed (Wikipedia's calendar gives only the
+  race day). Round names, circuits and race results come from Wikipedia, so a
+  race that ESPN lists under a sponsor title still reads plainly here.
+- **League tables** reflect whatever the season page has recorded; the header of
+  each table shows the date Wikipedia last updated it.
 - **Kick-off times.** Roughly 120 of the 275 fixtures have a date but no
   confirmed time yet — the source genuinely says `TBC`. They appear as all-day
   entries in `.ics` and as `TBC` in the UI. They gain a time on a later refresh.

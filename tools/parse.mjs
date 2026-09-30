@@ -231,7 +231,7 @@ function renderMatchEvent(_m, kind, a, b) {
   return minute;
 }
 
-function clean(value) {
+export function clean(value) {
   if (!value) return "";
   let out = stripRefs(value);
   out = out.replace(/<!--[\s\S]*?-->/g, "");

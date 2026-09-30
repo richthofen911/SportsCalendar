@@ -39,12 +39,28 @@ function toIcsStamp(iso) {
 }
 
 function matchSummary(m) {
-  const label = `${m.homeTeam} v ${m.awayTeam}`;
-  return `${label} (${m.competition})`;
+  if (m.category === "formula-1") {
+    return `${m.name} (Formula 1 · Round ${m.round})`;
+  }
+  return `${m.homeTeam} v ${m.awayTeam} (${m.competition})`;
 }
 
 function describe(m) {
   const lines = [];
+  if (m.category === "formula-1") {
+    lines.push(`Round ${m.round} of the ${m.sourcePage}`);
+    if (m.circuit) lines.push(`Circuit: ${[m.circuit, m.location, m.country].filter(Boolean).join(", ")}`);
+    if (m.weekendStartUtc) lines.push(`Weekend opens: ${m.weekendStartUtc}`);
+    if (m.kickoffUtc) lines.push(`Race start: ${m.kickoffUtc}`);
+    else lines.push(`Race day: ${m.date} — start time not confirmed`);
+    if (m.winner) {
+      lines.push(`Winner: ${m.winner}${m.winningConstructor ? ` (${m.winningConstructor})` : ""}`);
+      if (m.pole) lines.push(`Pole position: ${m.pole}`);
+      if (m.fastestLap) lines.push(`Fastest lap: ${m.fastestLap}`);
+    }
+    lines.push("Source: Wikipedia calendar; start times from ESPN");
+    return lines.join("\n");
+  }
   if (m.trackedClubNames?.length > 1) {
     lines.push(`Tracked clubs in this tie: ${m.trackedClubNames.join(", ")}`);
   }
@@ -70,7 +86,7 @@ function describe(m) {
   return lines.join("\n");
 }
 
-export function buildIcs({ name, matches, generatedAt }) {
+export function buildIcs({ name, matches, generatedAt, season = "2026-27" }) {
   const stamp = toIcsStamp(generatedAt);
   const body = [
     "BEGIN:VCALENDAR",
@@ -78,9 +94,9 @@ export function buildIcs({ name, matches, generatedAt }) {
     "PRODID:-//SportsCalendar//2026-27//EN",
     "CALSCALE:GREGORIAN",
     "METHOD:PUBLISH",
-    `X-WR-CALNAME:${escapeText(name)} 2026-27`,
+    `X-WR-CALNAME:${escapeText(season ? `${name} ${season}` : name)}`,
     "X-WR-TIMEZONE:UTC",
-    `X-WR-CALDESC:${escapeText(`${matches.length} matches, refreshed ${generatedAt.slice(0, 10)}`)}`,
+    `X-WR-CALDESC:${escapeText(`${matches.length} events, refreshed ${generatedAt.slice(0, 10)}`)}`,
   ];
 
   for (const m of matches) {
@@ -100,11 +116,14 @@ export function buildIcs({ name, matches, generatedAt }) {
       body.push(`DTEND;VALUE=DATE:${next.toISOString().slice(0, 10).replace(/-/g, "")}`);
     }
     body.push(`SUMMARY:${escapeText(matchSummary(m))}`);
-    body.push(
-      `LOCATION:${escapeText([m.venue, m.location].filter(Boolean).join(", ") || m.opponent)}`
-    );
+    const place =
+      m.category === "formula-1"
+        ? [m.circuit, m.location, m.country].filter(Boolean).join(", ")
+        : [m.venue, m.location].filter(Boolean).join(", ") || m.opponent;
+    body.push(`LOCATION:${escapeText(place)}`);
     body.push(`DESCRIPTION:${escapeText(describe(m))}`);
-    body.push(`STATUS:${m.score ? "CONFIRMED" : "TENTATIVE"}`);
+    const finished = m.status ? m.status === "played" : Boolean(m.score);
+    body.push(`STATUS:${finished ? "CONFIRMED" : "TENTATIVE"}`);
     body.push("END:VEVENT");
   }
 

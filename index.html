@@ -157,6 +157,36 @@
 
       .list { display: flex; flex-direction: column; gap: 18px; }
       .list h3 { margin: 0 0 6px; font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+      .todayMark {
+        background: var(--ink);
+        color: var(--bg);
+        font-size: 11px;
+        letter-spacing: .08em;
+        text-transform: uppercase;
+        padding: 3px 12px;
+      }
+      /* standings replaces the calendar, so calendar-only controls step out */
+      :root[data-panel="standings"] #statusSeg,
+      :root[data-panel="standings"] #compSelect,
+      :root[data-panel="standings"] #search,
+      :root[data-panel="standings"] #monthNav,
+      :root[data-panel="standings"] #clubChips { display: none; }
+      /* the month nav gets an inline display from syncLayoutButtons */
+      :root[data-panel="standings"] #monthNav { display: none !important; }
+
+      .league { margin-bottom: 22px; }
+      .league h3 { margin: 0 0 6px; font-size: 13px; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); }
+      .league h3 span { text-transform: none; letter-spacing: 0; font-weight: 400; }
+      .tbl { width: 100%; border-collapse: collapse; background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; font-variant-numeric: tabular-nums; }
+      .tbl th, .tbl td { padding: 6px 9px; text-align: right; border-bottom: 1px solid var(--line); font-size: 13px; }
+      .tbl th { color: var(--muted); font-weight: 500; font-size: 11px; text-transform: uppercase; letter-spacing: .05em; }
+      .tbl th:nth-child(2), .tbl td.team { text-align: left; }
+      .tbl tr.tracked td { font-weight: 600; }
+      .tbl tr.tracked td.team { box-shadow: inset 3px 0 0 var(--c); }
+      .tbl .pos { color: var(--muted); width: 30px; }
+      .tbl td.pts { font-weight: 700; }
+      .tbl tr:last-child td { border-bottom: 0; }
+
       .rows { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
       .row, .rhead {
         display: grid;
@@ -200,76 +230,84 @@
       .refresh[hidden] { display: none; }
       .refresh[disabled] { opacity: .6; cursor: progress; }
 
-      @media (max-width: 820px) {
-        header { padding: 14px 14px 12px; gap: 8px 14px; }
-        h1 { font-size: 16px; }
-        main { padding: 12px 12px calc(28px + env(safe-area-inset-bottom)); }
-        .controls {
-          padding: 8px 12px calc(8px + env(safe-area-inset-left));
-          gap: 8px;
-        }
-        /* club chips scroll sideways instead of eating half the screen */
-        .chips {
-          flex-wrap: nowrap;
-          overflow-x: auto;
-          width: 100%;
-          padding-bottom: 4px;
-          scrollbar-width: none;
-        }
-        .chips::-webkit-scrollbar { display: none; }
-        .chip { flex: 0 0 auto; padding: 7px 12px; font-size: 13px; }
-        select, input[type="search"], .nav button, .refresh { font-size: 13px; padding: 7px 10px; }
-        .seg button { font-size: 12.5px; padding: 7px 8px; }
-        input[type="search"] { flex: 1 1 140px; min-width: 0; }
-        .grow { display: none; }
-        /* a 7-column grid is unreadable at this width, so the agenda is the only view */
-        #viewSeg { display: none; }
-        #tzSeg { order: 4; }
-        #monthNav { display: none !important; }
-        .tally { font-size: 12px; }
+      /* Phone layout. Applied as a class by JS (see applyLayout) so it tracks
+         the device rather than only the window width, and can be overridden
+         from the header on any screen. */
+      .phone header { padding: 14px 14px 12px; gap: 8px 14px; }
+      .phone h1 { font-size: 16px; }
+      .phone main { padding: 12px 12px calc(28px + env(safe-area-inset-bottom)); }
+      .phone .controls { padding: 8px 12px; gap: 8px; }
+      .phone .tally { font-size: 12px; }
+      .phone .grow { display: none; }
 
-        /* agenda becomes a card per fixture */
-        .rhead { display: none; }
-        .row {
-          grid-template-columns: 1fr auto;
-          grid-template-areas:
-            "when    score"
-            "fixture fixture"
-            "comp    clubs"
-            "venue   venue";
-          gap: 2px 10px;
-          padding: 13px 14px;
-          min-height: 44px;
-        }
-        .c-when { grid-area: when; font-weight: 600; }
-        .c-fixture { grid-area: fixture; font-size: 15px; margin-top: 2px; }
-        .c-comp { grid-area: comp; color: var(--muted); font-size: 12.5px; }
-        .c-clubs { grid-area: clubs; text-align: right; font-size: 12.5px; }
-        .c-score { grid-area: score; text-align: right; font-size: 15px; }
-        .c-venue { grid-area: venue; color: var(--muted); font-size: 12.5px; margin-top: 3px; }
-        .dash { display: none; }
-
-        /* three compact rows: clubs · filters · toggles */
-        #compSelect { order: 1; flex: 1 1 150px; min-width: 0; }
-        #search { order: 2; flex: 1 1 140px; }
-        #statusSeg { order: 3; }
-        #viewSeg { order: 4; }
-        #tzSeg { order: 5; }
-        .nav { order: 6; }
-
-        /* the detail panel becomes a bottom sheet */
-        .drawer {
-          inset: auto 0 0 0;
-          width: auto;
-          max-height: 86vh;
-          border-left: 0;
-          border-top: 1px solid var(--line);
-          border-radius: 14px 14px 0 0;
-          padding: 16px 16px calc(20px + env(safe-area-inset-bottom));
-          box-shadow: 0 -12px 30px rgba(0,0,0,.2);
-        }
-        .drawer dl { grid-template-columns: 84px 1fr; }
+      /* club chips scroll sideways instead of eating half the screen */
+      .phone .chips {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        width: 100%;
+        padding-bottom: 4px;
+        scrollbar-width: none;
       }
+      .phone .chips::-webkit-scrollbar { display: none; }
+      .phone .chip { flex: 0 0 auto; padding: 7px 12px; font-size: 13px; }
+      .phone select,
+      .phone input[type="search"],
+      .phone .nav button,
+      .phone .refresh { font-size: 13px; padding: 7px 10px; }
+      .phone .seg button { font-size: 12px; padding: 7px 7px; }
+      .phone input[type="search"] { flex: 1 1 140px; min-width: 0; }
+
+      /* three compact rows: clubs · filters · toggles */
+      /* no flex-grow: a growing input would fill the line and push the next
+         control onto its own row */
+      .phone #compSelect { order: 1; flex: 0 1 128px; min-width: 0; }
+      .phone #search { order: 2; flex: 0 1 108px; min-width: 0; }
+      .phone #tzSeg { order: 3; flex: 0 0 auto; }
+      .phone #statusSeg { order: 4; flex: 0 0 auto; }
+      .phone #layoutSeg { order: 5; flex: 0 0 auto; }
+      .phone .nav { order: 6; width: 100%; justify-content: space-between; }
+      .phone .nav .label { min-width: 0; flex: 1; }
+
+      /* the month grid needs roughly 700px to stay legible */
+      .phone #monthNav { display: none !important; }
+
+      /* agenda becomes a card per fixture */
+      .phone .rhead { display: none; }
+      .phone .row {
+        grid-template-columns: 1fr auto;
+        grid-template-areas:
+          "when    score"
+          "fixture fixture"
+          "comp    clubs"
+          "venue   venue";
+        gap: 2px 10px;
+        padding: 13px 14px;
+        min-height: 44px;
+      }
+      .phone .c-when { grid-area: when; font-weight: 600; }
+      .phone .c-fixture { grid-area: fixture; font-size: 15px; margin-top: 2px; }
+      .phone .c-comp { grid-area: comp; color: var(--muted); font-size: 12.5px; }
+      .phone .c-clubs { grid-area: clubs; text-align: right; font-size: 12.5px; }
+      .phone .c-score { grid-area: score; text-align: right; font-size: 15px; }
+      .phone .c-venue { grid-area: venue; color: var(--muted); font-size: 12.5px; margin-top: 3px; }
+      .phone .dash { display: none; }
+
+      /* the detail panel becomes a bottom sheet */
+      .phone .drawer {
+        inset: auto 0 0 0;
+        width: auto;
+        max-height: 86vh;
+        border-left: 0;
+        border-top: 1px solid var(--line);
+        border-radius: 14px 14px 0 0;
+        padding: 16px 16px calc(20px + env(safe-area-inset-bottom));
+        box-shadow: 0 -12px 30px rgba(0, 0, 0, .2);
+      }
+      .phone .drawer dl { grid-template-columns: 84px 1fr; }
+      /* a nine-column table will not fit a phone: keep the decisive numbers */
+      .phone .hide-sm { display: none; }
+      .phone .tbl th, .phone .tbl td { padding: 7px 8px; font-size: 13px; }
+      .phone .league h3 { font-size: 12px; }
     </style>
   </head>
   <body>
@@ -285,6 +323,11 @@
     </header>
 
     <div class="controls">
+      <div class="seg" id="panelSeg" role="group" aria-label="Panel">
+        <button id="pCalendar" aria-pressed="true">Calendar</button>
+        <button id="pStandings" aria-pressed="false">Standings</button>
+      </div>
+      <div class="chips" id="categoryChips"></div>
       <div class="chips" id="clubChips"></div>
       <select id="compSelect" aria-label="Competition"></select>
       <div class="seg" id="statusSeg" role="group" aria-label="Status">
@@ -292,10 +335,12 @@
         <button id="stPlayed" aria-pressed="false">Played</button>
         <button id="stAll" aria-pressed="false">All</button>
       </div>
-      <input type="search" id="search" placeholder="opponent, venue…" aria-label="Search" />
-      <div class="seg" id="viewSeg" role="group" aria-label="View">
-        <button id="vMonth" aria-pressed="true">Month</button>
-        <button id="vList" aria-pressed="false">List</button>
+      <input type="search" id="search" placeholder="search…" aria-label="Search opponent, venue or competition" title="Search opponent, venue or competition" />
+      <div class="seg" id="layoutSeg" role="group" aria-label="Layout">
+        <button id="lAuto" aria-pressed="true" title="Phone layout on a phone, month on a desktop">Auto</button>
+        <button id="lMonth" aria-pressed="false">Month</button>
+        <button id="lAgenda" aria-pressed="false">List</button>
+        <button id="lPhone" aria-pressed="false" title="Cards, bottom sheet, compact controls">Phone</button>
       </div>
       <div class="seg" id="tzSeg" role="group" aria-label="Time zone">
         <button id="tzLocal" aria-pressed="true">Local</button>
@@ -318,24 +363,58 @@
     <div class="backdrop" id="backdrop" hidden></div>
     <aside class="drawer" id="drawer" hidden></aside>
 
-    <script src="data/matches.js"></script>
+    <script src="data/calendar.js"></script>
     <script>
-      const DATA = window.MATCHES_DATA;
+      const DATA = window.CALENDAR_DATA;
       const CLUBS = Object.fromEntries(DATA.clubs.map((c) => [c.id, c]));
+      const CATS = Object.fromEntries(DATA.categories.map((c) => [c.id, c]));
       const MONTHS = ["January","February","March","April","May","June","July","August","September","October","November","December"];
       const DOWS = ["Mon","Tue","Wed","Thu","Fri","Sat","Sun"];
+      const LAYOUTS = { lAuto: "auto", lMonth: "month", lAgenda: "agenda", lPhone: "phone" };
       const NOISE = new Set(["fc","cf","afc","ac","sc","fk","sk","cp","if","ca","club","de","the","04","05","09","1899","1900","1907","2004"]);
 
-      const narrow = window.matchMedia("(max-width: 820px)");
+      // Phones, including landscape ones that are wider than the grid needs.
+      const PHONE_QUERY = "(max-width: 820px), (pointer: coarse) and (max-width: 1100px)";
+      const phoneMq = window.matchMedia(PHONE_QUERY);
+
+      const store = {
+        get(key) {
+          try {
+            return localStorage.getItem(key);
+          } catch {
+            return null;
+          }
+        },
+        set(key, value) {
+          try {
+            localStorage.setItem(key, value);
+          } catch {
+            /* private mode or file:// — the choice just won't persist */
+          }
+        },
+      };
+
+      // Earlier builds stored "desktop"/"phone" for a separate layout axis.
+      function migrateLayout(stored) {
+        if (stored === "desktop") return "month";
+        if (stored === "list") return "agenda";
+        return Object.values(LAYOUTS).includes(stored) ? stored : "auto";
+      }
+
       const state = {
-        view: narrow.matches ? "list" : "month",
+        layout: migrateLayout(store.get("sc-layout")),
+        view: "month",
         status: "upcoming",
         tz: "local",
         clubs: new Set(DATA.clubs.map((c) => c.id)),
+        categories: new Set(store.get("sc-cats") ? store.get("sc-cats").split(",").filter((c) => c in CATS) : DATA.categories.map((c) => c.id)),
+        panel: store.get("sc-panel") === "standings" ? "standings" : "calendar",
         competition: "all",
         q: "",
         day: null,
         ym: null,
+        anchorKey: null,
+        anchorMark: false,
       };
 
       function push(map, key, value) {
@@ -371,7 +450,7 @@
 
       // ---- one entry per fixture, even when two tracked clubs feature ----
       const fixtureMap = new Map();
-      for (const m of DATA.matches) {
+      for (const m of DATA.events.filter((e) => e.category === "football")) {
         const key = m.fixtureKey || m.id;
         const found = fixtureMap.get(key);
         if (found) {
@@ -380,7 +459,11 @@
         }
         fixtureMap.set(key, { ...m, clubs: [m.club] });
       }
-      const fixtures = [...fixtureMap.values()];
+      const races = DATA.events
+        .filter((e) => e.category === "formula-1")
+        .map((e) => ({ ...e, clubs: [], fixtureKey: e.id }));
+      const fixtures = [...fixtureMap.values(), ...races];
+      const entryByKey = new Map(fixtures.map((f) => [f.fixtureKey, f]));
       const sortKeyOf = (m) => m.kickoffUtc || `${m.date} 99:99`;
       fixtures.sort((a, b) => (sortKeyOf(a) < sortKeyOf(b) ? -1 : sortKeyOf(a) > sortKeyOf(b) ? 1 : 0));
 
@@ -415,6 +498,13 @@
       function zoneLabel() {
         return state.tz === "utc" ? "UTC" : localZoneId().split("/").pop().replace(/_/g, " ");
       }
+      // Shows the UTC instant the source gave plus the same moment locally.
+      function utcLine(iso) {
+        const d = new Date(iso);
+        if (Number.isNaN(d.getTime())) return iso;
+        const local = `${DOWS[(d.getDay() + 6) % 7]} ${d.getDate()} ${MONTHS[d.getMonth()]}, ${String(d.getHours()).padStart(2, "0")}:${String(d.getMinutes()).padStart(2, "0")}`;
+        return `${iso} · ${local} ${zoneLabel()}`;
+      }
       function longWhen(m) {
         const d = shown(m);
         const wd = DOWS[(d.getDay() + 6) % 7];
@@ -442,17 +532,46 @@
         return mine > theirs ? "win" : mine < theirs ? "loss" : "draw";
       }
 
+      // ---- category-aware accessors ----
+      function eventTitle(m) {
+        return m.category === "formula-1" ? m.name : `${m.homeTeam} v ${m.awayTeam}`;
+      }
+      function eventCompetition(m) {
+        return m.category === "formula-1" ? "Formula 1" : m.competition;
+      }
+      function eventVenue(m) {
+        if (m.category === "formula-1") return [m.circuit, m.location, m.country].filter(Boolean).join(", ");
+        return [m.venue, m.location].filter(Boolean).join(", ");
+      }
+      function eventColor(m) {
+        return m.category === "formula-1"
+          ? CATS["formula-1"].color
+          : CLUBS[m.clubs[0]]?.color || "#888";
+      }
+      function eventShort(m) {
+        if (m.category !== "formula-1") return null;
+        return `${trimName(m.name.replace(/\s*Grand Prix$/i, ""))} GP`;
+      }
+      function raceResult(m) {
+        return m.category === "formula-1" && m.winner ? trimName(m.winner) : null;
+      }
+      function eventLine(m) {
+        if (m.category === "formula-1") return `${eventShort(m)}${m.winner ? ` — ${trimName(m.winner)}` : ""}`;
+        return m.score ? `${label(m, "home")} ${m.score} ${label(m, "away")}` : `${label(m, "home")} v ${label(m, "away")}`;
+      }
+
       // ---- filtering ----
       function visible() {
         const q = state.q.trim().toLowerCase();
         return fixtures.filter((m) => {
-          if (!m.clubs.some((c) => state.clubs.has(c))) return false;
-          if (state.competition !== "all" && m.competition !== state.competition) return false;
+          if (!state.categories.has(m.category)) return false;
+          if (m.category === "football" && !m.clubs.some((c) => state.clubs.has(c))) return false;
+          if (state.competition !== "all" && eventCompetition(m) !== state.competition) return false;
           if (state.status === "upcoming" && m.status !== "upcoming") return false;
           if (state.status === "played" && m.status !== "played") return false;
           if (state.day && dayKeyOf(m) !== state.day) return false;
           if (q) {
-            const hay = `${m.homeTeam} ${m.awayTeam} ${m.venue} ${m.location} ${m.competition} ${m.opponent}`.toLowerCase();
+            const hay = `${eventTitle(m)} ${eventCompetition(m)} ${eventVenue(m)} ${m.location || ""} ${m.round || ""}`.toLowerCase();
             if (!hay.includes(q)) return false;
           }
           return true;
@@ -462,26 +581,89 @@
       // Open on the first month that actually has something to show:
       // today if it still has fixtures, otherwise the next one due.
       function defaultMonth() {
+        const now = Date.now();
         const today = keyOf(new Date()).slice(0, 7);
-        const pool = state.status === "played" ? fixtures : fixtures.filter((m) => m.status === "upcoming");
+        const pool =
+          state.status === "upcoming"
+            ? fixtures.filter((m) => m.status === "upcoming")
+            : state.status === "played"
+              ? fixtures.filter((m) => m.status === "played")
+              : fixtures;
         if (pool.some((m) => dayKeyOf(m).startsWith(today))) return today;
-        const next = [...pool].sort((a, b) => (sortKeyOf(a) < sortKeyOf(b) ? -1 : 1))[0];
-        return next ? dayKeyOf(next).slice(0, 7) : today;
+        // Nearest in time, so Played opens on the latest results rather than August.
+        const near = pool.reduce(
+          (best, m) => {
+            const at = utcDate(m) ? utcDate(m).getTime() : Date.parse(`${m.date}T12:00:00`);
+            const gap = Math.abs(at - now);
+            return !best || gap < best.gap ? { m, gap } : best;
+          },
+          null
+        );
+        return near ? dayKeyOf(near.m).slice(0, 7) : today;
       }
 
       // ---- rendering ----
-      function render() {
-        for (const el of document.querySelectorAll(".chip")) {
+      // Played and All read from "now" backwards, so land on today rather than
+      // on the opening fixtures of the season.
+      function anchorsToToday() {
+        return state.status === "played" || state.status === "all";
+      }
+
+      function render({ anchor = false } = {}) {
+        document.documentElement.dataset.panel = state.panel;
+        for (const el of document.querySelectorAll("#clubChips .chip")) {
           el.setAttribute("aria-pressed", String(state.clubs.has(el.dataset.club)));
+        }
+        for (const el of document.querySelectorAll("#categoryChips .chip")) {
+          el.setAttribute("aria-pressed", String(state.categories.has(el.dataset.category)));
+        }
+        if (state.panel === "standings") {
+          document.getElementById("view").innerHTML = standingsHtml();
+          document.getElementById("tally").innerHTML =
+            `${DATA.standings.length} league tables · computed from each season's results · refreshed ${DATA.generatedAt.slice(0, 10)}`;
+          return;
         }
         if (!state.ym) state.ym = defaultMonth();
         const rows = visible();
+        const at = anchor && anchorsToToday() && state.view === "list" ? anchorFixture(rows) : null;
+        state.anchorKey = at?.key || null;
+        state.anchorMark = at?.mark || false;
         renderTally(rows);
         const [y, mo] = state.ym.split("-").map(Number);
         document.getElementById("monthLabel").textContent = `${MONTHS[mo - 1]} ${y}`;
-        document.getElementById("monthNav").style.display = state.view === "month" ? "inline-flex" : "none";
         document.getElementById("view").innerHTML = state.view === "month" ? monthHtml(rows) : listHtml(rows);
         bindClicks();
+        // A deliberate navigation always settles the scroll: on today when the
+        // filter reads from now, otherwise back at the top.
+        if (anchor) {
+          if (state.anchorKey) revealAnchor();
+          else window.scrollTo({ top: 0, behavior: "auto" });
+        }
+      }
+
+      // The first fixture on or after today; if every row is already played, the
+      // most recent one — and no marker, since nothing there is "today".
+      function anchorFixture(rows) {
+        const todayKey = keyOf(new Date());
+        const next = rows.find((m) => dayKeyOf(m) >= todayKey);
+        if (next) return { key: next.fixtureKey, mark: true };
+        const last = rows[rows.length - 1];
+        return last ? { key: last.fixtureKey, mark: false } : null;
+      }
+
+      function revealAnchor() {
+        const sticky = document.querySelector(".controls").getBoundingClientRect().height;
+        const mark = document.querySelector(".todayMark");
+        if (mark) {
+          window.scrollTo({ top: Math.max(0, mark.getBoundingClientRect().top + window.scrollY - sticky), behavior: "auto" });
+          return;
+        }
+        for (const el of document.querySelectorAll(".row")) {
+          if (el.dataset.fixture !== state.anchorKey) continue;
+          const top = el.getBoundingClientRect().top + window.scrollY - sticky - 10;
+          window.scrollTo({ top: Math.max(0, top), behavior: "auto" });
+          return;
+        }
       }
 
       function renderTally(rows) {
@@ -540,15 +722,11 @@
       }
 
       function chipHtml(m) {
-        const color = CLUBS[m.clubs[0]].color;
         const time = clockOf(m) || "—";
-        const ground = m.clubs.length === 1 ? ` ${sideOf(m, m.clubs[0]) === "home" ? "H" : "A"}` : "";
-        const line = m.score
-          ? `${label(m, "home")} ${m.score} ${label(m, "away")}`
-          : `${label(m, "home")} v ${label(m, "away")}`;
-        return `<button class="ev ${resultClass(m)}" style="--c:${color}" data-fixture="${m.fixtureKey}"
-          title="${m.competition}${m.round ? " · round " + m.round : ""}">
-          <span class="t">${time}${ground}</span> <span class="x">${line}</span>${m.kickoffUtc ? "" : ' <span class="t">TBC</span>'}
+        const ground = m.category === "football" && m.clubs.length === 1 ? ` ${sideOf(m, m.clubs[0]) === "home" ? "H" : "A"}` : "";
+        return `<button class="ev ${resultClass(m)}" style="--c:${eventColor(m)}" data-fixture="${m.fixtureKey}"
+          title="${eventCompetition(m)} · ${eventTitle(m)}">
+          <span class="t">${time}${ground}</span> <span class="x">${eventLine(m)}</span>${m.kickoffUtc ? "" : ' <span class="t">TBC</span>'}
         </button>`;
       }
 
@@ -563,25 +741,28 @@
       }
 
       function tableHtml(list) {
-        const head = `<div class="rhead"><span>Kick-off</span><span>Fixture</span><span>Competition</span><span>Your clubs</span><span>Score</span><span>Venue</span></div>`;
+        const head = `<div class="rhead"><span>Kick-off</span><span>Fixture</span><span>Competition</span><span>Your clubs</span><span>Result</span><span>Venue</span></div>`;
         const rows = list
           .map((m) => {
             const badges = m.clubs
               .map((id) => `<span class="cbadge" style="--c:${CLUBS[id].color}" title="${CLUBS[id].name}"></span>`)
               .join("");
-            const grounds = m.clubs
-              .map((id) => `${CLUBS[id].short} ${sideOf(m, id) === "home" ? "(H)" : "(A)"}`)
-              .join(", ");
+            const grounds =
+              m.category === "formula-1"
+                ? `<span class="cbadge" style="--c:${CATS["formula-1"].color}"></span>F1`
+                : m.clubs.map((id) => `${CLUBS[id].short} ${sideOf(m, id) === "home" ? "(H)" : "(A)"}`).join(", ");
             const d = shown(m);
             const when = `${String(d.getDate()).padStart(2, "0")} ${MONTHS[d.getMonth()].slice(0, 3)} ${clockOf(m) || ""}${
               m.kickoffUtc ? "" : '<span class="tbc">TBC</span>'}`;
-            return `<div class="row" data-fixture="${m.fixtureKey}">
+            const mark =
+              m.fixtureKey === state.anchorKey && state.anchorMark ? `<div class="todayMark">Today</div>` : "";
+            return `${mark}<div class="row" data-fixture="${m.fixtureKey}">
               <span class="c-when">${when}</span>
-              <span class="c-fixture">${m.homeTeam} v ${m.awayTeam}</span>
-              <span class="c-comp">${m.competition}${m.phase ? ` <span class="ground">· ${m.phase}</span>` : ""}${m.round ? ` <span class="ground">· rd ${m.round}</span>` : ""}</span>
+              <span class="c-fixture">${eventTitle(m)}</span>
+              <span class="c-comp">${eventCompetition(m)}${m.phase ? ` <span class="ground">· ${m.phase}</span>` : ""}${m.round ? ` <span class="ground">· ${m.category === "formula-1" ? "round" : "rd"} ${m.round}</span>` : ""}</span>
               <span class="c-clubs">${badges}${grounds}</span>
-              <span class="c-score">${m.score ? `${m.score}${m.scoreExtra ? ` ${m.scoreExtra}` : ""}` : '<i class="dash">—</i>'}</span>
-              <span class="c-venue">${[m.venue, m.location].filter(Boolean).join(", ") || "—"}</span>
+              <span class="c-score">${raceResult(m) ?? (m.score ? `${m.score}${m.scoreExtra ? ` ${m.scoreExtra}` : ""}` : '<i class="dash">—</i>')}</span>
+              <span class="c-venue">${eventVenue(m) || "—"}</span>
             </div>`;
           })
           .join("");
@@ -591,6 +772,23 @@
       function drawerHtml(m) {
         // The heading already carries the fixture, date and time.
         const rows = [];
+        if (m.category === "formula-1") {
+          rows.push(["Round", `${m.round} of ${races.length}`]);
+          if (m.circuit) rows.push(["Circuit", [m.circuit, m.location, m.country].filter(Boolean).join(", ")]);
+          if (m.weekendStartUtc) rows.push(["Weekend opens", utcLine(m.weekendStartUtc)]);
+          if (m.kickoffUtc) rows.push(["Race start", utcLine(m.kickoffUtc)]);
+          if (m.winner) {
+            rows.push(["Winner", `${m.winner}${m.winningConstructor ? ` — ${m.winningConstructor}` : ""}`]);
+            if (m.pole) rows.push(["Pole position", m.pole]);
+            if (m.fastestLap) rows.push(["Fastest lap", m.fastestLap]);
+          }
+          if (m.report) rows.push(["Report", `<a href="${m.report}" target="_blank" rel="noopener">race report</a>`]);
+          rows.push(["Source", `Wikipedia calendar, start times from ESPN — ${m.sourcePage}`]);
+          return `<button class="close" id="drawerClose">close</button>
+            <h2>${m.name}</h2>
+            <div class="sub">Formula 1 · round ${m.round} · ${longWhen(m)}</div>
+            <dl>${rows.map(([k, v]) => `<dt>${k}</dt><dd>${v}</dd>`).join("")}</dl>`;
+        }
         rows.push(["Competition", `${m.competition}${m.phase ? ` — ${m.phase}` : ""}${m.round ? ` · round ${m.round}` : ""}`]);
         if (m.kickoffUtc) rows.push(["UTC", m.kickoffUtc + (m.localClock ? ` (venue clock ${m.localClock})` : "")]);
         if (m.timeConfidence === "assumed") rows.push(["Time note", "zone inferred from the venue"]);
@@ -617,7 +815,7 @@
       function bindClicks() {
         for (const el of document.querySelectorAll("[data-fixture]")) {
           el.addEventListener("click", () => {
-            const m = fixtureMap.get(el.dataset.fixture);
+            const m = entryByKey.get(el.dataset.fixture);
             if (!m) return;
             const d = document.getElementById("drawer");
             d.innerHTML = drawerHtml(m);
@@ -629,9 +827,8 @@
         for (const el of document.querySelectorAll("[data-day]")) {
           el.addEventListener("click", () => {
             state.day = el.dataset.day;
-            state.view = "list";
-            document.getElementById("vMonth").setAttribute("aria-pressed", "false");
-            document.getElementById("vList").setAttribute("aria-pressed", "true");
+            state.layout = "agenda";
+            applyLayout();
             render();
           });
         }
@@ -653,9 +850,77 @@
         document.getElementById("backdrop").hidden = true;
       }
 
-      function syncViewButtons() {
-        document.getElementById("vMonth").setAttribute("aria-pressed", String(state.view === "month"));
-        document.getElementById("vList").setAttribute("aria-pressed", String(state.view === "list"));
+      // One control carries both axes: Auto, the two desktop views, and the
+      // phone layout, whose agenda is a card rendering of the same list.
+      function resolve(layout) {
+        switch (layout) {
+          case "month":
+            return { phone: false, view: "month" };
+          case "agenda":
+            return { phone: false, view: "list" };
+          case "phone":
+            return { phone: true, view: "list" };
+          default:
+            return phoneMq.matches ? { phone: true, view: "list" } : { phone: false, view: "month" };
+        }
+      }
+
+      let appliedKey = null;
+
+      function applyLayout() {
+        const { phone, view } = resolve(state.layout);
+        document.documentElement.classList.toggle("phone", phone);
+        const key = `${phone}|${view}`;
+        const changed = key !== appliedKey;
+        appliedKey = key;
+        state.view = view;
+        syncLayoutButtons();
+        return changed;
+      }
+
+      function setPanel(panel) {
+        state.panel = panel;
+        store.set("sc-panel", panel);
+        document.getElementById("pCalendar").setAttribute("aria-pressed", String(panel === "calendar"));
+        document.getElementById("pStandings").setAttribute("aria-pressed", String(panel === "standings"));
+        render();
+      }
+
+      function standingsHtml() {
+        return DATA.standings
+          .map((league) => {
+            const body = league.rows
+              .map((r) => {
+                const club = r.clubId ? CLUBS[r.clubId] : null;
+                return `<tr class="${club ? "tracked" : ""}"${club ? ` style="--c:${club.color}"` : ""}>
+                  <td class="pos">${r.position}</td>
+                  <td class="team">${club ? `<span class="cbadge" style="--c:${club.color}"></span>` : ""}${r.team}</td>
+                  <td>${r.played}</td>
+                  <td class="hide-sm">${r.won}</td>
+                  <td class="hide-sm">${r.drawn}</td>
+                  <td class="hide-sm">${r.lost}</td>
+                  <td class="hide-sm">${r.gf}:${r.ga}</td>
+                  <td>${r.gd > 0 ? `+${r.gd}` : r.gd}</td>
+                  <td class="pts">${r.points}</td>
+                </tr>`;
+              })
+              .join("");
+            return `<section class="league">
+              <h3>${league.league} <span>· ${league.rows.length} clubs · ${league.played} matches played${league.updated ? ` · table updated ${league.updated}` : ""}</span></h3>
+              <table class="tbl">
+                <thead><tr><th class="pos">#</th><th>Club</th><th>Pld</th><th class="hide-sm">W</th><th class="hide-sm">D</th><th class="hide-sm">L</th><th class="hide-sm">GF:GA</th><th>GD</th><th>Pts</th></tr></thead>
+                <tbody>${body}</tbody>
+              </table>
+            </section>`;
+          })
+          .join("");
+      }
+
+      function syncLayoutButtons() {
+        for (const [id, value] of Object.entries(LAYOUTS)) {
+          document.getElementById(id).setAttribute("aria-pressed", String(state.layout === value));
+        }
+        document.getElementById("monthNav").style.display = state.view === "month" ? "inline-flex" : "none";
       }
 
       async function refreshFromServer(btn) {
@@ -686,12 +951,20 @@
       function buildChrome() {
         document.getElementById("seasonLabel").textContent = ` ${DATA.season}`;
         document.getElementById("metaLine").innerHTML =
-          `${fixtures.length} fixtures across ${DATA.clubs.length} clubs<br>` +
+          `${fixtures.length} events · ${DATA.categories.map((c) => c.name).join(", ")}<br>` +
           `refreshed ${DATA.generatedAt.slice(0, 16).replace("T", " ")} · source: ${DATA.source}`;
         document.getElementById("icsLinks").innerHTML =
-          [`<a href="calendar/all-clubs.ics" download>all clubs</a>`]
+          [`<a href="calendar/all-events.ics" download>everything</a>`]
             .concat(DATA.clubs.map((c) => `<a href="calendar/${c.id}.ics" download>${c.name}</a>`))
+            .concat([`<a href="calendar/formula-1.ics" download>Formula 1</a>`])
             .join("");
+        document.getElementById("categoryChips").innerHTML = DATA.categories
+          .map(
+            (c) =>
+              `<button class="chip" data-category="${c.id}" style="--c:${c.color}" aria-pressed="${state.categories.has(c.id)}">` +
+              `<span class="dot"></span>${c.name}</button>`
+          )
+          .join("");
         document.getElementById("clubChips").innerHTML = DATA.clubs
           .map(
             (c) =>
@@ -699,12 +972,23 @@
               `<span class="dot"></span>${c.name}</button>`
           )
           .join("");
-        document.getElementById("compSelect").innerHTML = ["all", ...[...new Set(fixtures.map((m) => m.competition))].sort()]
+        document.getElementById("compSelect").innerHTML = ["all", ...[...new Set(fixtures.map(eventCompetition))].sort()]
           .map((c) => `<option value="${c}">${c === "all" ? "All competitions" : c}</option>`)
           .join("");
       }
 
       function wireUp() {
+        document.getElementById("categoryChips").addEventListener("click", (e) => {
+          const btn = e.target.closest(".chip");
+          if (!btn) return;
+          const id = btn.dataset.category;
+          state.categories.has(id) ? state.categories.delete(id) : state.categories.add(id);
+          if (!state.categories.size) DATA.categories.forEach((c) => state.categories.add(c.id));
+          store.set("sc-cats", [...state.categories].join(","));
+          render();
+        });
+        document.getElementById("pCalendar").addEventListener("click", () => setPanel("calendar"));
+        document.getElementById("pStandings").addEventListener("click", () => setPanel("standings"));
         document.getElementById("clubChips").addEventListener("click", (e) => {
           const btn = e.target.closest(".chip");
           if (!btn) return;
@@ -723,17 +1007,22 @@
             for (const k of Object.keys(statusButtons)) {
               document.getElementById(k).setAttribute("aria-pressed", String(k === id));
             }
-            render();
+            // Changing what is shown also changes where "now" is.
+            state.ym = defaultMonth();
+            render({ anchor: true });
           });
         }
-        document.getElementById("vMonth").addEventListener("click", () => {
-          state.view = "month";
-          pressPair("vList", "vMonth");
-          render();
-        });
-        document.getElementById("vList").addEventListener("click", () => {
-          state.view = "list";
-          pressPair("vMonth", "vList");
+        for (const [id, value] of Object.entries(LAYOUTS)) {
+          document.getElementById(id).addEventListener("click", () => {
+            state.layout = value;
+            store.set("sc-layout", value);
+            applyLayout();
+            render({ anchor: true });
+          });
+        }
+        phoneMq.addEventListener("change", () => {
+          if (state.layout !== "auto") return;
+          applyLayout();
           render();
         });
         document.getElementById("tzLocal").addEventListener("click", () => {
@@ -781,8 +1070,9 @@
 
       buildChrome();
       wireUp();
-      syncViewButtons();
-      render();
+      setPanel(state.panel);
+      applyLayout();
+      render({ anchor: true });
     </script>
   </body>
 </html>

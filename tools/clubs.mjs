@@ -1,5 +1,27 @@
 export const SEASON = "2026–27";
 
+export const CATEGORIES = [
+  {
+    id: "football",
+    name: "Football",
+    color: "#2E7D32",
+  },
+  {
+    id: "formula-1",
+    name: "Formula 1",
+    color: "#B3212B",
+    page: "2026 Formula One World Championship",
+    year: 2026,
+  },
+];
+
+export const LEAGUES = [
+  { name: "Premier League", page: `${SEASON} Premier League` },
+  { name: "La Liga", page: `${SEASON} La Liga` },
+  { name: "Bundesliga", page: `${SEASON} Bundesliga` },
+  { name: "Ligue 1", page: `${SEASON} Ligue 1` },
+];
+
 export const CLUBS = [
   {
     id: "real-madrid",

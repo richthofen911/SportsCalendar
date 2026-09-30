@@ -1,9 +1,20 @@
-// Independent check of data/matches.json against ESPN's public feed.
+// Independent checks of data/calendar.json.
+//   1. football results, home/away and kick-offs vs ESPN
+//   2. computed league tables vs Wikipedia's own rendered tables
+//   3. F1 rounds vs ESPN's race start times
 // Usage: node tools/verify.mjs
 import { readFileSync } from "node:fs";
 import path from "node:path";
 
-import { CLUBS } from "./clubs.mjs";
+import { CLUBS, LEAGUES } from "./clubs.mjs";
+import { fetchWikitext } from "./wiki.mjs";
+import {
+  parseLeagueMatches,
+  parseTeamNames,
+  parseRankingCriteria,
+  computeStandings,
+  findTableTransclusion,
+} from "./standings.mjs";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
 const ESPN_IDS = {
@@ -14,136 +25,210 @@ const ESPN_IDS = {
   bayern: ["ger.1", 132],
   psg: ["fra.1", 160],
 };
+const UA = { "User-Agent": "SportsCalendar/1.0 (fixture verification)" };
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 const NOISE = new Set([
-  "fc","cf","afc","ac","sc","club","cp","de","the","if","sk","fk","bk","1899","1900","1907","04","05","1",
+  "fc", "cf", "afc", "ac", "sc", "fk", "sk", "cp", "if", "ca", "club", "de", "the",
+  "04", "05", "09", "1899", "1900", "1907", "2004",
 ]);
 
 function norm(name) {
   return (name || "")
     .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[̀-ͯ]/g, "")
     .toLowerCase()
-    .replace(/[^a-z0-9 ]+/g, " ")
-    .split(/\s+/)
+    .replace(/\./g, "")
+    .replace(/[^a-z0-9]+/g, " ")
+    .split(" ")
     .filter((t) => t && !NOISE.has(t))
     .join(" ");
 }
 
 const ALIAS = [
-  ["manchester united", "man united"],
   ["athletic club", "athletic bilbao"],
   ["stade rennais", "rennes"],
   ["real betis", "betis"],
   ["sv elversberg", "elversberg"],
-  ["rayo vallecano", "rayo"],
-  ["real sociedad", "real sociedad", "rsociedad"],
+  ["inter milan", "inter"],
+  ["olympique marseille", "marseille"],
+  ["olympique lyonnais", "lyon"],
   ["1 fc heidenheim", "heidenheim"],
   ["borussia monchengladbach", "monchengladbach"],
   ["bayer 04 leverkusen", "leverkusen"],
-  ["olympique marseille", "marseille"],
-  ["olympique lyonnais", "lyon"],
-  ["inter milan", "inter"],
-  ["sl benfica", "benfica"],
-  ["union berlin", "union"],
+  ["manchester united", "man united"],
 ];
 
 function sameTeam(a, b) {
   const x = norm(a);
   const y = norm(b);
   if (!x || !y) return false;
-  if (x === y) return true;
-  if (x.includes(y) || y.includes(x)) return true;
-  for (const group of ALIAS) {
-    if (group.includes(x) && group.includes(y)) return true;
-  }
-  const tx = new Set(x.split(" "));
-  const ty = new Set(y.split(" "));
-  let shared = 0;
-  for (const t of tx) if (ty.has(t)) shared++;
-  return shared >= 1 && shared === Math.min(tx.size, ty.size);
+  if (x === y || x.includes(y) || y.includes(x)) return true;
+  return ALIAS.some((g) => g.includes(x) && g.includes(y));
 }
 
-async function espn(pathname) {
-  const url = `https://site.api.espn.com/apis/site/v2/sports/soccer/${pathname}`;
-  const res = await fetch(url, { headers: { "User-Agent": "SportsCalendar/1.0" } });
-  if (!res.ok) throw new Error(`ESPN HTTP ${res.status}`);
-  return res.json();
-}
-
-function eventsToRows(body) {
-  const rows = [];
-  for (const e of body.events || []) {
-    const c = e.competitions?.[0];
-    if (!c) continue;
-    const state = c.status?.type?.state ?? e.status?.type?.state;
-    const home = c.competitors?.find((x) => x.homeAway === "home");
-    const away = c.competitors?.find((x) => x.homeAway === "away");
-    if (!home || !away) continue;
-    rows.push({
-      kickoff: (e.date || c.date || "").slice(0, 16),
-      state,
-      home: home.team?.displayName,
-      away: away.team?.displayName,
-      homeScore: home.score?.value ?? null,
-      awayScore: away.score?.value ?? null,
-    });
-  }
-  return rows;
-}
-
-const data = JSON.parse(readFileSync(path.join(ROOT, "data/matches.json"), "utf8"));
-const ours = data.matches;
-
-let checked = 0;
-let mismatches = 0;
-const unverified = [];
-
-for (const club of CLUBS) {
-  const [league, id] = ESPN_IDS[club.id];
-  const rows = eventsToRows(await espn(`${league}/teams/${id}/schedule?limit=30`));
-  await new Promise((r) => setTimeout(r, 300));
-  const upcoming = eventsToRows(await espn(`${league}/scoreboard`));
-  await new Promise((r) => setTimeout(r, 300));
-
-  const candidates = [...rows, ...upcoming].filter(
-    (r) => r.home && (sameTeam(r.home, club.name) || sameTeam(r.away, club.name))
+// Ligue 1 has both Paris FC and Paris Saint-Germain, so containment alone can
+// pair the wrong pair of clubs. Try exact names first, then aliases, and only
+// then fall back to containment.
+function pickByTeam(rows, name, teamOf) {
+  const target = norm(name);
+  return (
+    rows.find((r) => norm(teamOf(r)) === target) ||
+    rows.find((r) => ALIAS.some((g) => g.includes(target) && g.includes(norm(teamOf(r))))) ||
+    rows.find((r) => sameTeam(teamOf(r), name)) ||
+    null
   );
+}
 
-  for (const r of candidates) {
-    const clubHome = sameTeam(r.home, club.name);
-    const opponent = clubHome ? r.away : r.home;
-    const day = r.kickoff.slice(0, 10);
-    const found = ours.filter(
-      (m) => m.club === club.id && m.date === day && sameTeam(m.opponent, opponent)
+const data = JSON.parse(readFileSync(path.join(ROOT, "data/calendar.json"), "utf8"));
+const football = data.events.filter((e) => e.category === "football");
+const races = data.events.filter((e) => e.category === "formula-1");
+let failures = 0;
+
+/* ----------------------------------------------------- 1. football vs ESPN */
+{
+  let checked = 0;
+  const bad = [];
+  for (const club of CLUBS) {
+    const [league, id] = ESPN_IDS[club.id];
+    for (const url of [`${league}/teams/${id}/schedule?limit=30`, `${league}/scoreboard`]) {
+      const res = await fetch(`https://site.api.espn.com/apis/site/v2/sports/soccer/${url}`, { headers: UA });
+      if (!res.ok) continue;
+      const body = await res.json();
+      for (const e of body.events || []) {
+        const c = e.competitions?.[0];
+        const home = c?.competitors?.find((x) => x.homeAway === "home");
+        const away = c?.competitors?.find((x) => x.homeAway === "away");
+        if (!home || !away) continue;
+        if (!sameTeam(home.team.displayName, club.name) && !sameTeam(away.team.displayName, club.name)) continue;
+        const clubHome = sameTeam(home.team.displayName, club.name);
+        const day = (e.date || "").slice(0, 10);
+        const opponent = clubHome ? away.team.displayName : home.team.displayName;
+        const ours = football.filter(
+          (m) => m.club === club.id && m.date === day && sameTeam(m.opponent, opponent)
+        );
+        if (ours.length > 1) bad.push(`${club.id} ${day}: ${ours.length} rows claim the same fixture`);
+        checked++;
+        if (!ours.length) {
+          bad.push(`${club.id} ${day} ${away.team.displayName} @ ${home.team.displayName}: not in our data`);
+          continue;
+        }
+        const m = ours[0];
+        if (m.home !== clubHome) {
+          bad.push(`${club.id} ${day}: ground ours=${m.home ? "H" : "A"} espn=${clubHome ? "H" : "A"}`);
+        }
+        if (c.status?.type?.state === "post" && m.score) {
+          const espnScore = clubHome
+            ? `${home.score?.value}-${away.score?.value}`
+            : `${away.score?.value}-${home.score?.value}`;
+          const [hg, ag] = m.score.split("-");
+          const mine = m.home ? `${hg}-${ag}` : `${ag}-${hg}`;
+          if (mine !== espnScore) bad.push(`${club.id} ${day}: score ours=${mine} espn=${espnScore}`);
+        }
+        if (m.kickoffUtc && e.date) {
+          const espnAt = e.date.endsWith("Z") ? e.date : `${e.date}Z`;
+          const gap = Math.abs(Date.parse(m.kickoffUtc) - Date.parse(espnAt)) / 60000;
+          if (gap > 120) bad.push(`${club.id} ${day}: kick-off ours=${m.kickoffUtc} espn=${espnAt}`);
+        }
+      }
+      await sleep(250);
+    }
+  }
+  failures += bad.length;
+  console.log(`1. football vs ESPN — ${checked} rows checked, ${bad.length} discrepancies`);
+  for (const b of bad.slice(0, 10)) console.log("   ✗", b);
+}
+
+/* ---------------------------- 2. computed tables vs Wikipedia's rendered */
+{
+  const strip = (h) =>
+    h.replace(/<[^>]+>/g, "")
+      .replace(/&nbsp;/g, " ")
+      .replace(/&amp;/g, "&")
+      .replace(/&#\d+;/g, "")
+      .replace(/\s+/g, " ")
+      .trim();
+  for (const league of LEAGUES) {
+    const season = await fetchWikitext({ page: league.page });
+    let wikitext = season.wikitext;
+    let renderPage = league.page;
+    const transclusion = findTableTransclusion(wikitext);
+    if (transclusion) {
+      wikitext = (await fetchWikitext({ page: `Template:${transclusion}` })).wikitext;
+      renderPage = `Template:${transclusion}`;
+    }
+    const mine = computeStandings(
+      parseLeagueMatches(wikitext).matches,
+      parseTeamNames(wikitext),
+      parseRankingCriteria(wikitext)
     );
-    checked++;
-    if (!found.length) {
-      unverified.push(`${club.id} ${day} vs ${opponent}: not in our data`);
+    const url =
+      "https://en.wikipedia.org/w/api.php?action=parse&format=json&formatversion=2&prop=text&page=" +
+      encodeURIComponent(renderPage);
+    const body = await (await fetch(url, { headers: UA })).json();
+    const html = body.parse?.text || "";
+    const table =
+      (html.match(/<table[\s\S]*?<\/table>/g) || []).find((t) => /Pld/.test(t) && /Pts/.test(t)) || "";
+    const rows = [...table.matchAll(/<tr[^>]*>([\s\S]*?)<\/tr>/g)]
+      .map((m) => [...m[1].matchAll(/<t[hd][^>]*>([\s\S]*?)<\/t[hd]>/g)].map((c) => strip(c[1])))
+      .filter((r) => r.length >= 9);
+    const rendered = rows
+      .slice(1)
+      .map((r) => ({ pos: +r[0], team: r[1], pld: +r[2], gf: +r[6], ga: +r[7], pts: +r[9] }))
+      .filter((r) => r.team && Number.isFinite(r.pts));
+    const bad = [];
+    for (const r of rendered) {
+      const m = pickByTeam(mine, r.team, (x) => x.team);
+      if (!m) {
+        bad.push(`no computed row for ${r.team}`);
+        continue;
+      }
+      if (m.position !== r.pos || m.played !== r.pld || m.gf !== r.gf || m.ga !== r.ga || m.points !== r.pts) {
+        bad.push(
+          `${r.team}: computed pos ${m.position} ${m.played}P ${m.gf}:${m.ga} ${m.points}pts vs rendered pos ${r.pos} ${r.pld}P ${r.gf}:${r.ga} ${r.pts}pts`
+        );
+      }
+    }
+    failures += bad.length;
+    console.log(
+      `2. ${league.name} — ${rendered.length} rendered rows vs ${mine.length} computed, ${bad.length} discrepancies`
+    );
+    for (const b of bad.slice(0, 6)) console.log("   ✗", b);
+    await sleep(300);
+  }
+}
+
+/* ----------------------------------------------------------- 3. F1 vs ESPN */
+{
+  const url = "https://site.api.espn.com/apis/site/v2/sports/racing/f1/scoreboard?dates=2026";
+  const body = await (await fetch(url, { headers: UA })).json();
+  const espnEvents = body.events || [];
+  let checked = 0;
+  const bad = [];
+  for (const race of races) {
+    const word = race.name.replace(/\s*Grand Prix.*$/i, "").split(/\s+/).pop().toLowerCase();
+    const byDate = espnEvents.find(
+      (e) => e.endDate && race.kickoffUtc && e.endDate.slice(0, 16) === race.kickoffUtc.slice(0, 16)
+    );
+    const byName = espnEvents.find((e) => e.endDate && String(e.name).toLowerCase().includes(word));
+    const hit = byDate || byName;
+    if (!hit) {
+      bad.push(`round ${race.round} ${race.name}: nothing on ESPN near ${race.kickoffUtc || race.date}`);
       continue;
     }
-    const m = found[0];
-    const problems = [];
-    if (m.home !== clubHome) problems.push(`ground: ours=${m.home ? "home" : "away"} espn=${clubHome ? "home" : "away"}`);
-    if (r.state === "post" && m.score) {
-      const espn = clubHome ? `${r.homeScore}-${r.awayScore}` : `${r.awayScore}-${r.homeScore}`;
-      const [hg, ag] = m.score.split("-").map(Number);
-      const ours = m.home ? `${hg}-${ag}` : `${ag}-${hg}`;
-      if (ours !== espn) problems.push(`score: ours=${ours} espn=${espn}`);
+    checked++;
+    if (race.kickoffUtc && hit.endDate.slice(0, 16) !== race.kickoffUtc.slice(0, 16)) {
+      bad.push(`round ${race.round} ${race.name}: ours=${race.kickoffUtc} espn=${hit.endDate}`);
     }
-    if (r.kickoff && m.kickoffUtc && m.kickoffUtc !== r.kickoff + "Z") {
-      // ESPN sometimes reports the local slot; only flag hour-level disagreement.
-      const diffMin = Math.abs(new Date(m.kickoffUtc) - new Date(r.kickoff + "Z")) / 60000;
-      if (diffMin > 120) problems.push(`kick-off: ours=${m.kickoffUtc} espn=${r.kickoff}Z`);
-    }
-    if (problems.length) {
-      mismatches++;
-      console.log(`✗ ${club.id} ${day} vs ${opponent} — ${problems.join("; ")}`);
+    const espnDone = hit.status?.type?.state === "post";
+    if (espnDone !== (race.status === "played")) {
+      bad.push(`round ${race.round} ${race.name}: status ours=${race.status} espn=${hit.status?.type?.state}`);
     }
   }
+  failures += bad.length;
+  console.log(`3. Formula 1 — ${checked}/${races.length} rounds matched, ${bad.length} discrepancies`);
+  for (const b of bad.slice(0, 6)) console.log("   ✗", b);
 }
 
-console.log(
-  `\nESPN rows compared: ${checked}   discrepancies: ${mismatches}   unmatched: ${unverified.length}`
-);
-for (const u of unverified) console.log("  ?", u);
+console.log(failures ? `\nFAILED: ${failures} problem(s)` : "\nAll checks agree.");
+process.exitCode = failures ? 1 : 0;

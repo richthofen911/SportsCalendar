@@ -2,13 +2,35 @@ import { writeFile, mkdir } from "node:fs/promises";
 import { readFileSync } from "node:fs";
 import path from "node:path";
 
-import { CLUBS } from "./clubs.mjs";
+import { CLUBS, CATEGORIES, LEAGUES } from "./clubs.mjs";
 import { fetchWikitext } from "./wiki.mjs";
 import { parseSeason, fixtureIdentity, CLUB_ALIASES } from "./parse.mjs";
+import { parseF1Calendar, parseF1Results, attachStartTimes } from "./f1.mjs";
+import {
+  parseLeagueMatches,
+  parseTeamNames,
+  parseRankingCriteria,
+  computeStandings,
+  parseUpdated,
+  findTableTransclusion,
+} from "./standings.mjs";
 import { buildIcs } from "./ics.mjs";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
 const force = process.argv.includes("--force");
+
+function clubIdForTeamName(name) {
+  const key = String(name).toLowerCase();
+  for (const club of CLUBS) {
+    const aliases = CLUB_ALIASES[club.id] || [];
+    if (aliases.some((a) => key === a.toLowerCase())) return club.id;
+  }
+  for (const club of CLUBS) {
+    const aliases = CLUB_ALIASES[club.id] || [];
+    if (aliases.some((a) => key.includes(a.toLowerCase()))) return club.id;
+  }
+  return null;
+}
 
 function hash8(text) {
   let h = 0;
@@ -66,6 +88,7 @@ for (const club of CLUBS) {
     seen.set(key, true);
     const full = {
       ...m,
+      category: "football",
       clubName: club.name,
       id: idOf(m),
       status: statusOf(m, now),
@@ -90,6 +113,102 @@ for (const club of CLUBS) {
   );
 }
 
+/* ------------------------------------------------------------------ Formula 1 */
+
+const f1Category = CATEGORIES.find((c) => c.id === "formula-1");
+const f1Events = [];
+const f1Report = { unmatchedF1: [], extraEspn: [], dateSpread: [] };
+try {
+  const page = await fetchWikitext({ page: f1Category.page, force });
+  const calendar = parseF1Calendar(page.wikitext, f1Category.year);
+  const results = parseF1Results(page.wikitext);
+  const espnUrl =
+    "https://site.api.espn.com/apis/site/v2/sports/racing/f1/scoreboard?dates=" + f1Category.year;
+  const espnBody = await (await fetch(espnUrl, { headers: { "User-Agent": "SportsCalendar/1.0" } })).json();
+  const espnEvents = (espnBody.events || []).map((e) => ({
+    name: e.name,
+    date: e.date,
+    end: e.endDate,
+    state: e.status?.type?.state,
+  }));
+  attachStartTimes(calendar, espnEvents, f1Report);
+  for (const round of calendar) {
+    const extra = results.get(round.round) || {};
+    f1Events.push({
+      id: `f1-${f1Category.year}-${String(round.round).padStart(2, "0")}`,
+      category: "formula-1",
+      kind: "race",
+      round: round.round,
+      name: round.name,
+      circuit: round.circuit,
+      location: round.location,
+      country: round.country,
+      date: round.date,
+      kickoffUtc: round.kickoffUtc || null,
+      weekendStartUtc: round.weekendStartUtc || null,
+      timeConfidence: round.kickoffUtc ? "exact" : "none",
+      status: round.status || "upcoming",
+      winner: extra.winner || null,
+      winningConstructor: extra.winningConstructor || null,
+      pole: extra.pole || null,
+      fastestLap: extra.fastestLap || null,
+      report: extra.report || null,
+      sourcePage: page.title,
+    });
+  }
+} catch (err) {
+  console.error("F1 stage failed:", err.message);
+  process.exitCode = 1;
+}
+
+/* ------------------------------------------------------------------ standings */
+
+const standings = [];
+const standingsReport = { problems: [], orphanCodes: [] };
+for (const league of LEAGUES) {
+  try {
+    const season = await fetchWikitext({ page: league.page, force });
+    let wikitext = season.wikitext;
+    let sourcePage = season.title;
+    const transclusion = findTableTransclusion(wikitext);
+    if (transclusion) {
+      const tpl = await fetchWikitext({ page: `Template:${transclusion}`, force });
+      wikitext = tpl.wikitext;
+      sourcePage = tpl.title;
+    }
+    const names = parseTeamNames(wikitext);
+    const { matches, problems } = parseLeagueMatches(wikitext);
+    standingsReport.problems.push(...problems.map((p) => ({ league: league.name, ...p })));
+    const codes = new Set(Object.keys(names));
+    const used = new Set();
+    for (const m of matches) {
+      used.add(m.home);
+      used.add(m.away);
+    }
+    const orphans = [...used].filter((c) => !codes.has(c));
+    if (orphans.length) standingsReport.orphanCodes.push({ league: league.name, orphans });
+    const rows = computeStandings(matches, names, parseRankingCriteria(wikitext)).map((r) => ({
+      ...r,
+      clubId: clubIdForTeamName(r.team) || null,
+    }));
+    standings.push({
+      category: "football",
+      league: league.name,
+      updated: parseUpdated(wikitext),
+      sourcePage,
+      teams: rows.length,
+      played: matches.filter((m) => m.state === "played").length,
+      rows,
+    });
+    console.log(
+      `${league.name.padEnd(16)} teams=${String(rows.length).padStart(2)} played=${String(matches.filter((m) => m.state === "played").length).padStart(3)} leader=${rows[0]?.team}`
+    );
+  } catch (err) {
+    console.error(`standings for ${league.name} failed:`, err.message);
+    process.exitCode = 1;
+  }
+}
+
 all.sort((a, b) => (a.date < b.date ? -1 : a.date > b.date ? 1 : 0));
 
 const dataDir = path.join(ROOT, "data");
@@ -98,10 +217,18 @@ await mkdir(dataDir, { recursive: true });
 await mkdir(calDir, { recursive: true });
 
 const generatedAt = now.toISOString();
+
+const events = [...all, ...f1Events].sort((a, b) => {
+  const ka = a.kickoffUtc || `${a.date} 99:99`;
+  const kb = b.kickoffUtc || `${b.date} 99:99`;
+  return ka < kb ? -1 : ka > kb ? 1 : 0;
+});
+
 const payload = {
   generatedAt,
   season: "2026-27",
-  source: "Wikipedia club season pages",
+  source: "Wikipedia season pages and league table templates; F1 start times from ESPN",
+  categories: CATEGORIES.map((c) => ({ ...c })),
   clubs: CLUBS.map(({ id, name, short, color, page }) => ({
       id,
       name,
@@ -110,13 +237,14 @@ const payload = {
       page,
       aliases: CLUB_ALIASES[id] || [name],
     })),
-  matches: all,
+  events,
+  standings,
 };
 
-await writeFile(path.join(dataDir, "matches.json"), JSON.stringify(payload, null, 2));
+await writeFile(path.join(dataDir, "calendar.json"), JSON.stringify(payload, null, 2));
 await writeFile(
-  path.join(dataDir, "matches.js"),
-  `// Generated by \`npm run refresh\` at ${generatedAt}\nwindow.MATCHES_DATA = ${JSON.stringify(payload)};\n`
+  path.join(dataDir, "calendar.js"),
+  `// Generated by \`npm run refresh\` at ${generatedAt}\nwindow.CALENDAR_DATA = ${JSON.stringify(payload)};\n`
 );
 
 const perClub = CLUBS.map((club) => ({
@@ -144,8 +272,17 @@ console.log(
   `combined calendar: ${combined.length} entries (${all.length - combined.length} shared fixtures merged)`
 );
 
+// The combined calendar legitimately repeats every per-club UID; nothing else may.
+const COMBINED_NAME = "Sports Calendar — everything";
+
 const files = [
-  { file: path.join(calDir, "all-clubs.ics"), matches: combined, name: "Sports Calendar — all clubs" },
+  { file: path.join(calDir, "all-events.ics"), matches: combined, name: COMBINED_NAME },
+  {
+    file: path.join(calDir, "formula-1.ics"),
+    matches: f1Events,
+    name: "Formula 1",
+    season: "2026",
+  },
   ...perClub.map(({ file, matches, club }) => ({ file, matches, name: club.name })),
 ];
 for (const f of files) {
@@ -155,7 +292,9 @@ for (const f of files) {
 const timeConfidence = {};
 for (const m of all) timeConfidence[m.timeConfidence] = (timeConfidence[m.timeConfidence] || 0) + 1;
 
-console.log(`\nmatches: ${all.length}   ics files: ${files.length}`);
+console.log(
+  `\nfootball rows: ${all.length}   f1 rounds: ${f1Events.length}   league tables: ${standings.length}   ics files: ${files.length}`
+);
 console.log("time confidence:", JSON.stringify(timeConfidence));
 console.log("skipped blocks:", report.skipped.length);
 for (const s of report.skipped.slice(0, 10)) console.log("  ", JSON.stringify(s));
@@ -196,7 +335,7 @@ function checkIcs(files) {
   // UIDs may repeat only between the combined file and its per-club sources.
   for (const [uid, names] of uids) {
     if (names.size > 2) problems.push(`uid ${uid} reused across ${[...names].join(", ")}`);
-    if (names.size === 2 && ![...names].includes("Sports Calendar — all clubs")) {
+    if (names.size === 2 && ![...names].includes(COMBINED_NAME)) {
       problems.push(`uid ${uid} duplicated in ${[...names].join(", ")}`);
     }
   }
@@ -214,5 +353,9 @@ if (icsProblems.length) {
 
 await writeFile(
   path.join(ROOT, ".cache", "report.json"),
-  JSON.stringify({ generatedAt, report, timeConfidence, comps }, null, 2)
+  JSON.stringify({ generatedAt, report, timeConfidence, comps, f1Report, standingsReport }, null, 2)
 );
+if (f1Report.unmatchedF1.length) console.log("F1 rounds without a start time:", f1Report.unmatchedF1.length);
+if (f1Report.dateSpread.length) console.log("F1 date disagreements (wiki vs ESPN):", JSON.stringify(f1Report.dateSpread));
+if (standingsReport.problems.length) console.log("unparseable league rows:", standingsReport.problems.length);
+if (standingsReport.orphanCodes.length) console.log("team codes without a name:", JSON.stringify(standingsReport.orphanCodes));
