@@ -1,17 +1,28 @@
 {
-  "generatedAt": "2026-09-30T19:22:16.683Z",
+  "generatedAt": "2026-09-30T23:56:33.202Z",
   "season": "2026-27",
   "source": "Wikipedia season pages and league table templates; F1 start times from ESPN",
   "categories": [
     {
       "id": "football",
       "name": "Football",
-      "color": "#2E7D32"
+      "color": "#2E7D32",
+      "teamsLabel": "Clubs",
+      "teams": [
+        "real-madrid",
+        "barcelona",
+        "arsenal",
+        "man-city",
+        "bayern",
+        "psg"
+      ]
     },
     {
       "id": "formula-1",
       "name": "Formula 1",
       "color": "#B3212B",
+      "teamsLabel": "Teams",
+      "teams": [],
       "page": "2026 Formula One World Championship",
       "year": 2026
     }
