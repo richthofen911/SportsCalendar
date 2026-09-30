@@ -93,10 +93,13 @@ Wikipedia/ESPN  --(npm run publish)-->  GitHub repo  --(Actions)-->  Pages site
   only those generated files and pushes. It makes no commit when nothing
   changed, so a scheduled run on a quiet day is a no-op. Add `--dry-run` to
   commit locally without pushing.
-- **`.github/workflows/pages.yml`** — runs on every push to `main`, copies
-  `index.html`, `data/calendar.js` and `calendar/*.ics` into the Pages artifact.
-  It never reads the network, so the page only ever shows what this machine
-  fetched.
+- **Pages source** is the `main` branch root, so a push publishes whatever is
+  committed. No build step and no network access on GitHub's side — the page can
+  only ever show what this machine fetched. It publishes the whole repository,
+  which is why `tools/` is also reachable at the site URL; nothing there is
+  secret, but if you would rather publish only the site, switch Settings →
+  Pages → Source to "GitHub Actions" and add a workflow that uploads just
+  `index.html`, `data/calendar.js` and `calendar/*.ics`.
 - **`npm run scheduler:install`** — optional. Installs a per-user LaunchAgent
   (no admin rights) that runs the publish step at 07:15 and 19:15. Override with
   `--times 06:00,22:00`; remove with `npm run scheduler:uninstall`. A job missed
