@@ -9,7 +9,10 @@ A local calendar with two categories, each independently toggleable:
 - **Formula 1** — all 23 rounds of the 2026 championship: circuit, race start
   time, weekend opening, and the winner, pole sitter and fastest lap once run.
 
-No accounts, no API keys, no build step, nothing running in the background.
+No accounts, no API keys, no build step: `index.html` reads one generated data
+file and works straight from `file://`. There is also a hosted deployment — a
+Node service on Render reading Postgres on Neon, refreshed on a schedule — under
+[Deploy it](#deploy-it-render--neon). It is optional; nothing below needs it.
 
 ## Open it
 
@@ -101,6 +104,10 @@ Wikipedia/ESPN  --(npm run publish)-->  GitHub repo  --(Actions)-->  Pages site
   only those generated files and pushes. It makes no commit when nothing
   changed, so a scheduled run on a quiet day is a no-op. Add `--dry-run` to
   commit locally without pushing.
+
+  If the Neon cron is refreshing on its own, run **`npm run db:pull`** first:
+  the database will have moved on since this Mac last built, and pulling makes
+  the committed files match what the hosted site is serving.
 - **Pages source** is the `main` branch root, so a push publishes whatever is
   committed. No build step and no network access on GitHub's side — the page can
   only ever show what this machine fetched. It publishes the whole repository,
@@ -128,6 +135,135 @@ itself on every publish, with no re-import:
 The **Refresh data** button in the header is shown only when the page comes from
 `localhost` or a private network address, so it never appears on the public site
 where there is no server to call.
+
+## Deploy it (Render + Neon)
+
+A static file cannot keep a copy of the calendar in a database or refresh itself
+while this Mac is asleep. Those two jobs are what the deployment adds.
+
+```
+                         cron 07:15 & 19:15 UTC
+                                   │
+                                   ▼
+   Wikipedia / ESPN ──▶  Neon Function `refresh`  ──▶  Postgres on Neon
+                                                              │
+                                          Render web service ◀┘
+                                                              │
+                                    index.html · /data/calendar.js · *.ics
+```
+
+| Piece | Where | Job |
+| --- | --- | --- |
+| Project `sports-calendar` | Neon, `aws-us-east-2` | Holds the calendar in Postgres |
+| Function `refresh` | branch `main` | Re-runs the build, replaces every row |
+| Trigger `calendar-twice-daily` | `15 7,19 * * *` UTC | Calls that function twice a day |
+| Web service | Render, `render.yaml` | Serves the site and the `.ics` files from Postgres |
+
+The web service reads the database and serves `/data/calendar.js` and
+`/calendar/*.ics` from it, so the page needs no change at all — it still just
+loads a script tag. Without `DATABASE_URL` the server falls back to the
+committed files, which is the behaviour `npm run serve` always had; the Render
+blueprint sets `REQUIRE_DATABASE=true` so a missing connection string stops the
+boot instead of quietly serving stale files.
+
+### The database
+
+Seven tables. `events` and `standings_rows` are ordinary columns you can query
+and index; each row also carries a `doc jsonb` holding the original object. That
+second copy is deliberate: `data/calendar.js` is a wire format, not a data
+model — `round` is a number for Formula 1 and a string like `Final` for a cup
+tie, `scoreExtra` is `""` on one row and `null` on the next — and rebuilding it
+by hand from typed columns is a slow drift of small mismatches. The columns are
+what you query; `doc` is what guarantees the JSON comes back exactly as it went
+in. `npm run db:verify` writes a payload, reads it back, and rolls the
+transaction back, so it can prove that without changing what is stored.
+
+```sql
+-- Who has played most, straight out of the relational columns:
+select club_name,
+       count(*) filter (where status = 'played') as played,
+       count(*) as total
+  from events where category = 'football'
+ group by club_name order by club_name;
+```
+
+```sh
+neon psql                    # psql against the linked branch, no local client needed
+npm run db:status            # what is in there, and when it was last refreshed
+npm run db:push              # data/calendar.json  ->  Postgres
+npm run db:pull              # Postgres  ->  data/ and calendar/
+npm run db:verify            # prove the round trip, changing nothing
+```
+
+`db:pull` is the one that matters once the cron is running: the database is then
+the freshest copy, and this is how the committed files — what GitHub Pages and a
+double-clicked `index.html` serve — are brought back in line with it before you
+publish.
+
+### Creating the Render service
+
+Everything on the Neon side already exists. Two of the three values Render needs
+come from Neon, and one is already on this machine:
+
+| Variable | Where to get it |
+| --- | --- |
+| `DATABASE_URL` | `neon env pull` writes the pooled string to `.env.local`; or Neon console → Connect |
+| `REFRESH_TOKEN` | the value of `REFRESH_TOKEN` in `.env.local` |
+| `REFRESH_FUNCTION_URL` | `neon functions get refresh` — the URL, with `/refresh` on the end |
+
+Then, in the Render dashboard:
+
+1. **New → Blueprint**, and pick the `SportsCalendar` repository. Render reads
+   `render.yaml` and shows one web service, plan **free**, region **Ohio** — the
+   same region as the Neon project, so queries do not cross the country.
+2. Paste the three values above when it asks for the `sync: false` variables.
+3. **Apply**. The first deploy takes a couple of minutes. When it is done,
+   `https://<service>.onrender.com/healthz` should answer
+   `{"ok":true,"database":"neon",...}`. A `503` there means the service is up but
+   `DATABASE_URL` cannot see any rows — check the string and run `npm run db:push`
+   if the database is empty.
+
+The free plan spins the service down when nobody visits, so the first request
+after a quiet spell takes a few seconds to wake. The Neon compute does the same;
+both are fine for a personal calendar.
+
+### Refreshing
+
+The cron trigger is the normal path — nothing has to be awake. To refresh by
+hand, either wait for the next tick or call the Function:
+
+```sh
+set -a; . ./.env.local; set +a
+curl -X POST "${NEON_FUNCTION_REFRESH_BASE_URL}/refresh" \
+     -H "Authorization: Bearer $REFRESH_TOKEN"
+```
+
+A refresh fetches fourteen Wikipedia pages with a two-second gap and writes
+every row in one transaction, so it takes about 35 seconds and the site never
+shows a half-written calendar. `POST /api/refresh` on the Render service does the same
+thing by calling the Function; it is authorised by `REFRESH_TOKEN`, and from
+your own LAN it works without one (which is what the in-page **Refresh data**
+button uses). It is deliberately not open to the public internet: a caller
+claiming `Host: localhost` is still refused, because the check is on the address
+the request actually came from.
+
+### Changing the Neon side
+
+`neon.ts` is the branch's infrastructure as code — the function, its
+environment, and the cron trigger.
+
+```sh
+neon config plan     # dry run: what a deploy would change
+neon deploy --env .env.local
+```
+
+Two things worth knowing:
+
+- `plan` always lists `~ function refresh`. It has no way to compare bundles, so
+  an existing function always reads as "would be updated". It is not drift.
+- An environment-variable change only reaches a fresh isolate, so a warm one can
+  keep serving the previous value for a request or two. Retry before assuming
+  the value is wrong.
 
 ## Refresh it by hand
 
@@ -172,19 +308,26 @@ re-importing updates existing events rather than stacking duplicates.
 ## Layout
 
 ```
-index.html          the calendar UI (reads data/matches.js)
-tools/build.mjs     fetch → parse → data + .ics, with a printed report
+index.html          the calendar UI (reads data/calendar.js)
+tools/build.mjs     CLI: build, then write data/ + calendar/
+tools/pipeline.mjs  fetch → parse → payload + .ics, touching no files
+tools/site-files.mjs  the only place that writes data/ and calendar/
+tools/db.mjs        the Postgres schema, and reading/writing a snapshot
+tools/db-push.mjs   CLI: db:push / db:pull / db:verify / db:status
 tools/parse.mjs     Wikipedia markup → normalised matches
 tools/wiki.mjs      throttled fetch with .cache/
 tools/ics.mjs       RFC 5545 writer (CRLF, 75-octet folding, escaping)
 tools/f1.mjs        F1 calendar + results, ESPN start times
 tools/standings.mjs league results -> tables
-tools/serve.mjs     LAN static server + /api/refresh
+tools/serve.mjs     the web server: files on disk, or Postgres when configured
 tools/publish.mjs   refresh, commit the generated files, push to GitHub
 tools/install-scheduler.mjs  optional twice-daily LaunchAgent
 tools/verify.mjs    cross-check against ESPN
 tools/clubs.mjs     the six clubs, colours and source pages
-data/               matches.json + matches.js (generated)
+src/refresh/index.ts  the Neon Function the cron trigger calls
+neon.ts             Neon branch policy: the function and its schedule
+render.yaml         Render blueprint for the web service
+data/               calendar.json + calendar.js (generated)
 calendar/           .ics files (generated)
 .cache/             raw page snapshots (generated)
 ```

@@ -5,10 +5,10 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 X-WR-CALNAME:Sports Calendar — everything 2026-27
 X-WR-TIMEZONE:UTC
-X-WR-CALDESC:275 events\, refreshed 2026-09-30
+X-WR-CALDESC:275 events\, refreshed 2026-10-16
 BEGIN:VEVENT
 UID:psg-2048319-1rxhoji@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20260812T190000Z
 DTEND:20260812T210000Z
 SUMMARY:Paris Saint-Germain v Aston Villa (UEFA Super Cup)
@@ -25,7 +25,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:arsenal-w19wy5ck@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20260816T140000Z
 DTEND:20260816T160000Z
 SUMMARY:Arsenal v Manchester City (FA Community Shield)
@@ -42,7 +42,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:psg-w033jd2j@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20260816T184500Z
 DTEND:20260816T204500Z
 SUMMARY:Lens v Paris Saint-Germain (Trophée des Champions)
@@ -59,7 +59,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:arsenal-2645195-0mbx5zu@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20260821T190000Z
 DTEND:20260821T210000Z
 SUMMARY:Arsenal v Coventry City (Premier League)
@@ -73,24 +73,8 @@ DESCRIPTION:Competition: Premier League\nRound: 1\nKick-off: 2026-08-21T19
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:real-madrid-w1peydak@sportscalendar.local
-DTSTAMP:20260930T235633Z
-DTSTART:20260822T193000Z
-DTEND:20260822T213000Z
-SUMMARY:Espanyol v Real Madrid (La Liga)
-LOCATION:RCDE Stadium\, Cornellà de Llobregat
-DESCRIPTION:Competition: La Liga\nRound: 1\nKick-off: 2026-08-22T19:30Z (v
- enue clock 21:30)\nResult: Espanyol 1-2 Real Madrid\nEspanyol: Calatrava
-  30'\nReal Madrid: Bellingham 9'\, Espí 90'\nVenue: RCDE Stadium\, Corn
- ellà de Llobregat\nAttendance: 33304\nReferee: José María Sánchez Ma
- rtínez\nReport: https://www.laliga.com/en-GB/match/temporada-2026-2027-
- laliga-ea-sports-rcd-espanyol-de-barcelona-real-madrid-2\nSource: Wikipe
- dia — 2026–27 Real Madrid CF season
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
 UID:bayern-w0epfmjq@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20260822T183000Z
 DTEND:20260822T203000Z
 SUMMARY:Borussia Dortmund v Bayern Munich (Franz Beckenbauer Supercup)
@@ -105,24 +89,24 @@ DESCRIPTION:Competition: Franz Beckenbauer Supercup\nRound: Final\nKick-of
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:barcelona-w0noadlz@sportscalendar.local
-DTSTAMP:20260930T235633Z
-DTSTART:20260823T193000Z
-DTEND:20260823T213000Z
-SUMMARY:Elche v Barcelona (La Liga)
-LOCATION:Martínez Valero\, Elche
-DESCRIPTION:Competition: La Liga\nRound: 2\nKick-off: 2026-08-23T19:30Z (v
- enue clock 21:30)\nResult: Elche 0-5 Barcelona\nElche: Houary 33' (yello
- w)\nBarcelona: Raphinha 14' (pen.)\, Adeyemi\, Fermín 71'\nVenue: Mart
- ínez Valero\, Elche\nAttendance: 30704\nReferee: Alejandro Quintero Gon
- zález\nReport: https://www.laliga.com/en-GB/match/temporada-2026-2027-l
- aliga-ea-sports-elche-cf-fc-barcelona-2\nSource: Wikipedia — 2026–27
-  FC Barcelona season
+UID:real-madrid-w1peydak@sportscalendar.local
+DTSTAMP:20261016T205806Z
+DTSTART:20260822T193000Z
+DTEND:20260822T213000Z
+SUMMARY:Espanyol v Real Madrid (La Liga)
+LOCATION:RCDE Stadium\, Cornellà de Llobregat
+DESCRIPTION:Competition: La Liga\nRound: 1\nKick-off: 2026-08-22T19:30Z (v
+ enue clock 21:30)\nResult: Espanyol 1-2 Real Madrid\nEspanyol: Calatrava
+  30'\nReal Madrid: Bellingham 9'\, Espí 90'\nVenue: RCDE Stadium\, Corn
+ ellà de Llobregat\nAttendance: 33304\nReferee: José María Sánchez Ma
+ rtínez\nReport: https://www.laliga.com/en-GB/match/temporada-2026-2027-
+ laliga-ea-sports-rcd-espanyol-de-barcelona-real-madrid-2\nSource: Wikipe
+ dia — 2026–27 Real Madrid CF season
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:man-city-2645202-0ajmtkw@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20260823T130000Z
 DTEND:20260823T150000Z
 SUMMARY:Manchester City v Bournemouth (Premier League)
@@ -138,7 +122,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:psg-w0z4wo1e@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20260823T184500Z
 DTEND:20260823T204500Z
 SUMMARY:Rennes v Paris Saint-Germain (Ligue 1)
@@ -154,8 +138,24 @@ DESCRIPTION:Competition: Ligue 1\nRound: 1\nKick-off: 2026-08-23T18:45Z (v
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
+UID:barcelona-w0noadlz@sportscalendar.local
+DTSTAMP:20261016T205806Z
+DTSTART:20260823T193000Z
+DTEND:20260823T213000Z
+SUMMARY:Elche v Barcelona (La Liga)
+LOCATION:Martínez Valero\, Elche
+DESCRIPTION:Competition: La Liga\nRound: 2\nKick-off: 2026-08-23T19:30Z (v
+ enue clock 21:30)\nResult: Elche 0-5 Barcelona\nElche: Houary 33' (yello
+ w)\nBarcelona: Raphinha 14' (pen.)\, Adeyemi\, Fermín 71'\nVenue: Mart
+ ínez Valero\, Elche\nAttendance: 30704\nReferee: Alejandro Quintero Gon
+ zález\nReport: https://www.laliga.com/en-GB/match/temporada-2026-2027-l
+ aliga-ea-sports-elche-cf-fc-barcelona-2\nSource: Wikipedia — 2026–27
+  FC Barcelona season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
 UID:real-madrid-w02ijwq3@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20260826T190000Z
 DTEND:20260826T210000Z
 SUMMARY:Real Madrid v Real Sociedad (La Liga)
@@ -172,7 +172,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:barcelona-w144inwd@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20260827T190000Z
 DTEND:20260827T210000Z
 SUMMARY:Barcelona v Athletic Bilbao (La Liga)
@@ -189,26 +189,8 @@ DESCRIPTION:Competition: La Liga\nRound: 1\nKick-off: 2026-08-27T19:00Z (v
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:man-city-2645209-03h84uh@sportscalendar.local
-DTSTAMP:20260930T235633Z
-DTSTART:20260828T190000Z
-DTEND:20260828T210000Z
-SUMMARY:Crystal Palace v Manchester City (Premier League)
-LOCATION:Selhurst Park\, Selhurst
-DESCRIPTION:Competition: Premier League\nRound: 2\nKick-off: 2026-08-28T19
- :00Z (venue clock 20:00)\nResult: Crystal Palace 1-4 Manchester City\nCr
- ystal Palace: Donnarumma 56' (own goal)\, Khalaili 68' (yellow)\nManches
- ter City: Haaland 17'\, Cherki 33' (yellow)\, 54'\, Anderson 55' (yellow
- )\nVenue: Selhurst Park\, Selhurst\nAttendance: 25149\nReferee: Andrew M
- adley\nNote: Fixture was initially scheduled for 29 August\, but was res
- cheduled for live Sky Sports broadcasting.\nReport: https://www.premierl
- eague.com/match/2645209\nSource: Wikipedia — 2026–27 Manchester City
-  F.C. season
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
 UID:bayern-w06vdu0b@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20260828T183000Z
 DTEND:20260828T203000Z
 SUMMARY:Bayern Munich v VfB Stuttgart (Bundesliga)
@@ -226,7 +208,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:psg-w1t9lhvg@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20260828T184500Z
 DTEND:20260828T204500Z
 SUMMARY:Lille v Paris Saint-Germain (Ligue 1)
@@ -241,8 +223,26 @@ DESCRIPTION:Competition: Ligue 1\nRound: 2\nKick-off: 2026-08-28T18:45Z (v
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
+UID:man-city-2645209-03h84uh@sportscalendar.local
+DTSTAMP:20261016T205806Z
+DTSTART:20260828T190000Z
+DTEND:20260828T210000Z
+SUMMARY:Crystal Palace v Manchester City (Premier League)
+LOCATION:Selhurst Park\, Selhurst
+DESCRIPTION:Competition: Premier League\nRound: 2\nKick-off: 2026-08-28T19
+ :00Z (venue clock 20:00)\nResult: Crystal Palace 1-4 Manchester City\nCr
+ ystal Palace: Donnarumma 56' (own goal)\, Khalaili 68' (yellow)\nManches
+ ter City: Haaland 17'\, Cherki 33' (yellow)\, 54'\, Anderson 55' (yellow
+ )\nVenue: Selhurst Park\, Selhurst\nAttendance: 25149\nReferee: Andrew M
+ adley\nNote: Fixture was initially scheduled for 29 August\, but was res
+ cheduled for live Sky Sports broadcasting.\nReport: https://www.premierl
+ eague.com/match/2645209\nSource: Wikipedia — 2026–27 Manchester City
+  F.C. season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
 UID:real-madrid-w0lskyx1@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20260830T150000Z
 DTEND:20260830T170000Z
 SUMMARY:Real Madrid v Málaga (La Liga)
@@ -257,8 +257,23 @@ DESCRIPTION:Competition: La Liga\nRound: 3\nKick-off: 2026-08-30T15:00Z (v
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
+UID:arsenal-2645206-0jqf0yt@sportscalendar.local
+DTSTAMP:20261016T205806Z
+DTSTART:20260831T190000Z
+DTEND:20260831T210000Z
+SUMMARY:Aston Villa v Arsenal (Premier League)
+LOCATION:Villa Park\, Birmingham
+DESCRIPTION:Competition: Premier League\nRound: 2\nKick-off: 2026-08-31T19
+ :00Z (venue clock 20:00)\nResult: Aston Villa 0-1 Arsenal\nAston Villa: 
+ Alysson 80' (yellow)\, McGinn 81' (yellow)\, Maatsen (yellow)\nArsenal: 
+ Tzolis 29' (yellow)\, Saka 59'\nVenue: Villa Park\, Birmingham\nAttendan
+ ce: 36804\nReferee: Jarred Gillett\nReport: https://www.premierleague.co
+ m/en/match/2645206\nSource: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
 UID:barcelona-w0smcgoj@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20260831T193000Z
 DTEND:20260831T213000Z
 SUMMARY:Barcelona v Rayo Vallecano (La Liga)
@@ -273,23 +288,8 @@ DESCRIPTION:Competition: La Liga\nRound: 3\nKick-off: 2026-08-31T19:30Z (v
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:arsenal-2645206-0jqf0yt@sportscalendar.local
-DTSTAMP:20260930T235633Z
-DTSTART:20260831T190000Z
-DTEND:20260831T210000Z
-SUMMARY:Aston Villa v Arsenal (Premier League)
-LOCATION:Villa Park\, Birmingham
-DESCRIPTION:Competition: Premier League\nRound: 2\nKick-off: 2026-08-31T19
- :00Z (venue clock 20:00)\nResult: Aston Villa 0-1 Arsenal\nAston Villa: 
- Alysson 80' (yellow)\, McGinn 81' (yellow)\, Maatsen (yellow)\nArsenal: 
- Tzolis 29' (yellow)\, Saka 59'\nVenue: Villa Park\, Birmingham\nAttendan
- ce: 36804\nReferee: Jarred Gillett\nReport: https://www.premierleague.co
- m/en/match/2645206\nSource: Wikipedia — 2026–27 Arsenal F.C. season
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
 UID:bayern-w0oub2sd@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20260902T184500Z
 DTEND:20260902T204500Z
 SUMMARY:VfL Osnabrück v Bayern Munich (DFB-Pokal)
@@ -305,7 +305,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:real-madrid-w0b47t0b@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20260904T190000Z
 DTEND:20260904T210000Z
 SUMMARY:Real Betis v Real Madrid (La Liga)
@@ -320,7 +320,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:psg-w1o82qc0@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20260904T190500Z
 DTEND:20260904T210500Z
 SUMMARY:Paris Saint-Germain v Monaco (Ligue 1)
@@ -336,7 +336,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:man-city-2645222-0kbmzds@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20260905T140000Z
 DTEND:20260905T160000Z
 SUMMARY:Manchester City v Coventry City (Premier League)
@@ -352,7 +352,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-w0st1gay@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20260905T163000Z
 DTEND:20260905T183000Z
 SUMMARY:Schalke 04 v Bayern Munich (Bundesliga)
@@ -369,7 +369,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:barcelona-w11f69q5@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20260906T141500Z
 DTEND:20260906T161500Z
 SUMMARY:Valencia v Barcelona (La Liga)
@@ -386,7 +386,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:arsenal-2645215-0uaykxs@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20260906T153000Z
 DTEND:20260906T173000Z
 SUMMARY:Arsenal v Chelsea (Premier League)
@@ -402,7 +402,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:real-madrid-2049553-0ee02wx@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20260908T190000Z
 DTEND:20260908T210000Z
 SUMMARY:Real Madrid v Inter Milan (UEFA Champions League)
@@ -418,7 +418,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:man-city-2049555-0hd53qm@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20260908T190000Z
 DTEND:20260908T210000Z
 SUMMARY:Porto v Manchester City (UEFA Champions League)
@@ -434,7 +434,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:barcelona-2049561-154hm16@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20260909T164500Z
 DTEND:20260909T184500Z
 SUMMARY:Barcelona v Feyenoord (UEFA Champions League)
@@ -450,7 +450,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:arsenal-2049563-0mysmsj@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20260909T190000Z
 DTEND:20260909T210000Z
 SUMMARY:Napoli v Arsenal (UEFA Champions League)
@@ -466,7 +466,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:psg-2049559-1pv1phy@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20260909T190000Z
 DTEND:20260909T210000Z
 SUMMARY:Paris Saint-Germain v Slovan Bratislava (UEFA Champions League)
@@ -483,7 +483,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-2049565-1immye4@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20260910T190000Z
 DTEND:20260910T210000Z
 SUMMARY:Bayern Munich v Bodø/Glimt (UEFA Champions League)
@@ -499,7 +499,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:real-madrid-w1u4str1@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20260912T190000Z
 DTEND:20260912T210000Z
 SUMMARY:Real Madrid v Rayo Vallecano (La Liga)
@@ -515,7 +515,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:arsenal-2645233-1hsc3kc@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20260912T190000Z
 DTEND:20260912T210000Z
 SUMMARY:Sunderland v Arsenal (Premier League)
@@ -532,7 +532,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:barcelona-w1g00155@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20260913T141500Z
 DTEND:20260913T161500Z
 SUMMARY:Levante v Barcelona (La Liga)
@@ -548,7 +548,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:man-city-2645232-0eyxjyh@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20260913T153000Z
 DTEND:20260913T173000Z
 SUMMARY:Manchester United v Manchester City (Premier League)
@@ -565,7 +565,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-w1vv338w@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20260913T153000Z
 DTEND:20260913T173000Z
 SUMMARY:SV Elversberg v Bayern Munich (Bundesliga)
@@ -582,7 +582,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:psg-w1v4ks2t@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20260913T184500Z
 DTEND:20260913T204500Z
 SUMMARY:Brest v Paris Saint-Germain (Ligue 1)
@@ -597,24 +597,8 @@ DESCRIPTION:Competition: Ligue 1\nRound: 4\nKick-off: 2026-09-13T18:45Z (v
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:real-madrid-w1ydxqu5@sportscalendar.local
-DTSTAMP:20260930T235633Z
-DTSTART:20260915T193000Z
-DTEND:20260915T213000Z
-SUMMARY:Elche v Real Madrid (La Liga)
-LOCATION:Martínez Valero\, Elche
-DESCRIPTION:Competition: La Liga\nRound: 6\nKick-off: 2026-09-15T19:30Z (v
- enue clock 21:30)\nResult: Elche 2-3 Real Madrid\nElche: Osorio 71'\, Ni
- ño 83'\nReal Madrid: Dituro 25' (own goal)\, Mbappé 33'\, Espí\nVenue
- : Martínez Valero\, Elche\nAttendance: 30383\nReferee: Jesús Gil Manza
- no\nReport: https://www.laliga.com/en-GB/match/temporada-2026-2027-lalig
- a-ea-sports-elche-cf-real-madrid-6\nSource: Wikipedia — 2026–27 Real
-  Madrid CF season
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
 UID:arsenal-w1u8t56w@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20260915T190000Z
 DTEND:20260915T210000Z
 SUMMARY:Ipswich Town v Arsenal (EFL Cup)
@@ -629,8 +613,24 @@ DESCRIPTION:Competition: EFL Cup\nRound: 3rd Round\nKick-off: 2026-09-15T1
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
+UID:real-madrid-w1ydxqu5@sportscalendar.local
+DTSTAMP:20261016T205806Z
+DTSTART:20260915T193000Z
+DTEND:20260915T213000Z
+SUMMARY:Elche v Real Madrid (La Liga)
+LOCATION:Martínez Valero\, Elche
+DESCRIPTION:Competition: La Liga\nRound: 6\nKick-off: 2026-09-15T19:30Z (v
+ enue clock 21:30)\nResult: Elche 2-3 Real Madrid\nElche: Osorio 71'\, Ni
+ ño 83'\nReal Madrid: Dituro 25' (own goal)\, Mbappé 33'\, Espí\nVenue
+ : Martínez Valero\, Elche\nAttendance: 30383\nReferee: Jesús Gil Manza
+ no\nReport: https://www.laliga.com/en-GB/match/temporada-2026-2027-lalig
+ a-ea-sports-elche-cf-real-madrid-6\nSource: Wikipedia — 2026–27 Real
+  Madrid CF season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
 UID:barcelona-w1t4knt9@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20260916T193000Z
 DTEND:20260916T213000Z
 SUMMARY:Barcelona v Racing Santander (La Liga)
@@ -648,7 +648,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:man-city-w1tly7hh@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20260917T183000Z
 DTEND:20260917T203000Z
 SUMMARY:Manchester City v Norwich City (EFL Cup)
@@ -664,7 +664,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-w0i502x6@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20260918T183000Z
 DTEND:20260918T203000Z
 SUMMARY:Bayern Munich v Union Berlin (Bundesliga)
@@ -680,24 +680,8 @@ DESCRIPTION:Competition: Bundesliga\nRound: 4\nKick-off: 2026-09-18T18:30Z
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:barcelona-w0rf7dqo@sportscalendar.local
-DTSTAMP:20260930T235633Z
-DTSTART:20260919T190000Z
-DTEND:20260919T210000Z
-SUMMARY:Sevilla v Barcelona (La Liga)
-LOCATION:Ramón Sánchez-Pizjuán\, Seville
-DESCRIPTION:Competition: La Liga\nRound: 7\nKick-off: 2026-09-19T19:00Z (v
- enue clock 21:00)\nResult: Sevilla 1-3 Barcelona\nSevilla: Fofana 19'\, 
- Agoumé 80' (yellow)\nBarcelona: Raphinha 22'\nVenue: Ramón Sánchez-Pi
- zjuán\, Seville\nAttendance: 41145\nReferee: Juan Martínez Munuera\nRe
- port: https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-s
- ports-sevilla-fc-fc-barcelona-7\nSource: Wikipedia — 2026–27 FC Barc
- elona season
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
 UID:arsenal-2645237-0z2u6pb@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20260919T140000Z
 DTEND:20260919T160000Z
 SUMMARY:Brighton & Hove Albion v Arsenal (Premier League)
@@ -713,24 +697,24 @@ DESCRIPTION:Competition: Premier League\nRound: 5\nKick-off: 2026-09-19T14
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:real-madrid-w1p2i7qi@sportscalendar.local
-DTSTAMP:20260930T235633Z
-DTSTART:20260920T141500Z
-DTEND:20260920T161500Z
-SUMMARY:Atlético Madrid v Real Madrid (La Liga)
-LOCATION:Riyadh Air Metropolitano\, Madrid
-DESCRIPTION:Competition: La Liga\nRound: 7\nKick-off: 2026-09-20T14:15Z (v
- enue clock 16:15)\nResult: Atlético Madrid 2-1 Real Madrid\nAtlético M
- adrid: Grimaldo 53' (pen.)\, David 59'\nReal Madrid: Huijsen\, Rüdiger 
- 89'\nVenue: Riyadh Air Metropolitano\, Madrid\nAttendance: 70514\nRefere
- e: Miguel Ángel Ortiz\nReport: https://www.laliga.com/en-GB/match/tempo
- rada-2026-2027-laliga-ea-sports-atletico-de-madrid-real-madrid-7\nSource
- : Wikipedia — 2026–27 Real Madrid CF season
+UID:barcelona-w0rf7dqo@sportscalendar.local
+DTSTAMP:20261016T205806Z
+DTSTART:20260919T190000Z
+DTEND:20260919T210000Z
+SUMMARY:Sevilla v Barcelona (La Liga)
+LOCATION:Ramón Sánchez-Pizjuán\, Seville
+DESCRIPTION:Competition: La Liga\nRound: 7\nKick-off: 2026-09-19T19:00Z (v
+ enue clock 21:00)\nResult: Sevilla 1-3 Barcelona\nSevilla: Fofana 19'\, 
+ Agoumé 80' (yellow)\nBarcelona: Raphinha 22'\nVenue: Ramón Sánchez-Pi
+ zjuán\, Seville\nAttendance: 41145\nReferee: Juan Martínez Munuera\nRe
+ port: https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-s
+ ports-sevilla-fc-fc-barcelona-7\nSource: Wikipedia — 2026–27 FC Barc
+ elona season
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:man-city-2645241-09ur9wa@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20260920T130000Z
 DTEND:20260920T150000Z
 SUMMARY:Manchester City v Sunderland (Premier League)
@@ -747,8 +731,24 @@ DESCRIPTION:Competition: Premier League\nRound: 5\nKick-off: 2026-09-20T13
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
+UID:real-madrid-w1p2i7qi@sportscalendar.local
+DTSTAMP:20261016T205806Z
+DTSTART:20260920T141500Z
+DTEND:20260920T161500Z
+SUMMARY:Atlético Madrid v Real Madrid (La Liga)
+LOCATION:Riyadh Air Metropolitano\, Madrid
+DESCRIPTION:Competition: La Liga\nRound: 7\nKick-off: 2026-09-20T14:15Z (v
+ enue clock 16:15)\nResult: Atlético Madrid 2-1 Real Madrid\nAtlético M
+ adrid: Grimaldo 53' (pen.)\, David 59'\nReal Madrid: Huijsen\, Rüdiger 
+ 89'\nVenue: Riyadh Air Metropolitano\, Madrid\nAttendance: 70514\nRefere
+ e: Miguel Ángel Ortiz\nReport: https://www.laliga.com/en-GB/match/tempo
+ rada-2026-2027-laliga-ea-sports-atletico-de-madrid-real-madrid-7\nSource
+ : Wikipedia — 2026–27 Real Madrid CF season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
 UID:psg-w1kq84gn@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20260920T184500Z
 DTEND:20260920T204500Z
 SUMMARY:Marseille v Paris Saint-Germain (Ligue 1)
@@ -763,207 +763,258 @@ DESCRIPTION:Competition: Ligue 1\nRound: 5\nKick-off: 2026-09-20T18:45Z (v
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:real-madrid-w0xxuruh@sportscalendar.local
-DTSTAMP:20260930T235633Z
-DTSTART:20261010T190000Z
-DTEND:20261010T210000Z
-SUMMARY:Real Madrid v Villarreal (La Liga)
-LOCATION:Bernabéu\, Madrid
-DESCRIPTION:Competition: La Liga\nRound: 8\nKick-off: 2026-10-10T19:00Z (v
- enue clock 21:00)\nVenue: Bernabéu\, Madrid\nReport: https://www.laliga
- .com/en-GB/match/temporada-2026-2027-laliga-ea-sports-real-madrid-villar
- real-cf-8\nSource: Wikipedia — 2026–27 Real Madrid CF season
-STATUS:TENTATIVE
-END:VEVENT
-BEGIN:VEVENT
-UID:barcelona-w1au1lbp@sportscalendar.local
-DTSTAMP:20260930T235633Z
-DTSTART:20261010T163000Z
-DTEND:20261010T183000Z
-SUMMARY:Barcelona v Getafe (La Liga)
-LOCATION:Camp Nou\, Barcelona
-DESCRIPTION:Competition: La Liga\nRound: 8\nKick-off: 2026-10-10T16:30Z (v
- enue clock 18:30)\nVenue: Camp Nou\, Barcelona\nReport: https://www.lali
- ga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-fc-barcelona-get
- afe-cf-8\nSource: Wikipedia — 2026–27 FC Barcelona season
-STATUS:TENTATIVE
-END:VEVENT
-BEGIN:VEVENT
 UID:arsenal-2645245-180kfjc@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20261010T113000Z
 DTEND:20261010T133000Z
 SUMMARY:Arsenal v Leeds United (Premier League)
 LOCATION:Emirates Stadium\, Holloway
 DESCRIPTION:Competition: Premier League\nRound: 6\nKick-off: 2026-10-10T11
- :30Z (venue clock 12:30)\nVenue: Emirates Stadium\, Holloway\nReport: ht
- tps://www.premierleague.com/en/match/2645245\nSource: Wikipedia — 2026
- –27 Arsenal F.C. season
-STATUS:TENTATIVE
+ :30Z (venue clock 12:30)\nResult: Arsenal 2-1 Leeds United\nArsenal: Cal
+ afiori 62'\, Bruno Guimarães 70'\, Ødegaard 84' (yellow)\nLeeds United
+ : Tanaka 36' (yellow)\, Ampadu 38' (yellow)\, Justin 55'\, 78' (yellow)\
+ , Muharemović 59' (yellow)\nVenue: Emirates Stadium\, Holloway\nAttenda
+ nce: 60315\nReferee: Paul Tierney\nReport: https://www.premierleague.com
+ /en/match/2645245\nSource: Wikipedia — 2026–27 Arsenal F.C. season
+STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-w0zvoexi@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20261010T133000Z
 DTEND:20261010T153000Z
 SUMMARY:FC Augsburg v Bayern Munich (Bundesliga)
 LOCATION:WWK Arena\, Augsburg
 DESCRIPTION:Competition: Bundesliga\nRound: 5\nKick-off: 2026-10-10T13:30Z
-  (venue clock 15:30)\nVenue: WWK Arena\, Augsburg\nReport: https://daten
- center.dfb.de/datencenter/bundesliga/2026-2027/5-spieltag/fc-augsburg-fc
- -bayern-muenchen-2419326\nSource: Wikipedia — 2026–27 FC Bayern Muni
- ch season
-STATUS:TENTATIVE
+  (venue clock 15:30)\nResult: FC Augsburg 2-2 Bayern Munich\nFC Augsburg
+ : Fellhauer 1'\, Matsima 42' (yellow)\, Ribeiro 43' (yellow)\, 64'\, Beh
+ rens 62' (yellow)\nBayern Munich: Saibari 55'\, Brown 80'\nVenue: WWK Ar
+ ena\, Augsburg\nAttendance: 30660\nReferee: Sven Jablonski\nReport: http
+ s://datencenter.dfb.de/datencenter/bundesliga/2026-2027/5-spieltag/fc-au
+ gsburg-fc-bayern-muenchen-2419326\nSource: Wikipedia — 2026–27 FC Ba
+ yern Munich season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w1au1lbp@sportscalendar.local
+DTSTAMP:20261016T205806Z
+DTSTART:20261010T163000Z
+DTEND:20261010T183000Z
+SUMMARY:Barcelona v Getafe (La Liga)
+LOCATION:Camp Nou\, Barcelona
+DESCRIPTION:Competition: La Liga\nRound: 8\nKick-off: 2026-10-10T16:30Z (v
+ enue clock 18:30)\nResult: Barcelona 3-0 Getafe\nBarcelona: Gordon 2'\, 
+ Gabriel Jesus 30'\, Olmo 46' (yellow)\, Koundé 73'\, Fermín (yellow)\n
+ Getafe: Femenía 34' (yellow)\, Mojica (yellow)\, Boselli 71' (yellow)\,
+  Terrats 75' (yellow)\nVenue: Camp Nou\, Barcelona\nAttendance: 59463\nR
+ eferee: Jesús Gil Manzano\nReport: https://www.laliga.com/en-GB/match/t
+ emporada-2026-2027-laliga-ea-sports-fc-barcelona-getafe-cf-8\nSource: Wi
+ kipedia — 2026–27 FC Barcelona season
+STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:psg-w03uvst2@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20261010T184500Z
 DTEND:20261010T204500Z
 SUMMARY:Paris Saint-Germain v Le Mans (Ligue 1)
 LOCATION:Parc des Princes\, Paris
 DESCRIPTION:Competition: Ligue 1\nRound: 6\nKick-off: 2026-10-10T18:45Z (v
- enue clock 20:45)\nVenue: Parc des Princes\, Paris\nReport: https://ligu
- e1.com/en/match-sheet/l1_championship_match_73872\nSource: Wikipedia —
-  2026–27 Paris Saint-Germain FC season
-STATUS:TENTATIVE
+ enue clock 20:45)\nResult: Paris Saint-Germain 3-1 Le Mans\nParis Saint-
+ Germain: Beraldo 19' (pen.)\, Kvaratskhelia 61'\, Akliouche 68'\, Doué\
+ nLe Mans: Gueye 47' (yellow)\, Mafouta 54'\, 65' (yellow)\, Bamba (yello
+ w)\, Brahimi (yellow)\, Boissé (yellow)\nVenue: Parc des Princes\, Pari
+ s\nAttendance: 47926\nReferee: Mathieu Vernice\nReport: https://ligue1.c
+ om/en/match-sheet/l1_championship_match_73872\nSource: Wikipedia — 202
+ 6–27 Paris Saint-Germain FC season
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:real-madrid-w0xxuruh@sportscalendar.local
+DTSTAMP:20261016T205806Z
+DTSTART:20261010T190000Z
+DTEND:20261010T210000Z
+SUMMARY:Real Madrid v Villarreal (La Liga)
+LOCATION:Bernabéu\, Madrid
+DESCRIPTION:Competition: La Liga\nRound: 8\nKick-off: 2026-10-10T19:00Z (v
+ enue clock 21:00)\nResult: Real Madrid 1-0 Villarreal\nReal Madrid: Diom
+ ande 62'\, Vinícius\nVenue: Bernabéu\, Madrid\nAttendance: 75242\nRefe
+ ree: Isidro Díaz de Mera Escuderos\nReport: https://www.laliga.com/en-G
+ B/match/temporada-2026-2027-laliga-ea-sports-real-madrid-villarreal-cf-8
+ \nSource: Wikipedia — 2026–27 Real Madrid CF season
+STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:man-city-2645252-11z130k@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20261011T153000Z
 DTEND:20261011T173000Z
 SUMMARY:Liverpool v Manchester City (Premier League)
 LOCATION:Anfield\, Liverpool
 DESCRIPTION:Competition: Premier League\nRound: 6\nKick-off: 2026-10-11T15
- :30Z (venue clock 16:30)\nVenue: Anfield\, Liverpool\nNote: Fixture was 
- initially scheduled for 12 September\, but was rescheduled for live Sky 
- Sports broadcasting.\nReport: https://www.premierleague.com/match/264525
- 2\nSource: Wikipedia — 2026–27 Manchester City F.C. season
-STATUS:TENTATIVE
+ :30Z (venue clock 16:30)\nResult: Liverpool 0-3 Manchester City\nLiverpo
+ ol: Araújo 8' (yellow)\, Gravenberch\, Van Dijk (yellow)\nManchester Ci
+ ty: O'Reilly 58' (yellow)\, Haaland 65'\, Doku 68'\, Cherki 78'\, Bouadd
+ i 86' (yellow)\nVenue: Anfield\, Liverpool\nAttendance: 60338\nReferee: 
+ Chris Kavanagh\nNote: Fixture was initially scheduled for 12 September\,
+  but was rescheduled for live Sky Sports broadcasting.\nReport: https://
+ www.premierleague.com/match/2645252\nSource: Wikipedia — 2026–27 Man
+ chester City F.C. season
+STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:barcelona-2049576-13hx80o@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20261013T190000Z
 DTEND:20261013T210000Z
 SUMMARY:Galatasaray v Barcelona (UEFA Champions League)
 LOCATION:Rams Park\, Istanbul\, Turkey
 DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 2\nK
- ick-off: 2026-10-13T19:00Z (venue clock 22:00)\nVenue: Rams Park\, Istan
- bul\, Turkey\nReport: https://www.uefa.com/uefachampionsleague/match/204
- 9576/\nSource: Wikipedia — 2026–27 FC Barcelona season
-STATUS:TENTATIVE
+ ick-off: 2026-10-13T19:00Z (venue clock 22:00)\nResult: Galatasaray 1-4 
+ Barcelona\nGalatasaray: Batrakov 28'\, Leão 64' (yellow)\, Sallai 86' (
+ yellow)\nBarcelona: Cancelo 43'\, Fermín 50'\, Gordon 53'\, Adeyemi 65'
+ \nVenue: Rams Park\, Istanbul\, Turkey\nAttendance: 49623\nReferee: Marc
+ o Guida (Italy)\nReport: https://www.uefa.com/uefachampionsleague/match/
+ 2049576/\nSource: Wikipedia — 2026–27 FC Barcelona season
+STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:arsenal-2049572-0a1xwp7@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20261013T190000Z
 DTEND:20261013T210000Z
 SUMMARY:Arsenal v Lille (UEFA Champions League)
 LOCATION:Emirates Stadium\, London\, England
 DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 2\nK
- ick-off: 2026-10-13T19:00Z (venue clock 20:00)\nVenue: Emirates Stadium\
- , London\, England\nReport: https://www.uefa.com/uefachampionsleague/mat
- ch/2049572/\nSource: Wikipedia — 2026–27 Arsenal F.C. season
-STATUS:TENTATIVE
+ ick-off: 2026-10-13T19:00Z (venue clock 20:00)\nResult: Arsenal 3-0 Lill
+ e\nArsenal: Merino 29' (yellow)\, Timber 64'\, Eze 67'\, Saka 71'\, Have
+ rtz (yellow)\nLille: Goffi 81' (yellow)\nVenue: Emirates Stadium\, Londo
+ n\, England\nAttendance: 57024\nReferee: Felix Zwayer (Germany)\nReport:
+  https://www.uefa.com/uefachampionsleague/match/2049572/\nSource: Wikipe
+ dia — 2026–27 Arsenal F.C. season
+STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-2049578-13so5za@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20261013T190000Z
 DTEND:20261013T210000Z
 SUMMARY:Viking v Bayern Munich (UEFA Champions League)
 LOCATION:Viking Stadion\, Stavanger\, Norway
 DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 2\nK
- ick-off: 2026-10-13T19:00Z (venue clock 21:00)\nVenue: Viking Stadion\, 
- Stavanger\, Norway\nReport: https://www.uefa.com/uefachampionsleague/mat
- ch/2049578/\nSource: Wikipedia — 2026–27 FC Bayern Munich season
-STATUS:TENTATIVE
+ ick-off: 2026-10-13T19:00Z (venue clock 21:00)\nResult: Viking 3-3 Bayer
+ n Munich\nViking: Stensness 2'\, Christiansen 38'\, K. Haugen 53' (yello
+ w)\, Daland 68' (yellow)\, H. Haugen 90'\nBayern Munich: Laimer 52' (yel
+ low)\, Kane 54' (pen.)\, Saibari 68' (yellow)\, Díaz 71'\, Olise\nVenue
+ : Viking Stadion\, Stavanger\, Norway\nAttendance: 15466\nReferee: Georg
+ i Kabakov (Bulgaria)\nReport: https://www.uefa.com/uefachampionsleague/m
+ atch/2049578/\nSource: Wikipedia — 2026–27 FC Bayern Munich season
+STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:real-madrid-2049581-0wi6sq2@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20261014T190000Z
 DTEND:20261014T210000Z
 SUMMARY:Roma v Real Madrid (UEFA Champions League)
 LOCATION:Stadio Olimpico\, Rome\, Italy
 DESCRIPTION:Competition: UEFA Champions League (League phase)\nRound: 2\nK
- ick-off: 2026-10-14T19:00Z (venue clock 21:00)\nVenue: Stadio Olimpico\,
-  Rome\, Italy\nReport: https://www.uefa.com/uefachampionsleague/match/20
- 49581\nSource: Wikipedia — 2026–27 Real Madrid CF season
-STATUS:TENTATIVE
+ ick-off: 2026-10-14T19:00Z (venue clock 21:00)\nResult: Roma 3-4 Real Ma
+ drid\nRoma: De Roon 20'\, Malen 51'\nReal Madrid: Mbappé 25'\, Espí 82
+ '\, Endrick 85'\, Rüdiger 90'\nVenue: Stadio Olimpico\, Rome\, Italy\nA
+ ttendance: 64256\nReferee: François Letexier (France)\nReport: https://
+ www.uefa.com/uefachampionsleague/match/2049581\nSource: Wikipedia — 20
+ 26–27 Real Madrid CF season
+STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:man-city-2049580-04w7ttd@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20261014T190000Z
 DTEND:20261014T210000Z
 SUMMARY:Manchester City v Paris Saint-Germain (UEFA Champions League)
 LOCATION:Etihad Stadium\, Manchester\, England
 DESCRIPTION:Tracked clubs in this tie: Manchester City\, Paris Saint-Germa
  in\nCompetition: UEFA Champions League (League phase)\nRound: 2\nKick-of
- f: 2026-10-14T19:00Z (venue clock 20:00)\nVenue: Etihad Stadium\, Manche
- ster\, England\nReport: https://www.uefa.com/uefachampionsleague/match/2
- 049580/\nSource: Wikipedia — 2026–27 Manchester City F.C. season
-STATUS:TENTATIVE
-END:VEVENT
-BEGIN:VEVENT
-UID:barcelona-w0r7g3q3@sportscalendar.local
-DTSTAMP:20260930T235633Z
-DTSTART:20261017T163000Z
-DTEND:20261017T183000Z
-SUMMARY:Real Betis v Barcelona (La Liga)
-LOCATION:La Cartuja\, Seville
-DESCRIPTION:Competition: La Liga\nRound: 9\nKick-off: 2026-10-17T16:30Z (v
- enue clock 18:30)\nVenue: La Cartuja\, Seville\nReport: https://www.lali
- ga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-real-betis-fc-ba
- rcelona-9\nSource: Wikipedia — 2026–27 FC Barcelona season
-STATUS:TENTATIVE
+ f: 2026-10-14T19:00Z (venue clock 20:00)\nResult: Manchester City 2-4 Pa
+ ris Saint-Germain\nManchester City: Haaland 53'\, Semenyo 61' (yellow)\n
+ Paris Saint-Germain: Doué 13'\, Dembélé 15'\, Vitinha 32'\, Akliouche
+  63'\, Zaïre-Emery 69' (yellow)\, Torres 90'\nVenue: Etihad Stadium\, M
+ anchester\, England\nAttendance: 60021\nReferee: Sven Jablonski (Germany
+ )\nReport: https://www.uefa.com/uefachampionsleague/match/2049580/\nSour
+ ce: Wikipedia — 2026–27 Manchester City F.C. season
+STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:man-city-2645261-08t2f1j@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20261017T140000Z
 DTEND:20261017T160000Z
 SUMMARY:Manchester City v Ipswich Town (Premier League)
 LOCATION:Etihad Stadium\, Manchester
 DESCRIPTION:Competition: Premier League\nRound: 7\nKick-off: 2026-10-17T14
- :00Z (venue clock 15:00)\nVenue: Etihad Stadium\, Manchester\nReport: ht
- tps://www.premierleague.com/match/2645261\nSource: Wikipedia — 2026–
- 27 Manchester City F.C. season
-STATUS:TENTATIVE
-END:VEVENT
-BEGIN:VEVENT
-UID:bayern-w1ldhu52@sportscalendar.local
-DTSTAMP:20260930T235633Z
-DTSTART:20261017T163000Z
-DTEND:20261017T183000Z
-SUMMARY:Bayern Munich v RB Leipzig (Bundesliga)
-LOCATION:Allianz Arena\, Munich
-DESCRIPTION:Competition: Bundesliga\nRound: 6\nKick-off: 2026-10-17T16:30Z
-  (venue clock 18:30)\nVenue: Allianz Arena\, Munich\nReport: https://dat
- encenter.dfb.de/datencenter/bundesliga/2026-2027/6-spieltag/fc-bayern-mu
- enchen-rb-leipzig-2419337\nSource: Wikipedia — 2026–27 FC Bayern Mun
- ich season
+ :00Z (venue clock 15:00)\nVenue: Etihad Stadium\, Manchester\nReferee: F
+ arai Hallam\nReport: https://www.premierleague.com/match/2645261\nSource
+ : Wikipedia — 2026–27 Manchester City F.C. season
 STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:psg-w0pcqrrx@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20261017T151500Z
 DTEND:20261017T171500Z
 SUMMARY:Strasbourg v Paris Saint-Germain (Ligue 1)
 LOCATION:Stade de la Meinau\, Strasbourg
 DESCRIPTION:Competition: Ligue 1\nRound: 7\nKick-off: 2026-10-17T15:15Z (v
- enue clock 17:15)\nVenue: Stade de la Meinau\, Strasbourg\nReport: https
- ://ligue1.com/en/match-sheet/l1_championship_match_73882\nSource: Wikipe
- dia — 2026–27 Paris Saint-Germain FC season
+ enue clock 17:15)\nVenue: Stade de la Meinau\, Strasbourg\nReferee: Will
+ y Delajod\nReport: https://ligue1.com/en/match-sheet/l1_championship_mat
+ ch_73882\nSource: Wikipedia — 2026–27 Paris Saint-Germain FC season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:barcelona-w0r7g3q3@sportscalendar.local
+DTSTAMP:20261016T205806Z
+DTSTART:20261017T163000Z
+DTEND:20261017T183000Z
+SUMMARY:Real Betis v Barcelona (La Liga)
+LOCATION:La Cartuja\, Seville
+DESCRIPTION:Competition: La Liga\nRound: 9\nKick-off: 2026-10-17T16:30Z (v
+ enue clock 18:30)\nVenue: La Cartuja\, Seville\nReferee: Ricardo de Burg
+ os Bengoetxea\nReport: https://www.laliga.com/en-GB/match/temporada-2026
+ -2027-laliga-ea-sports-real-betis-fc-barcelona-9\nSource: Wikipedia — 
+ 2026–27 FC Barcelona season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-w1ldhu52@sportscalendar.local
+DTSTAMP:20261016T205806Z
+DTSTART:20261017T163000Z
+DTEND:20261017T183000Z
+SUMMARY:Bayern Munich v RB Leipzig (Bundesliga)
+LOCATION:Allianz Arena\, Munich
+DESCRIPTION:Competition: Bundesliga\nRound: 6\nKick-off: 2026-10-17T16:30Z
+  (venue clock 18:30)\nVenue: Allianz Arena\, Munich\nReferee: Tobias Sti
+ eler\nReport: https://datencenter.dfb.de/datencenter/bundesliga/2026-202
+ 7/6-spieltag/fc-bayern-muenchen-rb-leipzig-2419337\nSource: Wikipedia 
+ — 2026–27 FC Bayern Munich season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:arsenal-2645263-0rqr9g2@sportscalendar.local
+DTSTAMP:20261016T205806Z
+DTSTART:20261018T153000Z
+DTEND:20261018T173000Z
+SUMMARY:Nottingham Forest v Arsenal (Premier League)
+LOCATION:City Ground\, West Bridgford
+DESCRIPTION:Competition: Premier League\nRound: 7\nKick-off: 2026-10-18T15
+ :30Z (venue clock 16:30)\nVenue: City Ground\, West Bridgford\nReferee: 
+ Michael Oliver\nReport: https://www.premierleague.com/en/match/2645263\n
+ Source: Wikipedia — 2026–27 Arsenal F.C. season
 STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:real-madrid-w1spa1t9@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20261018T190000Z
 DTEND:20261018T210000Z
 SUMMARY:Real Madrid v Sevilla (La Liga)
@@ -975,21 +1026,8 @@ DESCRIPTION:Competition: La Liga\nRound: 9\nKick-off: 2026-10-18T19:00Z (v
 STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
-UID:arsenal-2645263-0rqr9g2@sportscalendar.local
-DTSTAMP:20260930T235633Z
-DTSTART:20261018T153000Z
-DTEND:20261018T173000Z
-SUMMARY:Nottingham Forest v Arsenal (Premier League)
-LOCATION:City Ground\, West Bridgford
-DESCRIPTION:Competition: Premier League\nRound: 7\nKick-off: 2026-10-18T15
- :30Z (venue clock 16:30)\nVenue: City Ground\, West Bridgford\nReport: h
- ttps://www.premierleague.com/en/match/2645263\nSource: Wikipedia — 202
- 6–27 Arsenal F.C. season
-STATUS:TENTATIVE
-END:VEVENT
-BEGIN:VEVENT
 UID:barcelona-2049589-0snfs2o@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20261020T190000Z
 DTEND:20261020T210000Z
 SUMMARY:Paris Saint-Germain v Barcelona (UEFA Champions League)
@@ -1003,7 +1041,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:man-city-2049591-0x37ssu@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20261020T190000Z
 DTEND:20261020T210000Z
 SUMMARY:Manchester City v AEK Athens (UEFA Champions League)
@@ -1017,7 +1055,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:real-madrid-2049599-0ag11sv@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20261021T190000Z
 DTEND:20261021T210000Z
 SUMMARY:Real Madrid v RB Leipzig (UEFA Champions League)
@@ -1030,7 +1068,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:arsenal-2049598-0h5g9tt@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20261021T190000Z
 DTEND:20261021T210000Z
 SUMMARY:Bayern Munich v Arsenal (UEFA Champions League)
@@ -1043,21 +1081,8 @@ DESCRIPTION:Tracked clubs in this tie: Arsenal\, Bayern Munich\nCompetitio
 STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
-UID:arsenal-2645265-1gw8pjs@sportscalendar.local
-DTSTAMP:20260930T235633Z
-DTSTART:20261024T140000Z
-DTEND:20261024T160000Z
-SUMMARY:Arsenal v Everton (Premier League)
-LOCATION:Emirates Stadium\, Holloway
-DESCRIPTION:Competition: Premier League\nRound: 8\nKick-off: 2026-10-24T14
- :00Z (venue clock 15:00)\nVenue: Emirates Stadium\, Holloway\nReport: ht
- tps://www.premierleague.com/en/match/2645265/arsenal-vs-everton\nSource:
-  Wikipedia — 2026–27 Arsenal F.C. season
-STATUS:TENTATIVE
-END:VEVENT
-BEGIN:VEVENT
 UID:man-city-2645266-13b0s8j@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20261024T113000Z
 DTEND:20261024T133000Z
 SUMMARY:Aston Villa v Manchester City (Premier League)
@@ -1070,22 +1095,21 @@ DESCRIPTION:Competition: Premier League\nRound: 8\nKick-off: 2026-10-24T11
 STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
-UID:real-madrid-w1u23a60@sportscalendar.local
-DTSTAMP:20260930T235633Z
-DTSTART:20261025T200000Z
-DTEND:20261025T220000Z
-SUMMARY:Barcelona v Real Madrid (La Liga)
-LOCATION:Spotify Camp Nou\, Barcelona
-DESCRIPTION:Tracked clubs in this tie: Real Madrid\, FC Barcelona\nCompeti
- tion: La Liga\nRound: 10\nKick-off: 2026-10-25T20:00Z (venue clock 21:00
- )\nVenue: Spotify Camp Nou\, Barcelona\nReport: https://www.laliga.com/e
- n-GB/match/temporada-2026-2027-laliga-ea-sports-fc-barcelona-real-madrid
- -10\nSource: Wikipedia — 2026–27 Real Madrid CF season
+UID:arsenal-2645265-1gw8pjs@sportscalendar.local
+DTSTAMP:20261016T205806Z
+DTSTART:20261024T140000Z
+DTEND:20261024T160000Z
+SUMMARY:Arsenal v Everton (Premier League)
+LOCATION:Emirates Stadium\, Holloway
+DESCRIPTION:Competition: Premier League\nRound: 8\nKick-off: 2026-10-24T14
+ :00Z (venue clock 15:00)\nVenue: Emirates Stadium\, Holloway\nReport: ht
+ tps://www.premierleague.com/en/match/2645265/arsenal-vs-everton\nSource:
+  Wikipedia — 2026–27 Arsenal F.C. season
 STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-w1sy0n4n@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20261025T163000Z
 DTEND:20261025T183000Z
 SUMMARY:SC Freiburg v Bayern Munich (Bundesliga)
@@ -1099,7 +1123,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:psg-w0oghwmq@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20261025T194500Z
 DTEND:20261025T214500Z
 SUMMARY:Paris Saint-Germain v Lyon (Ligue 1)
@@ -1111,8 +1135,22 @@ DESCRIPTION:Competition: Ligue 1\nRound: 8\nKick-off: 2026-10-25T19:45Z (v
 STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
+UID:real-madrid-w1u23a60@sportscalendar.local
+DTSTAMP:20261016T205806Z
+DTSTART:20261025T200000Z
+DTEND:20261025T220000Z
+SUMMARY:Barcelona v Real Madrid (La Liga)
+LOCATION:Spotify Camp Nou\, Barcelona
+DESCRIPTION:Tracked clubs in this tie: Real Madrid\, FC Barcelona\nCompeti
+ tion: La Liga\nRound: 10\nKick-off: 2026-10-25T20:00Z (venue clock 21:00
+ )\nVenue: Spotify Camp Nou\, Barcelona\nReport: https://www.laliga.com/e
+ n-GB/match/temporada-2026-2027-laliga-ea-sports-fc-barcelona-real-madrid
+ -10\nSource: Wikipedia — 2026–27 Real Madrid CF season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
 UID:arsenal-w12zlxxh@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20261027T190000Z
 DTEND:20261027T210000Z
 SUMMARY:Fleetwood Town v Arsenal (EFL Cup)
@@ -1125,7 +1163,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:man-city-w0cu7ohe@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20261028T193000Z
 DTEND:20261028T213000Z
 SUMMARY:Manchester City v Brighton & Hove Albion (EFL Cup)
@@ -1138,7 +1176,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-w0yl39im@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20261028T194500Z
 DTEND:20261028T214500Z
 SUMMARY:Bayern Munich v 1. FC Magdeburg (DFB-Pokal)
@@ -1152,7 +1190,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:psg-w19dz6c5@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20261030T180000Z
 DTEND:20261030T200000Z
 SUMMARY:Le Havre v Paris Saint-Germain (Ligue 1)
@@ -1165,7 +1203,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:man-city-2645282-0opssyi@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20261031T150000Z
 DTEND:20261031T170000Z
 SUMMARY:Manchester City v Brighton & Hove Albion (Premier League)
@@ -1178,7 +1216,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-w0byz9u5@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20261031T173000Z
 DTEND:20261031T193000Z
 SUMMARY:Bayern Munich v Borussia Dortmund (Bundesliga)
@@ -1191,22 +1229,8 @@ DESCRIPTION:Competition: Bundesliga\nRound: 8\nKick-off: 2026-10-31T17:30Z
 STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
-UID:real-madrid-w18bk9a2@sportscalendar.local
-DTSTAMP:20260930T235633Z
-DTSTART;VALUE=DATE:20261101
-DTEND;VALUE=DATE:20261102
-SUMMARY:Racing Santander v Real Madrid (La Liga)
-LOCATION:El Sardinero\, Santander
-DESCRIPTION:Competition: La Liga\nRound: 11\nDate: 2026-11-01 — kick-off
-  time to be confirmed\nVenue: El Sardinero\, Santander\nReport: https://
- www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-r-racing
- -club-real-madrid-11\nSource: Wikipedia — 2026–27 Real Madrid CF sea
- son
-STATUS:TENTATIVE
-END:VEVENT
-BEGIN:VEVENT
 UID:barcelona-w192a178@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20261101
 DTEND;VALUE=DATE:20261102
 SUMMARY:Barcelona v Alavés (La Liga)
@@ -1219,8 +1243,21 @@ DESCRIPTION:Competition: La Liga\nRound: 11\nDate: 2026-11-01 — kick-off
 STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
+UID:real-madrid-w18bk9a2@sportscalendar.local
+DTSTAMP:20261016T205806Z
+DTSTART:20261101T151500Z
+DTEND:20261101T171500Z
+SUMMARY:Racing Santander v Real Madrid (La Liga)
+LOCATION:El Sardinero\, Santander
+DESCRIPTION:Competition: La Liga\nRound: 11\nKick-off: 2026-11-01T15:15Z (
+ venue clock 16:15)\nVenue: El Sardinero\, Santander\nReport: https://www
+ .laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-r-racing-cl
+ ub-real-madrid-11\nSource: Wikipedia — 2026–27 Real Madrid CF season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
 UID:arsenal-2645281-197mi5f@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20261101T163000Z
 DTEND:20261101T183000Z
 SUMMARY:Liverpool v Arsenal (Premier League)
@@ -1233,7 +1270,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:barcelona-2049607-1rrrs87@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20261103T200000Z
 DTEND:20261103T220000Z
 SUMMARY:Barcelona v Aston Villa (UEFA Champions League)
@@ -1246,7 +1283,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-2049608-0w7fure@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20261103T200000Z
 DTEND:20261103T220000Z
 SUMMARY:Atlético Madrid v Bayern Munich (UEFA Champions League)
@@ -1259,7 +1296,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:psg-2049612-1vkwsh5@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20261103T200000Z
 DTEND:20261103T220000Z
 SUMMARY:Villarreal v Paris Saint-Germain (UEFA Champions League)
@@ -1273,7 +1310,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:real-madrid-2049622-1f270fb@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20261104T174500Z
 DTEND:20261104T194500Z
 SUMMARY:AEK Athens v Real Madrid (UEFA Champions League)
@@ -1286,7 +1323,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:arsenal-2049621-0b6ilp2@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20261104T200000Z
 DTEND:20261104T220000Z
 SUMMARY:Slavia Prague v Arsenal (UEFA Champions League)
@@ -1299,7 +1336,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:man-city-2049619-1fsv13t@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20261104T200000Z
 DTEND:20261104T220000Z
 SUMMARY:RB Leipzig v Manchester City (UEFA Champions League)
@@ -1312,7 +1349,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:arsenal-2645285-0ymq9j9@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20261107
 DTEND;VALUE=DATE:20261108
 SUMMARY:Arsenal v Hull City (Premier League)
@@ -1324,8 +1361,22 @@ DESCRIPTION:Competition: Premier League\nRound: 10\nDate: 2026-11-07 — k
 STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
+UID:bayern-w0zuhezg@sportscalendar.local
+DTSTAMP:20261016T205806Z
+DTSTART:20261107T143000Z
+DTEND:20261107T163000Z
+SUMMARY:Mainz 05 v Bayern Munich (Bundesliga)
+LOCATION:Mewa Arena\, Mainz
+DESCRIPTION:Competition: Bundesliga\nRound: 9\nKick-off: 2026-11-07T14:30Z
+  (venue clock 15:30)\nVenue: Mewa Arena\, Mainz\nReport: https://datence
+ nter.dfb.de/datencenter/bundesliga/2026-2027/9-spieltag/1-fsv-mainz-05-f
+ c-bayern-muenchen-2419411\nSource: Wikipedia — 2026–27 FC Bayern Mun
+ ich season
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
 UID:man-city-2645293-0zh9lyq@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20261107T173000Z
 DTEND:20261107T193000Z
 SUMMARY:Nottingham Forest v Manchester City (Premier League)
@@ -1339,22 +1390,8 @@ DESCRIPTION:Competition: Premier League\nRound: 10\nKick-off: 2026-11-07T1
 STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
-UID:bayern-w0zuhezg@sportscalendar.local
-DTSTAMP:20260930T235633Z
-DTSTART:20261107T143000Z
-DTEND:20261107T163000Z
-SUMMARY:Mainz 05 v Bayern Munich (Bundesliga)
-LOCATION:Mewa Arena\, Mainz
-DESCRIPTION:Competition: Bundesliga\nRound: 9\nKick-off: 2026-11-07T14:30Z
-  (venue clock 15:30)\nVenue: Mewa Arena\, Mainz\nReport: https://datence
- nter.dfb.de/datencenter/bundesliga/2026-2027/9-spieltag/1-fsv-mainz-05-f
- c-bayern-muenchen-2419411\nSource: Wikipedia — 2026–27 FC Bayern Mun
- ich season
-STATUS:TENTATIVE
-END:VEVENT
-BEGIN:VEVENT
 UID:psg-w16bklzt@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20261107T194500Z
 DTEND:20261107T214500Z
 SUMMARY:Paris Saint-Germain v Troyes (Ligue 1)
@@ -1367,7 +1404,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:real-madrid-w1c0tpxi@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20261108
 DTEND;VALUE=DATE:20261109
 SUMMARY:Valencia v Real Madrid (La Liga)
@@ -1380,7 +1417,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:barcelona-w0hnqlu1@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20261108
 DTEND;VALUE=DATE:20261109
 SUMMARY:Atlético Madrid v Barcelona (La Liga)
@@ -1394,7 +1431,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-w15ny19g@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20261120T193000Z
 DTEND:20261120T213000Z
 SUMMARY:Bayern Munich v 1. FC Köln (Bundesliga)
@@ -1408,7 +1445,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:arsenal-2645303-0oq2qcg@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
 SUMMARY:Newcastle United v Arsenal (Premier League)
@@ -1421,7 +1458,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:man-city-2645302-1owp74n@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20261121T123000Z
 DTEND:20261121T143000Z
 SUMMARY:Manchester City v Fulham (Premier League)
@@ -1436,7 +1473,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:psg-w1i7u8lk@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20261121T161500Z
 DTEND:20261121T181500Z
 SUMMARY:Nice v Paris Saint-Germain (Ligue 1)
@@ -1449,7 +1486,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:real-madrid-w0qmfwe3@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20261122
 DTEND;VALUE=DATE:20261123
 SUMMARY:Real Madrid v Celta Vigo (La Liga)
@@ -1462,7 +1499,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:barcelona-w0s3m19p@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20261122
 DTEND;VALUE=DATE:20261123
 SUMMARY:Barcelona v Villarreal (La Liga)
@@ -1475,7 +1512,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:real-madrid-2049625-0y9hod8@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20261124T200000Z
 DTEND:20261124T220000Z
 SUMMARY:Real Madrid v PSV Eindhoven (UEFA Champions League)
@@ -1488,7 +1525,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:arsenal-2049627-19z1jqd@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20261124T200000Z
 DTEND:20261124T220000Z
 SUMMARY:Arsenal v Borussia Dortmund (UEFA Champions League)
@@ -1501,7 +1538,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:man-city-2049626-1p2gfl8@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20261124T200000Z
 DTEND:20261124T220000Z
 SUMMARY:Manchester City v Napoli (UEFA Champions League)
@@ -1515,7 +1552,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:barcelona-2049642-0yumlv7@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20261125T174500Z
 DTEND:20261125T194500Z
 SUMMARY:Sabah v Barcelona (UEFA Champions League)
@@ -1528,7 +1565,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-2049639-1cuwi2e@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20261125T200000Z
 DTEND:20261125T220000Z
 SUMMARY:Lille v Bayern Munich (UEFA Champions League)
@@ -1542,7 +1579,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:psg-2049634-0zx93rs@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20261125T200000Z
 DTEND:20261125T220000Z
 SUMMARY:Paris Saint-Germain v Roma (UEFA Champions League)
@@ -1555,7 +1592,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:arsenal-2645305-0ioa6xp@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20261128
 DTEND;VALUE=DATE:20261129
 SUMMARY:Arsenal v Manchester City (Premier League)
@@ -1568,7 +1605,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-w0ymn6b7@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20261128T143000Z
 DTEND:20261128T163000Z
 SUMMARY:Hamburger SV v Bayern Munich (Bundesliga)
@@ -1582,7 +1619,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:psg-w1wi4r2l@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20261128T194500Z
 DTEND:20261128T214500Z
 SUMMARY:Paris Saint-Germain v Lorient (Ligue 1)
@@ -1595,7 +1632,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:real-madrid-w0hut0be@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20261129
 DTEND;VALUE=DATE:20261130
 SUMMARY:Real Madrid v Alavés (La Liga)
@@ -1608,7 +1645,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:barcelona-w1xasco0@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20261129
 DTEND;VALUE=DATE:20261130
 SUMMARY:Deportivo A Coruña v Barcelona (La Liga)
@@ -1622,7 +1659,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:man-city-2645305-1jcofxa@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20261129T163000Z
 DTEND:20261129T183000Z
 SUMMARY:Arsenal v Manchester City (Premier League)
@@ -1637,7 +1674,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:arsenal-2645317-1094k8n@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20261202
 DTEND;VALUE=DATE:20261203
 SUMMARY:Brentford v Arsenal (Premier League)
@@ -1650,7 +1687,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:man-city-2645322-0vk9hie@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20261202T150000Z
 DTEND:20261202T170000Z
 SUMMARY:Manchester City v Leeds United (Premier League)
@@ -1663,7 +1700,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:arsenal-2645334-06xqdjv@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261206
 SUMMARY:Tottenham Hotspur v Arsenal (Premier League)
@@ -1676,7 +1713,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:man-city-2645327-1mooj6j@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20261205T150000Z
 DTEND:20261205T170000Z
 SUMMARY:Brentford v Manchester City (Premier League)
@@ -1689,7 +1726,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:real-madrid-w032elvd@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20261206
 DTEND;VALUE=DATE:20261207
 SUMMARY:Athletic Bilbao v Real Madrid (La Liga)
@@ -1702,7 +1739,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:barcelona-w186z92i@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20261206
 DTEND;VALUE=DATE:20261207
 SUMMARY:Barcelona v Celta Vigo (La Liga)
@@ -1715,7 +1752,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-w0zm39rd@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20261206
 DTEND;VALUE=DATE:20261207
 SUMMARY:Bayern Munich v SC Paderborn (Bundesliga)
@@ -1729,7 +1766,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:psg-w0qtetlb@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20261206
 DTEND;VALUE=DATE:20261207
 SUMMARY:Toulouse v Paris Saint-Germain (Ligue 1)
@@ -1742,7 +1779,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:barcelona-2049644-0u5mxpv@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20261208T200000Z
 DTEND:20261208T220000Z
 SUMMARY:Barcelona v Manchester City (UEFA Champions League)
@@ -1756,7 +1793,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-2049643-070oaqs@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20261208T200000Z
 DTEND:20261208T220000Z
 SUMMARY:Bayern Munich v Slavia Prague (UEFA Champions League)
@@ -1769,7 +1806,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:psg-2049646-08dv57w@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20261208T200000Z
 DTEND:20261208T220000Z
 SUMMARY:Aston Villa v Paris Saint-Germain (UEFA Champions League)
@@ -1782,7 +1819,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:real-madrid-2049653-1pdgt8n@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20261209T200000Z
 DTEND:20261209T220000Z
 SUMMARY:Arsenal v Real Madrid (UEFA Champions League)
@@ -1796,7 +1833,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:arsenal-2645335-157ic5i@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20261212
 DTEND;VALUE=DATE:20261213
 SUMMARY:Arsenal v Bournemouth (Premier League)
@@ -1809,7 +1846,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:man-city-2645343-0n0hmuc@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20261212T150000Z
 DTEND:20261212T170000Z
 SUMMARY:Manchester City v Chelsea (Premier League)
@@ -1822,7 +1859,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:real-madrid-w1rn4a0s@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20261213
 DTEND;VALUE=DATE:20261214
 SUMMARY:Real Madrid v Osasuna (La Liga)
@@ -1835,7 +1872,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:barcelona-w0gavrcb@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20261213
 DTEND;VALUE=DATE:20261214
 SUMMARY:Málaga v Barcelona (La Liga)
@@ -1848,7 +1885,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-w0eno39j@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20261213
 DTEND;VALUE=DATE:20261214
 SUMMARY:TSG Hoffenheim v Bayern Munich (Bundesliga)
@@ -1862,7 +1899,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:psg-w01pfn7f@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20261213
 DTEND;VALUE=DATE:20261214
 SUMMARY:Paris Saint-Germain v Paris FC (Ligue 1)
@@ -1875,7 +1912,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:psg-w0q8ip8w@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20261216
 DTEND;VALUE=DATE:20261217
 SUMMARY:Paris Saint-Germain v TBD (FIFA Intercontinental Cup)
@@ -1887,7 +1924,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:arsenal-2645346-04avjdi@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20261219
 DTEND;VALUE=DATE:20261220
 SUMMARY:Arsenal v Manchester United (Premier League)
@@ -1900,7 +1937,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:man-city-2645352-11as3ty@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20261219T150000Z
 DTEND:20261219T170000Z
 SUMMARY:Manchester City v Hull City (Premier League)
@@ -1913,7 +1950,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:real-madrid-w1acay7y@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20261220
 DTEND;VALUE=DATE:20261221
 SUMMARY:Deportivo A Coruña v Real Madrid (La Liga)
@@ -1927,7 +1964,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:barcelona-w0o4mrlk@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20261220
 DTEND;VALUE=DATE:20261221
 SUMMARY:Barcelona v Real Sociedad (La Liga)
@@ -1940,7 +1977,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-w11k3i70@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20261220
 DTEND;VALUE=DATE:20261221
 SUMMARY:Bayern Munich v Werder Bremen (Bundesliga)
@@ -1954,7 +1991,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:psg-w09okkf4@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20261221
 DTEND;VALUE=DATE:20261222
 SUMMARY: v  (Coupe de France)
@@ -1966,7 +2003,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:man-city-2645363-0p8lkkd@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20261226T150000Z
 DTEND:20261226T170000Z
 SUMMARY:Newcastle United v Manchester City (Premier League)
@@ -1981,7 +2018,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:arsenal-2645357-1vfuo0y@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20261227T190000Z
 DTEND:20261227T210000Z
 SUMMARY:Crystal Palace v Arsenal (Premier League)
@@ -1994,7 +2031,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:man-city-2645368-0i4ipvg@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20261229T201500Z
 DTEND:20261229T221500Z
 SUMMARY:Everton v Manchester City (Premier League)
@@ -2009,7 +2046,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:arsenal-2645369-1mhlwa7@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20261230T193000Z
 DTEND:20261230T213000Z
 SUMMARY:Fulham v Arsenal (Premier League)
@@ -2022,7 +2059,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:arsenal-2645376-0sb6zbh@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20270102T150000Z
 DTEND:20270102T170000Z
 SUMMARY:Arsenal v Ipswich Town (Premier League)
@@ -2035,7 +2072,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:real-madrid-w1jso09q@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270103
 DTEND;VALUE=DATE:20270104
 SUMMARY:Real Madrid v Getafe (La Liga)
@@ -2048,7 +2085,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:barcelona-w0mddv4d@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270103
 DTEND;VALUE=DATE:20270104
 SUMMARY:Espanyol v Barcelona (La Liga)
@@ -2062,7 +2099,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:man-city-2645382-1f71aaj@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20270103T163000Z
 DTEND:20270103T183000Z
 SUMMARY:Manchester City v Tottenham Hotspur (Premier League)
@@ -2077,7 +2114,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:psg-w0e8hmw5@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20270103T194500Z
 DTEND:20270103T214500Z
 SUMMARY:Lens v Paris Saint-Germain (Ligue 1)
@@ -2090,7 +2127,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:arsenal-2645385-000dx0b@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20270105T193000Z
 DTEND:20270105T213000Z
 SUMMARY:Arsenal v Brentford (Premier League)
@@ -2103,7 +2140,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:man-city-2645391-1hxtfsn@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20270106T201500Z
 DTEND:20270106T221500Z
 SUMMARY:Leeds United v Manchester City (Premier League)
@@ -2117,7 +2154,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:real-madrid-w1i65j43@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270110
 DTEND;VALUE=DATE:20270111
 SUMMARY:Real Madrid v Levante (La Liga)
@@ -2130,7 +2167,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:barcelona-w0vb286e@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270110
 DTEND;VALUE=DATE:20270111
 SUMMARY:Osasuna v Barcelona (La Liga)
@@ -2143,7 +2180,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-w1vpd3yf@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270110
 DTEND;VALUE=DATE:20270111
 SUMMARY:Borussia Mönchengladbach v Bayern Munich (Bundesliga)
@@ -2157,7 +2194,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:arsenal-w0zo4202@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270111
 DTEND;VALUE=DATE:20270112
 SUMMARY: v  (FA Cup)
@@ -2169,7 +2206,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-w0hhc56b@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270114
 DTEND;VALUE=DATE:20270115
 SUMMARY:Bayern Munich v Bayer Leverkusen (Bundesliga)
@@ -2183,7 +2220,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:arsenal-2645400-1mixqqr@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270116
 DTEND;VALUE=DATE:20270117
 SUMMARY:Hull City v Arsenal (Premier League)
@@ -2196,7 +2233,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:man-city-2645402-04xnggg@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20270116T150000Z
 DTEND:20270116T170000Z
 SUMMARY:Manchester City v Nottingham Forest (Premier League)
@@ -2209,7 +2246,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:real-madrid-w0qg23dm@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270117
 DTEND;VALUE=DATE:20270118
 SUMMARY:Málaga v Real Madrid (La Liga)
@@ -2222,7 +2259,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:barcelona-w1461p10@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270117
 DTEND;VALUE=DATE:20270118
 SUMMARY:Barcelona v Elche (La Liga)
@@ -2235,7 +2272,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-w1wgj5pm@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270117
 DTEND;VALUE=DATE:20270118
 SUMMARY:Eintracht Frankfurt v Bayern Munich (Bundesliga)
@@ -2249,7 +2286,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:psg-w180dw34@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270117
 DTEND;VALUE=DATE:20270118
 SUMMARY:Angers v Paris Saint-Germain (Ligue 1)
@@ -2262,7 +2299,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:real-madrid-2049661-1qmjgcc@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20270119T200000Z
 DTEND:20270119T220000Z
 SUMMARY:Real Madrid v LASK (UEFA Champions League)
@@ -2275,7 +2312,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:barcelona-2049670-1ck6ifm@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20270120T200000Z
 DTEND:20270120T220000Z
 SUMMARY:Sporting CP v Barcelona (UEFA Champions League)
@@ -2288,7 +2325,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:arsenal-2049672-0rht6rz@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20270120T200000Z
 DTEND:20270120T220000Z
 SUMMARY:Real Betis v Arsenal (UEFA Champions League)
@@ -2303,7 +2340,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:man-city-2049676-1wyyqhh@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20270120T200000Z
 DTEND:20270120T220000Z
 SUMMARY:Lens v Manchester City (UEFA Champions League)
@@ -2317,7 +2354,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-2049671-0mxgfug@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20270120T200000Z
 DTEND:20270120T220000Z
 SUMMARY:Manchester United v Bayern Munich (UEFA Champions League)
@@ -2330,7 +2367,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:psg-2049675-1uywxne@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20270120T200000Z
 DTEND:20270120T220000Z
 SUMMARY:Como v Paris Saint-Germain (UEFA Champions League)
@@ -2344,7 +2381,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:arsenal-2645405-12dzoq2@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270123
 DTEND;VALUE=DATE:20270124
 SUMMARY:Arsenal v Newcastle United (Premier League)
@@ -2357,7 +2394,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:man-city-2645406-0dhw372@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20270123T150000Z
 DTEND:20270123T170000Z
 SUMMARY:Brighton & Hove Albion v Manchester City (Premier League)
@@ -2370,7 +2407,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:real-madrid-w0cjuqj2@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270124
 DTEND;VALUE=DATE:20270125
 SUMMARY:Real Madrid v Real Betis (La Liga)
@@ -2383,7 +2420,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:barcelona-w1l8cwtt@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270124
 DTEND;VALUE=DATE:20270125
 SUMMARY:Alavés v Barcelona (La Liga)
@@ -2397,7 +2434,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-w0uogqa7@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270124
 DTEND;VALUE=DATE:20270125
 SUMMARY:VfB Stuttgart v Bayern Munich (Bundesliga)
@@ -2411,7 +2448,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:psg-w1yuagzg@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270124
 DTEND;VALUE=DATE:20270125
 SUMMARY:Paris Saint-Germain v Auxerre (Ligue 1)
@@ -2424,7 +2461,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:real-madrid-2049693-0lppxby@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20270127T200000Z
 DTEND:20270127T220000Z
 SUMMARY:Shakhtar Donetsk v Real Madrid (UEFA Champions League)
@@ -2437,7 +2474,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:barcelona-2049684-1hgocic@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20270127T200000Z
 DTEND:20270127T220000Z
 SUMMARY:Barcelona v Como (UEFA Champions League)
@@ -2450,7 +2487,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:arsenal-2049683-0vds2f4@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20270127T200000Z
 DTEND:20270127T220000Z
 SUMMARY:Arsenal v Sabah (UEFA Champions League)
@@ -2463,7 +2500,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:man-city-2049682-07gsif9@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20270127T200000Z
 DTEND:20270127T220000Z
 SUMMARY:Manchester City v Sporting CP (UEFA Champions League)
@@ -2477,7 +2514,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-2049680-10fr6ll@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20270127T200000Z
 DTEND:20270127T220000Z
 SUMMARY:Bayern Munich v Real Betis (UEFA Champions League)
@@ -2490,7 +2527,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:psg-2049679-1qm2k3f@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20270127T200000Z
 DTEND:20270127T220000Z
 SUMMARY:Paris Saint-Germain v Galatasaray (UEFA Champions League)
@@ -2503,7 +2540,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:arsenal-2645422-1uvyc8k@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270130
 DTEND;VALUE=DATE:20270131
 SUMMARY:Manchester City v Arsenal (Premier League)
@@ -2517,7 +2554,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:real-madrid-w1ecc4hp@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270131
 DTEND;VALUE=DATE:20270201
 SUMMARY:Rayo Vallecano v Real Madrid (La Liga)
@@ -2530,7 +2567,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:barcelona-w0bm0mf2@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270131
 DTEND;VALUE=DATE:20270201
 SUMMARY:Barcelona v Valencia (La Liga)
@@ -2543,7 +2580,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-w14ndywu@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270131
 DTEND;VALUE=DATE:20270201
 SUMMARY:Bayern Munich v Schalke 04 (Bundesliga)
@@ -2557,7 +2594,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:psg-w13c04vh@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270131
 DTEND;VALUE=DATE:20270201
 SUMMARY:Monaco v Paris Saint-Germain (Ligue 1)
@@ -2570,7 +2607,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:barcelona-w0febwte@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20270202T190000Z
 DTEND:20270202T210000Z
 SUMMARY:Barcelona v Atlético Madrid (Supercopa de España)
@@ -2583,7 +2620,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:real-madrid-w048l3ox@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20270203T190000Z
 DTEND:20270203T210000Z
 SUMMARY:Real Sociedad v Real Madrid (Supercopa de España)
@@ -2595,7 +2632,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:arsenal-2645425-1tfk7bb@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270206
 DTEND;VALUE=DATE:20270207
 SUMMARY:Arsenal v Liverpool (Premier League)
@@ -2608,7 +2645,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:man-city-2645429-0lt0xhj@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20270206T150000Z
 DTEND:20270206T170000Z
 SUMMARY:Fulham v Manchester City (Premier League)
@@ -2621,7 +2658,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:real-madrid-w1vuo06t@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270207
 DTEND;VALUE=DATE:20270208
 SUMMARY:Real Sociedad v Real Madrid (La Liga)
@@ -2635,7 +2672,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:barcelona-w0nvthgn@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270207
 DTEND;VALUE=DATE:20270208
 SUMMARY:Barcelona v Atlético Madrid (La Liga)
@@ -2649,7 +2686,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-w0q2xojh@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270207
 DTEND;VALUE=DATE:20270208
 SUMMARY:Bayern Munich v SV Elversberg (Bundesliga)
@@ -2663,7 +2700,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:psg-w12fvdxk@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20270207T194500Z
 DTEND:20270207T214500Z
 SUMMARY:Paris Saint-Germain v Marseille (Ligue 1)
@@ -2676,7 +2713,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:arsenal-2645441-18uinr9@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270210
 DTEND;VALUE=DATE:20270211
 SUMMARY:Ipswich Town v Arsenal (Premier League)
@@ -2689,7 +2726,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:man-city-2645444-0dlsc7q@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20270210T150000Z
 DTEND:20270210T170000Z
 SUMMARY:Tottenham Hotspur v Manchester City (Premier League)
@@ -2702,7 +2739,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:real-madrid-w11ync46@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270214
 DTEND;VALUE=DATE:20270215
 SUMMARY:Real Madrid v Athletic Bilbao (La Liga)
@@ -2715,7 +2752,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:barcelona-w0pbguuh@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270214
 DTEND;VALUE=DATE:20270215
 SUMMARY:Villarreal v Barcelona (La Liga)
@@ -2729,7 +2766,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-w139vtn4@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270214
 DTEND;VALUE=DATE:20270215
 SUMMARY:Union Berlin v Bayern Munich (Bundesliga)
@@ -2743,7 +2780,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:psg-w1yz17vc@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270214
 DTEND;VALUE=DATE:20270215
 SUMMARY:Le Mans v Paris Saint-Germain (Ligue 1)
@@ -2756,7 +2793,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:arsenal-2645446-0hq4b96@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270220
 DTEND;VALUE=DATE:20270221
 SUMMARY:Arsenal v Fulham (Premier League)
@@ -2769,7 +2806,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:man-city-2645452-0u0jv0t@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20270220T150000Z
 DTEND:20270220T170000Z
 SUMMARY:Manchester City v Newcastle United (Premier League)
@@ -2782,7 +2819,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:real-madrid-w1u7h003@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270221
 DTEND;VALUE=DATE:20270222
 SUMMARY:Sevilla v Real Madrid (La Liga)
@@ -2796,7 +2833,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:barcelona-w0wmicr2@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270221
 DTEND;VALUE=DATE:20270222
 SUMMARY:Barcelona v Levante (La Liga)
@@ -2809,7 +2846,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-w1ow30qc@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270221
 DTEND;VALUE=DATE:20270222
 SUMMARY:Bayern Munich v FC Augsburg (Bundesliga)
@@ -2823,7 +2860,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:psg-w0dm7jje@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270221
 DTEND;VALUE=DATE:20270222
 SUMMARY:Paris Saint-Germain v Brest (Ligue 1)
@@ -2836,7 +2873,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:arsenal-2645462-00sd88j@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270227
 DTEND;VALUE=DATE:20270228
 SUMMARY:Manchester United v Arsenal (Premier League)
@@ -2849,7 +2886,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:man-city-2645460-08uyz0j@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20270227T150000Z
 DTEND:20270227T170000Z
 SUMMARY:Hull City v Manchester City (Premier League)
@@ -2862,7 +2899,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:real-madrid-w1m1tbtv@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270228
 DTEND;VALUE=DATE:20270301
 SUMMARY:Real Madrid v Valencia (La Liga)
@@ -2875,7 +2912,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:barcelona-w1v0y285@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270228
 DTEND;VALUE=DATE:20270301
 SUMMARY:Athletic Bilbao v Barcelona (La Liga)
@@ -2888,7 +2925,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-w1og7uea@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270228
 DTEND;VALUE=DATE:20270301
 SUMMARY:RB Leipzig v Bayern Munich (Bundesliga)
@@ -2902,7 +2939,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:psg-w0fhp6n7@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20270228T194500Z
 DTEND:20270228T214500Z
 SUMMARY:Paris Saint-Germain v Lens (Ligue 1)
@@ -2915,7 +2952,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:arsenal-2645466-1lwq1m9@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270303
 DTEND;VALUE=DATE:20270304
 SUMMARY:Arsenal v Crystal Palace (Premier League)
@@ -2928,7 +2965,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:man-city-2645472-0e9dhzr@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20270303T150000Z
 DTEND:20270303T170000Z
 SUMMARY:Manchester City v Everton (Premier League)
@@ -2941,7 +2978,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-w16y89f9@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270304
 DTEND;VALUE=DATE:20270305
 SUMMARY:Bayern Munich v SC Freiburg (Bundesliga)
@@ -2955,7 +2992,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:real-madrid-w1b8aj22@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270307
 DTEND;VALUE=DATE:20270308
 SUMMARY:Villarreal v Real Madrid (La Liga)
@@ -2969,7 +3006,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:barcelona-w0q6mwtb@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270307
 DTEND;VALUE=DATE:20270308
 SUMMARY:Barcelona v Real Betis (La Liga)
@@ -2982,7 +3019,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-w1dvcjrn@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270307
 DTEND;VALUE=DATE:20270308
 SUMMARY:Borussia Dortmund v Bayern Munich (Bundesliga)
@@ -2996,7 +3033,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:psg-w0vy871i@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270307
 DTEND;VALUE=DATE:20270308
 SUMMARY:Paris Saint-Germain v Rennes (Ligue 1)
@@ -3008,7 +3045,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:arsenal-2645477-0btwrz7@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270313
 DTEND;VALUE=DATE:20270314
 SUMMARY:Chelsea v Arsenal (Premier League)
@@ -3021,7 +3058,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:man-city-2645478-1hw24g4@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20270313T150000Z
 DTEND:20270313T170000Z
 SUMMARY:Coventry City v Manchester City (Premier League)
@@ -3034,7 +3071,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:real-madrid-w1k1db7h@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270314
 DTEND;VALUE=DATE:20270315
 SUMMARY:Real Madrid v Espanyol (La Liga)
@@ -3048,7 +3085,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:barcelona-w1axw83s@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270314
 DTEND;VALUE=DATE:20270315
 SUMMARY:Barcelona v Deportivo A Coruña (La Liga)
@@ -3061,7 +3098,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-w1vbew60@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270314
 DTEND;VALUE=DATE:20270315
 SUMMARY:Bayern Munich v Mainz 05 (Bundesliga)
@@ -3075,7 +3112,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:psg-w15urvkr@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270314
 DTEND;VALUE=DATE:20270315
 SUMMARY:Auxerre v Paris Saint-Germain (Ligue 1)
@@ -3088,7 +3125,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:arsenal-2645485-17324c4@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270320
 DTEND;VALUE=DATE:20270321
 SUMMARY:Arsenal v Sunderland (Premier League)
@@ -3101,7 +3138,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:man-city-2645492-1k6kiy4@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20270320T150000Z
 DTEND:20270320T170000Z
 SUMMARY:Manchester City v Manchester United (Premier League)
@@ -3114,7 +3151,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:real-madrid-w01hmhl0@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270321
 DTEND;VALUE=DATE:20270322
 SUMMARY:Celta Vigo v Real Madrid (La Liga)
@@ -3127,7 +3164,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:barcelona-w07xdmyy@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270321
 DTEND;VALUE=DATE:20270322
 SUMMARY:Rayo Vallecano v Barcelona (La Liga)
@@ -3140,7 +3177,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-w1g9vqr3@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270321
 DTEND;VALUE=DATE:20270322
 SUMMARY:1. FC Köln v Bayern Munich (Bundesliga)
@@ -3154,7 +3191,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:psg-w053i1s7@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270321
 DTEND;VALUE=DATE:20270322
 SUMMARY:Paris Saint-Germain v Strasbourg (Ligue 1)
@@ -3167,7 +3204,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:real-madrid-w1ivzxee@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270404
 DTEND;VALUE=DATE:20270405
 SUMMARY:Real Madrid v Atlético Madrid (La Liga)
@@ -3181,7 +3218,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:barcelona-w13l3biq@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270404
 DTEND;VALUE=DATE:20270405
 SUMMARY:Barcelona v Sevilla (La Liga)
@@ -3194,7 +3231,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-w11ky72m@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270404
 DTEND;VALUE=DATE:20270405
 SUMMARY:Bayern Munich v Hamburger SV (Bundesliga)
@@ -3208,7 +3245,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:psg-w0642dvf@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270404
 DTEND;VALUE=DATE:20270405
 SUMMARY:Paris FC v Paris Saint-Germain (Ligue 1)
@@ -3221,7 +3258,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:arsenal-2645498-0w3pfjz@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270410
 DTEND;VALUE=DATE:20270411
 SUMMARY:Coventry City v Arsenal (Premier League)
@@ -3234,7 +3271,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:man-city-2645495-00dyrqb@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20270410T140000Z
 DTEND:20270410T160000Z
 SUMMARY:Bournemouth v Manchester City (Premier League)
@@ -3247,7 +3284,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:real-madrid-w0248ego@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270411
 DTEND;VALUE=DATE:20270412
 SUMMARY:Osasuna v Real Madrid (La Liga)
@@ -3260,7 +3297,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:barcelona-w1mj8xu2@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270411
 DTEND;VALUE=DATE:20270412
 SUMMARY:Racing Santander v Barcelona (La Liga)
@@ -3274,7 +3311,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-w03elp2z@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270411
 DTEND;VALUE=DATE:20270412
 SUMMARY:SC Paderborn v Bayern Munich (Bundesliga)
@@ -3288,7 +3325,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:psg-w1pkocly@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270411
 DTEND;VALUE=DATE:20270412
 SUMMARY:Paris Saint-Germain v Le Havre (Ligue 1)
@@ -3301,7 +3338,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:arsenal-2645505-0xucu5u@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270417
 DTEND;VALUE=DATE:20270418
 SUMMARY:Arsenal v Aston Villa (Premier League)
@@ -3314,7 +3351,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:man-city-2645512-03bh0tq@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20270417T140000Z
 DTEND:20270417T160000Z
 SUMMARY:Manchester City v Crystal Palace (Premier League)
@@ -3327,7 +3364,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:real-madrid-w0pomokj@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270418
 DTEND;VALUE=DATE:20270419
 SUMMARY:Getafe v Real Madrid (La Liga)
@@ -3340,7 +3377,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:barcelona-w086ouwe@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270418
 DTEND;VALUE=DATE:20270419
 SUMMARY:Barcelona v Espanyol (La Liga)
@@ -3354,7 +3391,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-w17wtbi2@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270418
 DTEND;VALUE=DATE:20270419
 SUMMARY:Bayern Munich v TSG Hoffenheim (Bundesliga)
@@ -3368,7 +3405,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:psg-w1mn7vmq@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270418
 DTEND;VALUE=DATE:20270419
 SUMMARY:Paris Saint-Germain v Lille (Ligue 1)
@@ -3381,7 +3418,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:real-madrid-w0rc85um@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270421
 DTEND;VALUE=DATE:20270422
 SUMMARY:Real Madrid v Elche (La Liga)
@@ -3394,7 +3431,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:barcelona-w0r9ai1d@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270421
 DTEND;VALUE=DATE:20270422
 SUMMARY:Celta Vigo v Barcelona (La Liga)
@@ -3407,7 +3444,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:arsenal-2645515-0kct8o5@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270424
 DTEND;VALUE=DATE:20270425
 SUMMARY:Bournemouth v Arsenal (Premier League)
@@ -3420,7 +3457,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:man-city-2645518-11rqzr7@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20270424T140000Z
 DTEND:20270424T160000Z
 SUMMARY:Chelsea v Manchester City (Premier League)
@@ -3433,7 +3470,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-w1vj08tb@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270425
 DTEND;VALUE=DATE:20270426
 SUMMARY:Werder Bremen v Bayern Munich (Bundesliga)
@@ -3447,7 +3484,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:psg-w0tbeauf@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270425
 DTEND;VALUE=DATE:20270426
 SUMMARY:Lorient v Paris Saint-Germain (Ligue 1)
@@ -3460,7 +3497,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:arsenal-2645525-09wz2no@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270501
 DTEND;VALUE=DATE:20270502
 SUMMARY:Arsenal v Tottenham Hotspur (Premier League)
@@ -3473,7 +3510,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:man-city-2645533-07dog6s@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20270501T140000Z
 DTEND:20270501T160000Z
 SUMMARY:Manchester City v Brentford (Premier League)
@@ -3486,7 +3523,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:real-madrid-w1dklxsy@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270502
 DTEND;VALUE=DATE:20270503
 SUMMARY:Levante v Real Madrid (La Liga)
@@ -3500,7 +3537,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:barcelona-w1gg15ad@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270502
 DTEND;VALUE=DATE:20270503
 SUMMARY:Barcelona v Osasuna (La Liga)
@@ -3513,7 +3550,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:psg-w1kpba7s@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270502
 DTEND;VALUE=DATE:20270503
 SUMMARY:Paris Saint-Germain v Angers (Ligue 1)
@@ -3526,7 +3563,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:arsenal-2645540-00l3cbc@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270508
 DTEND;VALUE=DATE:20270509
 SUMMARY:Leeds United v Arsenal (Premier League)
@@ -3539,7 +3576,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:man-city-2645541-0ipc8ef@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20270508T140000Z
 DTEND:20270508T160000Z
 SUMMARY:Manchester City v Liverpool (Premier League)
@@ -3552,7 +3589,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:real-madrid-w0mnchax@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270509
 DTEND;VALUE=DATE:20270510
 SUMMARY:Real Madrid v Barcelona (La Liga)
@@ -3566,7 +3603,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-w082crjr@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270509
 DTEND;VALUE=DATE:20270510
 SUMMARY:Bayern Munich v Borussia Mönchengladbach (Bundesliga)
@@ -3580,7 +3617,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:psg-w1wjsr2p@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20270509T184500Z
 DTEND:20270509T204500Z
 SUMMARY:Lyon v Paris Saint-Germain (Ligue 1)
@@ -3593,7 +3630,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:arsenal-2645545-1b95j8q@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270515
 DTEND;VALUE=DATE:20270516
 SUMMARY:Arsenal v Nottingham Forest (Premier League)
@@ -3606,7 +3643,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:man-city-2645551-028b610@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20270515T140000Z
 DTEND:20270515T160000Z
 SUMMARY:Ipswich Town v Manchester City (Premier League)
@@ -3619,7 +3656,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:real-madrid-w0xm47p0@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270516
 DTEND;VALUE=DATE:20270517
 SUMMARY:Real Madrid v Racing Santander (La Liga)
@@ -3632,7 +3669,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:barcelona-w04qvmws@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270516
 DTEND;VALUE=DATE:20270517
 SUMMARY:Real Sociedad v Barcelona (La Liga)
@@ -3646,7 +3683,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-w02rwnj3@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270516
 DTEND;VALUE=DATE:20270517
 SUMMARY:Bayer Leverkusen v Bayern Munich (Bundesliga)
@@ -3660,7 +3697,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:psg-w0wy8t6u@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270516
 DTEND;VALUE=DATE:20270517
 SUMMARY:Paris Saint-Germain v Nice (Ligue 1)
@@ -3673,7 +3710,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-w0x38vsw@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20270522T133000Z
 DTEND:20270522T153000Z
 SUMMARY:Bayern Munich v Eintracht Frankfurt (Bundesliga)
@@ -3687,7 +3724,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:psg-w0vrpwv8@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20270522T190000Z
 DTEND:20270522T210000Z
 SUMMARY:Troyes v Paris Saint-Germain (Ligue 1)
@@ -3700,7 +3737,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:real-madrid-w020gpje@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270523
 DTEND;VALUE=DATE:20270524
 SUMMARY:Alavés v Real Madrid (La Liga)
@@ -3714,7 +3751,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:barcelona-w127cxgx@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270523
 DTEND;VALUE=DATE:20270524
 SUMMARY:Barcelona v Málaga (La Liga)
@@ -3727,7 +3764,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:arsenal-2645558-18vcm42@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270523
 DTEND;VALUE=DATE:20270524
 SUMMARY:Everton v Arsenal (Premier League)
@@ -3740,7 +3777,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:man-city-2645551-1txgsnh@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20270523T140000Z
 DTEND:20270523T160000Z
 SUMMARY:Manchester City v Aston Villa (Premier League)
@@ -3753,7 +3790,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:psg-w0oqhh5d@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20270529T190000Z
 DTEND:20270529T210000Z
 SUMMARY:Paris Saint-Germain v Toulouse (Ligue 1)
@@ -3766,7 +3803,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:real-madrid-w1753n18@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270530
 DTEND;VALUE=DATE:20270531
 SUMMARY:Real Madrid v Deportivo A Coruña (La Liga)
@@ -3779,7 +3816,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:barcelona-w1chob96@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART;VALUE=DATE:20270530
 DTEND;VALUE=DATE:20270531
 SUMMARY:Getafe v Barcelona (La Liga)
@@ -3792,7 +3829,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:arsenal-2645565-0aatxz5@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20270530T150000Z
 DTEND:20270530T170000Z
 SUMMARY:Arsenal v Brighton & Hove Albion (Premier League)
@@ -3805,7 +3842,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:man-city-2645574-0e1gzpo@sportscalendar.local
-DTSTAMP:20260930T235633Z
+DTSTAMP:20261016T205806Z
 DTSTART:20270530T150000Z
 DTEND:20270530T170000Z
 SUMMARY:Sunderland v Manchester City (Premier League)

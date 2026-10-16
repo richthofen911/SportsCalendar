@@ -5,9 +5,14 @@
   "type": "module",
   "description": "Local fixture calendar for six European clubs, built from Wikipedia season pages",
   "scripts": {
+    "start": "node tools/serve.mjs",
     "refresh": "node tools/build.mjs",
     "refresh:force": "node tools/build.mjs --force",
     "serve": "node tools/serve.mjs",
+    "db:push": "node tools/db-push.mjs push",
+    "db:pull": "node tools/db-push.mjs pull",
+    "db:verify": "node tools/db-push.mjs verify",
+    "db:status": "node tools/db-push.mjs status",
     "publish": "node tools/publish.mjs",
     "scheduler:install": "node tools/install-scheduler.mjs",
     "scheduler:uninstall": "node tools/install-scheduler.mjs --uninstall",
@@ -15,5 +20,10 @@
   },
   "engines": {
     "node": ">=20.11"
+  },
+  "dependencies": {
+    "@neon/config": "^1.9.2",
+    "@neon/functions": "^0.11.0",
+    "pg": "^8.23.1"
   }
 }

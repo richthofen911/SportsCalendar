@@ -1,0 +1,39 @@
+# Render Blueprint for the Sports Calendar.
+#
+# Render runs the web service; the database lives on Neon, not here. The two
+# values Render cannot know are marked `sync: false`, so the dashboard asks for
+# them when you create the Blueprint instead of them being committed:
+#
+#   DATABASE_URL          pooled Neon connection string  (`neon env pull`)
+#   REFRESH_FUNCTION_URL  the Neon refresh Function's URL (`neon functions get refresh`)
+#
+# `ohio` is Render's aws-us-east-2 region, the same one the Neon project is in,
+# so queries do not cross the country.
+services:
+  - type: web
+    name: sports-calendar
+    runtime: node
+    plan: free
+    region: ohio
+    buildCommand: npm ci
+    startCommand: npm start
+    healthCheckPath: /healthz
+    autoDeploy: true
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      # Serving stale committed files must not look like success.
+      - key: REQUIRE_DATABASE
+        value: "true"
+      - key: DATABASE_URL
+        sync: false
+      # Read from the database at most once every 30s per instance.
+      - key: SNAPSHOT_TTL_MS
+        value: "30000"
+      # Shared secret between this service and the Neon refresh Function.
+      # The same value is already in `.env.local` (git-ignored) and on the
+      # deployed function; paste it here. Rotate it by changing all three.
+      - key: REFRESH_TOKEN
+        sync: false
+      - key: REFRESH_FUNCTION_URL
+        sync: false

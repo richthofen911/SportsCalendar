@@ -5,6 +5,14 @@ import path from "node:path";
 const ROOT = path.resolve(import.meta.dirname, "..");
 const CACHE_DIR = path.join(ROOT, ".cache");
 
+// A Neon Function has no writable project directory, so the cache is switched
+// off there with SPORTS_CALENDAR_CACHE=off and every page is fetched fresh.
+// Nothing else changes: the cache is an optimisation, never a source of truth.
+function cacheEnabled() {
+  const setting = process.env.SPORTS_CALENDAR_CACHE;
+  return setting !== "off" && setting !== "0" && setting !== "false";
+}
+
 const HEADERS = {
   // Wikipedia's robot policy asks for a contactable UA on API calls.
   "User-Agent":
@@ -47,11 +55,12 @@ async function requestJson(url) {
 }
 
 export async function fetchWikitext({ page, force = false }) {
-  await mkdir(CACHE_DIR, { recursive: true });
+  const useCache = cacheEnabled();
+  if (useCache) await mkdir(CACHE_DIR, { recursive: true });
   const slug = page.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
   const cacheFile = path.join(CACHE_DIR, `${slug}.json`);
 
-  if (!force && existsSync(cacheFile)) {
+  if (useCache && !force && existsSync(cacheFile)) {
     const cached = JSON.parse(await readFile(cacheFile, "utf8"));
     return { ...cached, fromCache: true };
   }
@@ -72,6 +81,6 @@ export async function fetchWikitext({ page, force = false }) {
     fetchedAt: new Date().toISOString(),
     fromCache: false,
   };
-  await writeFile(cacheFile, JSON.stringify(entry));
+  if (useCache) await writeFile(cacheFile, JSON.stringify(entry));
   return entry;
 }
