@@ -8,6 +8,7 @@ import path from "node:path";
 
 import { CLUBS, LEAGUES } from "./clubs.mjs";
 import { fetchWikitext } from "./wiki.mjs";
+import { sameTeam, pickByTeam } from "./teams.mjs";
 import {
   parseLeagueMatches,
   parseTeamNames,
@@ -28,56 +29,14 @@ const ESPN_IDS = {
 const UA = { "User-Agent": "SportsCalendar/1.0 (fixture verification)" };
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
-const NOISE = new Set([
-  "fc", "cf", "afc", "ac", "sc", "fk", "sk", "cp", "if", "ca", "club", "de", "the",
-  "04", "05", "09", "1899", "1900", "1907", "2004",
-]);
-
-function norm(name) {
-  return (name || "")
-    .normalize("NFD")
-    .replace(/[̀-ͯ]/g, "")
-    .toLowerCase()
-    .replace(/\./g, "")
-    .replace(/[^a-z0-9]+/g, " ")
-    .split(" ")
-    .filter((t) => t && !NOISE.has(t))
-    .join(" ");
-}
-
-const ALIAS = [
-  ["athletic club", "athletic bilbao"],
-  ["stade rennais", "rennes"],
-  ["real betis", "betis"],
-  ["sv elversberg", "elversberg"],
-  ["inter milan", "inter"],
-  ["olympique marseille", "marseille"],
-  ["olympique lyonnais", "lyon"],
-  ["1 fc heidenheim", "heidenheim"],
-  ["borussia monchengladbach", "monchengladbach"],
-  ["bayer 04 leverkusen", "leverkusen"],
-  ["manchester united", "man united"],
-];
-
-function sameTeam(a, b) {
-  const x = norm(a);
-  const y = norm(b);
-  if (!x || !y) return false;
-  if (x === y || x.includes(y) || y.includes(x)) return true;
-  return ALIAS.some((g) => g.includes(x) && g.includes(y));
-}
-
-// Ligue 1 has both Paris FC and Paris Saint-Germain, so containment alone can
-// pair the wrong pair of clubs. Try exact names first, then aliases, and only
-// then fall back to containment.
-function pickByTeam(rows, name, teamOf) {
-  const target = norm(name);
-  return (
-    rows.find((r) => norm(teamOf(r)) === target) ||
-    rows.find((r) => ALIAS.some((g) => g.includes(target) && g.includes(norm(teamOf(r))))) ||
-    rows.find((r) => sameTeam(teamOf(r), name)) ||
-    null
-  );
+// ESPN returns `score` as a string on soccer competitors (and as `{ value }`
+// elsewhere), so read both. Before this it was only `.value`, which was always
+// undefined here and made this check compare against "undefined-undefined".
+function espnScore(competitor) {
+  const score = competitor?.score;
+  if (typeof score === "string" && score.trim() !== "") return score;
+  if (score && typeof score === "object" && score.value != null) return String(score.value);
+  return null;
 }
 
 const data = JSON.parse(readFileSync(path.join(ROOT, "data/calendar.json"), "utf8"));
@@ -118,12 +77,13 @@ let failures = 0;
           bad.push(`${club.id} ${day}: ground ours=${m.home ? "H" : "A"} espn=${clubHome ? "H" : "A"}`);
         }
         if (c.status?.type?.state === "post" && m.score) {
-          const espnScore = clubHome
-            ? `${home.score?.value}-${away.score?.value}`
-            : `${away.score?.value}-${home.score?.value}`;
+          const homeScore = espnScore(home);
+          const awayScore = espnScore(away);
+          if (homeScore == null || awayScore == null) continue;
+          const espnLined = clubHome ? `${homeScore}-${awayScore}` : `${awayScore}-${homeScore}`;
           const [hg, ag] = m.score.split("-");
           const mine = m.home ? `${hg}-${ag}` : `${ag}-${hg}`;
-          if (mine !== espnScore) bad.push(`${club.id} ${day}: score ours=${mine} espn=${espnScore}`);
+          if (mine !== espnLined) bad.push(`${club.id} ${day}: score ours=${mine} espn=${espnLined}`);
         }
         if (m.kickoffUtc && e.date) {
           const espnAt = e.date.endsWith("Z") ? e.date : `${e.date}Z`;

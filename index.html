@@ -240,6 +240,7 @@
       .rhead { color: var(--muted); font-weight: 500; font-size: 11.5px; text-transform: uppercase; letter-spacing: .06em; }
       .c-when { white-space: nowrap; font-variant-numeric: tabular-nums; }
       .c-score { font-variant-numeric: tabular-nums; font-weight: 600; white-space: nowrap; }
+      .liveTag { display: inline-block; margin-left: 6px; padding: 1px 5px; border-radius: 4px; background: #d32f2f; color: #fff; font-size: 10px; font-weight: 700; letter-spacing: .04em; vertical-align: 1px; }
       .cbadge { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: var(--c); margin-right: 6px; }
       /* A crest in place of the colour dot. The span keeps the club colour
          behind the image, so a missing logo degrades to exactly the dot it
@@ -647,14 +648,21 @@
       }
 
       // ---- filtering ----
+      // A fixture either has a final score or it does not. "live" (ESPN has a
+      // score, the match is still running) and "unknown-result" (kicked off, no
+      // score yet) are both unfinished, so they belong under Upcoming — before
+      // this change a match vanished from every filter but All the moment it
+      // started.
+      const isFinished = (m) => m.status === "played";
+
       function visible() {
         const q = state.q.trim().toLowerCase();
         return fixtures.filter((m) => {
           if (!state.categories.has(m.category)) return false;
           if (m.category === "football" && !m.clubs.some((c) => state.clubs.has(c))) return false;
           if (state.competition !== "all" && eventCompetition(m) !== state.competition) return false;
-          if (state.status === "upcoming" && m.status !== "upcoming") return false;
-          if (state.status === "played" && m.status !== "played") return false;
+          if (state.status === "upcoming" && isFinished(m)) return false;
+          if (state.status === "played" && !isFinished(m)) return false;
           if (state.day && dayKeyOf(m) !== state.day) return false;
           if (q) {
             const hay = `${eventTitle(m)} ${eventCompetition(m)} ${eventVenue(m)} ${m.location || ""} ${m.round || ""}`.toLowerCase();
@@ -671,9 +679,9 @@
         const today = keyOf(new Date()).slice(0, 7);
         const pool =
           state.status === "upcoming"
-            ? fixtures.filter((m) => m.status === "upcoming")
+            ? fixtures.filter((m) => !isFinished(m))
             : state.status === "played"
-              ? fixtures.filter((m) => m.status === "played")
+              ? fixtures.filter(isFinished)
               : fixtures;
         if (pool.some((m) => dayKeyOf(m).startsWith(today))) return today;
         // Nearest in time, so Played opens on the latest results rather than August.
@@ -751,11 +759,13 @@
       }
 
       function renderTally(rows) {
-        const upcoming = rows.filter((m) => m.status === "upcoming").length;
-        const played = rows.filter((m) => m.status === "played").length;
+        const live = rows.filter((m) => m.status === "live").length;
+        const upcoming = rows.filter((m) => !isFinished(m) && m.status !== "live").length;
+        const played = rows.filter(isFinished).length;
         const tbc = rows.filter((m) => !m.kickoffUtc).length;
         const parts = [
           `${rows.length} fixtures`,
+          live ? `${live} live` : "",
           `${upcoming} upcoming`,
           `${played} played`,
           tbc ? `${tbc} kick-off TBC` : "",
@@ -824,6 +834,17 @@
         }).join("")}</div>`;
       }
 
+      // A live match shows its running score and the ESPN clock, so a 1-0 at
+      // 63' never looks like a full-time result sitting in the Upcoming list.
+      function scoreCell(m) {
+        const result =
+          raceResult(m) ?? (m.score ? `${m.score}${m.scoreExtra ? ` ${m.scoreExtra}` : ""}` : null);
+        if (m.status === "live") {
+          return `${result || ""}<span class="liveTag">${m.liveMinute || "LIVE"}</span>`;
+        }
+        return result || '<i class="dash">—</i>';
+      }
+
       function tableHtml(list) {
         const head = `<div class="rhead"><span>Kick-off</span><span>Fixture</span><span>Competition</span><span>Your clubs</span><span>Result</span><span>Venue</span></div>`;
         const rows = list
@@ -843,7 +864,7 @@
               <span class="c-fixture">${eventTitle(m)}</span>
               <span class="c-comp">${eventCompetition(m)}${m.phase ? ` <span class="ground">· ${m.phase}</span>` : ""}${m.round ? ` <span class="ground">· ${m.category === "formula-1" ? "round" : "rd"} ${m.round}</span>` : ""}</span>
               <span class="c-clubs">${badges}${grounds}</span>
-              <span class="c-score">${raceResult(m) ?? (m.score ? `${m.score}${m.scoreExtra ? ` ${m.scoreExtra}` : ""}` : '<i class="dash">—</i>')}</span>
+              <span class="c-score">${scoreCell(m)}</span>
               <span class="c-venue">${eventVenue(m) || "—"}</span>
             </div>`;
           })
@@ -878,6 +899,7 @@
           "Your clubs",
           m.clubs.map((id) => `${clubMark(id)}${CLUBS[id].name} — ${sideOf(m, id) === "home" ? "home" : "away"}`).join("<br>"),
         ]);
+        if (m.status === "live") rows.push(["Status", `<span class="liveTag">${m.liveMinute || "LIVE"}</span> in play — score from ESPN`]);
         if (m.score) rows.push(["Result", `${m.homeTeam} ${m.score.replace("-", "–")} ${m.awayTeam}${m.scoreExtra ? ` (${m.scoreExtra})` : ""}`]);
         if (m.homeEvents) rows.push([m.homeTeam, m.homeEvents]);
         if (m.awayEvents) rows.push([m.awayTeam, m.awayEvents]);

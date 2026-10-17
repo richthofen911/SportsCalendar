@@ -533,16 +533,16 @@ const LIVE_BEFORE_MINUTES = 5;
 const LIVE_AFTER_MINUTES = 150;
 
 /**
- * Fixtures whose 15-minute refresh window is open right now.
+ * Fixtures whose refresh window is open right now.
  *
- * This has to be a clock window rather than a status: Wikipedia only records a
- * score once a match is over, so a fixture that kicked off forty minutes ago
- * still reads as `upcoming` or `unknown-result`. Status is used only to stop
+ * This has to be a clock window rather than a status: a fixture that kicked off
+ * forty minutes ago is in play but not yet finished. Status is used only to stop
  * polling a match whose result is already in.
  */
 export async function liveWindow(pool, now = new Date()) {
   const { rows } = await pool.query(
-    `select id, name, home_team, away_team, competition, kickoff_utc, status
+    `select id, name, home_team, away_team, competition, kickoff_utc, status, home, score,
+            to_char(date, 'YYYY-MM-DD') as date
        from events
       where kickoff_utc is not null
         and status <> 'played'
@@ -552,6 +552,40 @@ export async function liveWindow(pool, now = new Date()) {
     [now.toISOString(), LIVE_BEFORE_MINUTES, LIVE_AFTER_MINUTES]
   );
   return rows;
+}
+
+/**
+ * Write result patches onto stored events, in place.
+ *
+ * This is the cheap path: no Wikipedia, no rebuild, just the handful of rows
+ * whose score changed. `doc` is rewritten along with the typed columns because
+ * the UI reads the JSON, not the table.
+ */
+export async function applyResultPatches(pool, patches) {
+  if (!patches || !patches.length) return { updated: 0 };
+  const client = await pool.connect();
+  try {
+    await client.query("begin");
+    let updated = 0;
+    for (const { id, patch } of patches) {
+      const { rows } = await client.query("select doc from events where id = $1 for update", [id]);
+      if (!rows.length) continue;
+      const doc = { ...rows[0].doc, ...patch };
+      if (patch.liveMinute == null) delete doc.liveMinute;
+      await client.query(
+        "update events set score = $2, status = $3, doc = $4::jsonb where id = $1",
+        [id, doc.score ?? null, doc.status, JSON.stringify(doc)]
+      );
+      updated++;
+    }
+    await client.query("commit");
+    return { updated };
+  } catch (err) {
+    await client.query("rollback").catch(() => {});
+    throw err;
+  } finally {
+    client.release();
+  }
 }
 
 /** When the calendar was last rebuilt successfully, or null if never. */

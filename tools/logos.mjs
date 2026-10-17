@@ -149,10 +149,15 @@ export async function refreshLogos({ force = false, log = console.log } = {}) {
     }
   }
 
-  await writeFile(
-    MANIFEST,
-    JSON.stringify({ updatedAt: new Date().toISOString(), images }, null, 2) + "\n"
-  );
+  // Only rewrite the manifest when something actually changed, so a routine
+  // `npm run refresh` does not dirty the working tree with a new timestamp.
+  const previousImages = JSON.stringify(previous.images || {});
+  if (downloaded > 0 || JSON.stringify(images) !== previousImages) {
+    await writeFile(
+      MANIFEST,
+      JSON.stringify({ updatedAt: new Date().toISOString(), images }, null, 2) + "\n"
+    );
+  }
 
   return { downloaded, skipped, failed, kept };
 }

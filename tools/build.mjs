@@ -14,7 +14,7 @@ const ROOT = path.resolve(import.meta.dirname, "..");
 const force = process.argv.includes("--force");
 
 const { payload, files, failed, report } = await buildCalendar({ force });
-const { report: detail, timeConfidence, comps, f1Report, standingsReport, counts } = report;
+const { report: detail, timeConfidence, comps, f1Report, standingsReport, espn, counts } = report;
 
 console.log(
   `combined calendar: ${counts.combined} entries (${counts.merged} shared fixtures merged)`
@@ -36,6 +36,9 @@ console.log(
   `\nfootball rows: ${counts.football}   f1 rounds: ${counts.f1}   league tables: ${counts.standings}   ics files: ${counts.icsFiles}`
 );
 console.log("time confidence:", JSON.stringify(timeConfidence));
+console.log(
+  `espn results: ${espn.patched} rows updated (${espn.live} in play) from ${espn.requests} scoreboard request(s)`
+);
 console.log("skipped blocks:", detail.skipped.length);
 for (const s of detail.skipped.slice(0, 10)) console.log("  ", JSON.stringify(s));
 console.log("duplicates:", detail.duplicates.length);

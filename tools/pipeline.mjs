@@ -5,6 +5,7 @@
 // with a different ending — Postgres instead of files — so the work moved here
 // and both callers now share it. Nothing in this module touches the filesystem.
 import { CLUBS, CATEGORIES, LEAGUES, clubLogo, leagueLogo } from "./clubs.mjs";
+import { collectResultPatches } from "./espn.mjs";
 import { fetchWikitext } from "./wiki.mjs";
 import { parseSeason, fixtureIdentity, CLUB_ALIASES } from "./parse.mjs";
 import { parseF1Calendar, parseF1Results, attachStartTimes } from "./f1.mjs";
@@ -317,10 +318,40 @@ export async function buildCalendar({ force = false, now = new Date(), log = con
     return ka < kb ? -1 : ka > kb ? 1 : 0;
   });
 
+  // ESPN owns the result, Wikipedia owns the fixture. A rebuilt calendar must
+  // not overwrite a score ESPN already published with a page that has not been
+  // edited yet, so the same overlay the live tick uses is applied here.
+  const espnReport = { patched: 0, live: 0, requests: 0 };
+  try {
+    const { patches, requests } = await collectResultPatches(events, {
+      now,
+      beforeHours: 72,
+      afterHours: 6,
+      log,
+    });
+    const byId = new Map(events.map((e) => [e.id, e]));
+    for (const { id, patch } of patches) {
+      const event = byId.get(id);
+      if (!event) continue;
+      const { liveMinute, ...rest } = patch;
+      Object.assign(event, rest);
+      // A finished match must not carry a stale clock.
+      if (liveMinute) event.liveMinute = liveMinute;
+      else delete event.liveMinute;
+      espnReport.patched++;
+      if (patch.status === "live") espnReport.live++;
+    }
+    espnReport.requests = requests;
+  } catch (err) {
+    // A failed lookup leaves the Wikipedia result in place, which is exactly
+    // where this started; it must not fail the whole build.
+    console.error("ESPN results unavailable:", err.message);
+  }
+
   const payload = {
     generatedAt,
     season: "2026-27",
-    source: "Wikipedia season pages and league table templates; F1 start times from ESPN",
+    source: "Wikipedia season pages and league table templates; results and F1 start times from ESPN",
     categories: CATEGORIES.map((c) => ({ ...c })),
     clubs: CLUBS.map(({ id, name, short, color, page }) => ({
       id,
@@ -355,6 +386,7 @@ export async function buildCalendar({ force = false, now = new Date(), log = con
       comps,
       f1Report,
       standingsReport,
+      espn: espnReport,
       counts: {
         football: all.length,
         f1: f1Events.length,

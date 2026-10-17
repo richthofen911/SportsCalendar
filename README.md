@@ -168,31 +168,49 @@ boot instead of quietly serving stale files.
 
 ### Refreshing during a match
 
-Scores are what change during a match, and only during a match, so the trigger
-fires every quarter hour but the function almost always declines to do anything:
+The score is the part that changes while you are watching, and it is the part
+Wikipedia is worst at: its season pages are edited by hand, so a result can land
+hours after full time, or not on the same day at all. ESPN publishes the score
+while the match is running and again at the final whistle, so **results come from
+ESPN and the schedule still comes from Wikipedia** — fixtures, venues, referees,
+kick-off times and the league tables are unchanged.
+
+That makes the two kinds of tick different work:
+
+| Tick | When | What it does |
+| --- | --- | --- |
+| **live** | a fixture is in play | 1–3 ESPN scoreboard requests, patching only the scores and clock of the rows on screen |
+| **full** | nothing live, or 12 h since the last full rebuild | the Wikipedia parse, with the ESPN result overlay applied, replacing the whole snapshot |
+| **skip** | otherwise | two small queries and exit |
 
 ```
-kick-off − 5 min  ┌──────────────────────────────────┐  kick-off + 150 min
-                  │  a rebuild every 15 minutes      │
-──────────────────┘  (14 Wikipedia pages, ~35 s)    └────────────────────
-       the tick returns two small queries and exits
+kick-off − 5 min  ┌────────────────────────────────────────────────┐  +150 min
+                  │  every 15 min: ESPN, 1–3 requests, ~1 s        │
+──────────────────┘  (no Wikipedia, no snapshot rewrite)          └──────────
+       a tick with nothing live costs two queries and exits
 ```
 
-"In play" is a clock window, not a status. Wikipedia only records a score once a
-match is over, so a fixture that kicked off forty minutes ago still reads as
-`upcoming` or `unknown-result` — the window is what makes it pollable. It runs
-from five minutes before kick-off to two and a half hours after, which absorbs
-stoppage time, extra time and penalties, a Grand Prix running long, and a delayed
-start. `status = 'played'` ends it early.
+"In play" is a clock window, not a status. A fixture that kicked off forty
+minutes ago is live but not finished, so the window runs from five minutes before
+kick-off to two and a half hours after — enough for stoppage time, extra time and
+penalties, a Grand Prix running long, or a delayed start. `status = 'played'`
+ends it early. During that window the row shows the running score and the ESPN
+clock (`0-1` with a `67'` badge) and stays under **Upcoming**, because it is not
+a result yet.
 
-With nothing live, the function still rebuilds if the data is more than twelve
-hours old (`REFRESH_MAX_AGE_HOURS` if you want a different floor), which is what
-keeps the old twice-daily rhythm. A quiet tick returns
+The full rebuild applies the same overlay, which matters more than it looks: a
+rebuild that ignored ESPN would happily overwrite a score it had just published
+with the empty one Wikipedia still had.
+
+With nothing live, the function rebuilds once the data is more than twelve hours
+old (`REFRESH_MAX_AGE_HOURS` for a different floor), which preserves the old
+twice-daily rhythm. A quiet tick returns
 `{"ok":true,"skipped":true,"reason":"no match in play"}` and logs one line.
 
-That leaves the cost at roughly two rebuilds on a quiet day and one per quarter
-hour while a fixture is actually running — around 110 Wikipedia requests for a
-full match, spread two seconds apart.
+The cost is now roughly two Wikipedia crawls on a quiet day and a handful of ESPN
+requests per quarter hour while a fixture is running, instead of fourteen
+Wikipedia pages every time — which also keeps the schedule clear of Wikipedia's
+rate limit on a busy Saturday.
 
 ### Logos
 
@@ -358,6 +376,8 @@ tools/db.mjs        the Postgres schema, and reading/writing a snapshot
 tools/db-push.mjs   CLI: db:push / db:pull / db:verify / db:status
 tools/parse.mjs     Wikipedia markup → normalised matches
 tools/wiki.mjs      throttled fetch with .cache/
+tools/espn.mjs      live + final results from ESPN's public scoreboard
+tools/teams.mjs     club-name normalisation shared by ESPN matching and verify
 tools/logos.mjs     club crests + league logos into assets/logos/
 tools/ics.mjs       RFC 5545 writer (CRLF, 75-octet folding, escaping)
 tools/f1.mjs        F1 calendar + results, ESPN start times
@@ -397,4 +417,6 @@ calendar/           .ics files (generated)
   combined calendar and month grid merge them and list both clubs.
 
 Source: each club's 2026-27 season page on the English Wikipedia, parsed per
-refresh.
+refresh, for the fixtures, venues, officials and league tables. Results and F1
+start times come from ESPN, which publishes them while the match is running
+rather than when someone gets round to editing a page.
