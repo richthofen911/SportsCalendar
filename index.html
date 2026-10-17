@@ -248,6 +248,8 @@
       .mark { display: inline-flex; width: 15px; height: 15px; border-radius: 50%; background: var(--c); overflow: hidden; vertical-align: -3px; margin-right: 6px; flex: 0 0 auto; }
       .mark img { width: 100%; height: 100%; object-fit: contain; display: block; }
       .mark.sm { width: 12px; height: 12px; margin-right: 5px; }
+      /* The month pill is 11.5px text, so the badge shrinks with it. */
+      .mark.xs { width: 12px; height: 12px; margin-right: 3px; vertical-align: -1px; }
       /* League marks sit on a light chip: these logos are drawn for white
          backgrounds and the Premier League lion in particular disappears
          against the dark theme. */
@@ -647,6 +649,18 @@
         return m.score ? `${label(m, "home")} ${m.score} ${label(m, "away")}` : `${label(m, "home")} v ${label(m, "away")}`;
       }
 
+      // The month pill puts both clubs on one line and has no "your clubs"
+      // column to carry a badge, so each tracked club's crest sits immediately
+      // before its own name — the same place it appears in List and Phone.
+      function eventLineHtml(m) {
+        if (m.category === "formula-1") return eventLine(m);
+        const home = m.clubs.find((c) => sideOf(m, c) === "home");
+        const away = m.clubs.find((c) => sideOf(m, c) === "away");
+        const mark = (id) => (id ? clubMark(id, "xs") : "");
+        const separator = m.score ? ` ${m.score} ` : " v ";
+        return `${mark(home)}${label(m, "home")}${separator}${mark(away)}${label(m, "away")}`;
+      }
+
       // ---- filtering ----
       // A fixture either has a final score or it does not. "live" (ESPN has a
       // score, the match is still running) and "unknown-result" (kicked off, no
@@ -820,7 +834,7 @@
         const ground = m.category === "football" && m.clubs.length === 1 ? ` ${sideOf(m, m.clubs[0]) === "home" ? "H" : "A"}` : "";
         return `<button class="ev ${resultClass(m)}" style="--c:${eventColor(m)}" data-fixture="${m.fixtureKey}"
           title="${eventCompetition(m)} · ${eventTitle(m)}">
-          <span class="t">${time}${ground}</span> <span class="x">${eventLine(m)}</span>${m.kickoffUtc ? "" : ' <span class="t">TBC</span>'}
+          <span class="t">${time}${ground}</span> <span class="x">${eventLineHtml(m)}</span>${m.kickoffUtc ? "" : ' <span class="t">TBC</span>'}
         </button>`;
       }
 

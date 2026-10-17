@@ -225,6 +225,19 @@ are trademarks — so vendoring them here is a deliberate choice for this
 repository rather than a general-purpose licence. If a logo is ever missing the
 UI falls back to the club's colour dot, so the page degrades instead of breaking.
 
+Where the crest appears differs by layout, because the space does:
+
+| Layout | Placement |
+| --- | --- |
+| **Month** | beside each tracked club inside the day pill — the pill carries both clubs on one line, so the badge sits immediately before its own name |
+| **List** | in the *Your clubs* column, beside the short code and H/A marker |
+| **Phone** | the same row markup as List, so the same column — re-flowed into the card |
+| **Standings** | beside each tracked club, with the league's mark on the table heading |
+
+Only the six tracked clubs have crests. In a fixture against, say, Ipswich Town
+the badge marks your club and the opponent stays plain text — the same rule the
+colour dot always followed.
+
 ### The database
 
 Seven tables. `events` and `standings_rows` are ordinary columns you can query
