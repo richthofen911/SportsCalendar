@@ -1,0 +1,75 @@
+{
+  "updatedAt": "2026-10-17T15:49:28.136Z",
+  "images": {
+    "real-madrid": {
+      "page": "Real Madrid CF",
+      "source": "https://thumb.wikimedia.org/wikipedia/en/thumb/5/56/Real_Madrid_CF.svg/250px-Real_Madrid_CF.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "contentType": "image/png",
+      "bytes": 62610,
+      "fetchedAt": "2026-10-17T15:49:10.280Z"
+    },
+    "barcelona": {
+      "page": "FC Barcelona",
+      "source": "https://thumb.wikimedia.org/wikipedia/en/thumb/4/47/FC_Barcelona_%28crest%29.svg/250px-FC_Barcelona_%28crest%29.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "contentType": "image/png",
+      "bytes": 19694,
+      "fetchedAt": "2026-10-17T15:49:12.130Z"
+    },
+    "arsenal": {
+      "page": "Arsenal F.C.",
+      "source": "https://thumb.wikimedia.org/wikipedia/en/thumb/5/53/Arsenal_FC.svg/250px-Arsenal_FC.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "contentType": "image/png",
+      "bytes": 41620,
+      "fetchedAt": "2026-10-17T15:49:14.172Z"
+    },
+    "man-city": {
+      "page": "Manchester City F.C.",
+      "source": "https://thumb.wikimedia.org/wikipedia/en/thumb/e/eb/Manchester_City_FC_badge.svg/250px-Manchester_City_FC_badge.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "contentType": "image/png",
+      "bytes": 48217,
+      "fetchedAt": "2026-10-17T15:49:16.219Z"
+    },
+    "bayern": {
+      "page": "FC Bayern Munich",
+      "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/FC_Bayern_M%C3%BCnchen_logo_%282024%29.svg/250px-FC_Bayern_M%C3%BCnchen_logo_%282024%29.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "contentType": "image/png",
+      "bytes": 34299,
+      "fetchedAt": "2026-10-17T15:49:18.136Z"
+    },
+    "psg": {
+      "page": "Paris Saint-Germain F.C.",
+      "source": "https://thumb.wikimedia.org/wikipedia/en/thumb/a/a7/Paris_Saint-Germain_F.C..svg/250px-Paris_Saint-Germain_F.C..svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "contentType": "image/png",
+      "bytes": 32299,
+      "fetchedAt": "2026-10-17T15:49:20.133Z"
+    },
+    "league-premier-league": {
+      "page": "Premier League",
+      "source": "https://thumb.wikimedia.org/wikipedia/en/thumb/f/f2/Premier_League_Logo.svg/250px-Premier_League_Logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "contentType": "image/png",
+      "bytes": 5709,
+      "fetchedAt": "2026-10-17T15:49:22.129Z"
+    },
+    "league-la-liga": {
+      "page": "La Liga",
+      "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/LaLiga_EA_Sports_2023_Vertical_Logo.svg/250px-LaLiga_EA_Sports_2023_Vertical_Logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "contentType": "image/png",
+      "bytes": 5206,
+      "fetchedAt": "2026-10-17T15:49:24.128Z"
+    },
+    "league-bundesliga": {
+      "page": "Bundesliga",
+      "source": "https://thumb.wikimedia.org/wikipedia/en/thumb/d/df/Bundesliga_logo_%282017%29.svg/250px-Bundesliga_logo_%282017%29.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "contentType": "image/png",
+      "bytes": 10725,
+      "fetchedAt": "2026-10-17T15:49:26.210Z"
+    },
+    "league-ligue-1": {
+      "page": "Ligue 1",
+      "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Logo_Ligue_1_McDonald%27s_2024.svg/250px-Logo_Ligue_1_McDonald%27s_2024.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "contentType": "image/png",
+      "bytes": 13315,
+      "fetchedAt": "2026-10-17T15:49:28.136Z"
+    }
+  }
+}

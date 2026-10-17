@@ -31,11 +31,18 @@ async function throttle() {
   lastRequestAt = Date.now();
 }
 
-async function requestJson(url) {
+/**
+ * One request to Wikipedia, spaced out and backing off on 429.
+ *
+ * Exported so `tools/logos.mjs` shares this throttle rather than inventing its
+ * own: the rate limit is per client, and a build now makes a couple of dozen
+ * requests between the pages and the crests.
+ */
+export async function politeFetch(url, { headers = {}, ...rest } = {}) {
   let delay = 2000;
   for (let attempt = 1; attempt <= 5; attempt++) {
     await throttle();
-    const res = await fetch(url, { headers: HEADERS });
+    const res = await fetch(url, { headers: { ...HEADERS, ...headers }, ...rest });
     if (res.status === 429) {
       const retryAfter = Number(res.headers.get("retry-after"));
       const waitMs = Number.isFinite(retryAfter) ? retryAfter * 1000 : delay;
@@ -49,9 +56,22 @@ async function requestJson(url) {
     if (!res.ok) {
       throw new Error(`HTTP ${res.status} for ${url}`);
     }
-    return res.json();
+    return res;
   }
   throw new Error(`gave up after repeated 429s: ${url}`);
+}
+
+export async function fetchJson(url) {
+  return (await politeFetch(url)).json();
+}
+
+/** Fetch an image as bytes, keeping the content type for validation. */
+export async function fetchBytes(url) {
+  const res = await politeFetch(url, { headers: { Accept: "image/*,*/*;q=0.8" } });
+  return {
+    bytes: Buffer.from(await res.arrayBuffer()),
+    contentType: res.headers.get("content-type") || "",
+  };
 }
 
 export async function fetchWikitext({ page, force = false }) {
@@ -70,7 +90,7 @@ export async function fetchWikitext({ page, force = false }) {
     "&prop=wikitext&redirects=1&disableeditsection=1&page=" +
     encodeURIComponent(page);
 
-  const body = await requestJson(api);
+  const body = await fetchJson(api);
   if (body.error) throw new Error(`${body.error.code}: ${body.error.info}`);
 
   const entry = {

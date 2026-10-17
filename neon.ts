@@ -27,12 +27,14 @@ export default defineConfig({
     },
   },
   triggers: {
-    "calendar-twice-daily": {
+    "calendar-live": {
       type: "schedule",
       function: "refresh",
-      // 07:15 and 19:15 UTC — the same twice-daily rhythm as the LaunchAgent,
-      // expressed in the only clock a cron trigger has.
-      cron: "15 7,19 * * *",
+      // Every quarter hour. The function does almost nothing on a tick with no
+      // match in play — two small queries — and only then does it consider a
+      // full rebuild. That is what keeps a matchday fresh without crawling
+      // Wikipedia 96 times a day.
+      cron: "*/15 * * * *",
       functionPath: "/refresh",
     },
   },

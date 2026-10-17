@@ -21,7 +21,7 @@ function step(label, args) {
   if (r.status !== 0) throw new Error(`${label} exited ${r.status}`);
 }
 
-const generated = ["data/calendar.js", "data/calendar.json"];
+const generated = ["data/calendar.js", "data/calendar.json", "assets/logos"];
 const icsDir = path.join(ROOT, "calendar");
 if (existsSync(icsDir)) {
   for (const f of spawnSync("/bin/sh", ["-c", "ls calendar/*.ics"], { cwd: ROOT, encoding: "utf8" }).stdout.split("\n")) {

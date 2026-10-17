@@ -142,7 +142,7 @@ A static file cannot keep a copy of the calendar in a database or refresh itself
 while this Mac is asleep. Those two jobs are what the deployment adds.
 
 ```
-                         cron 07:15 & 19:15 UTC
+                    cron */15, gated on a match in play
                                    │
                                    ▼
    Wikipedia / ESPN ──▶  Neon Function `refresh`  ──▶  Postgres on Neon
@@ -156,8 +156,8 @@ while this Mac is asleep. Those two jobs are what the deployment adds.
 | --- | --- | --- |
 | Project `sports-calendar` | Neon, `aws-us-east-2` | Holds the calendar in Postgres |
 | Function `refresh` | branch `main` | Re-runs the build, replaces every row |
-| Trigger `calendar-twice-daily` | `15 7,19 * * *` UTC | Calls that function twice a day |
-| Web service | Render, `render.yaml` | Serves the site and the `.ics` files from Postgres |
+| Trigger `calendar-live` | `*/15 * * * *` UTC | Ticks every 15 minutes; rebuilds only when a match is in play |
+| Web service | Render, `render.yaml` | Serves the site, the logos and the `.ics` files from Postgres |
 
 The web service reads the database and serves `/data/calendar.js` and
 `/calendar/*.ics` from it, so the page needs no change at all — it still just
@@ -165,6 +165,47 @@ loads a script tag. Without `DATABASE_URL` the server falls back to the
 committed files, which is the behaviour `npm run serve` always had; the Render
 blueprint sets `REQUIRE_DATABASE=true` so a missing connection string stops the
 boot instead of quietly serving stale files.
+
+### Refreshing during a match
+
+Scores are what change during a match, and only during a match, so the trigger
+fires every quarter hour but the function almost always declines to do anything:
+
+```
+kick-off − 5 min  ┌──────────────────────────────────┐  kick-off + 150 min
+                  │  a rebuild every 15 minutes      │
+──────────────────┘  (14 Wikipedia pages, ~35 s)    └────────────────────
+       the tick returns two small queries and exits
+```
+
+"In play" is a clock window, not a status. Wikipedia only records a score once a
+match is over, so a fixture that kicked off forty minutes ago still reads as
+`upcoming` or `unknown-result` — the window is what makes it pollable. It runs
+from five minutes before kick-off to two and a half hours after, which absorbs
+stoppage time, extra time and penalties, a Grand Prix running long, and a delayed
+start. `status = 'played'` ends it early.
+
+With nothing live, the function still rebuilds if the data is more than twelve
+hours old (`REFRESH_MAX_AGE_HOURS` if you want a different floor), which is what
+keeps the old twice-daily rhythm. A quiet tick returns
+`{"ok":true,"skipped":true,"reason":"no match in play"}` and logs one line.
+
+That leaves the cost at roughly two rebuilds on a quiet day and one per quarter
+hour while a fixture is actually running — around 110 Wikipedia requests for a
+full match, spread two seconds apart.
+
+### Logos
+
+Club crests and league logos live in `assets/logos/` as committed PNGs, not
+hotlinked. `npm run refresh` asks Wikipedia once for every lead image (one batched
+call) and only re-downloads an image whose source changed; `assets/logos/manifest.json`
+records where each one came from. A failed or missing image keeps the file already
+on disk and never fails the build.
+
+These are non-free, fair-use images on Wikipedia — crests and league wordmarks
+are trademarks — so vendoring them here is a deliberate choice for this
+repository rather than a general-purpose licence. If a logo is ever missing the
+UI falls back to the club's colour dot, so the page degrades instead of breaking.
 
 ### The database
 
@@ -229,8 +270,8 @@ both are fine for a personal calendar.
 
 ### Refreshing
 
-The cron trigger is the normal path — nothing has to be awake. To refresh by
-hand, either wait for the next tick or call the Function:
+The trigger is the normal path — nothing has to be awake. To refresh by hand,
+either wait for the next tick or call the Function:
 
 ```sh
 set -a; . ./.env.local; set +a
@@ -238,6 +279,7 @@ curl -X POST "${NEON_FUNCTION_REFRESH_BASE_URL}/refresh" \
      -H "Authorization: Bearer $REFRESH_TOKEN"
 ```
 
+A manual call always rebuilds; only the scheduled ticks are allowed to decline.
 A refresh fetches fourteen Wikipedia pages with a two-second gap and writes
 every row in one transaction, so it takes about 35 seconds and the site never
 shows a half-written calendar. `POST /api/refresh` on the Render service does the same
@@ -316,6 +358,7 @@ tools/db.mjs        the Postgres schema, and reading/writing a snapshot
 tools/db-push.mjs   CLI: db:push / db:pull / db:verify / db:status
 tools/parse.mjs     Wikipedia markup → normalised matches
 tools/wiki.mjs      throttled fetch with .cache/
+tools/logos.mjs     club crests + league logos into assets/logos/
 tools/ics.mjs       RFC 5545 writer (CRLF, 75-octet folding, escaping)
 tools/f1.mjs        F1 calendar + results, ESPN start times
 tools/standings.mjs league results -> tables
@@ -323,9 +366,10 @@ tools/serve.mjs     the web server: files on disk, or Postgres when configured
 tools/publish.mjs   refresh, commit the generated files, push to GitHub
 tools/install-scheduler.mjs  optional twice-daily LaunchAgent
 tools/verify.mjs    cross-check against ESPN
-tools/clubs.mjs     the six clubs, colours and source pages
-src/refresh/index.ts  the Neon Function the cron trigger calls
+tools/clubs.mjs     the six clubs, colours, crest pages and league list
+src/refresh/index.ts  the Neon Function the trigger calls
 neon.ts             Neon branch policy: the function and its schedule
+assets/logos/       crests and league logos, with a source manifest
 render.yaml         Render blueprint for the web service
 data/               calendar.json + calendar.js (generated)
 calendar/           .ics files (generated)

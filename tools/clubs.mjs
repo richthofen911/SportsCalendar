@@ -1,5 +1,8 @@
 export const SEASON = "2026–27";
 
+// `logoPage` is the article whose lead image is the club's crest or the league's
+// logo. The season pages this tool parses carry a stadium photo or nothing at
+// all, so the badge has to come from the club's own article. See tools/logos.mjs.
 export const CLUBS = [
   {
     id: "real-madrid",
@@ -7,6 +10,7 @@ export const CLUBS = [
     short: "RMA",
     color: "#00529F",
     page: `${SEASON} Real Madrid CF season`,
+    logoPage: "Real Madrid CF",
   },
   {
     id: "barcelona",
@@ -14,6 +18,7 @@ export const CLUBS = [
     short: "BAR",
     color: "#A50044",
     page: `${SEASON} FC Barcelona season`,
+    logoPage: "FC Barcelona",
   },
   {
     id: "arsenal",
@@ -21,6 +26,7 @@ export const CLUBS = [
     short: "ARS",
     color: "#EF0107",
     page: `${SEASON} Arsenal F.C. season`,
+    logoPage: "Arsenal F.C.",
   },
   {
     id: "man-city",
@@ -28,6 +34,7 @@ export const CLUBS = [
     short: "MCI",
     color: "#1C6EA6",
     page: `${SEASON} Manchester City F.C. season`,
+    logoPage: "Manchester City F.C.",
   },
   {
     id: "bayern",
@@ -35,6 +42,7 @@ export const CLUBS = [
     short: "BAY",
     color: "#DC0531",
     page: `${SEASON} FC Bayern Munich season`,
+    logoPage: "FC Bayern Munich",
   },
   {
     id: "psg",
@@ -42,6 +50,7 @@ export const CLUBS = [
     short: "PSG",
     color: "#004170",
     page: `${SEASON} Paris Saint-Germain FC season`,
+    logoPage: "Paris Saint-Germain F.C.",
   },
 ];
 
@@ -68,8 +77,36 @@ export const CATEGORIES = [
 ];
 
 export const LEAGUES = [
-  { name: "Premier League", page: `${SEASON} Premier League` },
-  { name: "La Liga", page: `${SEASON} La Liga` },
-  { name: "Bundesliga", page: `${SEASON} Bundesliga` },
-  { name: "Ligue 1", page: `${SEASON} Ligue 1` },
+  {
+    id: "premier-league",
+    name: "Premier League",
+    page: `${SEASON} Premier League`,
+    logoPage: "Premier League",
+  },
+  {
+    id: "la-liga",
+    name: "La Liga",
+    page: `${SEASON} La Liga`,
+    logoPage: "La Liga",
+  },
+  {
+    id: "bundesliga",
+    name: "Bundesliga",
+    page: `${SEASON} Bundesliga`,
+    logoPage: "Bundesliga",
+  },
+  {
+    id: "ligue-1",
+    name: "Ligue 1",
+    page: `${SEASON} Ligue 1`,
+    logoPage: "Ligue 1",
+  },
 ];
+
+/* ------------------------------------------------------------------ logo paths */
+
+// Both are derived from a stable id, so the payload can name a logo without
+// having fetched anything — which is what lets the Neon refresh Function stay
+// filesystem-free while still writing logo paths to Postgres.
+export const clubLogo = (id) => `/assets/logos/${id}.png`;
+export const leagueLogo = (leagueId) => `/assets/logos/league-${leagueId}.png`;

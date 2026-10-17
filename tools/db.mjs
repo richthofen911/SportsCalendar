@@ -44,6 +44,7 @@ create table if not exists clubs (
   short   text not null,
   color   text not null,
   page    text,
+  logo    text,
   aliases jsonb not null default '[]'::jsonb,
   ordinal integer not null default 0,
   doc     jsonb not null
@@ -103,6 +104,7 @@ create table if not exists standings (
   category    text not null,
   updated     text,
   source_page text,
+  logo        text,
   teams       integer,
   played      integer,
   ordinal     integer not null default 0,
@@ -140,6 +142,11 @@ create table if not exists refresh_runs (
   summary      text,
   error        text
 );
+
+-- "create table if not exists" leaves an existing table alone, so columns added
+-- after the first deploy need saying again.
+alter table clubs     add column if not exists logo text;
+alter table standings add column if not exists logo text;
 `;
 
 /* ------------------------------------------------------------------ connection */
@@ -352,14 +359,15 @@ async function applySnapshot(client, payload, { source, durationMs }) {
 
     for (const [i, c] of (payload.clubs || []).entries()) {
       await client.query(
-        `insert into clubs (id, name, short, color, page, aliases, ordinal, doc)
-         values ($1, $2, $3, $4, $5, $6::jsonb, $7, $8::jsonb)`,
+        `insert into clubs (id, name, short, color, page, logo, aliases, ordinal, doc)
+         values ($1, $2, $3, $4, $5, $6, $7::jsonb, $8, $9::jsonb)`,
         [
           c.id,
           c.name,
           c.short,
           c.color,
           text(c.page),
+          text(c.logo),
           JSON.stringify(c.aliases || []),
           i,
           JSON.stringify(c),
@@ -373,13 +381,14 @@ async function applySnapshot(client, payload, { source, durationMs }) {
     const standingRows = [];
     for (const [i, s] of (payload.standings || []).entries()) {
       await client.query(
-        `insert into standings (league, category, updated, source_page, teams, played, ordinal, doc)
-         values ($1, $2, $3, $4, $5, $6, $7, $8::jsonb)`,
+        `insert into standings (league, category, updated, source_page, logo, teams, played, ordinal, doc)
+         values ($1, $2, $3, $4, $5, $6, $7, $8, $9::jsonb)`,
         [
           s.league,
           s.category,
           text(s.updated),
           text(s.sourcePage),
+          text(s.logo),
           s.teams ?? null,
           s.played ?? null,
           i,
@@ -512,4 +521,43 @@ export async function readMeta(pool) {
 export async function readHealth(pool) {
   const { rows } = await pool.query("select 1 as ok");
   return rows[0]?.ok === 1;
+}
+
+/* ------------------------------------------------------------------ scheduling */
+
+// How long after kick-off a fixture still counts as "in play". Two and a half
+// hours covers stoppage time, extra time and penalties, a Grand Prix that runs
+// to time, and a delayed start. The lead-in catches a fixture that is about to
+// begin, which matters because ticks are 15 minutes apart.
+const LIVE_BEFORE_MINUTES = 5;
+const LIVE_AFTER_MINUTES = 150;
+
+/**
+ * Fixtures whose 15-minute refresh window is open right now.
+ *
+ * This has to be a clock window rather than a status: Wikipedia only records a
+ * score once a match is over, so a fixture that kicked off forty minutes ago
+ * still reads as `upcoming` or `unknown-result`. Status is used only to stop
+ * polling a match whose result is already in.
+ */
+export async function liveWindow(pool, now = new Date()) {
+  const { rows } = await pool.query(
+    `select id, name, home_team, away_team, competition, kickoff_utc, status
+       from events
+      where kickoff_utc is not null
+        and status <> 'played'
+        and kickoff_utc - ($2 || ' minutes')::interval <= $1
+        and $1 < kickoff_utc + ($3 || ' minutes')::interval
+      order by kickoff_utc`,
+    [now.toISOString(), LIVE_BEFORE_MINUTES, LIVE_AFTER_MINUTES]
+  );
+  return rows;
+}
+
+/** When the calendar was last rebuilt successfully, or null if never. */
+export async function lastSuccessAt(pool) {
+  const { rows } = await pool.query(
+    "select max(finished_at) as at from refresh_runs where status = 'ok'"
+  );
+  return rows[0]?.at ? new Date(rows[0].at) : null;
 }

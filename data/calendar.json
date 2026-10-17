@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T14:38:38.571Z",
+  "generatedAt": "2026-10-17T16:00:02.913Z",
   "season": "2026-27",
   "source": "Wikipedia season pages and league table templates; F1 start times from ESPN",
   "categories": [
@@ -30,6 +30,7 @@
   "clubs": [
     {
       "id": "real-madrid",
+      "logo": "/assets/logos/real-madrid.png",
       "name": "Real Madrid",
       "page": "2026–27 Real Madrid CF season",
       "color": "#00529F",
@@ -40,6 +41,7 @@
     },
     {
       "id": "barcelona",
+      "logo": "/assets/logos/barcelona.png",
       "name": "FC Barcelona",
       "page": "2026–27 FC Barcelona season",
       "color": "#A50044",
@@ -52,6 +54,7 @@
     },
     {
       "id": "arsenal",
+      "logo": "/assets/logos/arsenal.png",
       "name": "Arsenal",
       "page": "2026–27 Arsenal F.C. season",
       "color": "#EF0107",
@@ -64,6 +67,7 @@
     },
     {
       "id": "man-city",
+      "logo": "/assets/logos/man-city.png",
       "name": "Manchester City",
       "page": "2026–27 Manchester City F.C. season",
       "color": "#1C6EA6",
@@ -76,6 +80,7 @@
     },
     {
       "id": "bayern",
+      "logo": "/assets/logos/bayern.png",
       "name": "Bayern Munich",
       "page": "2026–27 FC Bayern Munich season",
       "color": "#DC0531",
@@ -90,6 +95,7 @@
     },
     {
       "id": "psg",
+      "logo": "/assets/logos/psg.png",
       "name": "Paris Saint-Germain",
       "page": "2026–27 Paris Saint-Germain FC season",
       "color": "#004170",
@@ -2331,7 +2337,7 @@
       "score": null,
       "venue": "Stade de la Meinau",
       "report": "https://ligue1.com/en/match-sheet/l1_championship_match_73882",
-      "status": "upcoming",
+      "status": "unknown-result",
       "referee": "Willy Delajod",
       "awayTeam": "Paris Saint-Germain",
       "category": "football",
@@ -9393,6 +9399,7 @@
   ],
   "standings": [
     {
+      "logo": "/assets/logos/league-premier-league.png",
       "rows": [
         {
           "ga": 5,
@@ -9493,16 +9500,16 @@
           "position": 7
         },
         {
-          "ga": 6,
-          "gd": 2,
+          "ga": 7,
+          "gd": 1,
           "gf": 8,
           "won": 2,
           "code": "HUL",
-          "lost": 1,
+          "lost": 2,
           "team": "Hull City",
           "drawn": 3,
           "clubId": null,
-          "played": 6,
+          "played": 7,
           "points": 9,
           "position": 8
         },
@@ -9591,6 +9598,20 @@
           "position": 14
         },
         {
+          "ga": 10,
+          "gd": -3,
+          "gf": 7,
+          "won": 1,
+          "code": "FUL",
+          "lost": 4,
+          "team": "Fulham",
+          "drawn": 2,
+          "clubId": null,
+          "played": 7,
+          "points": 5,
+          "position": 15
+        },
+        {
           "ga": 8,
           "gd": -3,
           "gf": 5,
@@ -9602,7 +9623,7 @@
           "clubId": null,
           "played": 6,
           "points": 5,
-          "position": 15
+          "position": 16
         },
         {
           "ga": 11,
@@ -9616,7 +9637,7 @@
           "clubId": null,
           "played": 6,
           "points": 5,
-          "position": 16
+          "position": 17
         },
         {
           "ga": 12,
@@ -9630,7 +9651,7 @@
           "clubId": null,
           "played": 6,
           "points": 4,
-          "position": 17
+          "position": 18
         },
         {
           "ga": 13,
@@ -9644,7 +9665,7 @@
           "clubId": null,
           "played": 6,
           "points": 3,
-          "position": 18
+          "position": 19
         },
         {
           "ga": 9,
@@ -9658,31 +9679,19 @@
           "clubId": null,
           "played": 6,
           "points": 3,
-          "position": 19
-        },
-        {
-          "ga": 10,
-          "gd": -4,
-          "gf": 6,
-          "won": 0,
-          "code": "FUL",
-          "lost": 4,
-          "team": "Fulham",
-          "drawn": 2,
-          "clubId": null,
-          "played": 6,
-          "points": 2,
           "position": 20
         }
       ],
       "teams": 20,
       "league": "Premier League",
-      "played": 61,
+      "played": 62,
       "updated": "17 October 2026",
       "category": "football",
+      "leagueId": "premier-league",
       "sourcePage": "2026–27 Premier League"
     },
     {
+      "logo": "/assets/logos/league-la-liga.png",
       "rows": [
         {
           "ga": 7,
@@ -9970,24 +9979,12 @@
       "played": 80,
       "updated": "17 October 2026",
       "category": "football",
+      "leagueId": "la-liga",
       "sourcePage": "Template:2026–27 La Liga table"
     },
     {
+      "logo": "/assets/logos/league-bundesliga.png",
       "rows": [
-        {
-          "ga": 4,
-          "gd": 10,
-          "gf": 14,
-          "won": 4,
-          "code": "FRE",
-          "lost": 0,
-          "team": "SC Freiburg",
-          "drawn": 1,
-          "clubId": null,
-          "played": 5,
-          "points": 13,
-          "position": 1
-        },
         {
           "ga": 4,
           "gd": 7,
@@ -9996,6 +9993,20 @@
           "code": "DOR",
           "lost": 0,
           "team": "Borussia Dortmund",
+          "drawn": 2,
+          "clubId": null,
+          "played": 6,
+          "points": 14,
+          "position": 1
+        },
+        {
+          "ga": 4,
+          "gd": 10,
+          "gf": 14,
+          "won": 4,
+          "code": "FRE",
+          "lost": 0,
+          "team": "SC Freiburg",
           "drawn": 1,
           "clubId": null,
           "played": 5,
@@ -10031,6 +10042,34 @@
           "position": 4
         },
         {
+          "ga": 10,
+          "gd": 4,
+          "gf": 14,
+          "won": 3,
+          "code": "MAI",
+          "lost": 2,
+          "team": "Mainz 05",
+          "drawn": 1,
+          "clubId": null,
+          "played": 6,
+          "points": 10,
+          "position": 5
+        },
+        {
+          "ga": 11,
+          "gd": 1,
+          "gf": 12,
+          "won": 3,
+          "code": "ELV",
+          "lost": 2,
+          "team": "SV Elversberg",
+          "drawn": 1,
+          "clubId": null,
+          "played": 6,
+          "points": 10,
+          "position": 6
+        },
+        {
           "ga": 5,
           "gd": 10,
           "gf": 15,
@@ -10042,35 +10081,49 @@
           "clubId": null,
           "played": 5,
           "points": 9,
-          "position": 5
+          "position": 7
         },
         {
-          "ga": 8,
-          "gd": 5,
-          "gf": 13,
-          "won": 2,
-          "code": "AUG",
-          "lost": 1,
-          "team": "FC Augsburg",
-          "drawn": 2,
-          "clubId": null,
-          "played": 5,
-          "points": 8,
-          "position": 6
-        },
-        {
-          "ga": 10,
+          "ga": 12,
           "gd": 0,
-          "gf": 10,
+          "gf": 12,
           "won": 2,
           "code": "BRE",
           "lost": 1,
           "team": "Werder Bremen",
+          "drawn": 3,
+          "clubId": null,
+          "played": 6,
+          "points": 9,
+          "position": 8
+        },
+        {
+          "ga": 15,
+          "gd": -9,
+          "gf": 6,
+          "won": 3,
+          "code": "HAM",
+          "lost": 3,
+          "team": "Hamburger SV",
+          "drawn": 0,
+          "clubId": null,
+          "played": 6,
+          "points": 9,
+          "position": 9
+        },
+        {
+          "ga": 12,
+          "gd": 4,
+          "gf": 16,
+          "won": 2,
+          "code": "AUG",
+          "lost": 2,
+          "team": "FC Augsburg",
           "drawn": 2,
           "clubId": null,
-          "played": 5,
+          "played": 6,
           "points": 8,
-          "position": 7
+          "position": 10
         },
         {
           "ga": 16,
@@ -10084,35 +10137,7 @@
           "clubId": null,
           "played": 6,
           "points": 8,
-          "position": 8
-        },
-        {
-          "ga": 10,
-          "gd": 3,
-          "gf": 13,
-          "won": 2,
-          "code": "MAI",
-          "lost": 2,
-          "team": "Mainz 05",
-          "drawn": 1,
-          "clubId": null,
-          "played": 5,
-          "points": 7,
-          "position": 9
-        },
-        {
-          "ga": 8,
-          "gd": 0,
-          "gf": 8,
-          "won": 2,
-          "code": "ELV",
-          "lost": 2,
-          "team": "SV Elversberg",
-          "drawn": 1,
-          "clubId": null,
-          "played": 5,
-          "points": 7,
-          "position": 10
+          "position": 11
         },
         {
           "ga": 11,
@@ -10126,62 +10151,48 @@
           "clubId": null,
           "played": 6,
           "points": 7,
-          "position": 11
-        },
-        {
-          "ga": 9,
-          "gd": -1,
-          "gf": 8,
-          "won": 2,
-          "code": "STU",
-          "lost": 3,
-          "team": "VfB Stuttgart",
-          "drawn": 0,
-          "clubId": null,
-          "played": 5,
-          "points": 6,
           "position": 12
         },
         {
-          "ga": 15,
-          "gd": -10,
-          "gf": 5,
+          "ga": 10,
+          "gd": -2,
+          "gf": 8,
           "won": 2,
-          "code": "HAM",
-          "lost": 3,
-          "team": "Hamburger SV",
+          "code": "STU",
+          "lost": 4,
+          "team": "VfB Stuttgart",
           "drawn": 0,
           "clubId": null,
-          "played": 5,
+          "played": 6,
           "points": 6,
           "position": 13
         },
         {
-          "ga": 6,
-          "gd": -2,
+          "ga": 7,
+          "gd": -3,
           "gf": 4,
           "won": 1,
           "code": "SCH",
-          "lost": 2,
+          "lost": 3,
           "team": "Schalke 04",
           "drawn": 2,
           "clubId": null,
-          "played": 5,
+          "played": 6,
           "points": 5,
           "position": 14
         },
         {
-          "ga": 7,
+          "ga": 9,
           "gd": -4,
-          "gf": 3,
+          "gf": 5,
           "won": 1,
           "code": "PAD",
           "lost": 3,
           "team": "SC Paderborn",
-          "drawn": 1,
+          "drawn": 2,
           "clubId": null,
-          "played": 5,
-          "points": 4,
+          "played": 6,
+          "points": 5,
           "position": 15
         },
         {
@@ -10192,10 +10203,10 @@
           "code": "UNB",
           "lost": 3,
           "team": "Union Berlin",
-          "drawn": 1,
+          "drawn": 2,
           "clubId": null,
-          "played": 5,
-          "points": 4,
+          "played": 6,
+          "points": 5,
           "position": 16
         },
         {
@@ -10229,12 +10240,14 @@
       ],
       "teams": 18,
       "league": "Bundesliga",
-      "played": 46,
-      "updated": "16 October 2026",
+      "played": 51,
+      "updated": "17 October 2026",
       "category": "football",
+      "leagueId": "bundesliga",
       "sourcePage": "Template:2026–27 Bundesliga table"
     },
     {
+      "logo": "/assets/logos/league-ligue-1.png",
       "rows": [
         {
           "ga": 5,
@@ -10494,6 +10507,7 @@
       "played": 55,
       "updated": "16 October 2026",
       "category": "football",
+      "leagueId": "ligue-1",
       "sourcePage": "Template:2026–27 Ligue 1 table"
     }
   ]

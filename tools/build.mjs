@@ -8,6 +8,7 @@ import path from "node:path";
 
 import { buildCalendar, checkIcsFiles } from "./pipeline.mjs";
 import { writeSiteFiles } from "./site-files.mjs";
+import { refreshLogos } from "./logos.mjs";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
 const force = process.argv.includes("--force");
@@ -20,6 +21,16 @@ console.log(
 );
 
 await writeSiteFiles(ROOT, payload, files);
+
+// One batched API call; the images themselves are only re-downloaded when the
+// source on Wikipedia changed. A failure here never fails the build.
+const logos = await refreshLogos({ force });
+if (!logos.offline) {
+  const bits = [`${logos.downloaded} updated`, `${logos.skipped} unchanged`];
+  if (logos.kept.length) bits.push(`${logos.kept.length} kept from disk`);
+  if (logos.failed.length) bits.push(`${logos.failed.length} unavailable (${logos.failed.join(", ")})`);
+  console.log(`logos: ${bits.join(", ")}`);
+}
 
 console.log(
   `\nfootball rows: ${counts.football}   f1 rounds: ${counts.f1}   league tables: ${counts.standings}   ics files: ${counts.icsFiles}`

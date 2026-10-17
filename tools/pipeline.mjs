@@ -4,7 +4,7 @@
 // decision to write it to disk. The Neon refresh Function needs the same work
 // with a different ending — Postgres instead of files — so the work moved here
 // and both callers now share it. Nothing in this module touches the filesystem.
-import { CLUBS, CATEGORIES, LEAGUES } from "./clubs.mjs";
+import { CLUBS, CATEGORIES, LEAGUES, clubLogo, leagueLogo } from "./clubs.mjs";
 import { fetchWikitext } from "./wiki.mjs";
 import { parseSeason, fixtureIdentity, CLUB_ALIASES } from "./parse.mjs";
 import { parseF1Calendar, parseF1Results, attachStartTimes } from "./f1.mjs";
@@ -287,6 +287,11 @@ export async function buildCalendar({ force = false, now = new Date(), log = con
       standings.push({
         category: "football",
         league: league.name,
+        leagueId: league.id,
+        // The path, not the picture: the image is downloaded by the build
+        // (tools/logos.mjs). This module stays free of the filesystem so the
+        // Neon Function can run it.
+        logo: leagueLogo(league.id),
         updated: parseUpdated(wikitext),
         sourcePage,
         teams: rows.length,
@@ -323,6 +328,7 @@ export async function buildCalendar({ force = false, now = new Date(), log = con
       short,
       color,
       page,
+      logo: clubLogo(id),
       aliases: CLUB_ALIASES[id] || [name],
     })),
     events,
