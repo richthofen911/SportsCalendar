@@ -193,7 +193,10 @@ async function refreshCalendar() {
       force: true,
       log: (line) => lines.push(line),
     });
-    const result = await writeSnapshot(getPool(), payload, { source: "render" });
+    const result = await writeSnapshot(getPool(), payload, {
+      source: "render",
+      durationMs: Date.now() - started,
+    });
     invalidate();
     return {
       ok: !failed.f1 && !failed.standings,

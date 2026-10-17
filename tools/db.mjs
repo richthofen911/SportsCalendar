@@ -317,8 +317,13 @@ from jsonb_to_recordset($1::jsonb) as x(
  * Replace the whole stored calendar with `payload`, inside a transaction the
  * caller owns. The builder regenerates every row each run, so the snapshot is
  * swapped rather than merged — a partial write is never visible.
+ *
+ * `durationMs` is the caller's total for the refresh — the Wikipedia fetch and
+ * parse included — because `refresh_runs` is a record of the refresh, not of
+ * this transaction. Without it a 65-second refresh logs as its few hundred
+ * milliseconds of inserts.
  */
-async function applySnapshot(client, payload, { source }) {
+async function applySnapshot(client, payload, { source, durationMs }) {
   const startedAt = Date.now();
   await client.query(SCHEMA_SQL);
   await client.query("delete from standings_rows");
@@ -410,7 +415,7 @@ async function applySnapshot(client, payload, { source }) {
     await client.query(
       `insert into refresh_runs (source, status, event_count, duration_ms, finished_at)
        values ($1, 'ok', $2, $3, now())`,
-      [source, events.length, Date.now() - startedAt]
+      [source, events.length, durationMs ?? Date.now() - startedAt]
     );
 
     return { events: events.length, standings: standingRows.length, durationMs: Date.now() - startedAt };
@@ -418,11 +423,11 @@ async function applySnapshot(client, payload, { source }) {
 }
 
 /** Swap the stored calendar for `payload` and keep it. */
-export async function writeSnapshot(pool, payload, { source = "unknown" } = {}) {
+export async function writeSnapshot(pool, payload, { source = "unknown", durationMs } = {}) {
   const client = await pool.connect();
   try {
     await client.query("begin");
-    const result = await applySnapshot(client, payload, { source });
+    const result = await applySnapshot(client, payload, { source, durationMs });
     await client.query("commit");
     return result;
   } catch (err) {

@@ -31,7 +31,10 @@ async function runRefresh(triggeredBy) {
       force: true,
       log: (line) => lines.push(line),
     });
-    const result = await writeSnapshot(getPool(), payload, { source: SOURCE });
+    const result = await writeSnapshot(getPool(), payload, {
+      source: SOURCE,
+      durationMs: Date.now() - started,
+    });
     return {
       ok: !failed.f1 && !failed.standings,
       triggeredBy,
