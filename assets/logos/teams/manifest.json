@@ -1,0 +1,628 @@
+{
+  "updatedAt": "2026-10-17T17:16:42.688Z",
+  "teams": {
+    "Aston Villa": {
+      "slug": "aston-villa",
+      "espnId": "362",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/362.png",
+      "bytes": 78018,
+      "fetchedAt": "2026-10-17T17:15:44.335Z"
+    },
+    "Lens": {
+      "slug": "lens",
+      "espnId": "175",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/175.png",
+      "bytes": 41414,
+      "fetchedAt": "2026-10-17T17:15:44.445Z"
+    },
+    "Coventry City": {
+      "slug": "coventry-city",
+      "espnId": "388",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/388.png",
+      "bytes": 147977,
+      "fetchedAt": "2026-10-17T17:15:44.646Z"
+    },
+    "Borussia Dortmund": {
+      "slug": "borussia-dortmund",
+      "espnId": "124",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/124.png",
+      "bytes": 45044,
+      "fetchedAt": "2026-10-17T17:15:44.758Z"
+    },
+    "Espanyol": {
+      "slug": "espanyol",
+      "espnId": "88",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/88.png",
+      "bytes": 32620,
+      "fetchedAt": "2026-10-17T17:15:44.889Z"
+    },
+    "Bournemouth": {
+      "slug": "bournemouth",
+      "espnId": "349",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/349.png",
+      "bytes": 61133,
+      "fetchedAt": "2026-10-17T17:15:45.083Z"
+    },
+    "Rennes": {
+      "slug": "rennes",
+      "espnId": "169",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/169.png",
+      "bytes": 26300,
+      "fetchedAt": "2026-10-17T17:15:45.299Z"
+    },
+    "Elche": {
+      "slug": "elche",
+      "espnId": "3751",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/3751.png",
+      "bytes": 32195,
+      "fetchedAt": "2026-10-17T17:15:45.424Z"
+    },
+    "Real Sociedad": {
+      "slug": "real-sociedad",
+      "espnId": "89",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/89.png",
+      "bytes": 44781,
+      "fetchedAt": "2026-10-17T17:15:45.605Z"
+    },
+    "Athletic Bilbao": {
+      "slug": "athletic-bilbao",
+      "espnId": "93",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/93.png",
+      "bytes": 42036,
+      "fetchedAt": "2026-10-17T17:15:45.829Z"
+    },
+    "VfB Stuttgart": {
+      "slug": "vfb-stuttgart",
+      "espnId": "134",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/134.png",
+      "bytes": 54812,
+      "fetchedAt": "2026-10-17T17:15:45.953Z"
+    },
+    "Lille": {
+      "slug": "lille",
+      "espnId": "166",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/166.png",
+      "bytes": 108528,
+      "fetchedAt": "2026-10-17T17:15:46.155Z"
+    },
+    "Crystal Palace": {
+      "slug": "crystal-palace",
+      "espnId": "384",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/384.png",
+      "bytes": 80572,
+      "fetchedAt": "2026-10-17T17:15:46.264Z"
+    },
+    "Málaga": {
+      "slug": "malaga",
+      "espnId": "99",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/99.png",
+      "bytes": 227125,
+      "fetchedAt": "2026-10-17T17:15:46.447Z"
+    },
+    "Rayo Vallecano": {
+      "slug": "rayo-vallecano",
+      "espnId": "101",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/101.png",
+      "bytes": 29165,
+      "fetchedAt": "2026-10-17T17:15:46.656Z"
+    },
+    "VfL Osnabrück": {
+      "slug": "vfl-osnabruck",
+      "espnId": "7013",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/7013.png",
+      "bytes": 29486,
+      "fetchedAt": "2026-10-17T17:15:46.847Z"
+    },
+    "Real Betis": {
+      "slug": "real-betis",
+      "espnId": "244",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/244.png",
+      "bytes": 25867,
+      "fetchedAt": "2026-10-17T17:15:46.950Z"
+    },
+    "Monaco": {
+      "slug": "monaco",
+      "espnId": "174",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/174.png",
+      "bytes": 19606,
+      "fetchedAt": "2026-10-17T17:15:47.180Z"
+    },
+    "Schalke 04": {
+      "slug": "schalke",
+      "espnId": "133",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/133.png",
+      "bytes": 15089,
+      "fetchedAt": "2026-10-17T17:15:47.352Z"
+    },
+    "Valencia": {
+      "slug": "valencia",
+      "espnId": "94",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/94.png",
+      "bytes": 66579,
+      "fetchedAt": "2026-10-17T17:15:47.518Z"
+    },
+    "Chelsea": {
+      "slug": "chelsea",
+      "espnId": "363",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/363.png",
+      "bytes": 59969,
+      "fetchedAt": "2026-10-17T17:15:47.704Z"
+    },
+    "Porto": {
+      "slug": "porto",
+      "espnId": "437",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/437.png",
+      "bytes": 84938,
+      "fetchedAt": "2026-10-17T17:15:47.813Z"
+    },
+    "Feyenoord": {
+      "slug": "feyenoord",
+      "espnId": "142",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/142.png",
+      "bytes": 61699,
+      "fetchedAt": "2026-10-17T17:15:47.976Z"
+    },
+    "Napoli": {
+      "slug": "napoli",
+      "espnId": "114",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/114.png",
+      "bytes": 16309,
+      "fetchedAt": "2026-10-17T17:15:48.092Z"
+    },
+    "Slovan Bratislava": {
+      "slug": "slovan-bratislava",
+      "espnId": "521",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/521.png",
+      "bytes": 32078,
+      "fetchedAt": "2026-10-17T17:15:48.316Z"
+    },
+    "Sunderland": {
+      "slug": "sunderland",
+      "espnId": "366",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/366.png",
+      "bytes": 53898,
+      "fetchedAt": "2026-10-17T17:15:48.472Z"
+    },
+    "Levante": {
+      "slug": "levante",
+      "espnId": "1538",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/1538.png",
+      "bytes": 30963,
+      "fetchedAt": "2026-10-17T17:15:48.582Z"
+    },
+    "Manchester United": {
+      "slug": "manchester-united",
+      "espnId": "360",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/360.png",
+      "bytes": 73159,
+      "fetchedAt": "2026-10-17T17:15:48.861Z"
+    },
+    "SV Elversberg": {
+      "slug": "sv-elversberg",
+      "espnId": "10388",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/10388.png",
+      "bytes": 66416,
+      "fetchedAt": "2026-10-17T17:15:48.994Z"
+    },
+    "Brest": {
+      "slug": "brest",
+      "espnId": "6997",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/6997.png",
+      "bytes": 34336,
+      "fetchedAt": "2026-10-17T17:15:49.130Z"
+    },
+    "Ipswich Town": {
+      "slug": "ipswich-town",
+      "espnId": "373",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/373.png",
+      "bytes": 22565,
+      "fetchedAt": "2026-10-17T17:15:49.296Z"
+    },
+    "Racing Santander": {
+      "slug": "racing-santander",
+      "espnId": "87",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/87.png",
+      "bytes": 55306,
+      "fetchedAt": "2026-10-17T17:15:49.412Z"
+    },
+    "Norwich City": {
+      "slug": "norwich-city",
+      "espnId": "381",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/381.png",
+      "bytes": 65449,
+      "fetchedAt": "2026-10-17T17:15:49.565Z"
+    },
+    "Union Berlin": {
+      "slug": "union-berlin",
+      "espnId": "598",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/598.png",
+      "bytes": 60840,
+      "fetchedAt": "2026-10-17T17:15:49.702Z"
+    },
+    "Brighton & Hove Albion": {
+      "slug": "brighton-hove-albion",
+      "espnId": "331",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/331.png",
+      "bytes": 77720,
+      "fetchedAt": "2026-10-17T17:15:49.844Z"
+    },
+    "Sevilla": {
+      "slug": "sevilla",
+      "espnId": "243",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/243.png",
+      "bytes": 64740,
+      "fetchedAt": "2026-10-17T17:15:50.027Z"
+    },
+    "Atlético Madrid": {
+      "slug": "atletico-madrid",
+      "espnId": "1068",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png",
+      "bytes": 34532,
+      "fetchedAt": "2026-10-17T17:15:50.145Z"
+    },
+    "Marseille": {
+      "slug": "marseille",
+      "espnId": "176",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/176.png",
+      "bytes": 51919,
+      "fetchedAt": "2026-10-17T17:15:50.325Z"
+    },
+    "Leeds United": {
+      "slug": "leeds-united",
+      "espnId": "357",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/357.png",
+      "bytes": 237616,
+      "fetchedAt": "2026-10-17T17:15:50.536Z"
+    },
+    "FC Augsburg": {
+      "slug": "augsburg",
+      "espnId": "3841",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/3841.png",
+      "bytes": 24973,
+      "fetchedAt": "2026-10-17T17:15:50.692Z"
+    },
+    "Getafe": {
+      "slug": "getafe",
+      "espnId": "2922",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/2922.png",
+      "bytes": 127543,
+      "fetchedAt": "2026-10-17T17:15:50.955Z"
+    },
+    "Le Mans": {
+      "slug": "le-mans",
+      "espnId": "2697",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/2697.png",
+      "bytes": 109710,
+      "fetchedAt": "2026-10-17T17:15:51.070Z"
+    },
+    "Villarreal": {
+      "slug": "villarreal",
+      "espnId": "102",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/102.png",
+      "bytes": 100657,
+      "fetchedAt": "2026-10-17T17:15:51.278Z"
+    },
+    "Liverpool": {
+      "slug": "liverpool",
+      "espnId": "364",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/364.png",
+      "bytes": 35827,
+      "fetchedAt": "2026-10-17T17:15:51.421Z"
+    },
+    "Galatasaray": {
+      "slug": "galatasaray",
+      "espnId": "432",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/432.png",
+      "bytes": 55405,
+      "fetchedAt": "2026-10-17T17:15:51.612Z"
+    },
+    "Viking": {
+      "slug": "viking",
+      "espnId": "510",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/510.png",
+      "bytes": 20657,
+      "fetchedAt": "2026-10-17T17:15:51.720Z"
+    },
+    "Roma": {
+      "slug": "roma",
+      "espnId": "104",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/104.png",
+      "bytes": 76247,
+      "fetchedAt": "2026-10-17T17:15:51.918Z"
+    },
+    "Strasbourg": {
+      "slug": "strasbourg",
+      "espnId": "180",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/180.png",
+      "bytes": 12670,
+      "fetchedAt": "2026-10-17T17:15:52.064Z"
+    },
+    "RB Leipzig": {
+      "slug": "rb-leipzig",
+      "espnId": "11420",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/11420.png",
+      "bytes": 62907,
+      "fetchedAt": "2026-10-17T17:15:52.193Z"
+    },
+    "Nottingham Forest": {
+      "slug": "nottingham-forest",
+      "espnId": "393",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/393.png",
+      "bytes": 20645,
+      "fetchedAt": "2026-10-17T17:15:52.423Z"
+    },
+    "AEK Athens": {
+      "slug": "aek-athens",
+      "espnId": "887",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/887.png",
+      "bytes": 67683,
+      "fetchedAt": "2026-10-17T17:15:52.617Z"
+    },
+    "Everton": {
+      "slug": "everton",
+      "espnId": "368",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/368.png",
+      "bytes": 146091,
+      "fetchedAt": "2026-10-17T17:15:52.737Z"
+    },
+    "SC Freiburg": {
+      "slug": "freiburg",
+      "espnId": "126",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/126.png",
+      "bytes": 27497,
+      "fetchedAt": "2026-10-17T17:15:52.951Z"
+    },
+    "Lyon": {
+      "slug": "lyon",
+      "espnId": "167",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/167.png",
+      "bytes": 22330,
+      "fetchedAt": "2026-10-17T17:15:53.104Z"
+    },
+    "Fleetwood Town": {
+      "slug": "fleetwood-town",
+      "espnId": "3891",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/3891.png",
+      "bytes": 69707,
+      "fetchedAt": "2026-10-17T17:15:53.298Z"
+    },
+    "1. FC Magdeburg": {
+      "slug": "1-magdeburg",
+      "espnId": "10382",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/10382.png",
+      "bytes": 62733,
+      "fetchedAt": "2026-10-17T17:15:53.580Z"
+    },
+    "Le Havre": {
+      "slug": "le-havre",
+      "espnId": "3236",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/3236.png",
+      "bytes": 93890,
+      "fetchedAt": "2026-10-17T17:15:53.730Z"
+    },
+    "Alavés": {
+      "slug": "alaves",
+      "espnId": "96",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/96.png",
+      "bytes": 103718,
+      "fetchedAt": "2026-10-17T17:15:53.896Z"
+    },
+    "Slavia Prague": {
+      "slug": "slavia-prague",
+      "espnId": "494",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/494.png",
+      "bytes": 33331,
+      "fetchedAt": "2026-10-17T17:15:54.102Z"
+    },
+    "Hull City": {
+      "slug": "hull-city",
+      "espnId": "306",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/306.png",
+      "bytes": 75616,
+      "fetchedAt": "2026-10-17T17:15:54.831Z"
+    },
+    "Mainz 05": {
+      "slug": "mainz",
+      "espnId": "2950",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/2950.png",
+      "bytes": 28646,
+      "fetchedAt": "2026-10-17T17:15:55.044Z"
+    },
+    "Troyes": {
+      "slug": "troyes",
+      "espnId": "170",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/170.png",
+      "bytes": 44735,
+      "fetchedAt": "2026-10-17T17:15:55.172Z"
+    },
+    "Newcastle United": {
+      "slug": "newcastle-united",
+      "espnId": "361",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/361.png",
+      "bytes": 189751,
+      "fetchedAt": "2026-10-17T17:15:55.300Z"
+    },
+    "Fulham": {
+      "slug": "fulham",
+      "espnId": "370",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/370.png",
+      "bytes": 16696,
+      "fetchedAt": "2026-10-17T17:15:55.423Z"
+    },
+    "Nice": {
+      "slug": "nice",
+      "espnId": "2502",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/2502.png",
+      "bytes": 140613,
+      "fetchedAt": "2026-10-17T17:15:55.651Z"
+    },
+    "Celta Vigo": {
+      "slug": "celta-vigo",
+      "espnId": "85",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/85.png",
+      "bytes": 32741,
+      "fetchedAt": "2026-10-17T17:15:55.817Z"
+    },
+    "PSV Eindhoven": {
+      "slug": "psv-eindhoven",
+      "espnId": "148",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/148.png",
+      "bytes": 60860,
+      "fetchedAt": "2026-10-17T17:15:55.962Z"
+    },
+    "Sabah": {
+      "slug": "sabah",
+      "espnId": "21922",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/21922.png",
+      "bytes": 56543,
+      "fetchedAt": "2026-10-17T17:15:56.145Z"
+    },
+    "Lorient": {
+      "slug": "lorient",
+      "espnId": "273",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/273.png",
+      "bytes": 27379,
+      "fetchedAt": "2026-10-17T17:15:56.311Z"
+    },
+    "Deportivo A Coruña": {
+      "slug": "deportivo-a-coruna",
+      "espnId": "90",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/90.png",
+      "bytes": 51470,
+      "fetchedAt": "2026-10-17T17:15:56.420Z"
+    },
+    "Brentford": {
+      "slug": "brentford",
+      "espnId": "337",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/337.png",
+      "bytes": 121058,
+      "fetchedAt": "2026-10-17T17:15:56.617Z"
+    },
+    "Tottenham Hotspur": {
+      "slug": "tottenham-hotspur",
+      "espnId": "367",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/367.png",
+      "bytes": 26224,
+      "fetchedAt": "2026-10-17T17:15:56.747Z"
+    },
+    "SC Paderborn": {
+      "slug": "paderborn",
+      "espnId": "3307",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/3307.png",
+      "bytes": 30429,
+      "fetchedAt": "2026-10-17T17:15:56.916Z"
+    },
+    "Toulouse": {
+      "slug": "toulouse",
+      "espnId": "179",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/179.png",
+      "bytes": 127777,
+      "fetchedAt": "2026-10-17T17:15:57.142Z"
+    },
+    "Osasuna": {
+      "slug": "osasuna",
+      "espnId": "97",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/97.png",
+      "bytes": 25635,
+      "fetchedAt": "2026-10-17T17:15:57.273Z"
+    },
+    "TSG Hoffenheim": {
+      "slug": "tsg-hoffenheim",
+      "espnId": "7911",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/7911.png",
+      "bytes": 25719,
+      "fetchedAt": "2026-10-17T17:15:57.495Z"
+    },
+    "Werder Bremen": {
+      "slug": "werder-bremen",
+      "espnId": "137",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/137.png",
+      "bytes": 20194,
+      "fetchedAt": "2026-10-17T17:15:57.688Z"
+    },
+    "Borussia Mönchengladbach": {
+      "slug": "borussia-monchengladbach",
+      "espnId": "268",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/268.png",
+      "bytes": 23230,
+      "fetchedAt": "2026-10-17T17:15:57.872Z"
+    },
+    "Bayer Leverkusen": {
+      "slug": "bayer-leverkusen",
+      "espnId": "131",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/131.png",
+      "bytes": 68738,
+      "fetchedAt": "2026-10-17T17:15:58.005Z"
+    },
+    "Eintracht Frankfurt": {
+      "slug": "eintracht-frankfurt",
+      "espnId": "125",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/125.png",
+      "bytes": 79536,
+      "fetchedAt": "2026-10-17T17:15:58.191Z"
+    },
+    "Angers": {
+      "slug": "angers",
+      "espnId": "7868",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/7868.png",
+      "bytes": 65012,
+      "fetchedAt": "2026-10-17T17:15:58.348Z"
+    },
+    "LASK": {
+      "slug": "lask",
+      "espnId": "4411",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/4411.png",
+      "bytes": 28520,
+      "fetchedAt": "2026-10-17T17:15:58.478Z"
+    },
+    "Sporting CP": {
+      "slug": "sporting",
+      "espnId": "2250",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/2250.png",
+      "bytes": 30137,
+      "fetchedAt": "2026-10-17T17:15:58.613Z"
+    },
+    "Como": {
+      "slug": "como",
+      "espnId": "2572",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/2572.png",
+      "bytes": 44308,
+      "fetchedAt": "2026-10-17T17:15:58.734Z"
+    },
+    "Auxerre": {
+      "slug": "auxerre",
+      "espnId": "172",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/172.png",
+      "bytes": 22238,
+      "fetchedAt": "2026-10-17T17:15:58.905Z"
+    },
+    "Shakhtar Donetsk": {
+      "slug": "shakhtar-donetsk",
+      "espnId": "493",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/493.png",
+      "bytes": 26409,
+      "fetchedAt": "2026-10-17T17:15:59.052Z"
+    },
+    "Bodø/Glimt": {
+      "slug": "bodo-glimt",
+      "espnId": "2980",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/2980.png",
+      "bytes": 67277,
+      "fetchedAt": "2026-10-17T17:16:29.836Z"
+    },
+    "Hamburger SV": {
+      "slug": "hamburger-sv",
+      "espnId": "127",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/127.png",
+      "bytes": 4471,
+      "fetchedAt": "2026-10-17T17:16:29.976Z"
+    },
+    "Inter Milan": {
+      "slug": "inter-milan",
+      "espnId": "110",
+      "source": "https://a.espncdn.com/i/teamlogos/soccer/500/110.png",
+      "bytes": 43426,
+      "fetchedAt": "2026-10-17T17:16:42.603Z"
+    }
+  }
+}

@@ -13,11 +13,15 @@ import { existsSync } from "node:fs";
 import path from "node:path";
 
 import { CLUBS, LEAGUES, clubLogo, leagueLogo } from "./clubs.mjs";
+import { ESPN_SLUGS } from "./espn.mjs";
+import { norm, sameTeam } from "./teams.mjs";
 import { fetchBytes, fetchJson } from "./wiki.mjs";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
 const DIR = path.join(ROOT, "assets", "logos");
 const MANIFEST = path.join(DIR, "manifest.json");
+const TEAM_DIR = path.join(DIR, "teams");
+const TEAM_MANIFEST = path.join(TEAM_DIR, "manifest.json");
 
 /** Every logo the page can ask for, keyed by the file it lives in. */
 export function logoManifest() {
@@ -160,4 +164,172 @@ export async function refreshLogos({ force = false, log = console.log } = {}) {
   }
 
   return { downloaded, skipped, failed, kept };
+}
+
+/* ------------------------------------------------- opponent crests (ESPN) */
+
+const ESPN_TEAM_LEAGUES = [
+  "eng.1", "esp.1", "ger.1", "fra.1",
+  "uefa.champions",
+  "eng.league_cup", "ger.dfb_pokal", "fra.coupe_de_france", "eng.fa",
+  "ger.2", "fra.2", "esp.2",
+];
+
+/**
+ * A stable filename for any club name.
+ *
+ * The page derives the same path from the team name it is about to draw —
+ * `/assets/logos/teams/<slug>.png` — so no lookup table has to travel with the
+ * payload, and the Neon Function needs no filesystem to name a crest it will
+ * never see. `norm` is shared with tools/teams.mjs, so both sides agree.
+ */
+export function teamSlug(name) {
+  return norm(name).replace(/\s+/g, "-");
+}
+
+async function readJson(file, fallback) {
+  try {
+    return JSON.parse(await readFile(file, "utf8"));
+  } catch {
+    return fallback;
+  }
+}
+
+// ESPN's CDN is a different host with its own (generous) limits, so it does not
+// share Wikipedia's two-second gate — 90 crests would otherwise take minutes.
+async function fetchImage(url) {
+  const res = await fetch(url, { headers: { "User-Agent": "SportsCalendar/1.0 (crest fetch)" } });
+  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  return {
+    bytes: Buffer.from(await res.arrayBuffer()),
+    contentType: res.headers.get("content-type") || "",
+  };
+}
+
+async function espnTeams(log) {
+  const out = [];
+  for (const league of ESPN_TEAM_LEAGUES) {
+    try {
+      const res = await fetch(
+        `https://site.api.espn.com/apis/site/v2/sports/soccer/${league}/teams`,
+        { headers: { "User-Agent": "SportsCalendar/1.0 (crest list)" } }
+      );
+      if (!res.ok) continue;
+      const body = await res.json();
+      const teams = (((body.sports || [])[0] || {}).leagues || [])[0]?.teams || [];
+      for (const t of teams) {
+        const name = t.team?.displayName || t.team?.name;
+        const logo = (t.team?.logos || []).find((l) => l.href)?.href;
+        if (name && logo) out.push({ name, id: t.team.id, logo, league });
+      }
+    } catch (err) {
+      log(`teams: ${league} unavailable (${err.message})`);
+    }
+    await new Promise((r) => setTimeout(r, 150));
+  }
+  return out;
+}
+
+/**
+ * Pick the ESPN team for a name, or nothing at all.
+ *
+ * The clubs whose competitions we know are tried first: "Inter Milan" only
+ * resolves cleanly inside the Champions League / Serie A pool, where it is not
+ * competing with Inter Miami. Within a pool, exact normalised names win; if the
+ * loose comparison still leaves more than one distinct crest the name is
+ * ambiguous, and the safe answer is to draw no crest rather than the wrong one.
+ */
+function pickTeam(name, teams, preferredLeagues) {
+  const pools = [teams.filter((t) => preferredLeagues.has(t.league)), teams];
+  for (const pool of pools) {
+    const exact = pool.filter((t) => norm(t.name) === norm(name));
+    const loose = exact.length ? exact : pool.filter((t) => sameTeam(t.name, name));
+    const distinct = new Map(loose.map((t) => [t.logo, t]));
+    if (distinct.size === 1) return [...distinct.values()][0];
+  }
+  return null;
+}
+
+/**
+ * Make `assets/logos/teams/` cover every club named in the fixtures.
+ *
+ * Only names with no file on disk are looked up, so a routine build costs
+ * nothing; a new opponent (a cup draw, say) costs one ESPN listing and one
+ * download. The six tracked clubs are skipped — their crests already exist and
+ * the page renders those from `clubs.mjs`.
+ */
+export async function refreshTeamLogos(events, { force = false, log = console.log } = {}) {
+  await mkdir(TEAM_DIR, { recursive: true });
+  const previous = await readJson(TEAM_MANIFEST, { teams: {} });
+  const teams = { ...(previous.teams || {}) };
+
+  const tracked = (name) => CLUBS.some((c) => sameTeam(c.name, name));
+
+  const wanted = new Map();
+  const leaguesFor = new Map();
+  for (const e of events) {
+    if (e.category === "formula-1") continue;
+    const leagueSlug = ESPN_SLUGS[e.competition];
+    for (const name of [e.homeTeam, e.awayTeam]) {
+      if (!name || /^tbd$/i.test(name) || tracked(name)) continue;
+      const slug = teamSlug(name);
+      if (!slug) continue;
+      if (!wanted.has(name)) wanted.set(name, slug);
+      if (leagueSlug) {
+        if (!leaguesFor.has(name)) leaguesFor.set(name, new Set());
+        leaguesFor.get(name).add(leagueSlug);
+      }
+    }
+  }
+
+  const missing = [...wanted].filter(
+    ([, slug]) => force || !existsSync(path.join(TEAM_DIR, `${slug}.png`))
+  );
+  if (!missing.length) return { added: 0, missing: 0, total: wanted.size, unresolved: [] };
+
+  const espn = await espnTeams(log);
+  if (!espn.length) {
+    log("teams: no ESPN team lists available; opponent crests left as they are");
+    return { added: 0, missing: missing.length, total: wanted.size, unresolved: [], offline: true };
+  }
+
+  let added = 0;
+  const written = new Set();
+  const unresolved = [];
+
+  for (const [name, slug] of missing) {
+    if (written.has(slug)) continue;
+    const hit = pickTeam(name, espn, leaguesFor.get(name) || new Set());
+    if (!hit) {
+      unresolved.push(name);
+      continue;
+    }
+    try {
+      const { bytes, contentType } = await fetchImage(hit.logo);
+      if (!/^image\//.test(contentType)) throw new Error(`unexpected content type "${contentType}"`);
+      await writeFile(path.join(TEAM_DIR, `${slug}.png`), bytes);
+      teams[name] = {
+        slug,
+        espnId: hit.id,
+        source: hit.logo,
+        bytes: bytes.length,
+        fetchedAt: new Date().toISOString(),
+      };
+      written.add(slug);
+      added++;
+      await new Promise((r) => setTimeout(r, 80));
+    } catch (err) {
+      unresolved.push(name);
+      log(`teams: ${name} failed (${err.message})`);
+    }
+  }
+
+  if (added > 0 || JSON.stringify(teams) !== JSON.stringify(previous.teams || {})) {
+    await writeFile(
+      TEAM_MANIFEST,
+      JSON.stringify({ updatedAt: new Date().toISOString(), teams }, null, 2) + "\n"
+    );
+  }
+
+  return { added, missing: missing.length, total: wanted.size, unresolved };
 }

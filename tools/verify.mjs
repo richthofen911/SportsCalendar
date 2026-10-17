@@ -7,7 +7,7 @@ import { readFileSync } from "node:fs";
 import path from "node:path";
 
 import { CLUBS, LEAGUES } from "./clubs.mjs";
-import { fetchWikitext } from "./wiki.mjs";
+import { fetchWikitext, fetchJson } from "./wiki.mjs";
 import { sameTeam, pickByTeam } from "./teams.mjs";
 import {
   parseLeagueMatches,
@@ -109,12 +109,15 @@ let failures = 0;
       .replace(/\s+/g, " ")
       .trim();
   for (const league of LEAGUES) {
-    const season = await fetchWikitext({ page: league.page });
+    // Both sides of this comparison have to be live. Reading the cached page
+    // here and fetching the rendered table fresh turned every Wikipedia edit
+    // since the last build into a phantom discrepancy.
+    const season = await fetchWikitext({ page: league.page, force: true });
     let wikitext = season.wikitext;
     let renderPage = league.page;
     const transclusion = findTableTransclusion(wikitext);
     if (transclusion) {
-      wikitext = (await fetchWikitext({ page: `Template:${transclusion}` })).wikitext;
+      wikitext = (await fetchWikitext({ page: `Template:${transclusion}`, force: true })).wikitext;
       renderPage = `Template:${transclusion}`;
     }
     const mine = computeStandings(
@@ -125,7 +128,9 @@ let failures = 0;
     const url =
       "https://en.wikipedia.org/w/api.php?action=parse&format=json&formatversion=2&prop=text&page=" +
       encodeURIComponent(renderPage);
-    const body = await (await fetch(url, { headers: UA })).json();
+    // Through the shared helper, so a 429 backs off instead of returning
+    // "You are making too many requests" as if it were JSON.
+    const body = await fetchJson(url);
     const html = body.parse?.text || "";
     const table =
       (html.match(/<table[\s\S]*?<\/table>/g) || []).find((t) => /Pld/.test(t) && /Pts/.test(t)) || "";

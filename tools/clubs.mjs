@@ -108,5 +108,8 @@ export const LEAGUES = [
 // Both are derived from a stable id, so the payload can name a logo without
 // having fetched anything — which is what lets the Neon refresh Function stay
 // filesystem-free while still writing logo paths to Postgres.
-export const clubLogo = (id) => `/assets/logos/${id}.png`;
-export const leagueLogo = (leagueId) => `/assets/logos/league-${leagueId}.png`;
+//
+// No leading slash: the page has to work from `file://` as well as from a
+// server, where `/assets/...` would resolve to the filesystem root.
+export const clubLogo = (id) => `assets/logos/${id}.png`;
+export const leagueLogo = (leagueId) => `assets/logos/league-${leagueId}.png`;

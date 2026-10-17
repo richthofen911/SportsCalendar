@@ -214,29 +214,38 @@ rate limit on a busy Saturday.
 
 ### Logos
 
-Club crests and league logos live in `assets/logos/` as committed PNGs, not
-hotlinked. `npm run refresh` asks Wikipedia once for every lead image (one batched
-call) and only re-downloads an image whose source changed; `assets/logos/manifest.json`
-records where each one came from. A failed or missing image keeps the file already
-on disk and never fails the build.
+Two sets of images, both committed rather than hotlinked.
 
-These are non-free, fair-use images on Wikipedia — crests and league wordmarks
-are trademarks — so vendoring them here is a deliberate choice for this
-repository rather than a general-purpose licence. If a logo is ever missing the
-UI falls back to the club's colour dot, so the page degrades instead of breaking.
+**The six clubs and four leagues** come from Wikipedia: `npm run refresh` asks
+for every lead image in one batched call and only re-downloads one whose source
+changed. `assets/logos/manifest.json` records where each came from.
+
+**Every other club in a fixture** comes from ESPN's team lists, downloaded on
+demand into `assets/logos/teams/` — 89 of the 90 opponents in the current season
+(ESPN does not carry 1. FC Köln). Each file is named by a slug derived from the
+club name, using the same normalisation as `tools/logos.mjs`, so the page builds
+the path itself and no lookup table has to travel with the payload — which is
+also why the Neon refresh Function can name a crest it will never see.
+`assets/logos/teams/manifest.json` keeps the ESPN id and URL for each. Only
+names with no file on disk are looked up, so a settled season costs no requests;
+a new cup opponent costs one listing and one download.
+
+These are non-free, fair-use images — crests and league wordmarks are trademarks
+— so vendoring them is a deliberate choice for this repository rather than a
+general-purpose licence. It is also why the tree carries about 5 MB of PNGs.
 
 Where the crest appears differs by layout, because the space does:
 
 | Layout | Placement |
 | --- | --- |
-| **Month** | beside each tracked club inside the day pill — the pill carries both clubs on one line, so the badge sits immediately before its own name |
-| **List** | in the *Your clubs* column, beside the short code and H/A marker |
-| **Phone** | the same row markup as List, so the same column — re-flowed into the card |
+| **Month** | a crest before each club name inside the day pill |
+| **List** | the fixture line is framed by the two crests — home on the left, away on the right. There is no separate clubs column: the fixture already names both teams, so a second column of short codes was saying it twice |
+| **Phone** | the same row, re-flowed into a card |
 | **Standings** | beside each tracked club, with the league's mark on the table heading |
 
-Only the six tracked clubs have crests. In a fixture against, say, Ipswich Town
-the badge marks your club and the opponent stays plain text — the same rule the
-colour dot always followed.
+A missing image removes itself rather than leaving a broken-image box: an
+opponent with no crest simply shows its name, and a tracked club falls back to
+its colour dot.
 
 ### The database
 
@@ -402,7 +411,8 @@ tools/verify.mjs    cross-check against ESPN
 tools/clubs.mjs     the six clubs, colours, crest pages and league list
 src/refresh/index.ts  the Neon Function the trigger calls
 neon.ts             Neon branch policy: the function and its schedule
-assets/logos/       crests and league logos, with a source manifest
+assets/logos/       club + league crests, with a source manifest
+assets/logos/teams/ every opponent crest, named by club-name slug
 render.yaml         Render blueprint for the web service
 data/               calendar.json + calendar.js (generated)
 calendar/           .ics files (generated)

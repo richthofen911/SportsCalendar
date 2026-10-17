@@ -228,7 +228,7 @@
       .rows { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
       .row, .rhead {
         display: grid;
-        grid-template-columns: 138px minmax(210px, 1.5fr) minmax(150px, 1fr) 128px 76px minmax(150px, 1fr);
+        grid-template-columns: 138px minmax(210px, 1.5fr) minmax(150px, 1fr) 76px minmax(150px, 1fr);
         gap: 10px;
         padding: 9px 12px;
         border-bottom: 1px solid var(--line);
@@ -239,9 +239,11 @@
       .row:hover { background: color-mix(in srgb, var(--ink) 5%, var(--panel)); }
       .rhead { color: var(--muted); font-weight: 500; font-size: 11.5px; text-transform: uppercase; letter-spacing: .06em; }
       .c-when { white-space: nowrap; font-variant-numeric: tabular-nums; }
+      /* The crest that closes a fixture line sits after the away club's name. */
+      .c-fixture .mark { margin-right: 5px; }
+      .c-fixture .mark.trail { margin-right: 0; margin-left: 5px; }
       .c-score { font-variant-numeric: tabular-nums; font-weight: 600; white-space: nowrap; }
       .liveTag { display: inline-block; margin-left: 6px; padding: 1px 5px; border-radius: 4px; background: #d32f2f; color: #fff; font-size: 10px; font-weight: 700; letter-spacing: .04em; vertical-align: 1px; }
-      .cbadge { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: var(--c); margin-right: 6px; }
       /* A crest in place of the colour dot. The span keeps the club colour
          behind the image, so a missing logo degrades to exactly the dot it
          replaced rather than leaving a gap. */
@@ -337,7 +339,7 @@
         grid-template-areas:
           "when    score"
           "fixture fixture"
-          "comp    clubs"
+          "comp    comp"
           "venue   venue";
         gap: 2px 10px;
         padding: 13px 14px;
@@ -346,7 +348,6 @@
       .phone .c-when { grid-area: when; font-weight: 600; }
       .phone .c-fixture { grid-area: fixture; font-size: 15px; margin-top: 2px; }
       .phone .c-comp { grid-area: comp; color: var(--muted); font-size: 12.5px; }
-      .phone .c-clubs { grid-area: clubs; text-align: right; font-size: 12.5px; }
       .phone .c-score { grid-area: score; text-align: right; font-size: 15px; }
       .phone .c-venue { grid-area: venue; color: var(--muted); font-size: 12.5px; margin-top: 3px; }
       .phone .dash { display: none; }
@@ -448,6 +449,46 @@
       function leagueMark(logo) {
         if (!logo) return "";
         return `<span class="lchip"><img class="lmark" src="${logo}" alt="" loading="lazy" onerror="this.closest('.lchip').remove()"></span>`;
+      }
+
+      // Opponent crest paths are derived from the club name, using the same
+      // normalisation as tools/logos.mjs. That way no lookup table has to travel
+      // with the payload, and a missing crest simply removes itself.
+      function teamSlug(name) {
+        return String(name || "")
+          .normalize("NFD")
+          .replace(/[\u0300-\u036f]/g, "")
+          .toLowerCase()
+          .replace(/ø/g, "o")
+          .replace(/æ/g, "ae")
+          .replace(/ß/g, "ss")
+          .replace(/[đð]/g, "d")
+          .replace(/ł/g, "l")
+          .replace(/\./g, "")
+          .replace(/[^a-z0-9]+/g, " ")
+          .split(" ")
+          .filter((t) => t && !NOISE.has(t))
+          .join(" ")
+          .replace(/\s+/g, "-");
+      }
+
+      function teamMark(name, extra = "") {
+        const slug = teamSlug(name);
+        if (!slug) return "";
+        return `<span class="mark ${extra}"><img src="assets/logos/teams/${slug}.png" alt="" loading="lazy" onerror="this.closest('.mark').remove()"></span>`;
+      }
+
+      // The fixture line is framed by the two clubs' crests — home on the left,
+      // away on the right — which is what replaced the "your clubs" column.
+      function fixtureHtml(m) {
+        if (m.category === "formula-1") return m.name;
+        const end = (side) => {
+          const id = m.clubs.find((c) => sideOf(m, c) === side);
+          const trailing = side === "away" ? "trail" : "";
+          if (id) return clubMark(id, trailing);
+          return teamMark(side === "home" ? m.homeTeam : m.awayTeam, trailing);
+        };
+        return `${end("home")}${m.homeTeam} v ${m.awayTeam}${end("away")}`;
       }
 
       // Phones, including landscape ones that are wider than the grid needs.
@@ -650,15 +691,17 @@
       }
 
       // The month pill puts both clubs on one line and has no "your clubs"
-      // column to carry a badge, so each tracked club's crest sits immediately
-      // before its own name — the same place it appears in List and Phone.
+      // column to carry a badge, so each club's crest sits immediately before
+      // its own name — the same way the fixture line is framed in List and Phone.
       function eventLineHtml(m) {
         if (m.category === "formula-1") return eventLine(m);
-        const home = m.clubs.find((c) => sideOf(m, c) === "home");
-        const away = m.clubs.find((c) => sideOf(m, c) === "away");
-        const mark = (id) => (id ? clubMark(id, "xs") : "");
+        const mark = (side) => {
+          const id = m.clubs.find((c) => sideOf(m, c) === side);
+          if (id) return clubMark(id, "xs");
+          return teamMark(side === "home" ? m.homeTeam : m.awayTeam, "xs");
+        };
         const separator = m.score ? ` ${m.score} ` : " v ";
-        return `${mark(home)}${label(m, "home")}${separator}${mark(away)}${label(m, "away")}`;
+        return `${mark("home")}${label(m, "home")}${separator}${mark("away")}${label(m, "away")}`;
       }
 
       // ---- filtering ----
@@ -860,14 +903,9 @@
       }
 
       function tableHtml(list) {
-        const head = `<div class="rhead"><span>Kick-off</span><span>Fixture</span><span>Competition</span><span>Your clubs</span><span>Result</span><span>Venue</span></div>`;
+        const head = `<div class="rhead"><span>Kick-off</span><span>Fixture</span><span>Competition</span><span>Result</span><span>Venue</span></div>`;
         const rows = list
           .map((m) => {
-            const badges = m.clubs.map((id) => clubMark(id)).join("");
-            const grounds =
-              m.category === "formula-1"
-                ? `<span class="cbadge" style="--c:${CATS["formula-1"].color}"></span>F1`
-                : m.clubs.map((id) => `${CLUBS[id].short} ${sideOf(m, id) === "home" ? "(H)" : "(A)"}`).join(", ");
             const d = shown(m);
             const when = `${String(d.getDate()).padStart(2, "0")} ${MONTHS[d.getMonth()].slice(0, 3)} ${clockOf(m) || ""}${
               m.kickoffUtc ? "" : '<span class="tbc">TBC</span>'}`;
@@ -875,9 +913,8 @@
               m.fixtureKey === state.anchorKey && state.anchorMark ? `<div class="todayMark">Today</div>` : "";
             return `${mark}<div class="row" data-fixture="${m.fixtureKey}">
               <span class="c-when">${when}</span>
-              <span class="c-fixture">${eventTitle(m)}</span>
+              <span class="c-fixture">${fixtureHtml(m)}</span>
               <span class="c-comp">${eventCompetition(m)}${m.phase ? ` <span class="ground">· ${m.phase}</span>` : ""}${m.round ? ` <span class="ground">· ${m.category === "formula-1" ? "round" : "rd"} ${m.round}</span>` : ""}</span>
-              <span class="c-clubs">${badges}${grounds}</span>
               <span class="c-score">${scoreCell(m)}</span>
               <span class="c-venue">${eventVenue(m) || "—"}</span>
             </div>`;

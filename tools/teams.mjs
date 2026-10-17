@@ -14,6 +14,13 @@ export function norm(name) {
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "")
     .toLowerCase()
+    // Letters NFD does not decompose, which otherwise survive as word breaks:
+    // "Bodø/Glimt" has to meet ESPN's "Bodo/Glimt".
+    .replace(/ø/g, "o")
+    .replace(/æ/g, "ae")
+    .replace(/ß/g, "ss")
+    .replace(/[đð]/g, "d")
+    .replace(/ł/g, "l")
     .replace(/\./g, "")
     .replace(/[^a-z0-9]+/g, " ")
     .split(" ")
@@ -27,12 +34,14 @@ export const ALIAS = [
   ["real betis", "betis"],
   ["sv elversberg", "elversberg"],
   ["inter milan", "inter"],
+  ["inter milan", "internazionale"],
   ["olympique marseille", "marseille"],
   ["olympique lyonnais", "lyon"],
   ["1 fc heidenheim", "heidenheim"],
   ["borussia monchengladbach", "monchengladbach"],
   ["bayer 04 leverkusen", "leverkusen"],
   ["manchester united", "man united"],
+  ["hamburger sv", "hamburg sv"],
 ];
 
 export function sameTeam(a, b) {

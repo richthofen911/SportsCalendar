@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T16:46:12.106Z",
+  "generatedAt": "2026-10-17T17:20:35.851Z",
   "season": "2026-27",
   "source": "Wikipedia season pages and league table templates; results and F1 start times from ESPN",
   "categories": [
@@ -34,7 +34,7 @@
       "short": "RMA",
       "color": "#00529F",
       "page": "2026–27 Real Madrid CF season",
-      "logo": "/assets/logos/real-madrid.png",
+      "logo": "assets/logos/real-madrid.png",
       "aliases": [
         "real madrid"
       ]
@@ -45,7 +45,7 @@
       "short": "BAR",
       "color": "#A50044",
       "page": "2026–27 FC Barcelona season",
-      "logo": "/assets/logos/barcelona.png",
+      "logo": "assets/logos/barcelona.png",
       "aliases": [
         "barcelona",
         "fc barcelona",
@@ -58,7 +58,7 @@
       "short": "ARS",
       "color": "#EF0107",
       "page": "2026–27 Arsenal F.C. season",
-      "logo": "/assets/logos/arsenal.png",
+      "logo": "assets/logos/arsenal.png",
       "aliases": [
         "arsenal",
         "arsenal fc",
@@ -71,7 +71,7 @@
       "short": "MCI",
       "color": "#1C6EA6",
       "page": "2026–27 Manchester City F.C. season",
-      "logo": "/assets/logos/man-city.png",
+      "logo": "assets/logos/man-city.png",
       "aliases": [
         "manchester city",
         "man city",
@@ -84,7 +84,7 @@
       "short": "BAY",
       "color": "#DC0531",
       "page": "2026–27 FC Bayern Munich season",
-      "logo": "/assets/logos/bayern.png",
+      "logo": "assets/logos/bayern.png",
       "aliases": [
         "bayern munich",
         "fc bayern munich",
@@ -99,7 +99,7 @@
       "short": "PSG",
       "color": "#004170",
       "page": "2026–27 Paris Saint-Germain FC season",
-      "logo": "/assets/logos/psg.png",
+      "logo": "assets/logos/psg.png",
       "aliases": [
         "paris saint-germain",
         "paris saint germain",
@@ -2215,7 +2215,7 @@
       "location": "Rome, Italy",
       "home": false,
       "opponent": "Roma",
-      "score": "4-3",
+      "score": "3-4",
       "scoreExtra": "",
       "homeTeam": "Roma",
       "awayTeam": "Real Madrid",
@@ -2231,8 +2231,7 @@
       "id": "real-madrid-2049581-0wi6sq2",
       "status": "played",
       "fixtureKey": "2026-10-14|real-madrid|roma",
-      "sourcePage": "2026–27 Real Madrid CF season",
-      "liveMinute": null
+      "sourcePage": "2026–27 Real Madrid CF season"
     },
     {
       "club": "man-city",
@@ -2263,8 +2262,7 @@
       "id": "man-city-2049580-04w7ttd",
       "status": "played",
       "fixtureKey": "2026-10-14|man-city|psg",
-      "sourcePage": "2026–27 Manchester City F.C. season",
-      "liveMinute": null
+      "sourcePage": "2026–27 Manchester City F.C. season"
     },
     {
       "club": "psg",
@@ -2279,7 +2277,7 @@
       "location": "Manchester, England",
       "home": false,
       "opponent": "Manchester City",
-      "score": "4-2",
+      "score": "2-4",
       "scoreExtra": "",
       "homeTeam": "Manchester City",
       "awayTeam": "Paris Saint-Germain",
@@ -2295,8 +2293,7 @@
       "id": "psg-2049580-04w7ttd",
       "status": "played",
       "fixtureKey": "2026-10-14|man-city|psg",
-      "sourcePage": "2026–27 Paris Saint-Germain FC season",
-      "liveMinute": null
+      "sourcePage": "2026–27 Paris Saint-Germain FC season"
     },
     {
       "club": "man-city",
@@ -2327,8 +2324,7 @@
       "id": "man-city-2645261-08t2f1j",
       "status": "played",
       "fixtureKey": "2026-10-17|ipswich town|man-city",
-      "sourcePage": "2026–27 Manchester City F.C. season",
-      "liveMinute": null
+      "sourcePage": "2026–27 Manchester City F.C. season"
     },
     {
       "club": "psg",
@@ -2343,11 +2339,11 @@
       "location": "Strasbourg",
       "home": false,
       "opponent": "Strasbourg",
-      "score": "0-1",
+      "score": "1-3",
       "scoreExtra": null,
       "homeTeam": "Strasbourg",
       "awayTeam": "Paris Saint-Germain",
-      "clubResult": null,
+      "clubResult": "W",
       "homeEvents": "",
       "awayEvents": "",
       "notes": "",
@@ -2357,10 +2353,9 @@
       "category": "football",
       "clubName": "Paris Saint-Germain",
       "id": "psg-w0pcqrrx",
-      "status": "live",
+      "status": "played",
       "fixtureKey": "2026-10-17|psg|strasbourg",
-      "sourcePage": "2026–27 Paris Saint-Germain FC season",
-      "liveMinute": "74'"
+      "sourcePage": "2026–27 Paris Saint-Germain FC season"
     },
     {
       "club": "barcelona",
@@ -2375,11 +2370,11 @@
       "location": "Seville",
       "home": false,
       "opponent": "Real Betis",
-      "score": "1-0",
+      "score": "1-2",
       "scoreExtra": null,
       "homeTeam": "Real Betis",
       "awayTeam": "Barcelona",
-      "clubResult": null,
+      "clubResult": "W",
       "homeEvents": "",
       "awayEvents": "",
       "notes": "",
@@ -2392,7 +2387,7 @@
       "status": "live",
       "fixtureKey": "2026-10-17|barcelona|real betis",
       "sourcePage": "2026–27 FC Barcelona season",
-      "liveMinute": "15'"
+      "liveMinute": "45'+4'"
     },
     {
       "club": "bayern",
@@ -2407,11 +2402,11 @@
       "location": "Munich",
       "home": true,
       "opponent": "RB Leipzig",
-      "score": "1-0",
+      "score": "3-0",
       "scoreExtra": null,
       "homeTeam": "Bayern Munich",
       "awayTeam": "RB Leipzig",
-      "clubResult": null,
+      "clubResult": "W",
       "homeEvents": "",
       "awayEvents": "",
       "notes": "",
@@ -2424,7 +2419,7 @@
       "status": "live",
       "fixtureKey": "2026-10-17|bayern|rb leipzig",
       "sourcePage": "2026–27 FC Bayern Munich season",
-      "liveMinute": "15'"
+      "liveMinute": "HT"
     },
     {
       "club": "arsenal",
@@ -9409,7 +9404,7 @@
       "category": "football",
       "league": "Premier League",
       "leagueId": "premier-league",
-      "logo": "/assets/logos/league-premier-league.png",
+      "logo": "assets/logos/league-premier-league.png",
       "updated": "17 October 2026",
       "sourcePage": "2026–27 Premier League",
       "teams": 20,
@@ -9701,7 +9696,7 @@
       "category": "football",
       "league": "La Liga",
       "leagueId": "la-liga",
-      "logo": "/assets/logos/league-la-liga.png",
+      "logo": "assets/logos/league-la-liga.png",
       "updated": "17 October 2026",
       "sourcePage": "Template:2026–27 La Liga table",
       "teams": 20,
@@ -9993,7 +9988,7 @@
       "category": "football",
       "league": "Bundesliga",
       "leagueId": "bundesliga",
-      "logo": "/assets/logos/league-bundesliga.png",
+      "logo": "assets/logos/league-bundesliga.png",
       "updated": "17 October 2026",
       "sourcePage": "Template:2026–27 Bundesliga table",
       "teams": 18,
@@ -10257,12 +10252,26 @@
       "category": "football",
       "league": "Ligue 1",
       "leagueId": "ligue-1",
-      "logo": "/assets/logos/league-ligue-1.png",
-      "updated": "16 October 2026",
+      "logo": "assets/logos/league-ligue-1.png",
+      "updated": "17 October 2026",
       "sourcePage": "Template:2026–27 Ligue 1 table",
       "teams": 18,
-      "played": 55,
+      "played": 56,
       "rows": [
+        {
+          "code": "PSG",
+          "team": "Paris Saint-Germain",
+          "played": 7,
+          "won": 4,
+          "drawn": 2,
+          "lost": 1,
+          "gf": 14,
+          "ga": 9,
+          "points": 14,
+          "gd": 5,
+          "position": 1,
+          "clubId": "psg"
+        },
         {
           "code": "ASM",
           "team": "Monaco",
@@ -10274,7 +10283,7 @@
           "ga": 5,
           "points": 14,
           "gd": 5,
-          "position": 1,
+          "position": 2,
           "clubId": null
         },
         {
@@ -10288,7 +10297,7 @@
           "ga": 4,
           "points": 13,
           "gd": 5,
-          "position": 2,
+          "position": 3,
           "clubId": null
         },
         {
@@ -10302,7 +10311,7 @@
           "ga": 10,
           "points": 13,
           "gd": 2,
-          "position": 3,
+          "position": 4,
           "clubId": null
         },
         {
@@ -10316,7 +10325,7 @@
           "ga": 4,
           "points": 11,
           "gd": 7,
-          "position": 4,
+          "position": 5,
           "clubId": null
         },
         {
@@ -10330,22 +10339,8 @@
           "ga": 4,
           "points": 11,
           "gd": 4,
-          "position": 5,
-          "clubId": null
-        },
-        {
-          "code": "PSG",
-          "team": "Paris Saint-Germain",
-          "played": 6,
-          "won": 3,
-          "drawn": 2,
-          "lost": 1,
-          "gf": 11,
-          "ga": 8,
-          "points": 11,
-          "gd": 3,
           "position": 6,
-          "clubId": "psg"
+          "clubId": null
         },
         {
           "code": "TFC",
@@ -10420,14 +10415,14 @@
         {
           "code": "STR",
           "team": "Strasbourg",
-          "played": 6,
+          "played": 7,
           "won": 2,
           "drawn": 1,
-          "lost": 3,
-          "gf": 11,
-          "ga": 12,
+          "lost": 4,
+          "gf": 12,
+          "ga": 15,
           "points": 7,
-          "gd": -1,
+          "gd": -3,
           "position": 12,
           "clubId": null
         },

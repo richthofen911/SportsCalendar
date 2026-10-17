@@ -8,7 +8,7 @@ import path from "node:path";
 
 import { buildCalendar, checkIcsFiles } from "./pipeline.mjs";
 import { writeSiteFiles } from "./site-files.mjs";
-import { refreshLogos } from "./logos.mjs";
+import { refreshLogos, refreshTeamLogos } from "./logos.mjs";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
 const force = process.argv.includes("--force");
@@ -30,6 +30,15 @@ if (!logos.offline) {
   if (logos.kept.length) bits.push(`${logos.kept.length} kept from disk`);
   if (logos.failed.length) bits.push(`${logos.failed.length} unavailable (${logos.failed.join(", ")})`);
   console.log(`logos: ${bits.join(", ")}`);
+}
+
+// Opponents are fetched on demand, so a settled season costs nothing here.
+const teamLogos = await refreshTeamLogos(payload.events, { force });
+if (teamLogos.added || teamLogos.unresolved.length) {
+  console.log(
+    `opponent crests: ${teamLogos.added} fetched of ${teamLogos.total}` +
+      (teamLogos.unresolved.length ? `, ${teamLogos.unresolved.length} without a match (${teamLogos.unresolved.join(", ")})` : "")
+  );
 }
 
 console.log(

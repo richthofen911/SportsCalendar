@@ -124,14 +124,26 @@ export function resultPatch(result, { home }) {
   const awayScore = result.away.score;
   if (homeScore == null || awayScore == null) return null;
 
-  // Our `score` is always from the tracked club's point of view.
-  const score = home ? `${homeScore}-${awayScore}` : `${awayScore}-${homeScore}`;
+  // `score` is home-away, the same orientation the Wikipedia parse produces —
+  // writing it club-first here made every away win read backwards. `clubResult`
+  // is the tracked club's own outcome, which the UI and the .ics writer use.
+  const score = `${homeScore}-${awayScore}`;
+  const ours = Number(home ? homeScore : awayScore);
+  const theirs = Number(home ? awayScore : homeScore);
+  const clubResult =
+    Number.isFinite(ours) && Number.isFinite(theirs)
+      ? ours > theirs
+        ? "W"
+        : ours < theirs
+          ? "L"
+          : "D"
+      : null;
 
   if (result.state === "in") {
-    return { score, status: "live", liveMinute: result.detail || result.clock || "LIVE" };
+    return { score, clubResult, status: "live", liveMinute: result.detail || result.clock || "LIVE" };
   }
   if (result.state === "post") {
-    return { score, status: "played", liveMinute: null };
+    return { score, clubResult, status: "played", liveMinute: null };
   }
   return null;
 }
