@@ -2,9 +2,8 @@
 #
 # Render runs the web service; the database lives on Neon, not here.
 #
-# The service name in the file is `sports-calendar`, while the live one is
-# `sportscalendar-da1q` — a service created by hand rather than from this
-# Blueprint keeps its own name, and that is fine. What matters is that it has
+# The service name below matches the live one so that applying this Blueprint
+# adopts it rather than creating a duplicate. What matters most is that it has
 # the four `sync: false` values set in the dashboard:
 #
 #   DATABASE_URL          pooled Neon connection string  (`neon env pull`)
@@ -20,7 +19,9 @@
 # so queries do not cross the country.
 services:
   - type: web
-    name: sports-calendar
+    # Must match the live service, or applying this Blueprint creates a second
+    # one instead of adopting the existing deployment.
+    name: sportscalendar-da1q
     runtime: node
     plan: free
     region: ohio
