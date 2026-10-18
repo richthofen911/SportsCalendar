@@ -155,7 +155,12 @@ export function checkIcsFiles(files) {
  * Fetch, parse and assemble the whole calendar.
  * Returns the payload, the `.ics` files, and the build report — writes nothing.
  */
-export async function buildCalendar({ force = false, now = new Date(), log = console.log } = {}) {
+export async function buildCalendar({
+  force = false,
+  now = new Date(),
+  log = console.log,
+  retentionMonths = Number(process.env.RETENTION_MONTHS || 6),
+} = {}) {
   const idOf = makeIdFactory();
   const all = [];
   const report = { skipped: [], duplicates: [], noDate: [], byClub: {} };
@@ -312,11 +317,31 @@ export async function buildCalendar({ force = false, now = new Date(), log = con
 
   const generatedAt = now.toISOString();
 
-  const events = [...all, ...f1Events].sort((a, b) => {
+  const assembled = [...all, ...f1Events].sort((a, b) => {
     const ka = a.kickoffUtc || `${a.date} 99:99`;
     const kb = b.kickoffUtc || `${b.date} 99:99`;
     return ka < kb ? -1 : ka > kb ? 1 : 0;
   });
+
+  // The calendar is a live schedule, not an archive. Each full rebuild replaces
+  // the whole snapshot, so dropping anything that finished more than
+  // `retentionMonths` ago is enough to stop the database and the published files
+  // growing without bound — there is no separate cleanup job to forget.
+  //
+  // Only the past is trimmed: future fixtures are the calendar. The window rolls,
+  // so from mid-season it also starts dropping the earliest matches of the
+  // season; set RETENTION_MONTHS higher (or the same via neon.ts) to keep more.
+  const retentionFloor =
+    Number.isFinite(retentionMonths) && retentionMonths > 0
+      ? (() => {
+          const cutoff = new Date(now);
+          cutoff.setUTCMonth(cutoff.getUTCMonth() - retentionMonths);
+          return cutoff.toISOString().slice(0, 10);
+        })()
+      : null;
+
+  const events = retentionFloor ? assembled.filter((e) => !e.date || e.date >= retentionFloor) : assembled;
+  const pruned = assembled.length - events.length;
 
   // ESPN owns the result, Wikipedia owns the fixture. A rebuilt calendar must
   // not overwrite a score ESPN already published with a page that has not been
@@ -387,6 +412,7 @@ export async function buildCalendar({ force = false, now = new Date(), log = con
       f1Report,
       standingsReport,
       espn: espnReport,
+      retention: { months: retentionMonths, floor: retentionFloor, pruned },
       counts: {
         football: all.length,
         f1: f1Events.length,

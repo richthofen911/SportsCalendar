@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T01:52:11.049Z",
+  "generatedAt": "2026-10-18T02:16:12.149Z",
   "season": "2026-27",
   "source": "Wikipedia season pages and league table templates; results and F1 start times from ESPN",
   "categories": [
@@ -109,69 +109,6 @@
     }
   ],
   "events": [
-    {
-      "id": "f1-2026-01",
-      "category": "formula-1",
-      "kind": "race",
-      "round": 1,
-      "name": "Australian Grand Prix",
-      "circuit": "Albert Park Circuit",
-      "location": "Melbourne",
-      "country": "Australia",
-      "date": "2026-03-08",
-      "kickoffUtc": "2026-03-08T04:00Z",
-      "weekendStartUtc": "2026-03-06T01:30Z",
-      "timeConfidence": "exact",
-      "status": "played",
-      "winner": "George Russell",
-      "winningConstructor": "Mercedes",
-      "pole": "George Russell",
-      "fastestLap": "Max Verstappen",
-      "report": "https://en.wikipedia.org/wiki/2026_Australian_Grand_Prix",
-      "sourcePage": "2026 Formula One World Championship"
-    },
-    {
-      "id": "f1-2026-02",
-      "category": "formula-1",
-      "kind": "race",
-      "round": 2,
-      "name": "Chinese Grand Prix",
-      "circuit": "Shanghai International Circuit",
-      "location": "Shanghai",
-      "country": "China",
-      "date": "2026-03-15",
-      "kickoffUtc": "2026-03-15T07:00Z",
-      "weekendStartUtc": "2026-03-13T03:30Z",
-      "timeConfidence": "exact",
-      "status": "played",
-      "winner": "Kimi Antonelli",
-      "winningConstructor": "Mercedes",
-      "pole": "Kimi Antonelli",
-      "fastestLap": "Kimi Antonelli",
-      "report": "https://en.wikipedia.org/wiki/2026_Chinese_Grand_Prix",
-      "sourcePage": "2026 Formula One World Championship"
-    },
-    {
-      "id": "f1-2026-03",
-      "category": "formula-1",
-      "kind": "race",
-      "round": 3,
-      "name": "Japanese Grand Prix",
-      "circuit": "Suzuka Circuit",
-      "location": "Suzuka",
-      "country": "Japan",
-      "date": "2026-03-29",
-      "kickoffUtc": "2026-03-29T05:00Z",
-      "weekendStartUtc": "2026-03-27T02:30Z",
-      "timeConfidence": "exact",
-      "status": "played",
-      "winner": "Kimi Antonelli",
-      "winningConstructor": "Mercedes",
-      "pole": "Kimi Antonelli",
-      "fastestLap": "Kimi Antonelli",
-      "report": "https://en.wikipedia.org/wiki/2026_Japanese_Grand_Prix",
-      "sourcePage": "2026 Formula One World Championship"
-    },
     {
       "id": "f1-2026-04",
       "category": "formula-1",
@@ -9406,7 +9343,7 @@
       "updated": "17 October 2026",
       "sourcePage": "2026–27 Premier League",
       "teams": 20,
-      "played": 64,
+      "played": 65,
       "rows": [
         {
           "code": "MCI",
@@ -9551,15 +9488,29 @@
         {
           "code": "NEW",
           "team": "Newcastle United",
-          "played": 6,
+          "played": 7,
           "won": 2,
           "drawn": 2,
-          "lost": 2,
+          "lost": 3,
           "gf": 10,
-          "ga": 13,
+          "ga": 14,
           "points": 8,
-          "gd": -3,
+          "gd": -4,
           "position": 11,
+          "clubId": null
+        },
+        {
+          "code": "AVL",
+          "team": "Aston Villa",
+          "played": 7,
+          "won": 2,
+          "drawn": 2,
+          "lost": 3,
+          "gf": 7,
+          "ga": 11,
+          "points": 8,
+          "gd": -4,
+          "position": 12,
           "clubId": null
         },
         {
@@ -9573,7 +9524,7 @@
           "ga": 12,
           "points": 7,
           "gd": -3,
-          "position": 12,
+          "position": 13,
           "clubId": null
         },
         {
@@ -9587,7 +9538,7 @@
           "ga": 9,
           "points": 6,
           "gd": 0,
-          "position": 13,
+          "position": 14,
           "clubId": null
         },
         {
@@ -9601,7 +9552,7 @@
           "ga": 11,
           "points": 6,
           "gd": -6,
-          "position": 14,
+          "position": 15,
           "clubId": null
         },
         {
@@ -9615,7 +9566,7 @@
           "ga": 10,
           "points": 5,
           "gd": -3,
-          "position": 15,
+          "position": 16,
           "clubId": null
         },
         {
@@ -9629,20 +9580,6 @@
           "ga": 8,
           "points": 5,
           "gd": -3,
-          "position": 16,
-          "clubId": null
-        },
-        {
-          "code": "AVL",
-          "team": "Aston Villa",
-          "played": 6,
-          "won": 1,
-          "drawn": 2,
-          "lost": 3,
-          "gf": 6,
-          "ga": 11,
-          "points": 5,
-          "gd": -5,
           "position": 17,
           "clubId": null
         },
@@ -9698,19 +9635,19 @@
       "updated": "17 October 2026",
       "sourcePage": "Template:2026–27 La Liga table",
       "teams": 20,
-      "played": 81,
+      "played": 83,
       "rows": [
         {
           "code": "BAR",
           "team": "Barcelona",
-          "played": 8,
-          "won": 8,
+          "played": 9,
+          "won": 9,
           "drawn": 0,
           "lost": 0,
-          "gf": 34,
-          "ga": 7,
-          "points": 24,
-          "gd": 27,
+          "gf": 39,
+          "ga": 9,
+          "points": 27,
+          "gd": 30,
           "position": 1,
           "clubId": "barcelona"
         },
@@ -9731,14 +9668,14 @@
         {
           "code": "BET",
           "team": "Real Betis",
-          "played": 8,
+          "played": 9,
           "won": 6,
           "drawn": 1,
-          "lost": 1,
-          "gf": 14,
-          "ga": 9,
+          "lost": 2,
+          "gf": 16,
+          "ga": 14,
           "points": 19,
-          "gd": 5,
+          "gd": 2,
           "position": 3,
           "clubId": null
         },
@@ -9813,6 +9750,20 @@
           "clubId": null
         },
         {
+          "code": "ATH",
+          "team": "Athletic Bilbao",
+          "played": 7,
+          "won": 2,
+          "drawn": 3,
+          "lost": 2,
+          "gf": 7,
+          "ga": 6,
+          "points": 9,
+          "gd": 1,
+          "position": 9,
+          "clubId": null
+        },
+        {
           "code": "VIL",
           "team": "Villarreal",
           "played": 9,
@@ -9823,7 +9774,7 @@
           "ga": 13,
           "points": 9,
           "gd": 0,
-          "position": 9,
+          "position": 10,
           "clubId": null
         },
         {
@@ -9837,20 +9788,6 @@
           "ga": 6,
           "points": 8,
           "gd": 2,
-          "position": 10,
-          "clubId": null
-        },
-        {
-          "code": "ATH",
-          "team": "Athletic Bilbao",
-          "played": 6,
-          "won": 2,
-          "drawn": 2,
-          "lost": 2,
-          "gf": 7,
-          "ga": 6,
-          "points": 8,
-          "gd": 1,
           "position": 11,
           "clubId": null
         },
@@ -9955,13 +9892,13 @@
         {
           "code": "VAL",
           "team": "Valencia",
-          "played": 8,
+          "played": 9,
           "won": 1,
-          "drawn": 2,
+          "drawn": 3,
           "lost": 5,
           "gf": 6,
           "ga": 15,
-          "points": 5,
+          "points": 6,
           "gd": -9,
           "position": 19,
           "clubId": null
@@ -9990,8 +9927,22 @@
       "updated": "17 October 2026",
       "sourcePage": "Template:2026–27 Bundesliga table",
       "teams": 18,
-      "played": 51,
+      "played": 52,
       "rows": [
+        {
+          "code": "MUN",
+          "team": "Bayern Munich",
+          "played": 6,
+          "won": 4,
+          "drawn": 2,
+          "lost": 0,
+          "gf": 22,
+          "ga": 5,
+          "points": 14,
+          "gd": 17,
+          "position": 1,
+          "clubId": "bayern"
+        },
         {
           "code": "DOR",
           "team": "Borussia Dortmund",
@@ -10003,7 +9954,7 @@
           "ga": 4,
           "points": 14,
           "gd": 7,
-          "position": 1,
+          "position": 2,
           "clubId": null
         },
         {
@@ -10017,22 +9968,8 @@
           "ga": 4,
           "points": 13,
           "gd": 10,
-          "position": 2,
-          "clubId": null
-        },
-        {
-          "code": "MUN",
-          "team": "Bayern Munich",
-          "played": 5,
-          "won": 3,
-          "drawn": 2,
-          "lost": 0,
-          "gf": 16,
-          "ga": 4,
-          "points": 11,
-          "gd": 12,
           "position": 3,
-          "clubId": "bayern"
+          "clubId": null
         },
         {
           "code": "LEV",
@@ -10079,14 +10016,14 @@
         {
           "code": "LEI",
           "team": "RB Leipzig",
-          "played": 5,
+          "played": 6,
           "won": 3,
           "drawn": 0,
-          "lost": 2,
-          "gf": 15,
-          "ga": 5,
+          "lost": 3,
+          "gf": 16,
+          "ga": 11,
           "points": 9,
-          "gd": 10,
+          "gd": 5,
           "position": 7,
           "clubId": null
         },
@@ -10254,7 +10191,7 @@
       "updated": "17 October 2026",
       "sourcePage": "Template:2026–27 Ligue 1 table",
       "teams": 18,
-      "played": 56,
+      "played": 58,
       "rows": [
         {
           "code": "PSG",
@@ -10271,6 +10208,20 @@
           "clubId": "psg"
         },
         {
+          "code": "LIL",
+          "team": "Lille",
+          "played": 7,
+          "won": 4,
+          "drawn": 2,
+          "lost": 1,
+          "gf": 10,
+          "ga": 5,
+          "points": 14,
+          "gd": 5,
+          "position": 2,
+          "clubId": null
+        },
+        {
           "code": "ASM",
           "team": "Monaco",
           "played": 6,
@@ -10280,20 +10231,6 @@
           "gf": 10,
           "ga": 5,
           "points": 14,
-          "gd": 5,
-          "position": 2,
-          "clubId": null
-        },
-        {
-          "code": "LIL",
-          "team": "Lille",
-          "played": 6,
-          "won": 4,
-          "drawn": 1,
-          "lost": 1,
-          "gf": 9,
-          "ga": 4,
-          "points": 13,
           "gd": 5,
           "position": 3,
           "clubId": null
@@ -10341,6 +10278,34 @@
           "clubId": null
         },
         {
+          "code": "LEN",
+          "team": "Lens",
+          "played": 7,
+          "won": 3,
+          "drawn": 1,
+          "lost": 3,
+          "gf": 14,
+          "ga": 11,
+          "points": 10,
+          "gd": 3,
+          "position": 7,
+          "clubId": null
+        },
+        {
+          "code": "BRE",
+          "team": "Brest",
+          "played": 7,
+          "won": 2,
+          "drawn": 3,
+          "lost": 2,
+          "gf": 13,
+          "ga": 10,
+          "points": 9,
+          "gd": 3,
+          "position": 8,
+          "clubId": null
+        },
+        {
           "code": "TFC",
           "team": "Toulouse",
           "played": 7,
@@ -10351,21 +10316,7 @@
           "ga": 11,
           "points": 9,
           "gd": 1,
-          "position": 7,
-          "clubId": null
-        },
-        {
-          "code": "BRE",
-          "team": "Brest",
-          "played": 6,
-          "won": 2,
-          "drawn": 2,
-          "lost": 2,
-          "gf": 12,
-          "ga": 9,
-          "points": 8,
-          "gd": 3,
-          "position": 8,
+          "position": 9,
           "clubId": null
         },
         {
@@ -10379,7 +10330,7 @@
           "ga": 6,
           "points": 8,
           "gd": 0,
-          "position": 9,
+          "position": 10,
           "clubId": null
         },
         {
@@ -10393,20 +10344,6 @@
           "ga": 7,
           "points": 8,
           "gd": -2,
-          "position": 10,
-          "clubId": null
-        },
-        {
-          "code": "LEN",
-          "team": "Lens",
-          "played": 6,
-          "won": 2,
-          "drawn": 1,
-          "lost": 3,
-          "gf": 11,
-          "ga": 10,
-          "points": 7,
-          "gd": 1,
           "position": 11,
           "clubId": null
         },
@@ -10483,14 +10420,14 @@
         {
           "code": "TRO",
           "team": "Troyes",
-          "played": 6,
+          "played": 7,
           "won": 1,
           "drawn": 1,
-          "lost": 4,
-          "gf": 4,
-          "ga": 13,
+          "lost": 5,
+          "gf": 5,
+          "ga": 16,
           "points": 4,
-          "gd": -9,
+          "gd": -11,
           "position": 17,
           "clubId": null
         },

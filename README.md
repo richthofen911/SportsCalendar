@@ -265,6 +265,23 @@ the freshest copy, and this is how the committed files — what a double-clicked
 `index.html` serves — are brought back in line with it. The hosted site does not
 read them; it reads the database.
 
+### How much history it keeps
+
+Six months, rolling. The calendar is a live schedule, not an archive, so a full
+rebuild only writes matches that finished inside the window — `RETENTION_MONTHS`,
+declared for the Function in `neon.ts` and picked up from the environment by
+`npm run refresh`. Future fixtures are always kept: they are the calendar.
+
+There is no separate cleanup job to forget. Every rebuild replaces the snapshot
+wholesale, so an expired match simply stops being written back, and the
+`refresh_runs` log is trimmed on the same clock.
+
+The window rolls, which means it eventually eats the start of the current
+season. Right now it already excludes the first three Formula 1 races (March
+2026); from around March 2027 it would begin dropping August's football. Set
+`RETENTION_MONTHS=12` — in `neon.ts` for the Function, and in the environment for
+local builds — if you would rather keep a whole season in view.
+
 ### The Render service
 
 `https://sportscalendar-da1q.onrender.com/` runs `tools/serve.mjs` and must be

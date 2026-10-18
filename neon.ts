@@ -18,6 +18,12 @@ export default defineConfig({
         // cache is switched off and every page is fetched fresh. The cache is
         // an optimisation, never a source of truth.
         SPORTS_CALENDAR_CACHE: "off",
+        // How much history the calendar keeps. Every full rebuild replaces the
+        // snapshot, so this is also the database's retention: anything that
+        // finished more than six months ago is not written back. Raise it to
+        // keep a whole season in view (a rolling window starts dropping the
+        // season's opening matches from mid-season).
+        RETENTION_MONTHS: "6",
         // Only sent when it is present, so `neon deploy` works before Render
         // has generated the value. Once you copy it into `.env.local`, deploy
         // with `--env .env.local` and the function accepts manual refreshes

@@ -338,6 +338,17 @@ async function applySnapshot(client, payload, { source, durationMs }) {
   await client.query("delete from events");
   await client.query("delete from clubs");
   await client.query("delete from categories");
+
+  // The snapshot tables are replaced wholesale, so they cannot grow. This log
+  // can: two full rebuilds a day, forever. Trim it on the same clock the
+  // pipeline uses for events.
+  const logMonths = Number(process.env.RETENTION_MONTHS || 6);
+  if (Number.isFinite(logMonths) && logMonths > 0) {
+    await client.query(
+      `delete from refresh_runs where started_at < now() - ($1 || ' months')::interval`,
+      [String(logMonths)]
+    );
+  }
   {
     for (const [i, c] of (payload.categories || []).entries()) {
       await client.query(
@@ -378,6 +389,18 @@ async function applySnapshot(client, payload, { source, durationMs }) {
     const events = (payload.events || []).map(eventRow);
     if (events.length) await client.query(EVENTS_INSERT, [JSON.stringify(events)]);
 
+    // Belt and braces. The pipeline already drops expired matches, but the
+    // guarantee belongs to the database: whatever payload is pushed, nothing
+    // older than the retention window is stored. `date >= floor` keeps every
+    // future fixture, which is the calendar.
+    const eventMonths = Number(process.env.RETENTION_MONTHS || 6);
+    if (Number.isFinite(eventMonths) && eventMonths > 0) {
+      await client.query(
+        `delete from events where date < (now() - ($1 || ' months')::interval)::date`,
+        [String(eventMonths)]
+      );
+    }
+
     const standingRows = [];
     for (const [i, s] of (payload.standings || []).entries()) {
       await client.query(
@@ -405,7 +428,7 @@ async function applySnapshot(client, payload, { source, durationMs }) {
 
     await client.query(
       `insert into calendar_meta (id, generated_at, season, source, refreshed_by, event_count)
-       values (true, $1, $2, $3, $4, $5)
+       values (true, $1, $2, $3, $4, (select count(*) from events))
        on conflict (id) do update set
          generated_at = excluded.generated_at,
          season       = excluded.season,
@@ -417,7 +440,6 @@ async function applySnapshot(client, payload, { source, durationMs }) {
         payload.season || "",
         payload.source || "",
         source,
-        events.length,
       ]
     );
 
@@ -427,7 +449,16 @@ async function applySnapshot(client, payload, { source, durationMs }) {
       [source, events.length, durationMs ?? Date.now() - startedAt]
     );
 
-    return { events: events.length, standings: standingRows.length, durationMs: Date.now() - startedAt };
+    // Report what the database actually holds, not what the payload offered:
+    // retention may have dropped a few rows on the way in.
+    const stored = await client.query("select count(*)::int as n from events");
+    return {
+      events: stored.rows[0].n,
+      stored: stored.rows[0].n,
+      offered: events.length,
+      standings: standingRows.length,
+      durationMs: Date.now() - startedAt,
+    };
   }
 }
 

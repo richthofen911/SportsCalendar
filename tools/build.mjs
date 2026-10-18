@@ -48,6 +48,10 @@ console.log("time confidence:", JSON.stringify(timeConfidence));
 console.log(
   `espn results: ${espn.patched} rows updated (${espn.live} in play) from ${espn.requests} scoreboard request(s)`
 );
+console.log(
+  `retention: ${report.retention.months} months` +
+    (report.retention.floor ? ` (from ${report.retention.floor}), ${report.retention.pruned} events dropped` : ", disabled")
+);
 console.log("skipped blocks:", detail.skipped.length);
 for (const s of detail.skipped.slice(0, 10)) console.log("  ", JSON.stringify(s));
 console.log("duplicates:", detail.duplicates.length);
