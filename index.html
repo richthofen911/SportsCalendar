@@ -140,6 +140,12 @@
         background: transparent; color: var(--muted); cursor: pointer;
       }
       .seg button[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
+      /* Seven columns of two clubs will not read on a phone, so the option is
+         not offered there. Same query the layout switch uses for Auto, so the
+         button disappears exactly when Auto would have picked the cards. */
+      @media (max-width: 820px), (pointer: coarse) and (max-width: 1100px) {
+        #lMonth { display: none; }
+      }
       .nav { display: inline-flex; align-items: center; gap: 6px; }
       .nav button {
         font: inherit; font-size: 13px; padding: 4px 10px;
@@ -1040,6 +1046,11 @@
       // One control carries both axes: Auto, the two desktop views, and the
       // phone layout, whose agenda is a card rendering of the same list.
       function resolve(layout) {
+        // The month grid needs width a phone does not have — seven columns of
+        // two clubs each — so there is no Month option there. A stored
+        // preference from a desktop falls back to the cards instead of drawing
+        // an unusable grid; the preference itself is kept for the desktop.
+        if (layout === "month" && phoneMq.matches) return { phone: true, view: "list" };
         switch (layout) {
           case "month":
             return { phone: false, view: "month" };
@@ -1104,8 +1115,12 @@
       }
 
       function syncLayoutButtons() {
+        // Light up what is actually on screen. A stored "month" on a phone is
+        // served as the card layout, so the Phone button is the true one there —
+        // otherwise no visible option looks selected.
+        const effective = state.layout === "month" && phoneMq.matches ? "phone" : state.layout;
         for (const [id, value] of Object.entries(LAYOUTS)) {
-          document.getElementById(id).setAttribute("aria-pressed", String(state.layout === value));
+          document.getElementById(id).setAttribute("aria-pressed", String(effective === value));
         }
         document.getElementById("monthNav").style.display = state.view === "month" ? "inline-flex" : "none";
       }
@@ -1273,7 +1288,8 @@
           });
         }
         phoneMq.addEventListener("change", () => {
-          if (state.layout !== "auto") return;
+          // Re-resolve for every choice, not just Auto: a stored "month" has to
+          // fall back when the window narrows (and come back when it widens).
           applyLayout();
           render();
         });

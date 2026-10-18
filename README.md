@@ -60,13 +60,18 @@ presentation and the view, so there is nothing else to switch:
 | Choice | What you get |
 | --- | --- |
 | **Auto** (default) | Phone layout on a phone, month grid on a desktop |
-| **Month** | Desktop layout, calendar grid with the month navigator |
+| **Month** | Desktop layout, calendar grid with the month navigator. Not offered on a phone: seven columns of two clubs each cannot be read there |
 | **List** | Desktop layout, agenda table with column headers |
 | **Phone** | Cards instead of the grid and the table, fixture details as a bottom sheet, tighter filter bar |
 
 Auto detects on viewport width *and* pointer type, so a phone held sideways still
 gets the phone layout. Any explicit choice is remembered in that browser, and
 Auto is one tap away if you want the device decision back.
+
+A remembered **Month** on a phone falls back to the cards rather than drawing an
+unreadable grid, and the Phone button lights up to show what you are actually
+looking at; the preference is kept, so the same browser still opens the grid on a
+wide screen.
 
 On iPhone, **Share → Add to Home Screen** gives it its own icon and a full-width
 status bar.
