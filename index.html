@@ -242,6 +242,8 @@
       /* The crest that closes a fixture line sits after the away club's name. */
       .c-fixture .mark { margin-right: 5px; }
       .c-fixture .mark.trail { margin-right: 0; margin-left: 5px; }
+      /* Phone moves the goals between the names; desktop keeps the Result column. */
+      .c-fixture .inl { display: none; font-weight: 700; }
       .c-score { font-variant-numeric: tabular-nums; font-weight: 600; white-space: nowrap; }
       .liveTag { display: inline-block; margin-left: 6px; padding: 1px 5px; border-radius: 4px; background: #d32f2f; color: #fff; font-size: 10px; font-weight: 700; letter-spacing: .04em; vertical-align: 1px; }
       /* A crest in place of the colour dot. The span keeps the club colour
@@ -347,6 +349,11 @@
       }
       .phone .c-when { grid-area: when; font-weight: 600; }
       .phone .c-fixture { grid-area: fixture; font-size: 15px; margin-top: 2px; }
+      .phone .c-fixture .inl { display: inline; margin: 0 0.3em; }
+      .phone .c-fixture .vsep { display: none; }
+      /* The goals now sit next to the team names, so the corner keeps only the
+         live clock. Formula 1 has no goals and keeps its result there. */
+      .phone .row.cat-football .c-score .score-text { display: none; }
       .phone .c-comp { grid-area: comp; color: var(--muted); font-size: 12.5px; }
       .phone .c-score { grid-area: score; text-align: right; font-size: 15px; }
       .phone .c-venue { grid-area: venue; color: var(--muted); font-size: 12.5px; margin-top: 3px; }
@@ -488,7 +495,14 @@
           if (id) return clubMark(id, trailing);
           return teamMark(side === "home" ? m.homeTeam : m.awayTeam, trailing);
         };
-        return `${end("home")}${m.homeTeam} v ${m.awayTeam}${end("away")}`;
+        // Desktop keeps the Result column, so the line reads "Home v Away".
+        // On a phone that column is a long way from the club it describes, so
+        // the goals move between the names: Home 2 : 1 Away. Both forms are in
+        // the markup and CSS picks one; nothing is re-rendered on resize.
+        const between = m.score
+          ? `<span class="vsep"> v </span><span class="inl">${m.score.split("-").join(" : ")}</span>`
+          : " v ";
+        return `${end("home")}${m.homeTeam}${between}${m.awayTeam}${end("away")}`;
       }
 
       // Phones, including landscape ones that are wider than the grid needs.
@@ -907,10 +921,9 @@
       function scoreCell(m) {
         const result =
           raceResult(m) ?? (m.score ? `${m.score}${m.scoreExtra ? ` ${m.scoreExtra}` : ""}` : null);
-        if (isLiveNow(m)) {
-          return `${result || ""}<span class="liveTag">${m.liveMinute || "LIVE"}</span>`;
-        }
-        return result || '<i class="dash">—</i>';
+        const text = result ? `<span class="score-text">${result}</span>` : '<i class="dash">—</i>';
+        if (isLiveNow(m)) return `${text}<span class="liveTag">${m.liveMinute || "LIVE"}</span>`;
+        return text;
       }
 
       function tableHtml(list) {
@@ -922,7 +935,7 @@
               m.kickoffUtc ? "" : '<span class="tbc">TBC</span>'}`;
             const mark =
               m.fixtureKey === state.anchorKey && state.anchorMark ? `<div class="todayMark">Today</div>` : "";
-            return `${mark}<div class="row" data-fixture="${m.fixtureKey}">
+            return `${mark}<div class="row ${m.category === "football" ? "cat-football" : "cat-f1"}" data-fixture="${m.fixtureKey}">
               <span class="c-when">${when}</span>
               <span class="c-fixture">${fixtureHtml(m)}</span>
               <span class="c-comp">${eventCompetition(m)}${m.phase ? ` <span class="ground">· ${m.phase}</span>` : ""}${m.round ? ` <span class="ground">· ${m.category === "formula-1" ? "round" : "rd"} ${m.round}</span>` : ""}</span>
