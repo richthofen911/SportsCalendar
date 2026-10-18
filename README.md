@@ -10,9 +10,10 @@ A local calendar with two categories, each independently toggleable:
   time, weekend opening, and the winner, pole sitter and fastest lap once run.
 
 No accounts, no API keys, no build step: `index.html` reads one generated data
-file and works straight from `file://`. There is also a hosted deployment — a
-Node service on Render reading Postgres on Neon, refreshed on a schedule — under
-[Deploy it](#deploy-it-render--neon). It is optional; nothing below needs it.
+file and works straight from `file://`. The calendar is also hosted at
+<https://sportscalendar-da1q.onrender.com/>, where a Node service on Render reads
+Postgres on Neon — see [Deploy it](#deploy-it-render--neon). Nothing below needs
+that; it is just where the public copy lives.
 
 ## Open it
 
@@ -91,50 +92,33 @@ Tapping it re-runs the whole fetch-and-build on the Mac and reloads the page, so
 you can pull new scores from the sofa. It is a plain POST with no auth, so keep
 this on your own Wi-Fi and don't port-forward the address.
 
-## Publish to GitHub Pages
+## Where it lives
 
-The site is static, so GitHub Pages serves it and this Mac stays the only thing
-that fetches data:
+The calendar is served from **Render**, reading Postgres on Neon:
 
 ```
-Wikipedia/ESPN  --(npm run publish)-->  GitHub repo  --(Actions)-->  Pages site
+https://sportscalendar-da1q.onrender.com/
 ```
 
-- **`npm run publish`** — re-fetches, rebuilds `data/` and `calendar/`, commits
-  only those generated files and pushes. It makes no commit when nothing
-  changed, so a scheduled run on a quiet day is a no-op. Add `--dry-run` to
-  commit locally without pushing.
-
-  If the Neon cron is refreshing on its own, run **`npm run db:pull`** first:
-  the database will have moved on since this Mac last built, and pulling makes
-  the committed files match what the hosted site is serving.
-- **Pages source** is the `main` branch root, so a push publishes whatever is
-  committed. No build step and no network access on GitHub's side — the page can
-  only ever show what this machine fetched. It publishes the whole repository,
-  which is why `tools/` is also reachable at the site URL; nothing there is
-  secret, but if you would rather publish only the site, switch Settings →
-  Pages → Source to "GitHub Actions" and add a workflow that uploads just
-  `index.html`, `data/calendar.js` and `calendar/*.ics`.
-- **`npm run scheduler:install`** — optional. Installs a per-user LaunchAgent
-  (no admin rights) that runs the publish step at 07:15 and 19:15. Override with
-  `--times 06:00,22:00`; remove with `npm run scheduler:uninstall`. A job missed
-  while asleep runs on the next wake; while powered off it is skipped. Log:
-  `~/Library/Logs/SportsCalendar-refresh.log`.
-
-Site: `https://<owner>.github.io/SportsCalendar/`
-
-Because the calendar files are served over plain HTTP from that URL, a calendar
-app can **subscribe** to them instead of importing a snapshot — it then updates
-itself on every publish, with no re-import:
+GitHub Pages is retired. It served the committed files, which only changed when
+this Mac pushed — so a finished match could sit at half time for hours, and the
+public site drifted from the database without anything noticing. Anything that
+used to point at a `github.io` address should point at the Render URL instead,
+including calendar subscriptions:
 
 - **Google Calendar** — Settings → Imports & exports → **Other calendars → By URL**
-  and paste `https://<owner>.github.io/SportsCalendar/calendar/all-events.ics`.
+  and paste `https://sportscalendar-da1q.onrender.com/calendar/all-events.ics`.
 - **Apple Calendar** — File → New Calendar Subscription with the same URL.
   Set "Reload every hour".
 
+The committed `data/` and `calendar/` files are still generated and still make
+`file://` work, but they are a local convenience now, not what the site serves.
+**`npm run db:pull`** brings them in line with the database. The old
+`npm run publish` and `npm run scheduler:install` were part of the Pages
+workflow; if either was installed, `npm run scheduler:uninstall` removes it.
+
 The **Refresh data** button in the header is shown only when the page comes from
-`localhost` or a private network address, so it never appears on the public site
-where there is no server to call.
+`localhost` or a private network address, so it never appears on the public site.
 
 ## Deploy it (Render + Neon)
 
@@ -161,10 +145,10 @@ while this Mac is asleep. Those two jobs are what the deployment adds.
 
 The web service reads the database and serves `/data/calendar.js` and
 `/calendar/*.ics` from it, so the page needs no change at all — it still just
-loads a script tag. Without `DATABASE_URL` the server falls back to the
-committed files, which is the behaviour `npm run serve` always had; the Render
-blueprint sets `REQUIRE_DATABASE=true` so a missing connection string stops the
-boot instead of quietly serving stale files.
+loads a script tag. Locally, without `DATABASE_URL`, it falls back to the
+committed files, which is the behaviour `npm run serve` always had. On Render it
+does not: the platform sets `RENDER`, and a deployment without a database
+refuses to start rather than quietly serving a frozen snapshot.
 
 ### Refreshing during a match
 
@@ -277,32 +261,39 @@ npm run db:verify            # prove the round trip, changing nothing
 ```
 
 `db:pull` is the one that matters once the cron is running: the database is then
-the freshest copy, and this is how the committed files — what GitHub Pages and a
-double-clicked `index.html` serve — are brought back in line with it before you
-publish.
+the freshest copy, and this is how the committed files — what a double-clicked
+`index.html` serves — are brought back in line with it. The hosted site does not
+read them; it reads the database.
 
-### Creating the Render service
+### The Render service
 
-Everything on the Neon side already exists. Two of the three values Render needs
-come from Neon, and one is already on this machine:
+`https://sportscalendar-da1q.onrender.com/` runs `tools/serve.mjs` and must be
+pointed at Neon. `render.yaml` declares the service, but the four environment
+variables below are `sync: false`, so they are set in the dashboard — and a
+service created by hand starts without them:
 
-| Variable | Where to get it |
+| Variable | Value |
 | --- | --- |
-| `DATABASE_URL` | `neon env pull` writes the pooled string to `.env.local`; or Neon console → Connect |
+| `DATABASE_URL` | the pooled Neon string — `neon env pull` writes it to `.env.local`; or Neon console → Connect |
 | `REFRESH_TOKEN` | the value of `REFRESH_TOKEN` in `.env.local` |
-| `REFRESH_FUNCTION_URL` | `neon functions get refresh` — the URL, with `/refresh` on the end |
+| `REFRESH_FUNCTION_URL` | `neon functions get refresh` — the URL with `/refresh` on the end |
+| `REQUIRE_DATABASE` | `true` (implicit on Render, but be explicit) |
 
-Then, in the Render dashboard:
+Then **Manual Deploy → Deploy latest commit**, and check the two things that
+tell you it is wired up correctly:
 
-1. **New → Blueprint**, and pick the `SportsCalendar` repository. Render reads
-   `render.yaml` and shows one web service, plan **free**, region **Ohio** — the
-   same region as the Neon project, so queries do not cross the country.
-2. Paste the three values above when it asks for the `sync: false` variables.
-3. **Apply**. The first deploy takes a couple of minutes. When it is done,
-   `https://<service>.onrender.com/healthz` should answer
-   `{"ok":true,"database":"neon",...}`. A `503` there means the service is up but
-   `DATABASE_URL` cannot see any rows — check the string and run `npm run db:push`
-   if the database is empty.
+```sh
+curl -s https://sportscalendar-da1q.onrender.com/healthz
+# {"ok":true,"database":"neon","generatedAt":"…","events":307}
+```
+
+`"database":"files"` means `DATABASE_URL` is missing: the service is serving the
+committed snapshot, which is exactly the failure that made a finished match read
+"HT". Since the service detects Render's `RENDER` variable, a deployment without
+a database now **fails its health check** rather than starting in that state.
+
+If `/healthz` returns `503` with `"database":"neon"`, the connection works but
+the snapshot is empty — run `npm run db:push`.
 
 The free plan spins the service down when nobody visits, so the first request
 after a quiet spell takes a few seconds to wake. The Neon compute does the same;
@@ -405,8 +396,8 @@ tools/ics.mjs       RFC 5545 writer (CRLF, 75-octet folding, escaping)
 tools/f1.mjs        F1 calendar + results, ESPN start times
 tools/standings.mjs league results -> tables
 tools/serve.mjs     the web server: files on disk, or Postgres when configured
-tools/publish.mjs   refresh, commit the generated files, push to GitHub
-tools/install-scheduler.mjs  optional twice-daily LaunchAgent
+tools/publish.mjs   retired Pages step: commit the generated files, push
+tools/install-scheduler.mjs  retired LaunchAgent that ran the Pages publish
 tools/verify.mjs    cross-check against ESPN
 tools/clubs.mjs     the six clubs, colours, crest pages and league list
 src/refresh/index.ts  the Neon Function the trigger calls

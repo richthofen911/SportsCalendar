@@ -1,11 +1,20 @@
 # Render Blueprint for the Sports Calendar.
 #
-# Render runs the web service; the database lives on Neon, not here. The two
-# values Render cannot know are marked `sync: false`, so the dashboard asks for
-# them when you create the Blueprint instead of them being committed:
+# Render runs the web service; the database lives on Neon, not here.
+#
+# The service name in the file is `sports-calendar`, while the live one is
+# `sportscalendar-da1q` — a service created by hand rather than from this
+# Blueprint keeps its own name, and that is fine. What matters is that it has
+# the four `sync: false` values set in the dashboard:
 #
 #   DATABASE_URL          pooled Neon connection string  (`neon env pull`)
+#   REFRESH_TOKEN         shared with the Neon refresh Function
 #   REFRESH_FUNCTION_URL  the Neon refresh Function's URL (`neon functions get refresh`)
+#   REQUIRE_DATABASE      "true"
+#
+# Without DATABASE_URL the service serves the committed snapshot instead of the
+# database, which is how a finished match kept reading "HT". tools/serve.mjs now
+# treats Render as requiring a database, so that state fails its health check.
 #
 # `ohio` is Render's aws-us-east-2 region, the same one the Neon project is in,
 # so queries do not cross the country.

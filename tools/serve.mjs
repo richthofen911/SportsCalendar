@@ -55,12 +55,21 @@ function dbEnabled() {
 }
 
 // On Render the database is the point: quietly serving the committed files
-// instead would look healthy while showing last week's fixtures. The blueprint
-// sets REQUIRE_DATABASE=true so a missing DATABASE_URL stops the boot instead.
-if (process.env.REQUIRE_DATABASE === "true" && !dbEnabled()) {
+// instead looks healthy while showing whatever was last pushed, which is how
+// finished matches kept appearing as half-time. `RENDER` is set by the platform,
+// so a deployment that has lost its DATABASE_URL fails its health check instead
+// of serving a frozen copy. REQUIRE_DATABASE=false opts out.
+const onRender = Boolean(process.env.RENDER);
+const requireDatabase =
+  process.env.REQUIRE_DATABASE === "true" ||
+  (onRender && process.env.REQUIRE_DATABASE !== "false");
+
+if (requireDatabase && !dbEnabled()) {
   console.error(
-    "REQUIRE_DATABASE=true but DATABASE_URL is not set. " +
-      "Set it to the pooled Neon connection string (see README, Deploy)."
+    (onRender
+      ? "Running on Render but DATABASE_URL is not set. "
+      : "REQUIRE_DATABASE=true but DATABASE_URL is not set. ") +
+      "Set DATABASE_URL to the pooled Neon connection string (see README, Deploy)."
   );
   process.exit(1);
 }
