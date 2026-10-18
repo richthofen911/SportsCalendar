@@ -223,7 +223,7 @@ Where the crest appears differs by layout, because the space does:
 | Layout | Placement |
 | --- | --- |
 | **Month** | a crest before each club name inside the day pill |
-| **List** | the fixture line is framed by the two crests — home on the left, away on the right. There is no separate clubs column: the fixture already names both teams, so a second column of short codes was saying it twice |
+| **List** | the fixture line is framed by the two crests — home on the left, away on the right — with the clubs separated by `:`. There is no separate clubs column: the fixture already names both teams, so a second column of short codes was saying it twice. The table keeps its columns at a readable width and scrolls sideways on a narrow screen, rather than clipping Result and Venue off the edge |
 | **Phone** | the same row, re-flowed into a card, with the goals moved between the two club names — `Home 2 : 1 Away` — because the Result column sits a long way from either name on a narrow screen. The corner keeps only the live clock |
 | **Standings** | beside each tracked club, with the league's mark on the table heading |
 

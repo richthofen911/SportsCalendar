@@ -225,7 +225,9 @@
       .tbl td.pts { font-weight: 700; }
       .tbl tr:last-child td { border-bottom: 0; }
 
-      .rows { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+      /* The table is wider than a phone. Clipping it hid the Result and Venue
+         columns entirely, so it scrolls sideways instead. */
+      .rows { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); overflow-x: auto; overflow-y: hidden; -webkit-overflow-scrolling: touch; }
       .row, .rhead {
         display: grid;
         grid-template-columns: 138px minmax(210px, 1.5fr) minmax(150px, 1fr) 76px minmax(150px, 1fr);
@@ -233,6 +235,9 @@
         padding: 9px 12px;
         border-bottom: 1px solid var(--line);
         align-items: baseline;
+        /* Keep the columns at a readable width and let the container scroll,
+           rather than squeezing them until the text wraps into a tower. */
+        min-width: 780px;
       }
       .row { font-size: 13px; cursor: pointer; }
       .row:last-child { border-bottom: 0; }
@@ -346,7 +351,10 @@
         gap: 2px 10px;
         padding: 13px 14px;
         min-height: 44px;
+        /* The card fits the screen; only the table scrolls. */
+        min-width: 0;
       }
+      .phone .rhead { min-width: 0; }
       .phone .c-when { grid-area: when; font-weight: 600; }
       .phone .c-fixture { grid-area: fixture; font-size: 15px; margin-top: 2px; }
       .phone .c-fixture .inl { display: inline; margin: 0 0.3em; }
@@ -495,13 +503,13 @@
           if (id) return clubMark(id, trailing);
           return teamMark(side === "home" ? m.homeTeam : m.awayTeam, trailing);
         };
-        // Desktop keeps the Result column, so the line reads "Home v Away".
+        // Desktop keeps the Result column, so the line reads "Home : Away".
         // On a phone that column is a long way from the club it describes, so
         // the goals move between the names: Home 2 : 1 Away. Both forms are in
         // the markup and CSS picks one; nothing is re-rendered on resize.
         const between = m.score
-          ? `<span class="vsep"> v </span><span class="inl">${m.score.split("-").join(" : ")}</span>`
-          : " v ";
+          ? `<span class="vsep"> : </span><span class="inl">${m.score.split("-").join(" : ")}</span>`
+          : " : ";
         return `${end("home")}${m.homeTeam}${between}${m.awayTeam}${end("away")}`;
       }
 
