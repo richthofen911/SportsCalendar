@@ -578,6 +578,10 @@ export async function applyResultPatches(pool, patches) {
       );
       updated++;
     }
+    // The snapshot's "as of" time has to move with its contents. Without this,
+    // a page served from the database reports a staleness it does not have,
+    // because only a full rebuild used to touch calendar_meta.
+    await client.query("update calendar_meta set generated_at = now() where id");
     await client.query("commit");
     return { updated };
   } catch (err) {

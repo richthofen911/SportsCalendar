@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T17:20:35.851Z",
+  "generatedAt": "2026-10-18T01:52:11.049Z",
   "season": "2026-27",
   "source": "Wikipedia season pages and league table templates; results and F1 start times from ESPN",
   "categories": [
@@ -2370,7 +2370,7 @@
       "location": "Seville",
       "home": false,
       "opponent": "Real Betis",
-      "score": "1-2",
+      "score": "2-5",
       "scoreExtra": null,
       "homeTeam": "Real Betis",
       "awayTeam": "Barcelona",
@@ -2384,10 +2384,9 @@
       "category": "football",
       "clubName": "FC Barcelona",
       "id": "barcelona-w0r7g3q3",
-      "status": "live",
+      "status": "played",
       "fixtureKey": "2026-10-17|barcelona|real betis",
-      "sourcePage": "2026–27 FC Barcelona season",
-      "liveMinute": "45'+4'"
+      "sourcePage": "2026–27 FC Barcelona season"
     },
     {
       "club": "bayern",
@@ -2402,7 +2401,7 @@
       "location": "Munich",
       "home": true,
       "opponent": "RB Leipzig",
-      "score": "3-0",
+      "score": "6-1",
       "scoreExtra": null,
       "homeTeam": "Bayern Munich",
       "awayTeam": "RB Leipzig",
@@ -2416,10 +2415,9 @@
       "category": "football",
       "clubName": "Bayern Munich",
       "id": "bayern-w1ldhu52",
-      "status": "live",
+      "status": "played",
       "fixtureKey": "2026-10-17|bayern|rb leipzig",
-      "sourcePage": "2026–27 FC Bayern Munich season",
-      "liveMinute": "HT"
+      "sourcePage": "2026–27 FC Bayern Munich season"
     },
     {
       "club": "arsenal",

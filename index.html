@@ -816,8 +816,8 @@
       }
 
       function renderTally(rows) {
-        const live = rows.filter((m) => m.status === "live").length;
-        const upcoming = rows.filter((m) => !isFinished(m) && m.status !== "live").length;
+        const live = rows.filter(isLiveNow).length;
+        const upcoming = rows.filter((m) => !isFinished(m) && !isLiveNow(m)).length;
         const played = rows.filter(isFinished).length;
         const tbc = rows.filter((m) => !m.kickoffUtc).length;
         const parts = [
@@ -893,10 +893,21 @@
 
       // A live match shows its running score and the ESPN clock, so a 1-0 at
       // 63' never looks like a full-time result sitting in the Upcoming list.
+      // A match cannot still be in play three hours after kick-off. If a stored
+      // row says "live" past that, the copy we are reading is simply old — a
+      // static snapshot goes stale the moment it is written — and repeating its
+      // half-time clock would be a lie. The window matches the one the poller
+      // uses (kick-off + 150 min).
+      function isLiveNow(m) {
+        if (m.status !== "live") return false;
+        const started = utcDate(m);
+        return Boolean(started) && Date.now() < started.getTime() + 150 * 60000;
+      }
+
       function scoreCell(m) {
         const result =
           raceResult(m) ?? (m.score ? `${m.score}${m.scoreExtra ? ` ${m.scoreExtra}` : ""}` : null);
-        if (m.status === "live") {
+        if (isLiveNow(m)) {
           return `${result || ""}<span class="liveTag">${m.liveMinute || "LIVE"}</span>`;
         }
         return result || '<i class="dash">—</i>';
@@ -950,7 +961,7 @@
           "Your clubs",
           m.clubs.map((id) => `${clubMark(id)}${CLUBS[id].name} — ${sideOf(m, id) === "home" ? "home" : "away"}`).join("<br>"),
         ]);
-        if (m.status === "live") rows.push(["Status", `<span class="liveTag">${m.liveMinute || "LIVE"}</span> in play — score from ESPN`]);
+        if (isLiveNow(m)) rows.push(["Status", `<span class="liveTag">${m.liveMinute || "LIVE"}</span> in play — score from ESPN`]);
         if (m.score) rows.push(["Result", `${m.homeTeam} ${m.score.replace("-", "–")} ${m.awayTeam}${m.scoreExtra ? ` (${m.scoreExtra})` : ""}`]);
         if (m.homeEvents) rows.push([m.homeTeam, m.homeEvents]);
         if (m.awayEvents) rows.push([m.awayTeam, m.awayEvents]);
@@ -1145,11 +1156,25 @@
         }
       }
 
+      // How old the copy on screen is. A static deployment is frozen at the
+      // moment it was written, so saying "refreshed 2026-10-17 17:20" quietly
+      // invites the reader to assume it is current; "refreshed 8h ago" does not.
+      function snapshotAge() {
+        const at = Date.parse(DATA.generatedAt);
+        if (!Number.isFinite(at)) return null;
+        const minutes = Math.round((Date.now() - at) / 60000);
+        if (minutes < 0) return "just now";
+        if (minutes < 60) return `${minutes}m ago`;
+        const hours = Math.round(minutes / 60);
+        if (hours < 36) return `${hours}h ago`;
+        return `${Math.round(hours / 24)}d ago`;
+      }
+
       function buildChrome() {
         document.getElementById("seasonLabel").textContent = ` ${DATA.season}`;
         document.getElementById("metaLine").innerHTML =
           `${fixtures.length} events · ${DATA.categories.map((c) => c.name).join(", ")}<br>` +
-          `refreshed ${DATA.generatedAt.slice(0, 16).replace("T", " ")} · source: ${DATA.source}`;
+          `refreshed ${snapshotAge() || DATA.generatedAt.slice(0, 16).replace("T", " ")} · source: ${DATA.source}`;
         document.getElementById("icsLinks").innerHTML =
           [`<a href="calendar/all-events.ics" download>everything</a>`]
             .concat(DATA.clubs.map((c) => `<a href="calendar/${c.id}.ics" download>${c.name}</a>`))
